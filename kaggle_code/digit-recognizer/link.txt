@@ -1,0 +1,1 @@
+https://www.kaggle.com/carlolepelaars/minimnist-quick-and-small-keras-cnn

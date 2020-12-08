@@ -1,0 +1,1 @@
+https://www.kaggle.com/antmarakis/bi-lstm-conv-layer
