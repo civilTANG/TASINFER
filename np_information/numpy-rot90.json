@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "rot90",
+        "description": "Rotate an array by 90 degrees in the plane specified by axes."
+    },
+    "parameter": {
+        "m": {
+            "type": "array_like",
+            "description": "Array of two or more dimensions. "
+        },
+        "k": {
+            "type": "integer",
+            "description": "Number of times the array is rotated by 90 degrees. "
+        },
+        "axes: (2,) array_like": {
+            "type": "ndarray",
+            "description": "The array is rotated in the plane defined by the axes. Axes must be different.  New in version 1.12.0.  "
+        }
+    },
+    "return": {
+        "y": {
+            "type": "ndarray",
+            "description": "A rotated view of m. "
+        }
+    },
+    "note": "Notes '"
+}

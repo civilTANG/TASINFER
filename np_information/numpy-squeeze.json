@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "squeeze",
+        "description": "Remove single-dimensional entries from the shape of an array."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input data. "
+        },
+        "axis": {
+            "type": "None or int or tuple of ints, optional",
+            "description": " New in version 1.7.0.  Selects a subset of the single-dimensional entries in the shape. If an axis is selected with shape entry greater than one, an error is raised. "
+        }
+    },
+    "return": {
+        "squeezed": {
+            "type": "ndarray",
+            "description": "The input array, but with all or a subset of the dimensions of length 1 removed. This is always a itself or a view into a. Note that if all axes are squeezed, the result is a 0d array and not a scalar. "
+        }
+    }
+}

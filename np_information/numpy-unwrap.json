@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "unwrap",
+        "description": "Unwrap by changing deltas between values to 2*pi complement."
+    },
+    "parameter": {
+        "p": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "discont": {
+            "type": "float, optional",
+            "description": "Maximum discontinuity between values, default is pi. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "Axis along which unwrap will operate, default is the last axis. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array. "
+        }
+    },
+    "note": "Notes '"
+}

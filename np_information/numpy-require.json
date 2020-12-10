@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "require",
+        "description": "Return an ndarray of the provided type that satisfies requirements."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "The object to be converted to a type-and-requirement-satisfying array. "
+        },
+        "dtype": {
+            "type": "data-type",
+            "description": "The required data-type. If None preserve the current dtype. If your application requires the data to be in native byteorder, include a byteorder specification as a part of the dtype specification. "
+        },
+        "requirements": {
+            "type": "str or list of str",
+            "description": "The requirements list can be any of the following  \u2018F_CONTIGUOUS\u2019 (\u2018F\u2019) - ensure a Fortran-contiguous array \u2018C_CONTIGUOUS\u2019 (\u2018C\u2019) - ensure a C-contiguous array \u2018ALIGNED\u2019 (\u2018A\u2019)      - ensure a data-type aligned array \u2018WRITEABLE\u2019 (\u2018W\u2019)    - ensure a writable array \u2018OWNDATA\u2019 (\u2018O\u2019)      - ensure an array that owns its own data \u2018ENSUREARRAY\u2019, (\u2018E\u2019) - ensure a base array, instead of a subclass  "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Array with specified requirements and type if given. "
+        }
+    },
+    "note": "Notes '"
+}

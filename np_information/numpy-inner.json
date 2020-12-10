@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "inner",
+        "description": "Inner product of two arrays."
+    },
+    "parameter": {
+        "a, b": {
+            "type": "array_like",
+            "description": "If a and b are nonscalar, their last dimensions must match. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "out.shape = a.shape[:-1] + b.shape[:-1] "
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "overall": {
+        "api_name": "amin",
+        "description": "Return the minimum of an array or minimum along an axis."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input data. "
+        },
+        "axis": {
+            "type": "None or int or tuple of ints, optional",
+            "description": "Axis or axes along which to operate.  By default, flattened input is used.  New in version 1.7.0.  If this is a tuple of ints, the minimum is selected over multiple axes, instead of a single axis or all the axes as before. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Alternative output array in which to place the result.  Must be of the same shape and buffer length as the expected output. See ufuncs-output-type for more details. "
+        },
+        "keepdims": {
+            "type": "bool, optional",
+            "description": "If this is set to True, the axes which are reduced are left in the result as dimensions with size one. With this option, the result will broadcast correctly against the input array. If the default value is passed, then keepdims will not be passed through to the amin method of sub-classes of ndarray, however any non-default value will be.  If the sub-class\u2019 method does not implement keepdims any exceptions will be raised. "
+        },
+        "initial": {
+            "type": "scalar, optional",
+            "description": "The maximum value of an output element. Must be present to allow computation on empty slice. See reduce for details.  New in version 1.15.0.  "
+        },
+        "where": {
+            "type": "array_like of bool, optional",
+            "description": "Elements to compare for the minimum. See reduce for details.  New in version 1.17.0.  "
+        }
+    },
+    "return": {
+        "amin": {
+            "type": "ndarray or scalar",
+            "description": "Minimum of a. If axis is None, the result is a scalar value. If axis is given, the result is an array of dimension a.ndim - 1. "
+        }
+    },
+    "note": "NaN values are propagated, that is if at least one item is NaN, the corresponding min value will be NaN as well. To ignore NaN values (MATLAB behavior), please use nanmin. '"
+}

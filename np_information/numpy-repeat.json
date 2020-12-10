@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "repeat",
+        "description": "Repeat elements of an array."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "repeats": {
+            "type": "int or array of ints",
+            "description": "The number of repetitions for each element.  repeats is broadcasted to fit the shape of the given axis. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "The axis along which to repeat values.  By default, use the flattened input array, and return a flat output array. "
+        }
+    },
+    "return": {
+        "repeated_array": {
+            "type": "ndarray",
+            "description": "Output array which has the same shape as a, except along the given axis. "
+        }
+    }
+}

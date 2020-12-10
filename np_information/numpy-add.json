@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "add",
+        "description": "Return element-wise string concatenation for two arrays of str or unicode."
+    },
+    "parameter": {
+        "x1": {
+            "type": "array_like of str or unicode",
+            "description": "Input array. "
+        },
+        "x2": {
+            "type": "array_like of str or unicode",
+            "description": "Input array. "
+        }
+    },
+    "return": {
+        "add": {
+            "type": "ndarray",
+            "description": "Output array of string_ or unicode_, depending on input types of the same shape as x1 and x2. "
+        }
+    }
+}

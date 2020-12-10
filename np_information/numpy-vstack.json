@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "vstack",
+        "description": "Stack arrays in sequence vertically (row wise)."
+    },
+    "parameter": {
+        "tup": {
+            "type": "sequence of ndarrays",
+            "description": "The arrays must have the same shape along all but the first axis. 1-D arrays must have the same length. "
+        }
+    },
+    "return": {
+        "stacked": {
+            "type": "ndarray",
+            "description": "The array formed by stacking the given arrays, will be at least 2-D. "
+        }
+    },
+    "note": "This function makes most sense for arrays with up to 3 dimensions. For instance, for pixel-data with a height (first axis), width (second axis), and r/g/b channels (third axis). The functions concatenate, stack and block provide more general stacking and concatenation operations. '"
+}

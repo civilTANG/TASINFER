@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "datetime_data",
+        "description": "Get information about the step size of a date or time type."
+    },
+    "parameter": {
+        "dtype": {
+            "type": "dtype",
+            "description": "The dtype object, which must be a datetime64 or timedelta64 type. "
+        }
+    },
+    "return": {
+        "unit": {
+            "type": "str",
+            "description": "The datetime unit on which this dtype is based. "
+        },
+        "count": {
+            "type": "int",
+            "description": "The number of base units in a step. "
+        }
+    },
+    "note": "Examples '"
+}

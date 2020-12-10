@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "trim_zeros",
+        "description": "Trim the leading and/or trailing zeros from a 1-D array or sequence."
+    },
+    "parameter": {
+        "filt": {
+            "type": "1-D array or sequence",
+            "description": "Input array. "
+        },
+        "trim": {
+            "type": "str, optional",
+            "description": "A string with \u2018f\u2019 representing trim from front and \u2018b\u2019 to trim from back. Default is \u2018fb\u2019, trim zeros from both front and back of the array. "
+        }
+    },
+    "return": {
+        "trimmed": {
+            "type": "1-D array or sequence",
+            "description": "The result of trimming the input. The input data type is preserved. "
+        }
+    },
+    "note": "The input data type is preserved, list/tuple in means list/tuple out. '"
+}

@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "filled",
+        "description": "Return input as an array with masked data replaced by a fill value."
+    },
+    "parameter": {
+        "a": {
+            "type": "MaskedArray or array_like",
+            "description": "An input object. "
+        },
+        "fill_value": {
+            "type": "array_like, optional.",
+            "description": "Can be scalar or non-scalar. If non-scalar, the resulting filled array should be broadcastable over input array. Default is None. "
+        }
+    },
+    "return": {
+        "a": {
+            "type": "ndarray",
+            "description": "The filled array. "
+        }
+    }
+}

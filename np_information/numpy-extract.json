@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "extract",
+        "description": "Return the elements of an array that satisfy some condition."
+    },
+    "parameter": {
+        "condition": {
+            "type": "array_like",
+            "description": "An array whose nonzero or True entries indicate the elements of arr to extract. "
+        },
+        "arr": {
+            "type": "array_like",
+            "description": "Input array of the same size as condition. "
+        }
+    },
+    "return": {
+        "extract": {
+            "type": "ndarray",
+            "description": "Rank 1 array of values from arr where condition is True. "
+        }
+    },
+    "note": "Note that place does the exact opposite of extract. '"
+}

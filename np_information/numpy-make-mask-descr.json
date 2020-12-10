@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "make_mask_descr",
+        "description": "Construct a dtype description list from a given dtype."
+    },
+    "parameter": {
+        "ndtype": {
+            "type": "dtype",
+            "description": "The dtype to convert. "
+        }
+    },
+    "return": {
+        "result": {
+            "type": "dtype",
+            "description": "A dtype that looks like ndtype, the type of all fields is boolean. "
+        }
+    }
+}

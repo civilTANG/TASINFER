@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "cholesky",
+        "description": "Cholesky decomposition."
+    },
+    "parameter": {
+        "a": {
+            "type": "(\u2026, M, M) array_like",
+            "description": "Hermitian (symmetric if all elements are real), positive-definite input matrix. "
+        }
+    },
+    "return": {
+        "L": {
+            "type": "(\u2026, M, M) array_like",
+            "description": "Upper or lower-triangular Cholesky factor of a.  Returns a matrix object if a is a matrix object. "
+        }
+    }
+}

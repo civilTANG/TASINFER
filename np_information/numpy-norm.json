@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "norm",
+        "description": "Matrix or vector norm."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like",
+            "description": "Input array.  If axis is None, x must be 1-D or 2-D, unless ord is None. If both axis and ord are None, the 2-norm of x.ravel will be returned. "
+        },
+        "ord": {
+            "type": "{non-zero int, inf, -inf, \u2018fro\u2019, \u2018nuc\u2019}, optional",
+            "description": "Order of the norm (see table under Notes). inf means numpy\u2019s inf object. The default is None. "
+        },
+        "axis": {
+            "type": "{None, int, 2-tuple of ints}, optional.",
+            "description": "If axis is an integer, it specifies the axis of x along which to compute the vector norms.  If axis is a 2-tuple, it specifies the axes that hold 2-D matrices, and the matrix norms of these matrices are computed.  If axis is None then either a vector norm (when x is 1-D) or a matrix norm (when x is 2-D) is returned. The default is None.  New in version 1.8.0.  "
+        },
+        "keepdims": {
+            "type": "bool, optional",
+            "description": "If this is set to True, the axes which are normed over are left in the result as dimensions with size one.  With this option the result will broadcast correctly against the original x.  New in version 1.10.0.  "
+        }
+    },
+    "return": {
+        "n": {
+            "type": "float or ndarray",
+            "description": "Norm of the matrix or vector(s). "
+        }
+    }
+}

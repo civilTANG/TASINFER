@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "rfind",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array-like of str or unicode",
+            "description": ""
+        },
+        "sub": {
+            "type": "str or unicode",
+            "description": ""
+        },
+        "start, end": {
+            "type": "int, optional",
+            "description": "Optional arguments start and end are interpreted as in slice notation. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of ints.  Return -1 on failure. "
+        }
+    }
+}

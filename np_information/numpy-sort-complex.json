@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "sort_complex",
+        "description": "Sort a complex array using the real part first, then the imaginary part."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "complex ndarray",
+            "description": "Always returns a sorted complex array. "
+        }
+    }
+}

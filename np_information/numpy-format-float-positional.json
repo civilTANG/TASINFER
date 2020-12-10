@@ -1,0 +1,47 @@
+{
+    "overall": {
+        "api_name": "format_float_positional",
+        "description": "Format a floating-point scalar as a decimal string in positional notation."
+    },
+    "parameter": {
+        "x": {
+            "type": "python float or numpy floating scalar",
+            "description": "Value to format. "
+        },
+        "precision": {
+            "type": "non-negative integer or None, optional",
+            "description": "Maximum number of digits to print. May be None if unique is True, but must be an integer if unique is False. "
+        },
+        "unique": {
+            "type": "boolean, optional",
+            "description": "If True, use a digit-generation strategy which gives the shortest representation which uniquely identifies the floating-point number from other values of the same type, by judicious rounding. If precision was omitted, print out all necessary digits, otherwise digit generation is cut off after precision digits and the remaining value is rounded. If False, digits are generated as if printing an infinite-precision value and stopping after precision digits, rounding the remaining value. "
+        },
+        "fractional": {
+            "type": "boolean, optional",
+            "description": "If True, the cutoff of precision digits refers to the total number of digits after the decimal point, including leading zeros. If False, precision refers to the total number of significant digits, before or after the decimal point, ignoring leading zeros. "
+        },
+        "trim": {
+            "type": "one of \u2018k\u2019, \u2018.\u2019, \u20180\u2019, \u2018-\u2018, optional",
+            "description": "Controls post-processing trimming of trailing digits, as follows:  \u2018k\u2019 : keep trailing zeros, keep decimal point (no trimming) \u2018.\u2019 : trim all trailing zeros, leave decimal point \u20180\u2019 : trim all but the zero before the decimal point. Insert the zero if it is missing. \u2018-\u2018 : trim trailing zeros and any trailing decimal point  "
+        },
+        "sign": {
+            "type": "boolean, optional",
+            "description": "Whether to show the sign for positive values. "
+        },
+        "pad_left": {
+            "type": "non-negative integer, optional",
+            "description": "Pad the left side of the string with whitespace until at least that many characters are to the left of the decimal point. "
+        },
+        "pad_right": {
+            "type": "non-negative integer, optional",
+            "description": "Pad the right side of the string with whitespace until at least that many characters are to the right of the decimal point. "
+        }
+    },
+    "return": {
+        "rep": {
+            "type": "string",
+            "description": "The string representation of the floating point value "
+        }
+    },
+    "note": "Examples '"
+}

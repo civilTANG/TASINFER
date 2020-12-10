@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "encode",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        },
+        "encoding": {
+            "type": "str, optional",
+            "description": "The name of an encoding "
+        },
+        "errors": {
+            "type": "str, optional",
+            "description": "Specifies how to handle encoding errors "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": ""
+        }
+    }
+}

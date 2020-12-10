@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "frombuffer",
+        "description": "Interpret a buffer as a 1-dimensional array."
+    },
+    "parameter": {
+        "buffer": {
+            "type": "buffer_like",
+            "description": "An object that exposes the buffer interface. "
+        },
+        "dtype": {
+            "type": "data-type, optional",
+            "description": "Data-type of the returned array; default: float. "
+        },
+        "count": {
+            "type": "int, optional",
+            "description": "Number of items to read. -1 means all data in the buffer. "
+        },
+        "offset": {
+            "type": "int, optional",
+            "description": "Start reading the buffer from this offset (in bytes); default: 0. "
+        }
+    },
+    "return": {},
+    "note": "If the buffer has data that is not in machine byte-order, this should be specified as part of the data-type, e.g.: '"
+}

@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "union1d",
+        "description": "Find the union of two arrays."
+    },
+    "parameter": {
+        "ar1, ar2": {
+            "type": "array_like",
+            "description": "Input arrays. They are flattened if they are not already 1D. "
+        }
+    },
+    "return": {
+        "union1d": {
+            "type": "ndarray",
+            "description": "Unique, sorted union of the input arrays. "
+        }
+    },
+    "note": "Examples '"
+}

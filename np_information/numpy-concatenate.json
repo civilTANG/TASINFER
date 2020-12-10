@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "concatenate",
+        "description": "Concatenate a sequence of arrays along the given axis."
+    },
+    "parameter": {
+        "arrays": {
+            "type": "sequence of array_like",
+            "description": "The arrays must have the same shape, except in the dimension corresponding to axis (the first, by default). "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "The axis along which the arrays will be joined. Default is 0. "
+        }
+    },
+    "return": {
+        "result": {
+            "type": "MaskedArray",
+            "description": "The concatenated array with any masked entries preserved. "
+        }
+    }
+}

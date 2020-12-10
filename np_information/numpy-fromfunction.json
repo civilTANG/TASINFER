@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "fromfunction",
+        "description": "Construct an array by executing a function over each coordinate."
+    },
+    "parameter": {
+        "function": {
+            "type": "callable",
+            "description": "The function is called with N parameters, where N is the rank of shape.  Each parameter represents the coordinates of the array varying along a specific axis.  For example, if shape were (2, 2), then the parameters would be array([[0, 0], [1, 1]]) and array([[0, 1], [0, 1]]) "
+        },
+        "shape": {
+            "type": "(N,) tuple of ints",
+            "description": "Shape of the output array, which also determines the shape of the coordinate arrays passed to function. "
+        },
+        "dtype": {
+            "type": "data-type, optional",
+            "description": "Data-type of the coordinate arrays passed to function. By default, dtype is float. "
+        }
+    },
+    "return": {
+        "fromfunction": {
+            "type": "any",
+            "description": "The result of the call to function is passed back directly. Therefore the shape of fromfunction is completely determined by function.  If function returns a scalar value, the shape of fromfunction would not match the shape parameter. "
+        }
+    },
+    "note": "Notes '"
+}

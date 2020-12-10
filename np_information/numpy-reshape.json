@@ -1,0 +1,17 @@
+{
+    "overall": {
+        "api_name": "reshape",
+        "description": "Returns an array containing the same data with a new shape."
+    },
+    "parameter": {
+        "axis": {
+            "type": "int, optional",
+            "description": "Input data. "
+        },
+        "element_count": {
+            "type": "int",
+            "description": "Axis along which the elements are counted.  By default, give the total number of elements. "
+        }
+    },
+    "return": {}
+}

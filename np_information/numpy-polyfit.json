@@ -1,0 +1,50 @@
+{
+    "overall": {
+        "api_name": "polyfit",
+        "description": "Least squares polynomial fit."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like, shape (M,)",
+            "description": "x-coordinates of the M sample points (x[i], y[i]). "
+        },
+        "y": {
+            "type": "array_like, shape (M,) or (M, K)",
+            "description": "y-coordinates of the sample points. Several data sets of sample points sharing the same x-coordinates can be fitted at once by passing in a 2D-array that contains one dataset per column. "
+        },
+        "deg": {
+            "type": "int",
+            "description": "Degree of the fitting polynomial "
+        },
+        "rcond": {
+            "type": "float, optional",
+            "description": "Relative condition number of the fit. Singular values smaller than this relative to the largest singular value will be ignored. The default value is len(x)*eps, where eps is the relative precision of the float type, about 2e-16 in most cases. "
+        },
+        "full": {
+            "type": "bool, optional",
+            "description": "Switch determining nature of return value. When it is False (the default) just the coefficients are returned, when True diagnostic information from the singular value decomposition is also returned. "
+        },
+        "w": {
+            "type": "array_like, shape (M,), optional",
+            "description": "Weights to apply to the y-coordinates of the sample points. For gaussian uncertainties, use 1/sigma (not 1/sigma**2). "
+        },
+        "cov": {
+            "type": "bool or str, optional",
+            "description": "If given and not False, return not just the estimate but also its covariance matrix. By default, the covariance are scaled by chi2/sqrt(N-dof), i.e., the weights are presumed to be unreliable except in a relative sense and everything is scaled such that the reduced chi2 is unity. This scaling is omitted if cov='unscaled', as is relevant for the case that the weights are 1/sigma**2, with sigma known to be a reliable estimate of the uncertainty. "
+        }
+    },
+    "return": {
+        "p": {
+            "type": "ndarray, shape (deg + 1,) or (deg + 1, K)",
+            "description": "Polynomial coefficients, highest power first.  If y was 2-D, the coefficients for k-th data set are in p[:,k]. "
+        },
+        "residuals, rank, singular_values, rcond": {
+            "type": "ndarray, shape (M,M) or (M,M,K)",
+            "description": "Present only if full = True.  Residuals is sum of squared residuals of the least-squares fit, the effective rank of the scaled Vandermonde coefficient matrix, its singular values, and the specified value of rcond. For more details, see linalg.lstsq. "
+        },
+        "V": {
+            "type": "ndarray, shape (M,M) or (M,M,K)",
+            "description": "Present only if full = False and cov`=True.  The covariance matrix of the polynomial coefficient estimates.  The diagonal of this matrix are the variance estimates for each coefficient.  If y is a 2-D array, then the covariance matrix for the `k-th data set are in V[:,:,k] "
+        }
+    }
+}

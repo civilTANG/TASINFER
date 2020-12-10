@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "who",
+        "description": "Print the NumPy arrays in the given dictionary."
+    },
+    "parameter": {
+        "vardict": {
+            "type": "dict, optional",
+            "description": "A dictionary possibly containing ndarrays.  Default is globals(). "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "None",
+            "description": "Returns \u2018None\u2019. "
+        }
+    },
+    "note": "Notes '"
+}

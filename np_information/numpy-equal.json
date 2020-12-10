@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "equal",
+        "description": "Return (x1 == x2) element-wise."
+    },
+    "parameter": {
+        "x1, x2": {
+            "type": "array_like of str or unicode",
+            "description": "Input arrays of the same shape. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray or bool",
+            "description": "Output array of bools, or a single bool if x1 and x2 are scalars. "
+        }
+    }
+}

@@ -1,4 +1,4 @@
-,0
+,var,line,mypy,our,type,,
 0,f,53,textio,textio,textio,1,1
 1,RND_STATE,48,int,int,int,1,1
 2,pred,196,ndarray,ndarray,ndarray,1,1
@@ -6,13 +6,13 @@
 4,x,133,str,str,str,1,1
 5,feature,188,any,any,objecttype,3,3
 6,labels,68,any,series,series,3,1
-7,limit,188,int,int,1,1
-8,mask_test,any,any,list,3,3
+7,limit,188,int,int,int,1,1
+8,mask_test,146,any,any,list,3,3
 9,TRAIN_SIZE,45,int,int,int,1,1
 10,range,187,functiontype,functiontype,functiontype,1,1
 11,mask_train,44,any,any,list,3,3
 12,X_test_df,154,list,list,list,1,1
-13,filter_words,objecttype,objecttype,objecttype,1,1
+13,filter_words,109,objecttype,objecttype,objecttype,1,1
 14,ex,189,any,any,objecttype,3,3
 15,fit_iter,193,int,int,int,1,1
 16,test,224,list,list,list,1,1

@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "apply_over_axes",
+        "description": "Apply a function repeatedly over multiple axes."
+    },
+    "parameter": {
+        "func": {
+            "type": "function",
+            "description": "This function must take two arguments, func(a, axis). "
+        },
+        "a": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "axes": {
+            "type": "array_like",
+            "description": "Axes over which func is applied; the elements must be integers. "
+        }
+    },
+    "return": {
+        "apply_over_axis": {
+            "type": "ndarray",
+            "description": "The output array.  The number of dimensions is the same as a, but the shape can be different.  This depends on whether func changes the shape of its output with respect to its input. "
+        }
+    }
+}

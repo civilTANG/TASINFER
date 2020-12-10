@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "around",
+        "description": "Evenly round to the given number of decimals."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input data. "
+        },
+        "decimals": {
+            "type": "int, optional",
+            "description": "Number of decimal places to round to (default: 0).  If decimals is negative, it specifies the number of positions to the left of the decimal point. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Alternative output array in which to place the result. It must have the same shape as the expected output, but the type of the output values will be cast if necessary. See ufuncs-output-type for more details. "
+        }
+    },
+    "return": {
+        "rounded_array": {
+            "type": "ndarray",
+            "description": "An array of the same type as a, containing the rounded values. Unless out was specified, a new array is created.  A reference to the result is returned. The real and imaginary parts of complex numbers are rounded separately.  The result of rounding a float is a float. "
+        }
+    },
+    "note": "For values exactly halfway between rounded decimal values, NumPy rounds to the nearest even value. Thus 1.5 and 2.5 round to 2.0, -0.5 and 0.5 round to 0.0, etc. '"
+}

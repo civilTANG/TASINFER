@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "fromstring",
+        "description": "A new 1-D array initialized from text data in a string."
+    },
+    "parameter": {
+        "string": {
+            "type": "str",
+            "description": "A string containing the data. "
+        },
+        "dtype": {
+            "type": "data-type, optional",
+            "description": "The data type of the array; default: float.  For binary input data, the data must be in exactly this format. Most builtin numeric types are supported and extension types may be supported.  New in version 1.18.0: Complex dtypes.  "
+        },
+        "count": {
+            "type": "int, optional",
+            "description": "Read this number of dtype elements from the data.  If this is negative (the default), the count will be determined from the length of the data. "
+        },
+        "sep": {
+            "type": "str, optional",
+            "description": "The string separating numbers in the data; extra whitespace between elements is also ignored.  Deprecated since version 1.14: Passing sep='', the default, is deprecated since it will trigger the deprecated binary mode of this function. This mode interprets string as binary bytes, rather than ASCII text with decimal numbers, an operation which is better spelt frombuffer(string, dtype, count). If string contains unicode text, the binary mode of fromstring will first encode it into bytes using either utf-8 (python 3) or the default encoding (python 2), neither of which produce sane results.  "
+        }
+    },
+    "return": {
+        "arr": {
+            "type": "ndarray",
+            "description": "The constructed array. "
+        }
+    }
+}

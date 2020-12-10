@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "mod",
+        "description": "Return (a % i), that is pre-Python 2.6 string formatting\n(interpolation), element-wise for a pair of array_likes of str\nor unicode."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        },
+        "values": {
+            "type": "array_like of values",
+            "description": "These values will be element-wise interpolated into the string. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of str or unicode, depending on input types "
+        }
+    }
+}

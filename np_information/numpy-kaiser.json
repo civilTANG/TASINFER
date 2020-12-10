@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "kaiser",
+        "description": "Return the Kaiser window."
+    },
+    "parameter": {
+        "M": {
+            "type": "int",
+            "description": "Number of points in the output window. If zero or less, an empty array is returned. "
+        },
+        "beta": {
+            "type": "float",
+            "description": "Shape parameter for window. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "array",
+            "description": "The window, with the maximum value normalized to one (the value one appears only if the number of samples is odd). "
+        }
+    },
+    "note": "Notes '"
+}

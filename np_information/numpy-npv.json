@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "npv",
+        "description": "Returns the NPV (Net Present Value) of a cash flow series."
+    },
+    "parameter": {
+        "rate": {
+            "type": "scalar",
+            "description": "The discount rate. "
+        },
+        "values": {
+            "type": "array_like, shape(M, )",
+            "description": "The values of the time series of cash flows.  The (fixed) time interval between cash flow \u201cevents\u201d must be the same as that for which rate is given (i.e., if rate is per year, then precisely a year is understood to elapse between each cash flow event).  By convention, investments or \u201cdeposits\u201d are negative, income or \u201cwithdrawals\u201d are positive; values must begin with the initial investment, thus values[0] will typically be negative. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "float",
+            "description": "The NPV of the input cash flow series values at the discount rate. "
+        }
+    },
+    "note": "Returns the result of: [2] '"
+}

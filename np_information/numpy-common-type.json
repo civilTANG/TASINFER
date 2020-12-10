@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "common_type",
+        "description": "Return a scalar type which is common to the input arrays."
+    },
+    "parameter": {
+        "array1, array2, \u2026": {
+            "type": "ndarrays",
+            "description": "Input arrays. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "data type code",
+            "description": "Data type code. "
+        }
+    },
+    "note": "All input arrays except int64 and uint64 can be safely cast to the returned dtype without loss of information. '"
+}

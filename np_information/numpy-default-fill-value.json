@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "default_fill_value",
+        "description": "Return the default fill value for the argument object."
+    },
+    "parameter": {
+        "obj": {
+            "type": "ndarray, dtype or scalar",
+            "description": "The array data-type or scalar for which the default fill value is returned. "
+        }
+    },
+    "return": {
+        "fill_value": {
+            "type": "scalar",
+            "description": "The default fill value. "
+        }
+    }
+}

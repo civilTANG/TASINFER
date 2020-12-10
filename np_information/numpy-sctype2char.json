@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "sctype2char",
+        "description": "Return the string representation of a scalar dtype."
+    },
+    "parameter": {
+        "sctype": {
+            "type": "scalar dtype or object",
+            "description": "If a scalar dtype, the corresponding string character is returned. If an object, sctype2char tries to infer its scalar type and then return the corresponding string character. "
+        }
+    },
+    "return": {
+        "typechar": {
+            "type": "str",
+            "description": "The string character corresponding to the scalar type. "
+        }
+    }
+}

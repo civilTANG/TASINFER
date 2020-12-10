@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "swapcase",
+        "description": "Return element-wise a copy of the string with\nuppercase characters converted to lowercase and vice versa."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like, {str, unicode}",
+            "description": "Input array. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray, {str, unicode}",
+            "description": "Output array of str or unicode, depending on input type "
+        }
+    }
+}

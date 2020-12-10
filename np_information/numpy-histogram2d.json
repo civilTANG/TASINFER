@@ -1,0 +1,51 @@
+{
+    "overall": {
+        "api_name": "histogram2d",
+        "description": "Compute the bi-dimensional histogram of two data samples."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like, shape (N,)",
+            "description": "An array containing the x coordinates of the points to be histogrammed. "
+        },
+        "y": {
+            "type": "array_like, shape (N,)",
+            "description": "An array containing the y coordinates of the points to be histogrammed. "
+        },
+        "bins": {
+            "type": "int or array_like or [int, int] or [array, array], optional",
+            "description": "The bin specification:   If int, the number of bins for the two dimensions (nx=ny=bins). If array_like, the bin edges for the two dimensions (x_edges=y_edges=bins). If [int, int], the number of bins in each dimension (nx, ny = bins). If [array, array], the bin edges in each dimension (x_edges, y_edges = bins). A combination [int, array] or [array, int], where int is the number of bins and array is the bin edges.   "
+        },
+        "range": {
+            "type": "array_like, shape(2,2), optional",
+            "description": "The leftmost and rightmost edges of the bins along each dimension (if not specified explicitly in the bins parameters): [[xmin, xmax], [ymin, ymax]]. All values outside of this range will be considered outliers and not tallied in the histogram. "
+        },
+        "density": {
+            "type": "bool, optional",
+            "description": "If False, the default, returns the number of samples in each bin. If True, returns the probability density function at the bin, bin_count / sample_count / bin_area. "
+        },
+        "normed": {
+            "type": "bool, optional",
+            "description": "An alias for the density argument that behaves identically. To avoid confusion with the broken normed argument to histogram, density should be preferred. "
+        },
+        "weights": {
+            "type": "array_like, shape(N,), optional",
+            "description": "An array of values w_i weighing each sample (x_i, y_i). Weights are normalized to 1 if normed is True. If normed is False, the values of the returned histogram are equal to the sum of the weights belonging to the samples falling into each bin. "
+        }
+    },
+    "return": {
+        "H": {
+            "type": "ndarray, shape(nx, ny)",
+            "description": "The bi-dimensional histogram of samples x and y. Values in x are histogrammed along the first dimension and values in y are histogrammed along the second dimension. "
+        },
+        "xedges": {
+            "type": "ndarray, shape(nx+1,)",
+            "description": "The bin edges along the first dimension. "
+        },
+        "yedges": {
+            "type": "ndarray, shape(ny+1,)",
+            "description": "The bin edges along the second dimension. "
+        }
+    },
+    "note": "When normed is True, then the returned histogram is the sample density, defined such that the sum over bins of the product bin_value * bin_area is 1. '"
+}

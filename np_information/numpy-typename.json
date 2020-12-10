@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "typename",
+        "description": "Return a description for the given data type code."
+    },
+    "parameter": {
+        "char": {
+            "type": "str",
+            "description": "Data type code. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "str",
+            "description": "Description of the input data type code. "
+        }
+    }
+}

@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "join",
+        "description": null
+    },
+    "parameter": {
+        "sep": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        },
+        "seq": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of str or unicode, depending on input types "
+        }
+    }
+}

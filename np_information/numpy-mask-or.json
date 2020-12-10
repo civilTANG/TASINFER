@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "mask_or",
+        "description": null
+    },
+    "parameter": {
+        "m1, m2": {
+            "type": "array_like",
+            "description": "Input masks. "
+        },
+        "copy": {
+            "type": "bool, optional",
+            "description": "If copy is False and one of the inputs is nomask, return a view of the other input mask. Defaults to False. "
+        },
+        "shrink": {
+            "type": "bool, optional",
+            "description": "Whether to shrink the output to nomask if all its values are False. Defaults to True. "
+        }
+    },
+    "return": {
+        "mask": {
+            "type": "output mask",
+            "description": "The result masks values that are masked in either m1 or m2. "
+        }
+    }
+}

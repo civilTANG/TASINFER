@@ -1,0 +1,35 @@
+{
+    "overall": {
+        "api_name": "pv",
+        "description": "Compute the present value."
+    },
+    "parameter": {
+        "rate": {
+            "type": "array_like",
+            "description": "Rate of interest (per period) "
+        },
+        "nper": {
+            "type": "array_like",
+            "description": "Number of compounding periods "
+        },
+        "pmt": {
+            "type": "array_like",
+            "description": "Payment "
+        },
+        "fv": {
+            "type": "array_like, optional",
+            "description": "Future value "
+        },
+        "when": {
+            "type": "{{\u2018begin\u2019, 1}, {\u2018end\u2019, 0}}, {string, int}, optional",
+            "description": "When payments are due (\u2018begin\u2019 (1) or \u2018end\u2019 (0)) "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray, float",
+            "description": "Present value of a series of payments or investments. "
+        }
+    },
+    "note": "The present value is computed by solving the equation: '"
+}

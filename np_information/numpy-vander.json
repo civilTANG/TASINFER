@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "vander",
+        "description": "Generate a Vandermonde matrix."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like",
+            "description": "1-D input array. "
+        },
+        "N": {
+            "type": "int, optional",
+            "description": "Number of columns in the output.  If N is not specified, a square array is returned (N = len(x)). "
+        },
+        "increasing": {
+            "type": "bool, optional",
+            "description": "Order of the powers of the columns.  If True, the powers increase from left to right, if False (the default) they are reversed.  New in version 1.9.0.  "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Vandermonde matrix.  If increasing is False, the first column is x^(N-1), the second x^(N-2) and so forth. If increasing is True, the columns are x^0, x^1, ..., x^(N-1). "
+        }
+    }
+}

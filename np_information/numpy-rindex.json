@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "rindex",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array-like of str or unicode",
+            "description": ""
+        },
+        "sub": {
+            "type": "str or unicode",
+            "description": ""
+        },
+        "start, end": {
+            "type": "int, optional",
+            "description": ""
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of ints. "
+        }
+    }
+}

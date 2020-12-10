@@ -1,0 +1,35 @@
+{
+    "overall": {
+        "api_name": "trace",
+        "description": "Return the sum along diagonals of the array."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array, from which the diagonals are taken. "
+        },
+        "offset": {
+            "type": "int, optional",
+            "description": "Offset of the diagonal from the main diagonal. Can be both positive and negative. Defaults to 0. "
+        },
+        "axis1, axis2": {
+            "type": "int, optional",
+            "description": "Axes to be used as the first and second axis of the 2-D sub-arrays from which the diagonals should be taken. Defaults are the first two axes of a. "
+        },
+        "dtype": {
+            "type": "dtype, optional",
+            "description": "Determines the data-type of the returned array and of the accumulator where the elements are summed. If dtype has the value None and a is of integer type of precision less than the default integer precision, then the default integer precision is used. Otherwise, the precision is the same as that of a. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Array into which the output is placed. Its type is preserved and it must be of the right shape to hold the output. "
+        }
+    },
+    "return": {
+        "sum_along_diagonals": {
+            "type": "ndarray",
+            "description": "If a is 2-D, the sum along the diagonal is returned.  If a has larger dimensions, then an array of sums along diagonals is returned. "
+        }
+    },
+    "note": "If a has more than two dimensions, then the axes specified by axis1 and axis2 are used to determine the 2-D sub-arrays whose traces are returned. The shape of the resulting array is the same as that of a with axis1 and axis2 removed. '"
+}

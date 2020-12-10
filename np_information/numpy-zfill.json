@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "zfill",
+        "description": "Return the numeric string left-filled with zeros"
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like, {str, unicode}",
+            "description": "Input array. "
+        },
+        "width": {
+            "type": "int",
+            "description": "Width of string to left-fill elements in a. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray, {str, unicode}",
+            "description": "Output array of str or unicode, depending on input type "
+        }
+    }
+}

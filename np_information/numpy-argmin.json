@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "argmin",
+        "description": "Returns the indices of the minimum values along an axis."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "By default, the index is into the flattened array, otherwise along the specified axis. "
+        },
+        "out": {
+            "type": "array, optional",
+            "description": "If provided, the result will be inserted into this array. It should be of the appropriate shape and dtype. "
+        }
+    },
+    "return": {
+        "index_array": {
+            "type": "ndarray of ints",
+            "description": "Array of indices into the array. It has the same shape as a.shape with the dimension along axis removed. "
+        }
+    },
+    "note": "In case of multiple occurrences of the minimum values, the indices corresponding to the first occurrence are returned. '"
+}

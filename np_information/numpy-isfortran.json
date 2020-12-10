@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "isfortran",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "ndarray",
+            "description": "Input array. "
+        }
+    },
+    "return": {
+        "isfortran": {
+            "type": "bool",
+            "description": "Returns True if the array is Fortran contiguous but not C contiguous. "
+        }
+    },
+    "note": "Examples '"
+}

@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "flatnotmasked_edges",
+        "description": "Find the indices of the first and last unmasked values."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input 1-D MaskedArray "
+        }
+    },
+    "return": {
+        "edges": {
+            "type": "ndarray or None",
+            "description": "The indices of first and last non-masked value in the array. Returns None if all values are masked. "
+        }
+    }
+}

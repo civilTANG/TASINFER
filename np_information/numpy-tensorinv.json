@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "tensorinv",
+        "description": "Compute the \u2018inverse\u2019 of an N-dimensional array."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Tensor to \u2018invert\u2019. Its shape must be \u2018square\u2019, i. e., prod(a.shape[:ind]) == prod(a.shape[ind:]). "
+        },
+        "ind": {
+            "type": "int, optional",
+            "description": "Number of first indices that are involved in the inverse sum. Must be a positive integer, default is 2. "
+        }
+    },
+    "return": {
+        "b": {
+            "type": "ndarray",
+            "description": "a\u2019s tensordot inverse, shape a.shape[ind:] + a.shape[:ind]. "
+        }
+    }
+}

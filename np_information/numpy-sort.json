@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "sort",
+        "description": "Return a sorted copy of an array."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Array to be sorted. "
+        },
+        "axis": {
+            "type": "int or None, optional",
+            "description": "Axis along which to sort. If None, the array is flattened before sorting. The default is -1, which sorts along the last axis. "
+        },
+        "kind": {
+            "type": "{\u2018quicksort\u2019, \u2018mergesort\u2019, \u2018heapsort\u2019, \u2018stable\u2019}, optional",
+            "description": "Sorting algorithm. The default is \u2018quicksort\u2019. Note that both \u2018stable\u2019 and \u2018mergesort\u2019 use timsort or radix sort under the covers and, in general, the actual implementation will vary with data type. The \u2018mergesort\u2019 option is retained for backwards compatibility.  Changed in version 1.15.0.: The \u2018stable\u2019 option was added.  "
+        },
+        "order": {
+            "type": "str or list of str, optional",
+            "description": "When a is an array with fields defined, this argument specifies which fields to compare first, second, etc.  A single field can be specified as a string, and not all fields need be specified, but unspecified fields will still be used, in the order in which they come up in the dtype, to break ties. "
+        }
+    },
+    "return": {
+        "sorted_array": {
+            "type": "ndarray",
+            "description": "Array of the same type and shape as a. "
+        }
+    },
+    "note": "The various sorting algorithms are characterized by their average speed, worst case performance, work space size, and whether they are stable. A stable sort keeps items with the same key in the same relative order. The four algorithms implemented in NumPy have the following properties: '"
+}

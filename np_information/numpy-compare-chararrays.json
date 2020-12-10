@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "compare_chararrays",
+        "description": null
+    },
+    "parameter": {
+        "a, b": {
+            "type": "array_like",
+            "description": "Arrays to be compared. "
+        },
+        "cmp_op": {
+            "type": "{\u201c<\u201d, \u201c<=\u201d, \u201c==\u201d, \u201c>=\u201d, \u201c>\u201d, \u201c!=\u201d}",
+            "description": "Type of comparison. "
+        },
+        "rstrip": {
+            "type": "Boolean",
+            "description": "If True, the spaces at the end of Strings are removed before the comparison. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "The output array of type Boolean with the same shape as a and b. "
+        }
+    }
+}

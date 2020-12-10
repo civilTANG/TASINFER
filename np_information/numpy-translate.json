@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "translate",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array-like of str or unicode",
+            "description": ""
+        },
+        "table": {
+            "type": "str of length 256",
+            "description": ""
+        },
+        "deletechars": {
+            "type": "str",
+            "description": ""
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of str or unicode, depending on input type "
+        }
+    }
+}

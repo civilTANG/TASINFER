@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "vdot",
+        "description": "Return the dot product of two vectors."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "If a is complex the complex conjugate is taken before calculation of the dot product. "
+        },
+        "b": {
+            "type": "array_like",
+            "description": "Second argument to the dot product. "
+        }
+    },
+    "return": {
+        "output": {
+            "type": "ndarray",
+            "description": "Dot product of a and b.  Can be an int, float, or complex depending on the types of a and b. "
+        }
+    },
+    "note": "Note that vdot handles multidimensional arrays differently than dot: it does not perform a matrix product, but flattens input arguments to 1-D vectors first. Consequently, it should only be used for vectors. '"
+}

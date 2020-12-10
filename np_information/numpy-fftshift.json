@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "fftshift",
+        "description": "Shift the zero-frequency component to the center of the spectrum."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "axes": {
+            "type": "int or shape tuple, optional",
+            "description": "Axes over which to shift.  Default is None, which shifts all axes. "
+        }
+    },
+    "return": {
+        "y": {
+            "type": "ndarray",
+            "description": "The shifted array. "
+        }
+    }
+}

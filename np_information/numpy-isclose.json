@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "isclose",
+        "description": "Returns a boolean array where two arrays are element-wise equal within a\ntolerance."
+    },
+    "parameter": {
+        "a, b": {
+            "type": "array_like",
+            "description": "Input arrays to compare. "
+        },
+        "rtol": {
+            "type": "float",
+            "description": "The relative tolerance parameter (see Notes). "
+        },
+        "atol": {
+            "type": "float",
+            "description": "The absolute tolerance parameter (see Notes). "
+        },
+        "equal_nan": {
+            "type": "bool",
+            "description": "Whether to compare NaN\u2019s as equal.  If True, NaN\u2019s in a will be considered equal to NaN\u2019s in b in the output array. "
+        }
+    },
+    "return": {
+        "y": {
+            "type": "array_like",
+            "description": "Returns a boolean array of where a and b are equal within the given tolerance. If both a and b are scalars, returns a single boolean value. "
+        }
+    },
+    "note": "Notes '"
+}

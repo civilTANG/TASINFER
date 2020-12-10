@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "moveaxis",
+        "description": "Move axes of an array to new positions."
+    },
+    "parameter": {
+        "a": {
+            "type": "np.ndarray",
+            "description": "The array whose axes should be reordered. "
+        },
+        "source": {
+            "type": "int or sequence of int",
+            "description": "Original positions of the axes to move. These must be unique. "
+        },
+        "destination": {
+            "type": "int or sequence of int",
+            "description": "Destination positions for each of the original axes. These must also be unique. "
+        }
+    },
+    "return": {
+        "result": {
+            "type": "np.ndarray",
+            "description": "Array with moved axes. This array is a view of the input array. "
+        }
+    },
+    "note": "Examples '"
+}

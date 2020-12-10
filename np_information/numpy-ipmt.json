@@ -1,0 +1,39 @@
+{
+    "overall": {
+        "api_name": "ipmt",
+        "description": "Compute the interest portion of a payment."
+    },
+    "parameter": {
+        "rate": {
+            "type": "scalar or array_like of shape(M, )",
+            "description": "Rate of interest as decimal (not per cent) per period "
+        },
+        "per": {
+            "type": "scalar or array_like of shape(M, )",
+            "description": "Interest paid against the loan changes during the life or the loan. The per is the payment period to calculate the interest amount. "
+        },
+        "nper": {
+            "type": "scalar or array_like of shape(M, )",
+            "description": "Number of compounding periods "
+        },
+        "pv": {
+            "type": "scalar or array_like of shape(M, )",
+            "description": "Present value "
+        },
+        "fv": {
+            "type": "scalar or array_like of shape(M, ), optional",
+            "description": "Future value "
+        },
+        "when": {
+            "type": "{{\u2018begin\u2019, 1}, {\u2018end\u2019, 0}}, {string, int}, optional",
+            "description": "When payments are due (\u2018begin\u2019 (1) or \u2018end\u2019 (0)). Defaults to {\u2018end\u2019, 0}. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Interest portion of payment.  If all input is scalar, returns a scalar float.  If any input is array_like, returns interest payment for each input element. If multiple inputs are array_like, they all must have the same shape. "
+        }
+    },
+    "note": "The total payment is made up of payment against principal plus interest. '"
+}

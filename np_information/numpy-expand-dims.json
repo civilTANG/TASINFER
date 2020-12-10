@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "expand_dims",
+        "description": "Expand the shape of an array."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "axis": {
+            "type": "int or tuple of ints",
+            "description": "Position in the expanded axes where the new axis (or axes) is placed.  Deprecated since version 1.13.0: Passing an axis where axis &gt; a.ndim will be treated as axis == a.ndim, and passing axis &lt; -a.ndim - 1 will be treated as axis == 0. This behavior is deprecated.   Changed in version 1.18.0: A tuple of axes is now supported.  Out of range axes as described above are now forbidden and raise an AxisError.  "
+        }
+    },
+    "return": {
+        "result": {
+            "type": "ndarray",
+            "description": "View of a with the number of dimensions increased. "
+        }
+    }
+}

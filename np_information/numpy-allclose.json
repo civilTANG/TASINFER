@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "allclose",
+        "description": "Returns True if two arrays are element-wise equal within a tolerance."
+    },
+    "parameter": {
+        "a, b": {
+            "type": "array_like",
+            "description": "Input arrays to compare. "
+        },
+        "masked_equal": {
+            "type": "bool, optional",
+            "description": "Whether masked values in a and b are considered equal (True) or not (False). They are considered equal by default. "
+        },
+        "rtol": {
+            "type": "float, optional",
+            "description": "Relative tolerance. The relative difference is equal to rtol * b. Default is 1e-5. "
+        },
+        "atol": {
+            "type": "float, optional",
+            "description": "Absolute tolerance. The absolute difference is equal to atol. Default is 1e-8. "
+        }
+    },
+    "return": {
+        "y": {
+            "type": "bool",
+            "description": "Returns True if the two arrays are equal within the given tolerance, False otherwise. If either array contains NaN, then False is returned. "
+        }
+    }
+}

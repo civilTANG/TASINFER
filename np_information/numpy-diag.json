@@ -1,0 +1,29 @@
+{
+    "overall": {
+        "api_name": "diag",
+        "description": "Extract a diagonal or construct a diagonal array."
+    },
+    "parameter": {
+        "kind": {
+            "type": "{\u2018quicksort\u2019, \u2018mergesort\u2019, \u2018heapsort\u2019, \u2018stable\u2019}, optional",
+            "description": "Axis along which to sort. If None, the default, the flattened array is used.  Changed in version 1.13.0: Previously, the default was documented to be -1, but that was in error. At some future date, the default will change to -1, as originally intended. Until then, the axis should be given explicitly when arr.ndim &gt; 1, to avoid a FutureWarning.  "
+        },
+        "order": {
+            "type": "list, optional",
+            "description": "The sorting algorithm used. "
+        },
+        "endwith": {
+            "type": "{True, False}, optional",
+            "description": "When a is an array with fields defined, this argument specifies which fields to compare first, second, etc.  Not all fields need be specified. "
+        },
+        "fill_value": {
+            "type": "{var}, optional",
+            "description": "Whether missing values (if any) should be treated as the largest values (True) or the smallest values (False) When the array contains unmasked values at the same extremes of the datatype, the ordering of these values and the masked values is undefined. "
+        },
+        "index_array": {
+            "type": "ndarray, int",
+            "description": "Value used internally for the masked values. If fill_value is not None, it supersedes endwith. "
+        }
+    },
+    "return": {}
+}

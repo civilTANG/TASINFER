@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "asarray_chkfinite",
+        "description": "Convert the input to an array, checking for NaNs or Infs."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input data, in any form that can be converted to an array.  This includes lists, lists of tuples, tuples, tuples of tuples, tuples of lists and ndarrays.  Success requires no NaNs or Infs. "
+        },
+        "dtype": {
+            "type": "data-type, optional",
+            "description": "By default, the data-type is inferred from the input data. "
+        },
+        "order": {
+            "type": "{\u2018C\u2019, \u2018F\u2019}, optional",
+            "description": "Whether to use row-major (C-style) or column-major (Fortran-style) memory representation. Defaults to \u2018C\u2019. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Array interpretation of a.  No copy is performed if the input is already an ndarray.  If a is a subclass of ndarray, a base class ndarray is returned. "
+        }
+    },
+    "note": "Convert a list into an array.  If all elements are finite asarray_chkfinite is identical to asarray. '"
+}

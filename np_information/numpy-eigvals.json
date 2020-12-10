@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "eigvals",
+        "description": "Compute the eigenvalues of a general matrix."
+    },
+    "parameter": {
+        "a": {
+            "type": "(\u2026, M, M) array_like",
+            "description": "A complex- or real-valued matrix whose eigenvalues will be computed. "
+        }
+    },
+    "return": {
+        "w": {
+            "type": "(\u2026, M,) ndarray",
+            "description": "The eigenvalues, each repeated according to its multiplicity. They are not necessarily ordered, nor are they necessarily real for real matrices. "
+        }
+    }
+}

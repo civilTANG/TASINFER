@@ -1,0 +1,35 @@
+{
+    "overall": {
+        "api_name": "nan_to_num",
+        "description": null
+    },
+    "parameter": {
+        "x": {
+            "type": "scalar or array_like",
+            "description": "Input data. "
+        },
+        "copy": {
+            "type": "bool, optional",
+            "description": "Whether to create a copy of x (True) or to replace values in-place (False). The in-place operation only occurs if casting to an array does not require a copy. Default is True.  New in version 1.13.  "
+        },
+        "nan": {
+            "type": "int, float, optional",
+            "description": "Value to be used to fill NaN values. If no value is passed  then NaN values will be replaced with 0.0.  New in version 1.17.  "
+        },
+        "posinf": {
+            "type": "int, float, optional",
+            "description": "Value to be used to fill positive infinity values. If no value is  passed then positive infinity values will be replaced with a very large number.  New in version 1.17.  "
+        },
+        "neginf": {
+            "type": "int, float, optional",
+            "description": "Value to be used to fill negative infinity values. If no value is  passed then negative infinity values will be replaced with a very small (or negative) number.  New in version 1.17.  "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "x, with the non-finite values replaced. If copy is False, this may be x itself. "
+        }
+    },
+    "note": "For complex dtypes, the above is applied to each of the real and imaginary components of x separately. '"
+}

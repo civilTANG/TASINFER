@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "all",
+        "description": "Test whether all array elements along a given axis evaluate to True."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array or object that can be converted to an array. "
+        },
+        "axis": {
+            "type": "None or int or tuple of ints, optional",
+            "description": "Axis or axes along which a logical AND reduction is performed. The default (axis=None) is to perform a logical AND over all the dimensions of the input array. axis may be negative, in which case it counts from the last to the first axis.  New in version 1.7.0.  If this is a tuple of ints, a reduction is performed on multiple axes, instead of a single axis or all the axes as before. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Alternate output array in which to place the result. It must have the same shape as the expected output and its type is preserved (e.g., if dtype(out) is float, the result will consist of 0.0\u2019s and 1.0\u2019s). See ufuncs-output-type for more details. "
+        },
+        "keepdims": {
+            "type": "bool, optional",
+            "description": "If this is set to True, the axes which are reduced are left in the result as dimensions with size one. With this option, the result will broadcast correctly against the input array. If the default value is passed, then keepdims will not be passed through to the all method of sub-classes of ndarray, however any non-default value will be.  If the sub-class\u2019 method does not implement keepdims any exceptions will be raised. "
+        }
+    },
+    "return": {
+        "all": {
+            "type": "ndarray, bool",
+            "description": "A new boolean or array is returned unless out is specified, in which case a reference to out is returned. "
+        }
+    },
+    "note": "Not a Number (NaN), positive infinity and negative infinity evaluate to True because these are not equal to zero. '"
+}

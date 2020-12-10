@@ -1,0 +1,34 @@
+{
+    "overall": {
+        "api_name": "eye",
+        "description": "Return a matrix with ones on the diagonal and zeros elsewhere."
+    },
+    "parameter": {
+        "n": {
+            "type": "int",
+            "description": "Number of rows in the output. "
+        },
+        "M": {
+            "type": "int, optional",
+            "description": "Number of columns in the output, defaults to n. "
+        },
+        "k": {
+            "type": "int, optional",
+            "description": "Index of the diagonal: 0 refers to the main diagonal, a positive value refers to an upper diagonal, and a negative value to a lower diagonal. "
+        },
+        "dtype": {
+            "type": "dtype, optional",
+            "description": "Data-type of the returned matrix. "
+        },
+        "order": {
+            "type": "{\u2018C\u2019, \u2018F\u2019}, optional",
+            "description": "Whether the output should be stored in row-major (C-style) or column-major (Fortran-style) order in memory.  New in version 1.14.0.  "
+        }
+    },
+    "return": {
+        "I": {
+            "type": "matrix",
+            "description": "A n x M matrix where all elements are equal to zero, except for the k-th diagonal, whose values are equal to one. "
+        }
+    }
+}

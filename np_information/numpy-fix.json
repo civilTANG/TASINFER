@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "fix",
+        "description": "Round to nearest integer towards zero."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like",
+            "description": "An array of floats to be rounded "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "A location into which the result is stored. If provided, it must have a shape that the input broadcasts to. If not provided or None, a freshly-allocated array is returned. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray of floats",
+            "description": "A float array with the same dimensions as the input. If second argument is not supplied then a float array is returned with the rounded values. If a second argument is supplied the result is stored there. The return value out is then a reference to that array. "
+        }
+    },
+    "note": "Examples '"
+}

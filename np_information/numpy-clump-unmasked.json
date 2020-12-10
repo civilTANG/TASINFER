@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "clump_unmasked",
+        "description": "Return list of slices corresponding to the unmasked clumps of a 1-D array.\n(A \u201cclump\u201d is defined as a contiguous region of the array)."
+    },
+    "parameter": {
+        "a": {
+            "type": "ndarray",
+            "description": "A one-dimensional masked array. "
+        }
+    },
+    "return": {
+        "slices": {
+            "type": "list of slice",
+            "description": "The list of slices, one for each continuous region of unmasked elements in a. "
+        }
+    }
+}

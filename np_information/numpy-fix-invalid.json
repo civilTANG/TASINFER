@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "fix_invalid",
+        "description": "Return input with invalid data masked and replaced by a fill value."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array, a (subclass of) ndarray. "
+        },
+        "mask": {
+            "type": "sequence, optional",
+            "description": "Mask. Must be convertible to an array of booleans with the same shape as data. True indicates a masked (i.e. invalid) data. "
+        },
+        "copy": {
+            "type": "bool, optional",
+            "description": "Whether to use a copy of a (True) or to fix a in place (False). Default is True. "
+        },
+        "fill_value": {
+            "type": "scalar, optional",
+            "description": "Value used for fixing invalid data. Default is None, in which case the a.fill_value is used. "
+        }
+    },
+    "return": {
+        "b": {
+            "type": "MaskedArray",
+            "description": "The input array with invalid entries fixed. "
+        }
+    }
+}

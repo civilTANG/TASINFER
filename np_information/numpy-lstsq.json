@@ -1,0 +1,38 @@
+{
+    "overall": {
+        "api_name": "lstsq",
+        "description": "Return the least-squares solution to a linear matrix equation."
+    },
+    "parameter": {
+        "a": {
+            "type": "(M, N) array_like",
+            "description": "\u201cCoefficient\u201d matrix. "
+        },
+        "b": {
+            "type": "{(M,), (M, K)} array_like",
+            "description": "Ordinate or \u201cdependent variable\u201d values. If b is two-dimensional, the least-squares solution is calculated for each of the K columns of b. "
+        },
+        "rcond": {
+            "type": "float, optional",
+            "description": "Cut-off ratio for small singular values of a. For the purposes of rank determination, singular values are treated as zero if they are smaller than rcond times the largest singular value of a.  Changed in version 1.14.0: If not set, a FutureWarning is given. The previous default of -1 will use the machine precision as rcond parameter, the new default will use the machine precision times max(M, N). To silence the warning and use the new default, use rcond=None, to keep using the old behavior, use rcond=-1.  "
+        }
+    },
+    "return": {
+        "x": {
+            "type": "{(N,), (N, K)} ndarray",
+            "description": "Least-squares solution. If b is two-dimensional, the solutions are in the K columns of x. "
+        },
+        "residuals": {
+            "type": "{(1,), (K,), (0,)} ndarray",
+            "description": "Sums of residuals; squared Euclidean 2-norm for each column in b - a*x. If the rank of a is &lt; N or M &lt;= N, this is an empty array. If b is 1-dimensional, this is a (1,) shape array. Otherwise the shape is (K,). "
+        },
+        "rank": {
+            "type": "int",
+            "description": "Rank of matrix a. "
+        },
+        "s": {
+            "type": "(min(M, N),) ndarray",
+            "description": "Singular values of a. "
+        }
+    }
+}

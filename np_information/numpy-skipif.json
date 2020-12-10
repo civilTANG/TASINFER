@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "skipif",
+        "description": "Make function raise SkipTest exception if a given condition is true."
+    },
+    "parameter": {
+        "skip_condition": {
+            "type": "bool or callable",
+            "description": "Flag to determine whether to skip the decorated test. "
+        },
+        "msg": {
+            "type": "str, optional",
+            "description": "Message to give on raising a SkipTest exception. Default is None. "
+        }
+    },
+    "return": {
+        "decorator": {
+            "type": "function",
+            "description": "Decorator which, when applied to a function, causes SkipTest to be raised when skip_condition is True, and the function to be called normally otherwise. "
+        }
+    }
+}

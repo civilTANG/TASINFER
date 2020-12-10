@@ -1,0 +1,35 @@
+{
+    "overall": {
+        "api_name": "nanprod",
+        "description": "Return the product of array elements over a given axis treating Not a\nNumbers (NaNs) as ones."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Array containing numbers whose product is desired. If a is not an array, a conversion is attempted. "
+        },
+        "axis": {
+            "type": "{int, tuple of int, None}, optional",
+            "description": "Axis or axes along which the product is computed. The default is to compute the product of the flattened array. "
+        },
+        "dtype": {
+            "type": "data-type, optional",
+            "description": "The type of the returned array and of the accumulator in which the elements are summed.  By default, the dtype of a is used.  An exception is when a has an integer type with less precision than the platform (u)intp. In that case, the default will be either (u)int32 or (u)int64 depending on whether the platform is 32 or 64 bits. For inexact inputs, dtype must be inexact. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Alternate output array in which to place the result.  The default is None. If provided, it must have the same shape as the expected output, but the type will be cast if necessary. See ufuncs-output-type for more details. The casting of NaN to integer can yield unexpected results. "
+        },
+        "keepdims": {
+            "type": "bool, optional",
+            "description": "If True, the axes which are reduced are left in the result as dimensions with size one. With this option, the result will broadcast correctly against the original arr. "
+        }
+    },
+    "return": {
+        "nanprod": {
+            "type": "ndarray",
+            "description": "A new array holding the result is returned unless out is specified, in which case it is returned. "
+        }
+    },
+    "note": "Examples '"
+}

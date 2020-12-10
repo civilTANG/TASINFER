@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "count_masked",
+        "description": "Count the number of masked elements along the given axis."
+    },
+    "parameter": {
+        "arr": {
+            "type": "array_like",
+            "description": "An array with (possibly) masked elements. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "Axis along which to count. If None (default), a flattened version of the array is used. "
+        }
+    },
+    "return": {
+        "count": {
+            "type": "int, ndarray",
+            "description": "The total number of masked elements (axis=None) or the number of masked elements along each slice of the given axis. "
+        }
+    }
+}

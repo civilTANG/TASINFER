@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "masked_where",
+        "description": "Mask an array where a condition is met."
+    },
+    "parameter": {
+        "condition": {
+            "type": "array_like",
+            "description": "Masking condition.  When condition tests floating point values for equality, consider using masked_values instead. "
+        },
+        "a": {
+            "type": "array_like",
+            "description": "Array to mask. "
+        },
+        "copy": {
+            "type": "bool",
+            "description": "If True (default) make a copy of a in the result.  If False modify a in place and return a view. "
+        }
+    },
+    "return": {
+        "result": {
+            "type": "MaskedArray",
+            "description": "The result of masking a where condition is True. "
+        }
+    }
+}

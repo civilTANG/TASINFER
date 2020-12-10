@@ -1,0 +1,34 @@
+{
+    "overall": {
+        "api_name": "as_strided",
+        "description": "Create a view into the array with the given shape and strides."
+    },
+    "parameter": {
+        "x": {
+            "type": "ndarray",
+            "description": "Array to create a new. "
+        },
+        "shape": {
+            "type": "sequence of int, optional",
+            "description": "The shape of the new array. Defaults to x.shape. "
+        },
+        "strides": {
+            "type": "sequence of int, optional",
+            "description": "The strides of the new array. Defaults to x.strides. "
+        },
+        "subok": {
+            "type": "bool, optional",
+            "description": " New in version 1.10.  If True, subclasses are preserved. "
+        },
+        "writeable": {
+            "type": "bool, optional",
+            "description": " New in version 1.12.  If set to False, the returned array will always be readonly. Otherwise it will be writable if the original array was. It is advisable to set this to False if possible (see Notes). "
+        }
+    },
+    "return": {
+        "view": {
+            "type": "ndarray",
+            "description": ""
+        }
+    }
+}

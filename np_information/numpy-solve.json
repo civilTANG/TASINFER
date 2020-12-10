@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "solve",
+        "description": "Solve a linear matrix equation, or system of linear scalar equations."
+    },
+    "parameter": {
+        "a": {
+            "type": "(\u2026, M, M) array_like",
+            "description": "Coefficient matrix. "
+        },
+        "b": {
+            "type": "{(\u2026, M,), (\u2026, M, K)}, array_like",
+            "description": "Ordinate or \u201cdependent variable\u201d values. "
+        }
+    },
+    "return": {
+        "x": {
+            "type": "{(\u2026, M,), (\u2026, M, K)} ndarray",
+            "description": "Solution to the system a x = b.  Returned shape is identical to b. "
+        }
+    }
+}

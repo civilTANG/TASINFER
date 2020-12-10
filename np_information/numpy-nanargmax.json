@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "nanargmax",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input data. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "Axis along which to operate.  By default flattened input is used. "
+        }
+    },
+    "return": {
+        "index_array": {
+            "type": "ndarray",
+            "description": "An array of indices or a single index value. "
+        }
+    }
+}

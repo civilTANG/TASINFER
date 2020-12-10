@@ -1,0 +1,39 @@
+{
+    "overall": {
+        "api_name": "cross",
+        "description": "Return the cross product of two (arrays of) vectors."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Components of the first vector(s). "
+        },
+        "b": {
+            "type": "array_like",
+            "description": "Components of the second vector(s). "
+        },
+        "axisa": {
+            "type": "int, optional",
+            "description": "Axis of a that defines the vector(s).  By default, the last axis. "
+        },
+        "axisb": {
+            "type": "int, optional",
+            "description": "Axis of b that defines the vector(s).  By default, the last axis. "
+        },
+        "axisc": {
+            "type": "int, optional",
+            "description": "Axis of c containing the cross product vector(s).  Ignored if both input vectors have dimension 2, as the return is scalar. By default, the last axis. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "If defined, the axis of a, b and c that defines the vector(s) and cross product(s).  Overrides axisa, axisb and axisc. "
+        }
+    },
+    "return": {
+        "c": {
+            "type": "ndarray",
+            "description": "Vector cross product(s). "
+        }
+    },
+    "note": "Notes '"
+}

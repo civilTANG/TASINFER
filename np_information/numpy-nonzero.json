@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "nonzero",
+        "description": "Return the indices of the elements that are non-zero."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array. "
+        }
+    },
+    "return": {
+        "tuple_of_arrays": {
+            "type": "tuple",
+            "description": "Indices of elements that are non-zero. "
+        }
+    },
+    "note": "To group the indices by element, rather than dimension, use argwhere, which returns a row for each non-zero element. '"
+}

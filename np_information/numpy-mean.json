@@ -1,0 +1,35 @@
+{
+    "overall": {
+        "api_name": "mean",
+        "description": "Compute the arithmetic mean along the specified axis."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Array containing numbers whose mean is desired. If a is not an array, a conversion is attempted. "
+        },
+        "axis": {
+            "type": "None or int or tuple of ints, optional",
+            "description": "Axis or axes along which the means are computed. The default is to compute the mean of the flattened array.  New in version 1.7.0.  If this is a tuple of ints, a mean is performed over multiple axes, instead of a single axis or all the axes as before. "
+        },
+        "dtype": {
+            "type": "data-type, optional",
+            "description": "Type to use in computing the mean.  For integer inputs, the default is float64; for floating point inputs, it is the same as the input dtype. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Alternate output array in which to place the result.  The default is None; if provided, it must have the same shape as the expected output, but the type will be cast if necessary. See ufuncs-output-type for more details. "
+        },
+        "keepdims": {
+            "type": "bool, optional",
+            "description": "If this is set to True, the axes which are reduced are left in the result as dimensions with size one. With this option, the result will broadcast correctly against the input array. If the default value is passed, then keepdims will not be passed through to the mean method of sub-classes of ndarray, however any non-default value will be.  If the sub-class\u2019 method does not implement keepdims any exceptions will be raised. "
+        }
+    },
+    "return": {
+        "m": {
+            "type": "ndarray, see dtype parameter above",
+            "description": "If out=None, returns a new array containing the mean values, otherwise a reference to the output array is returned. "
+        }
+    },
+    "note": "Notes '"
+}

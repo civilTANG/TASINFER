@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "i0",
+        "description": "Modified Bessel function of the first kind, order 0."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like, dtype float or complex",
+            "description": "Argument of the Bessel function. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray, shape = x.shape, dtype = x.dtype",
+            "description": "The modified Bessel function evaluated at each of the elements of x. "
+        }
+    },
+    "note": "Notes '"
+}

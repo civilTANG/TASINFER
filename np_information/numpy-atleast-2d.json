@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "atleast_2d",
+        "description": "View inputs as arrays with at least two dimensions."
+    },
+    "parameter": {
+        "arys1, arys2, \u2026": {
+            "type": "array_like",
+            "description": "One or more array-like sequences.  Non-array inputs are converted to arrays.  Arrays that already have two or more dimensions are preserved. "
+        }
+    },
+    "return": {
+        "res, res2, \u2026": {
+            "type": "ndarray",
+            "description": "An array, or list of arrays, each with a.ndim &gt;= 2. Copies are avoided where possible, and views with two or more dimensions are returned. "
+        }
+    }
+}

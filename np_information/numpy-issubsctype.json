@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "issubsctype",
+        "description": "Determine if the first argument is a subclass of the second argument."
+    },
+    "parameter": {
+        "arg1, arg2": {
+            "type": "dtype or dtype specifier",
+            "description": "Data-types. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "bool",
+            "description": "The result. "
+        }
+    }
+}

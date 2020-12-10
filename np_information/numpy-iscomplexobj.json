@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "iscomplexobj",
+        "description": "Check for a complex type or an array of complex numbers."
+    },
+    "parameter": {
+        "x": {
+            "type": "any",
+            "description": "The input can be of any type and shape. "
+        }
+    },
+    "return": {
+        "iscomplexobj": {
+            "type": "bool",
+            "description": "The return value, True if x is of a complex type or has at least one complex element. "
+        }
+    },
+    "note": "Examples '"
+}

@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "size",
+        "description": "Return the number of elements along a given axis."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input data. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "Axis along which the elements are counted.  By default, give the total number of elements. "
+        }
+    },
+    "return": {
+        "element_count": {
+            "type": "int",
+            "description": "Number of elements along the specified axis. "
+        }
+    }
+}

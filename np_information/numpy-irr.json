@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "irr",
+        "description": "Return the Internal Rate of Return (IRR)."
+    },
+    "parameter": {
+        "values": {
+            "type": "array_like, shape(N,)",
+            "description": "Input cash flows per time period.  By convention, net \u201cdeposits\u201d are negative and net \u201cwithdrawals\u201d are positive.  Thus, for example, at least the first element of values, which represents the initial investment, will typically be negative. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "float",
+            "description": "Internal Rate of Return for periodic input values. "
+        }
+    },
+    "note": "decimal.Decimal type is not supported. '"
+}

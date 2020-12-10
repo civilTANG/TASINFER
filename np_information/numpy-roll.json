@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "roll",
+        "description": "Roll array elements along a given axis."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "shift": {
+            "type": "int or tuple of ints",
+            "description": "The number of places by which elements are shifted.  If a tuple, then axis must be a tuple of the same size, and each of the given axes is shifted by the corresponding number.  If an int while axis is a tuple of ints, then the same value is used for all given axes. "
+        },
+        "axis": {
+            "type": "int or tuple of ints, optional",
+            "description": "Axis or axes along which elements are shifted.  By default, the array is flattened before shifting, after which the original shape is restored. "
+        }
+    },
+    "return": {
+        "res": {
+            "type": "ndarray",
+            "description": "Output array, with the same shape as a. "
+        }
+    },
+    "note": "Notes '"
+}

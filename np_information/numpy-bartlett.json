@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "bartlett",
+        "description": "Return the Bartlett window."
+    },
+    "parameter": {
+        "M": {
+            "type": "int",
+            "description": "Number of points in the output window. If zero or less, an empty array is returned. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "array",
+            "description": "The triangular window, with the maximum value normalized to one (the value one appears only if the number of samples is odd), with the first and last samples equal to zero. "
+        }
+    },
+    "note": "Notes '"
+}

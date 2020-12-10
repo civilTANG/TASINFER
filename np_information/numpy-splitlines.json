@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "splitlines",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        },
+        "keepends": {
+            "type": "bool, optional",
+            "description": "Line breaks are not included in the resulting list unless keepends is given and true. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Array of list objects "
+        }
+    }
+}

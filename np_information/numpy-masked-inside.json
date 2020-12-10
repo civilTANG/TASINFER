@@ -1,0 +1,25 @@
+{
+    "overall": {
+        "api_name": "masked_inside",
+        "description": "Mask an array inside a given interval."
+    },
+    "parameter": {
+        "mask": {
+            "type": "sequence, optional",
+            "description": "Input array, a (subclass of) ndarray. "
+        },
+        "copy": {
+            "type": "bool, optional",
+            "description": "Mask. Must be convertible to an array of booleans with the same shape as data. True indicates a masked (i.e. invalid) data. "
+        },
+        "fill_value": {
+            "type": "scalar, optional",
+            "description": "Whether to use a copy of a (True) or to fix a in place (False). Default is True. "
+        },
+        "b": {
+            "type": "MaskedArray",
+            "description": "Value used for fixing invalid data. Default is None, in which case the a.fill_value is used. "
+        }
+    },
+    "return": {}
+}

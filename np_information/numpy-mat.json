@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "mat",
+        "description": "Interpret the input as a matrix."
+    },
+    "parameter": {
+        "data": {
+            "type": "array_like",
+            "description": "Input data. "
+        },
+        "dtype": {
+            "type": "data-type",
+            "description": "Data-type of the output matrix. "
+        }
+    },
+    "return": {
+        "mat": {
+            "type": "matrix",
+            "description": "data interpreted as a matrix. "
+        }
+    },
+    "note": "Examples '"
+}

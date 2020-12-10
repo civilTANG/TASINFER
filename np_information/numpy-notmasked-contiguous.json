@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "notmasked_contiguous",
+        "description": "Find contiguous unmasked data in a masked array along the given axis."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "The input array. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "Axis along which to perform the operation. If None (default), applies to a flattened version of the array, and this is the same as flatnotmasked_contiguous. "
+        }
+    },
+    "return": {
+        "endpoints": {
+            "type": "list",
+            "description": "A list of slices (start and end indexes) of unmasked indexes in the array. If the input is 2d and axis is specified, the result is a list of lists. "
+        }
+    }
+}

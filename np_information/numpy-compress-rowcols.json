@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "compress_rowcols",
+        "description": "Suppress the rows and/or columns of a 2-D array that contain\nmasked values."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like, MaskedArray",
+            "description": "The array to operate on.  If not a MaskedArray instance (or if no array elements are masked), x is interpreted as a MaskedArray with mask set to nomask. Must be a 2D array. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "Axis along which to perform the operation. Default is None. "
+        }
+    },
+    "return": {
+        "compressed_array": {
+            "type": "ndarray",
+            "description": "The compressed array. "
+        }
+    }
+}

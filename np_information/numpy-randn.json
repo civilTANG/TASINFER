@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "randn",
+        "description": "Return a random matrix with data from the \u201cstandard normal\u201d distribution."
+    },
+    "parameter": {
+        "*args": {
+            "type": "Arguments",
+            "description": "Shape of the output. If given as N integers, each integer specifies the size of one dimension. If given as a tuple, this tuple gives the complete shape. "
+        }
+    },
+    "return": {
+        "Z": {
+            "type": "matrix of floats",
+            "description": "A matrix of floating-point samples drawn from the standard normal distribution. "
+        }
+    }
+}

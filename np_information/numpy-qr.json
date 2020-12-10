@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "qr",
+        "description": "Compute the qr factorization of a matrix."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like, shape (M, N)",
+            "description": "Matrix to be factored. "
+        },
+        "mode": {
+            "type": "{\u2018reduced\u2019, \u2018complete\u2019, \u2018r\u2019, \u2018raw\u2019}, optional",
+            "description": "If K = min(M, N), then  \u2018reduced\u2019  : returns q, r with dimensions (M, K), (K, N) (default) \u2018complete\u2019 : returns q, r with dimensions (M, M), (M, N) \u2018r\u2019        : returns r only with dimensions (K, N) \u2018raw\u2019      : returns h, tau with dimensions (N, M), (K,)  The options \u2018reduced\u2019, \u2018complete, and \u2018raw\u2019 are new in numpy 1.8, see the notes for more information. The default is \u2018reduced\u2019, and to maintain backward compatibility with earlier versions of numpy both it and the old default \u2018full\u2019 can be omitted. Note that array h returned in \u2018raw\u2019 mode is transposed for calling Fortran. The \u2018economic\u2019 mode is deprecated.  The modes \u2018full\u2019 and \u2018economic\u2019 may be passed using only the first letter for backwards compatibility, but all others must be spelled out. See the Notes for more explanation. "
+        }
+    },
+    "return": {
+        "q": {
+            "type": "ndarray of float or complex, optional",
+            "description": "A matrix with orthonormal columns. When mode = \u2018complete\u2019 the result is an orthogonal/unitary matrix depending on whether or not a is real/complex. The determinant may be either +/- 1 in that case. "
+        },
+        "r": {
+            "type": "ndarray of float or complex, optional",
+            "description": "The upper-triangular matrix. "
+        },
+        "(h, tau)": {
+            "type": "ndarrays of np.double or np.cdouble, optional",
+            "description": "The array h contains the Householder reflectors that generate q along with r. The tau array contains scaling factors for the reflectors. In the deprecated  \u2018economic\u2019 mode only h is returned. "
+        }
+    }
+}

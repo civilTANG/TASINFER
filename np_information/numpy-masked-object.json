@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "masked_object",
+        "description": null
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like",
+            "description": "Array to mask "
+        },
+        "value": {
+            "type": "object",
+            "description": "Comparison value "
+        },
+        "copy": {
+            "type": "{True, False}, optional",
+            "description": "Whether to return a copy of x. "
+        },
+        "shrink": {
+            "type": "{True, False}, optional",
+            "description": "Whether to collapse a mask full of False to nomask "
+        }
+    },
+    "return": {
+        "result": {
+            "type": "MaskedArray",
+            "description": "The result of masking x where equal to value. "
+        }
+    }
+}

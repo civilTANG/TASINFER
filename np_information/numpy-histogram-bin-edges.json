@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "histogram_bin_edges",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input data. The histogram is computed over the flattened array. "
+        },
+        "bins": {
+            "type": "int or sequence of scalars or str, optional",
+            "description": "If bins is an int, it defines the number of equal-width bins in the given range (10, by default). If bins is a sequence, it defines the bin edges, including the rightmost edge, allowing for non-uniform bin widths. If bins is a string from the list below, histogram_bin_edges will use the method chosen to calculate the optimal bin width and consequently the number of bins (see Notes for more detail on the estimators) from the data that falls within the requested range. While the bin width will be optimal for the actual data in the range, the number of bins will be computed to fill the entire range, including the empty portions. For visualisation, using the \u2018auto\u2019 option is suggested. Weighted data is not supported for automated bin size selection.  \u2018auto\u2019Maximum of the \u2018sturges\u2019 and \u2018fd\u2019 estimators. Provides good all around performance.  \u2018fd\u2019 (Freedman Diaconis Estimator)Robust (resilient to outliers) estimator that takes into account data variability and data size.  \u2018doane\u2019An improved version of Sturges\u2019 estimator that works better with non-normal datasets.  \u2018scott\u2019Less robust estimator that that takes into account data variability and data size.  \u2018stone\u2019Estimator based on leave-one-out cross-validation estimate of the integrated squared error. Can be regarded as a generalization of Scott\u2019s rule.  \u2018rice\u2019Estimator does not take variability into account, only data size. Commonly overestimates number of bins required.  \u2018sturges\u2019R\u2019s default method, only accounts for data size. Only optimal for gaussian data and underestimates number of bins for large non-gaussian datasets.  \u2018sqrt\u2019Square root (of data size) estimator, used by Excel and other programs for its speed and simplicity.   "
+        },
+        "range": {
+            "type": "(float, float), optional",
+            "description": "The lower and upper range of the bins.  If not provided, range is simply (a.min(), a.max()).  Values outside the range are ignored. The first element of the range must be less than or equal to the second. range affects the automatic bin computation as well. While bin width is computed to be optimal based on the actual data within range, the bin count will fill the entire range including portions containing no data. "
+        },
+        "weights": {
+            "type": "array_like, optional",
+            "description": "An array of weights, of the same shape as a.  Each value in a only contributes its associated weight towards the bin count (instead of 1). This is currently not used by any of the bin estimators, but may be in the future. "
+        }
+    },
+    "return": {
+        "bin_edges": {
+            "type": "array of dtype float",
+            "description": "The edges to pass into histogram "
+        }
+    },
+    "note": "The methods to estimate the optimal number of bins are well founded in literature, and are inspired by the choices R provides for histogram visualisation. Note that having the number of bins proportional to  is asymptotically optimal, which is why it appears in most estimators. These are simply plug-in methods that give good starting points for number of bins. In the equations below,  is the binwidth and  is the number of bins. All estimators that compute bin counts are recast to bin width using the ptp of the data. The final bin count is obtained from np.round(np.ceil(range / h)). '"
+}

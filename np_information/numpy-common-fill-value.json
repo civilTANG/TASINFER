@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "common_fill_value",
+        "description": "Return the common filling value of two masked arrays, if any."
+    },
+    "parameter": {
+        "a, b": {
+            "type": "MaskedArray",
+            "description": "The masked arrays for which to compare fill values. "
+        }
+    },
+    "return": {
+        "fill_value": {
+            "type": "scalar or None",
+            "description": "The common fill value, or None. "
+        }
+    }
+}

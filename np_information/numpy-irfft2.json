@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "irfft2",
+        "description": "Compute the 2-dimensional inverse FFT of a real array."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "The input array "
+        },
+        "s": {
+            "type": "sequence of ints, optional",
+            "description": "Shape of the real output to the inverse FFT. "
+        },
+        "axes": {
+            "type": "sequence of ints, optional",
+            "description": "The axes over which to compute the inverse fft. Default is the last two axes. "
+        },
+        "norm": {
+            "type": "{None, \u201cortho\u201d}, optional",
+            "description": " New in version 1.10.0.  Normalization mode (see numpy.fft). Default is None. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "The result of the inverse real 2-D FFT. "
+        }
+    }
+}

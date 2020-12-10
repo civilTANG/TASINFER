@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "iscomplex",
+        "description": "Returns a bool array, where True if input element is complex."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like",
+            "description": "Input array. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray of bools",
+            "description": "Output array. "
+        }
+    },
+    "note": "Examples '"
+}

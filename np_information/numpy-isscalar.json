@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "isscalar",
+        "description": null
+    },
+    "parameter": {
+        "element": {
+            "type": "any",
+            "description": "Input argument, can be of any type and shape. "
+        }
+    },
+    "return": {
+        "val": {
+            "type": "bool",
+            "description": "True if element is a scalar type, False if it is not. "
+        }
+    },
+    "note": "If you need a stricter way to identify a numerical scalar, use isinstance(x, numbers.Number), as that returns False for most non-numerical elements such as strings. '"
+}

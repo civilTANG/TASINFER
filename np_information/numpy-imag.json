@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "imag",
+        "description": "Return the imaginary part of the complex argument."
+    },
+    "parameter": {
+        "val": {
+            "type": "array_like",
+            "description": "Input array. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray or scalar",
+            "description": "The imaginary component of the complex argument. If val is real, the type of val is used for the output.  If val has complex elements, the returned type is float. "
+        }
+    }
+}

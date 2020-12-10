@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "diff",
+        "description": "Calculate the n-th discrete difference along the given axis."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array "
+        },
+        "n": {
+            "type": "int, optional",
+            "description": "The number of times values are differenced. If zero, the input is returned as-is. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "The axis along which the difference is taken, default is the last axis. "
+        },
+        "prepend, append": {
+            "type": "array_like, optional",
+            "description": "Values to prepend or append to a along axis prior to performing the difference.  Scalar values are expanded to arrays with length 1 in the direction of axis and the shape of the input array in along all other axes.  Otherwise the dimension and shape must match a except along axis.  New in version 1.16.0.  "
+        }
+    },
+    "return": {
+        "diff": {
+            "type": "ndarray",
+            "description": "The n-th differences. The shape of the output is the same as a except along axis where the dimension is smaller by n. The type of the output is the same as the type of the difference between any two elements of a. This is the same as the type of a in most cases. A notable exception is datetime64, which results in a timedelta64 output array. "
+        }
+    },
+    "note": "Notes '"
+}

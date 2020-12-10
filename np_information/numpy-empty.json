@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "empty",
+        "description": "Return a new array of given shape and type, without initializing entries."
+    },
+    "parameter": {
+        "shape": {
+            "type": "int or tuple of int",
+            "description": "Shape of the empty array, e.g., (2, 3) or 2. "
+        },
+        "dtype": {
+            "type": "data-type, optional",
+            "description": "Desired output data-type for the array, e.g, numpy.int8. Default is numpy.float64. "
+        },
+        "order": {
+            "type": "{\u2018C\u2019, \u2018F\u2019}, optional, default: \u2018C\u2019",
+            "description": "Whether to store multi-dimensional data in row-major (C-style) or column-major (Fortran-style) order in memory. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Array of uninitialized (arbitrary) data of the given shape, dtype, and order.  Object arrays will be initialized to None. "
+        }
+    },
+    "note": "empty, unlike zeros, does not set the array values to zero, and may therefore be marginally faster.  On the other hand, it requires the user to manually set all the values in the array, and should be used with caution. '"
+}

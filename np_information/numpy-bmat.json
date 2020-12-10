@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "bmat",
+        "description": "Build a matrix object from a string, nested sequence, or array."
+    },
+    "parameter": {
+        "obj": {
+            "type": "str or array_like",
+            "description": "Input data. If a string, variables in the current scope may be referenced by name. "
+        },
+        "ldict": {
+            "type": "dict, optional",
+            "description": "A dictionary that replaces local operands in current frame. Ignored if obj is not a string or gdict is None. "
+        },
+        "gdict": {
+            "type": "dict, optional",
+            "description": "A dictionary that replaces global operands in current frame. Ignored if obj is not a string. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "matrix",
+            "description": "Returns a matrix object, which is a specialized 2-D array. "
+        }
+    },
+    "note": "All the following expressions construct the same block matrix: '"
+}

@@ -1,0 +1,14 @@
+{
+    "overall": {
+        "api_name": "show_config",
+        "description": "Show libraries in the system on which NumPy was built."
+    },
+    "parameter": {
+        "(low, high)": {
+            "type": "tuple of 2 integers",
+            "description": "Input array. It must conform to the Python-side of the array interface. "
+        }
+    },
+    "return": {},
+    "note": "Notes '"
+}

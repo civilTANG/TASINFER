@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "zeros",
+        "description": "Return a matrix of given shape and type, filled with zeros."
+    },
+    "parameter": {
+        "shape": {
+            "type": "int or sequence of ints",
+            "description": "Shape of the matrix "
+        },
+        "dtype": {
+            "type": "data-type, optional",
+            "description": "The desired data-type for the matrix, default is float. "
+        },
+        "order": {
+            "type": "{\u2018C\u2019, \u2018F\u2019}, optional",
+            "description": "Whether to store the result in C- or Fortran-contiguous order, default is \u2018C\u2019. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "matrix",
+            "description": "Zero matrix of given shape, dtype, and order. "
+        }
+    }
+}

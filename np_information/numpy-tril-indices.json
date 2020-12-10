@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "tril_indices",
+        "description": "Return the indices for the lower-triangle of an (n, m) array."
+    },
+    "parameter": {
+        "n": {
+            "type": "int",
+            "description": "The row dimension of the arrays for which the returned indices will be valid. "
+        },
+        "k": {
+            "type": "int, optional",
+            "description": "Diagonal offset (see tril for details). "
+        },
+        "m": {
+            "type": "int, optional",
+            "description": " New in version 1.9.0.  The column dimension of the arrays for which the returned arrays will be valid. By default m is taken equal to n. "
+        }
+    },
+    "return": {
+        "inds": {
+            "type": "tuple of arrays",
+            "description": "The indices for the triangle. The returned tuple contains two arrays, each with the indices along one dimension of the array. "
+        }
+    },
+    "note": "Examples '"
+}

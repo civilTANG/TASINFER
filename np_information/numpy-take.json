@@ -1,0 +1,35 @@
+{
+    "overall": {
+        "api_name": "take",
+        "description": "Take elements from an array along an axis."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like (Ni\u2026, M, Nk\u2026)",
+            "description": "The source array. "
+        },
+        "indices": {
+            "type": "array_like (Nj\u2026)",
+            "description": "The indices of the values to extract.  New in version 1.8.0.  Also allow scalars for indices. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "The axis over which to select values. By default, the flattened input array is used. "
+        },
+        "out": {
+            "type": "ndarray, optional (Ni\u2026, Nj\u2026, Nk\u2026)",
+            "description": "If provided, the result will be placed in this array. It should be of the appropriate shape and dtype. Note that out is always buffered if mode=\u2019raise\u2019; use other modes for better performance. "
+        },
+        "mode": {
+            "type": "{\u2018raise\u2019, \u2018wrap\u2019, \u2018clip\u2019}, optional",
+            "description": "Specifies how out-of-bounds indices will behave.  \u2018raise\u2019 \u2013 raise an error (default) \u2018wrap\u2019 \u2013 wrap around \u2018clip\u2019 \u2013 clip to the range  \u2018clip\u2019 mode means that all indices that are too large are replaced by the index that addresses the last element along that axis. Note that this disables indexing with negative numbers. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray (Ni\u2026, Nj\u2026, Nk\u2026)",
+            "description": "The returned array has the same type as a. "
+        }
+    },
+    "note": "Explained without fancy indexing, this is equivalent to the following use of ndindex, which sets each of ii, jj, and kk to a tuple of indices: '"
+}

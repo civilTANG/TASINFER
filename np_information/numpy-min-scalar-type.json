@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "min_scalar_type",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "scalar or array_like",
+            "description": "The value whose minimal data type is to be found. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "dtype",
+            "description": "The minimal data type. "
+        }
+    },
+    "note": "Notes '"
+}

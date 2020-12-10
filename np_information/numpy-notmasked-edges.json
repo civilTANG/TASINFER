@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "notmasked_edges",
+        "description": "Find the indices of the first and last unmasked values along an axis."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "The input array. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "Axis along which to perform the operation. If None (default), applies to a flattened version of the array. "
+        }
+    },
+    "return": {
+        "edges": {
+            "type": "ndarray or list",
+            "description": "An array of start and end indexes if there are any masked data in the array. If there are no masked data in the array, edges is a list of the first and last index. "
+        }
+    }
+}

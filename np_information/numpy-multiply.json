@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "multiply",
+        "description": "Return (a * i), that is string multiple concatenation,\nelement-wise."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        },
+        "i": {
+            "type": "array_like of ints",
+            "description": ""
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of str or unicode, depending on input types "
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "triu_indices_from",
+        "description": "Return the indices for the upper-triangle of arr."
+    },
+    "parameter": {
+        "arr": {
+            "type": "ndarray, shape(N, N)",
+            "description": "The indices will be valid for square arrays. "
+        },
+        "k": {
+            "type": "int, optional",
+            "description": "Diagonal offset (see triu for details). "
+        }
+    },
+    "return": {
+        "triu_indices_from": {
+            "type": "tuple, shape(2) of ndarray, shape(N)",
+            "description": "Indices for the upper-triangle of arr. "
+        }
+    },
+    "note": "Notes '"
+}

@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "fliplr",
+        "description": "Flip array in the left/right direction."
+    },
+    "parameter": {
+        "m": {
+            "type": "array_like",
+            "description": "Input array, must be at least 2-D. "
+        }
+    },
+    "return": {
+        "f": {
+            "type": "ndarray",
+            "description": "A view of m with the columns reversed.  Since a view is returned, this operation is . "
+        }
+    },
+    "note": "Notes '"
+}

@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "atleast_3d",
+        "description": "View inputs as arrays with at least three dimensions."
+    },
+    "parameter": {
+        "arys1, arys2, \u2026": {
+            "type": "array_like",
+            "description": "One or more array-like sequences.  Non-array inputs are converted to arrays.  Arrays that already have three or more dimensions are preserved. "
+        }
+    },
+    "return": {
+        "res1, res2, \u2026": {
+            "type": "ndarray",
+            "description": "An array, or list of arrays, each with a.ndim &gt;= 3.  Copies are avoided where possible, and views with three or more dimensions are returned.  For example, a 1-D array of shape (N,) becomes a view of shape (1, N, 1), and a 2-D array of shape (M, N) becomes a view of shape (M, N, 1). "
+        }
+    }
+}

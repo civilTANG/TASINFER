@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "ediff1d",
+        "description": "The differences between consecutive elements of an array."
+    },
+    "parameter": {
+        "ary": {
+            "type": "array_like",
+            "description": "If necessary, will be flattened before the differences are taken. "
+        },
+        "to_end": {
+            "type": "array_like, optional",
+            "description": "Number(s) to append at the end of the returned differences. "
+        },
+        "to_begin": {
+            "type": "array_like, optional",
+            "description": "Number(s) to prepend at the beginning of the returned differences. "
+        }
+    },
+    "return": {
+        "ediff1d": {
+            "type": "ndarray",
+            "description": "The differences. Loosely, this is ary.flat[1:] - ary.flat[:-1]. "
+        }
+    },
+    "note": "When applied to masked arrays, this function drops the mask information if the to_begin and/or to_end parameters are used. '"
+}

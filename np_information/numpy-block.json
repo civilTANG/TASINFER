@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "block",
+        "description": "Assemble an nd-array from nested lists of blocks."
+    },
+    "parameter": {
+        "arrays": {
+            "type": "nested list of array_like or scalars (but not tuples)",
+            "description": "If passed a single ndarray or scalar (a nested list of depth 0), this is returned unmodified (and not copied). Elements shapes must match along the appropriate axes (without broadcasting), but leading 1s will be prepended to the shape as necessary to make the dimensions match. "
+        }
+    },
+    "return": {
+        "block_array": {
+            "type": "ndarray",
+            "description": "The array assembled from the given blocks. The dimensionality of the output is equal to the greatest of: * the dimensionality of all the inputs * the depth to which the input list is nested "
+        }
+    },
+    "note": "Blocks can be of any dimension, but will not be broadcasted using the normal rules. Instead, leading axes of size 1 are inserted, to make block.ndim the same for all blocks. This is primarily useful for working with scalars, and means that code like np.block([v, 1]) is valid, where v.ndim == 1. '"
+}

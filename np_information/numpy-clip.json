@@ -1,0 +1,35 @@
+{
+    "overall": {
+        "api_name": "clip",
+        "description": "Clip (limit) the values in an array."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Array containing elements to clip. "
+        },
+        "a_min": {
+            "type": "scalar or array_like or None",
+            "description": "Minimum value. If None, clipping is not performed on lower interval edge. Not more than one of a_min and a_max may be None. "
+        },
+        "a_max": {
+            "type": "scalar or array_like or None",
+            "description": "Maximum value. If None, clipping is not performed on upper interval edge. Not more than one of a_min and a_max may be None. If a_min or a_max are array_like, then the three arrays will be broadcasted to match their shapes. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "The results will be placed in this array. It may be the input array for in-place clipping.  out must be of the right shape to hold the output.  Its type is preserved. "
+        },
+        "**kwargs": {
+            "type": "ndarray",
+            "description": "For other keyword-only arguments, see the ufunc docs.  New in version 1.17.0.  "
+        }
+    },
+    "return": {
+        "clipped_array": {
+            "type": "ndarray",
+            "description": "An array with the elements of a, but where values &lt; a_min are replaced with a_min, and those &gt; a_max with a_max. "
+        }
+    },
+    "note": "Equivalent to but faster than np.minimum(a_max, np.maximum(a, a_min)). '"
+}

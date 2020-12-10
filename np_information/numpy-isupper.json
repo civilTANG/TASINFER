@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "isupper",
+        "description": "Returns true for each element if all cased characters in the\nstring are uppercase and there is at least one character, false\notherwise."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of bools "
+        }
+    }
+}

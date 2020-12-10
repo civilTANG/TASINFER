@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "correlate",
+        "description": "Cross-correlation of two 1-dimensional sequences."
+    },
+    "parameter": {
+        "a, v": {
+            "type": "array_like",
+            "description": "Input sequences. "
+        },
+        "mode": {
+            "type": "{\u2018valid\u2019, \u2018same\u2019, \u2018full\u2019}, optional",
+            "description": "Refer to the convolve docstring.  Note that the default is \u2018valid\u2019, unlike convolve, which uses \u2018full\u2019. "
+        },
+        "old_behavior": {
+            "type": "bool",
+            "description": "old_behavior was removed in NumPy 1.10. If you need the old behavior, use multiarray.correlate. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Discrete cross-correlation of a and v. "
+        }
+    },
+    "note": "with a and v sequences being zero-padded where necessary and conj being the conjugate. '"
+}

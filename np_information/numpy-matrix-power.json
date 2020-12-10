@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "matrix_power",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "(\u2026, M, M) array_like",
+            "description": "Matrix to be \u201cpowered\u201d. "
+        },
+        "n": {
+            "type": "int",
+            "description": "The exponent can be any integer or long integer, positive, negative, or zero. "
+        }
+    },
+    "return": {
+        "a**n": {
+            "type": "(\u2026, M, M) ndarray or matrix object",
+            "description": "The return value is the same shape and type as M; if the exponent is positive or zero then the type of the elements is the same as those of M. If the exponent is negative the elements are floating-point. "
+        }
+    }
+}

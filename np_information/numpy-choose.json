@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "choose",
+        "description": "Use an index array to construct a new array from a set of choices."
+    },
+    "parameter": {
+        "a": {
+            "type": "ndarray of ints",
+            "description": "This array must contain integers in [0, n-1], where n is the number of choices. "
+        },
+        "choices": {
+            "type": "sequence of arrays",
+            "description": "Choice arrays. The index array and all of the choices should be broadcastable to the same shape. "
+        },
+        "out": {
+            "type": "array, optional",
+            "description": "If provided, the result will be inserted into this array. It should be of the appropriate shape and dtype. "
+        },
+        "mode": {
+            "type": "{\u2018raise\u2019, \u2018wrap\u2019, \u2018clip\u2019}, optional",
+            "description": "Specifies how out-of-bounds indices will behave.  \u2018raise\u2019 : raise an error \u2018wrap\u2019 : wrap around \u2018clip\u2019 : clip to the range  "
+        }
+    },
+    "return": {
+        "merged_array": {
+            "type": "array",
+            "description": ""
+        }
+    }
+}

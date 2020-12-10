@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "slow",
+        "description": "Label a test as \u2018slow\u2019."
+    },
+    "parameter": {
+        "t": {
+            "type": "callable",
+            "description": "The test to label as slow. "
+        }
+    },
+    "return": {
+        "t": {
+            "type": "callable",
+            "description": "The decorated test t. "
+        }
+    }
+}

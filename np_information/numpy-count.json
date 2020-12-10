@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "count",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        },
+        "sub": {
+            "type": "str or unicode",
+            "description": "The substring to search for. "
+        },
+        "start, end": {
+            "type": "int, optional",
+            "description": "Optional arguments start and end are interpreted as slice notation to specify the range in which to count. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of ints. "
+        }
+    }
+}

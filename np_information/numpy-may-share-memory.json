@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "may_share_memory",
+        "description": "Determine if two arrays might share memory"
+    },
+    "parameter": {
+        "a, b": {
+            "type": "ndarray",
+            "description": "Input arrays "
+        },
+        "max_work": {
+            "type": "int, optional",
+            "description": "Effort to spend on solving the overlap problem.  See shares_memory for details.  Default for may_share_memory is to do a bounds check. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "bool",
+            "description": ""
+        }
+    },
+    "note": "Only the memory bounds of a and b are checked by default. '"
+}

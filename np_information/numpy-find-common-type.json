@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "find_common_type",
+        "description": "Determine common type following standard coercion rules."
+    },
+    "parameter": {
+        "array_types": {
+            "type": "sequence",
+            "description": "A list of dtypes or dtype convertible objects representing arrays. "
+        },
+        "scalar_types": {
+            "type": "sequence",
+            "description": "A list of dtypes or dtype convertible objects representing scalars. "
+        }
+    },
+    "return": {
+        "datatype": {
+            "type": "dtype",
+            "description": "The common data type, which is the maximum of array_types ignoring scalar_types, unless the maximum of scalar_types is of a different kind (dtype.kind). If the kind is not understood, then None is returned. "
+        }
+    },
+    "note": "The standard casting rules ensure that a scalar cannot up-cast an array unless the scalar is of a fundamentally different kind of data (i.e. under a different hierarchy in the data type hierarchy) then the array: '"
+}

@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "tensorsolve",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Coefficient tensor, of shape b.shape + Q. Q, a tuple, equals the shape of that sub-tensor of a consisting of the appropriate number of its rightmost indices, and must be such that prod(Q) == prod(b.shape) (in which sense a is said to be \u2018square\u2019). "
+        },
+        "b": {
+            "type": "array_like",
+            "description": "Right-hand tensor, which can be of any shape. "
+        },
+        "axes": {
+            "type": "tuple of ints, optional",
+            "description": "Axes in a to reorder to the right, before inversion. If None (default), no reordering is done. "
+        }
+    },
+    "return": {
+        "x": {
+            "type": "ndarray, shape Q",
+            "description": ""
+        }
+    }
+}

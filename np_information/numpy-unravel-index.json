@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "unravel_index",
+        "description": "Converts a flat index or array of flat indices into a tuple\nof coordinate arrays."
+    },
+    "parameter": {
+        "indices": {
+            "type": "array_like",
+            "description": "An integer array whose elements are indices into the flattened version of an array of dimensions shape. Before version 1.6.0, this function accepted just one index value. "
+        },
+        "shape": {
+            "type": "tuple of ints",
+            "description": "The shape of the array to use for unraveling indices.  Changed in version 1.16.0: Renamed from dims to shape.  "
+        },
+        "order": {
+            "type": "{\u2018C\u2019, \u2018F\u2019}, optional",
+            "description": "Determines whether the indices should be viewed as indexing in row-major (C-style) or column-major (Fortran-style) order.  New in version 1.6.0.  "
+        }
+    },
+    "return": {
+        "unraveled_coords": {
+            "type": "tuple of ndarray",
+            "description": "Each array in the tuple has the same shape as the indices array. "
+        }
+    }
+}

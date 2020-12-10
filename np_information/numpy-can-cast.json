@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "can_cast",
+        "description": "Returns True if cast between data types can occur according to the\ncasting rule.  If from is a scalar or array scalar, also returns\nTrue if the scalar value can be cast without overflow or truncation\nto an integer."
+    },
+    "parameter": {
+        "from_": {
+            "type": "dtype, dtype specifier, scalar, or array",
+            "description": "Data type, scalar, or array to cast from. "
+        },
+        "to": {
+            "type": "dtype or dtype specifier",
+            "description": "Data type to cast to. "
+        },
+        "casting": {
+            "type": "{\u2018no\u2019, \u2018equiv\u2019, \u2018safe\u2019, \u2018same_kind\u2019, \u2018unsafe\u2019}, optional",
+            "description": "Controls what kind of data casting may occur.   \u2018no\u2019 means the data types should not be cast at all. \u2018equiv\u2019 means only byte-order changes are allowed. \u2018safe\u2019 means only casts which can preserve values are allowed. \u2018same_kind\u2019 means only safe casts or casts within a kind, like float64 to float32, are allowed. \u2018unsafe\u2019 means any data conversions may be done.   "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "bool",
+            "description": "True if cast can occur according to the casting rule. "
+        }
+    },
+    "note": "Examples '"
+}

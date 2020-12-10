@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "outerproduct",
+        "description": "Compute the outer product of two vectors."
+    },
+    "parameter": {
+        "a": {
+            "type": "(M,) array_like",
+            "description": "First input vector.  Input is flattened if not already 1-dimensional. "
+        },
+        "b": {
+            "type": "(N,) array_like",
+            "description": "Second input vector.  Input is flattened if not already 1-dimensional. "
+        },
+        "out": {
+            "type": "(M, N) ndarray, optional",
+            "description": "A location where the result is stored  New in version 1.9.0.  "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "(M, N) ndarray",
+            "description": "out[i, j] = a[i] * b[j] "
+        }
+    }
+}

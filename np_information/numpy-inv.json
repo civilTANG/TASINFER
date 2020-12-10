@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "inv",
+        "description": "Compute the (multiplicative) inverse of a matrix."
+    },
+    "parameter": {
+        "a": {
+            "type": "(\u2026, M, M) array_like",
+            "description": "Matrix to be inverted. "
+        }
+    },
+    "return": {
+        "ainv": {
+            "type": "(\u2026, M, M) ndarray or matrix",
+            "description": "(Multiplicative) inverse of the matrix a. "
+        }
+    }
+}

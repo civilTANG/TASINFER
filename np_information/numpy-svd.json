@@ -1,0 +1,38 @@
+{
+    "overall": {
+        "api_name": "svd",
+        "description": "Singular Value Decomposition."
+    },
+    "parameter": {
+        "a": {
+            "type": "(\u2026, M, N) array_like",
+            "description": "A real or complex array with a.ndim &gt;= 2. "
+        },
+        "full_matrices": {
+            "type": "bool, optional",
+            "description": "If True (default), u and vh have the shapes (..., M, M) and (..., N, N), respectively.  Otherwise, the shapes are (..., M, K) and (..., K, N), respectively, where K = min(M, N). "
+        },
+        "compute_uv": {
+            "type": "bool, optional",
+            "description": "Whether or not to compute u and vh in addition to s.  True by default. "
+        },
+        "hermitian": {
+            "type": "bool, optional",
+            "description": "If True, a is assumed to be Hermitian (symmetric if real-valued), enabling a more efficient method for finding singular values. Defaults to False.  New in version 1.17.0.  "
+        }
+    },
+    "return": {
+        "u": {
+            "type": "{ (\u2026, M, M), (\u2026, M, K) } array",
+            "description": "Unitary array(s). The first a.ndim - 2 dimensions have the same size as those of the input a. The size of the last two dimensions depends on the value of full_matrices. Only returned when compute_uv is True. "
+        },
+        "s": {
+            "type": "(\u2026, K) array",
+            "description": "Vector(s) with the singular values, within each vector sorted in descending order. The first a.ndim - 2 dimensions have the same size as those of the input a. "
+        },
+        "vh": {
+            "type": "{ (\u2026, N, N), (\u2026, K, N) } array",
+            "description": "Unitary array(s). The first a.ndim - 2 dimensions have the same size as those of the input a. The size of the last two dimensions depends on the value of full_matrices. Only returned when compute_uv is True. "
+        }
+    }
+}

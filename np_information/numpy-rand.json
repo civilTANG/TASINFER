@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "rand",
+        "description": "Return a matrix of random values with given shape."
+    },
+    "parameter": {
+        "*args": {
+            "type": "Arguments",
+            "description": "Shape of the output. If given as N integers, each integer specifies the size of one dimension. If given as a tuple, this tuple gives the complete shape. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "The matrix of random values with shape given by *args. "
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "datetime_as_string",
+        "description": "Convert an array of datetimes into an array of strings."
+    },
+    "parameter": {
+        "arr": {
+            "type": "array_like of datetime64",
+            "description": "The array of UTC timestamps to format. "
+        },
+        "unit": {
+            "type": "str",
+            "description": "One of None, \u2018auto\u2019, or a datetime unit. "
+        },
+        "timezone": {
+            "type": "{\u2018naive\u2019, \u2018UTC\u2019, \u2018local\u2019} or tzinfo",
+            "description": "Timezone information to use when displaying the datetime. If \u2018UTC\u2019, end with a Z to indicate UTC time. If \u2018local\u2019, convert to the local timezone first, and suffix with a +-#### timezone offset. If a tzinfo object, then do as with \u2018local\u2019, but use the specified timezone. "
+        },
+        "casting": {
+            "type": "{\u2018no\u2019, \u2018equiv\u2019, \u2018safe\u2019, \u2018same_kind\u2019, \u2018unsafe\u2019}",
+            "description": "Casting to allow when changing between datetime units. "
+        }
+    },
+    "return": {
+        "str_arr": {
+            "type": "ndarray",
+            "description": "An array of strings the same shape as arr. "
+        }
+    },
+    "note": "Setting the timezone to UTC shows the same information, but with a Z suffix '"
+}

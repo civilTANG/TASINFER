@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "asanyarray",
+        "description": "Convert the input to a masked array, conserving subclasses."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input data, in any form that can be converted to an array. "
+        },
+        "dtype": {
+            "type": "dtype, optional",
+            "description": "By default, the data-type is inferred from the input data. "
+        },
+        "order": {
+            "type": "{\u2018C\u2019, \u2018F\u2019}, optional",
+            "description": "Whether to use row-major (\u2018C\u2019) or column-major (\u2018FORTRAN\u2019) memory representation.  Default is \u2018C\u2019. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "MaskedArray",
+            "description": "MaskedArray interpretation of a. "
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "hanning",
+        "description": "Return the Hanning window."
+    },
+    "parameter": {
+        "M": {
+            "type": "int",
+            "description": "Number of points in the output window. If zero or less, an empty array is returned. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray, shape(M,)",
+            "description": "The window, with the maximum value normalized to one (the value one appears only if M is odd). "
+        }
+    },
+    "note": "Notes '"
+}

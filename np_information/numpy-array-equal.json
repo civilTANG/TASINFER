@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "array_equal",
+        "description": "True if two arrays have the same shape and elements, False otherwise."
+    },
+    "parameter": {
+        "a1, a2": {
+            "type": "array_like",
+            "description": "Input arrays. "
+        },
+        "equal_nan": {
+            "type": "bool",
+            "description": "Whether to compare NaN\u2019s as equal. If the dtype of a1 and a2 is complex, values will be considered equal if either the real or the imaginary component of a given value is nan.  New in version 1.19.0.  "
+        }
+    },
+    "return": {
+        "b": {
+            "type": "bool",
+            "description": "Returns True if the arrays are equal. "
+        }
+    },
+    "note": "When equal_nan is True, complex values with nan components are considered equal if either the real or the imaginary components are nan. '"
+}

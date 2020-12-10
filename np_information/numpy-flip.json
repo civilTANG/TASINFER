@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "flip",
+        "description": "Reverse the order of elements in an array along the given axis."
+    },
+    "parameter": {
+        "m": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "axis": {
+            "type": "None or int or tuple of ints, optional",
+            "description": "Axis or axes along which to flip over. The default, axis=None, will flip over all of the axes of the input array. If axis is negative it counts from the last to the first axis. If axis is a tuple of ints, flipping is performed on all of the axes specified in the tuple.  Changed in version 1.15.0: None and tuples of axes are supported  "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "array_like",
+            "description": "A view of m with the entries of axis reversed.  Since a view is returned, this operation is done in constant time. "
+        }
+    },
+    "note": "Notes '"
+}

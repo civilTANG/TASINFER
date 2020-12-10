@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "nancumprod",
+        "description": "Return the cumulative product of array elements over a given axis treating Not a\nNumbers (NaNs) as one.  The cumulative product does not change when NaNs are\nencountered and leading NaNs are replaced by ones."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "Axis along which the cumulative product is computed.  By default the input is flattened. "
+        },
+        "dtype": {
+            "type": "dtype, optional",
+            "description": "Type of the returned array, as well as of the accumulator in which the elements are multiplied.  If dtype is not specified, it defaults to the dtype of a, unless a has an integer dtype with a precision less than that of the default platform integer.  In that case, the default platform integer is used instead. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Alternative output array in which to place the result. It must have the same shape and buffer length as the expected output but the type of the resulting values will be cast if necessary. "
+        }
+    },
+    "return": {
+        "nancumprod": {
+            "type": "ndarray",
+            "description": "A new array holding the result is returned unless out is specified, in which case it is returned. "
+        }
+    },
+    "note": "Examples '"
+}

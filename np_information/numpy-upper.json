@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "upper",
+        "description": "Return an array with the elements converted to uppercase."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like, {str, unicode}",
+            "description": "Input array. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray, {str, unicode}",
+            "description": "Output array of str or unicode, depending on input type "
+        }
+    }
+}

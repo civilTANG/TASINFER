@@ -1,0 +1,43 @@
+{
+    "overall": {
+        "api_name": "einsum",
+        "description": "Evaluates the Einstein summation convention on the operands."
+    },
+    "parameter": {
+        "subscripts": {
+            "type": "str",
+            "description": "Specifies the subscripts for summation as comma separated list of subscript labels. An implicit (classical Einstein summation) calculation is performed unless the explicit indicator \u2018-&gt;\u2019 is included as well as subscript labels of the precise output form. "
+        },
+        "operands": {
+            "type": "list of array_like",
+            "description": "These are the arrays for the operation. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "If provided, the calculation is done into this array. "
+        },
+        "dtype": {
+            "type": "{data-type, None}, optional",
+            "description": "If provided, forces the calculation to use the data type specified. Note that you may have to also give a more liberal casting parameter to allow the conversions. Default is None. "
+        },
+        "order": {
+            "type": "{\u2018C\u2019, \u2018F\u2019, \u2018A\u2019, \u2018K\u2019}, optional",
+            "description": "Controls the memory layout of the output. \u2018C\u2019 means it should be C contiguous. \u2018F\u2019 means it should be Fortran contiguous, \u2018A\u2019 means it should be \u2018F\u2019 if the inputs are all \u2018F\u2019, \u2018C\u2019 otherwise. \u2018K\u2019 means it should be as close to the layout as the inputs as is possible, including arbitrarily permuted axes. Default is \u2018K\u2019. "
+        },
+        "casting": {
+            "type": "{\u2018no\u2019, \u2018equiv\u2019, \u2018safe\u2019, \u2018same_kind\u2019, \u2018unsafe\u2019}, optional",
+            "description": "Controls what kind of data casting may occur.  Setting this to \u2018unsafe\u2019 is not recommended, as it can adversely affect accumulations.   \u2018no\u2019 means the data types should not be cast at all. \u2018equiv\u2019 means only byte-order changes are allowed. \u2018safe\u2019 means only casts which can preserve values are allowed. \u2018same_kind\u2019 means only safe casts or casts within a kind, like float64 to float32, are allowed. \u2018unsafe\u2019 means any data conversions may be done.   Default is \u2018safe\u2019. "
+        },
+        "optimize": {
+            "type": "{False, True, \u2018greedy\u2019, \u2018optimal\u2019}, optional",
+            "description": "Controls if intermediate optimization should occur. No optimization will occur if False and True will default to the \u2018greedy\u2019 algorithm. Also accepts an explicit contraction list from the np.einsum_path function. See np.einsum_path for more details. Defaults to False. "
+        }
+    },
+    "return": {
+        "output": {
+            "type": "ndarray",
+            "description": "The calculation based on the Einstein summation convention. "
+        }
+    },
+    "note": "In explicit mode, einsum provides further flexibility to compute other array operations that might not be considered classical Einstein summation operations, by disabling, or forcing summation over specified subscript labels. '"
+}

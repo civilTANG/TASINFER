@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "select",
+        "description": "Return an array drawn from elements in choicelist, depending on conditions."
+    },
+    "parameter": {
+        "condlist": {
+            "type": "list of bool ndarrays",
+            "description": "The list of conditions which determine from which array in choicelist the output elements are taken. When multiple conditions are satisfied, the first one encountered in condlist is used. "
+        },
+        "choicelist": {
+            "type": "list of ndarrays",
+            "description": "The list of arrays from which the output elements are taken. It has to be of the same length as condlist. "
+        },
+        "default": {
+            "type": "scalar, optional",
+            "description": "The element inserted in output when all conditions evaluate to False. "
+        }
+    },
+    "return": {
+        "output": {
+            "type": "ndarray",
+            "description": "The output at position m is the m-th element of the array in choicelist where the m-th element of the corresponding array in condlist is True. "
+        }
+    }
+}

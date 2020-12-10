@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "real_if_close",
+        "description": "If input is complex with all imaginary parts close to zero, return \nreal parts."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "tol": {
+            "type": "float",
+            "description": "Tolerance in machine epsilons for the complex part of the elements in the array. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "If a is real, the type of a is used for the output.  If a has complex elements, the returned type is float. "
+        }
+    },
+    "note": "Notes '"
+}

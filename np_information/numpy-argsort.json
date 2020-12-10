@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "argsort",
+        "description": "Returns the indices that would sort an array."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Array to sort. "
+        },
+        "axis": {
+            "type": "int or None, optional",
+            "description": "Axis along which to sort.  The default is -1 (the last axis). If None, the flattened array is used. "
+        },
+        "kind": {
+            "type": "{\u2018quicksort\u2019, \u2018mergesort\u2019, \u2018heapsort\u2019, \u2018stable\u2019}, optional",
+            "description": "Sorting algorithm. The default is \u2018quicksort\u2019. Note that both \u2018stable\u2019 and \u2018mergesort\u2019 use timsort under the covers and, in general, the actual implementation will vary with data type. The \u2018mergesort\u2019 option is retained for backwards compatibility.  Changed in version 1.15.0.: The \u2018stable\u2019 option was added.  "
+        },
+        "order": {
+            "type": "str or list of str, optional",
+            "description": "When a is an array with fields defined, this argument specifies which fields to compare first, second, etc.  A single field can be specified as a string, and not all fields need be specified, but unspecified fields will still be used, in the order in which they come up in the dtype, to break ties. "
+        }
+    },
+    "return": {
+        "index_array": {
+            "type": "ndarray, int",
+            "description": "Array of indices that sort a along the specified axis. If a is one-dimensional, a[index_array] yields a sorted a. More generally, np.take_along_axis(a, index_array, axis=axis) always yields the sorted a, irrespective of dimensionality. "
+        }
+    },
+    "note": "Notes '"
+}

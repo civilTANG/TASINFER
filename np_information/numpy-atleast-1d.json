@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "atleast_1d",
+        "description": "Convert inputs to arrays with at least one dimension."
+    },
+    "parameter": {
+        "arys1, arys2, \u2026": {
+            "type": "array_like",
+            "description": "One or more input arrays. "
+        }
+    },
+    "return": {
+        "ret": {
+            "type": "ndarray",
+            "description": "An array, or list of arrays, each with a.ndim &gt;= 1. Copies are made only if necessary. "
+        }
+    },
+    "note": "Examples '"
+}

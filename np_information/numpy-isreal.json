@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "isreal",
+        "description": "Returns a bool array, where True if input element is real."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like",
+            "description": "Input array. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray, bool",
+            "description": "Boolean array of same shape as x. "
+        }
+    },
+    "note": "Examples '"
+}

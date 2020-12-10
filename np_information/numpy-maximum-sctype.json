@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "maximum_sctype",
+        "description": "Return the scalar type of highest precision of the same kind as the input."
+    },
+    "parameter": {
+        "t": {
+            "type": "dtype or dtype specifier",
+            "description": "The input data type. This can be a dtype object or an object that is convertible to a dtype. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "dtype",
+            "description": "The highest precision data type of the same kind (dtype.kind) as t. "
+        }
+    }
+}

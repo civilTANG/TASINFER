@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "insert",
+        "description": "Insert values along the given axis before the given indices."
+    },
+    "parameter": {
+        "arr": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "obj": {
+            "type": "int, slice or sequence of ints",
+            "description": "Object that defines the index or indices before which values is inserted.  New in version 1.8.0.  Support for multiple insertions when obj is a single scalar or a sequence with one element (similar to calling insert multiple times). "
+        },
+        "values": {
+            "type": "array_like",
+            "description": "Values to insert into arr. If the type of values is different from that of arr, values is converted to the type of arr. values should be shaped so that arr[...,obj,...] = values is legal. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "Axis along which to insert values.  If axis is None then arr is flattened first. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "A copy of arr with values inserted.  Note that insert does not occur in-place: a new array is returned. If axis is None, out is a flattened array. "
+        }
+    },
+    "note": "Note that for higher dimensional inserts obj=0 behaves very different from obj=[0] just like arr[:,0,:] = values is different from arr[:,[0],:] = values. '"
+}

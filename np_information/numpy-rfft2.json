@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "rfft2",
+        "description": "Compute the 2-dimensional FFT of a real array."
+    },
+    "parameter": {
+        "a": {
+            "type": "array",
+            "description": "Input array, taken to be real. "
+        },
+        "s": {
+            "type": "sequence of ints, optional",
+            "description": "Shape of the FFT. "
+        },
+        "axes": {
+            "type": "sequence of ints, optional",
+            "description": "Axes over which to compute the FFT. "
+        },
+        "norm": {
+            "type": "{None, \u201cortho\u201d}, optional",
+            "description": " New in version 1.10.0.  Normalization mode (see numpy.fft). Default is None. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "The result of the real 2-D FFT. "
+        }
+    }
+}

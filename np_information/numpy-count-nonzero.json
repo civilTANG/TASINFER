@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "count_nonzero",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "The array for which to count non-zeros. "
+        },
+        "axis": {
+            "type": "int or tuple, optional",
+            "description": "Axis or tuple of axes along which to count non-zeros. Default is None, meaning that non-zeros will be counted along a flattened version of a.  New in version 1.12.0.  "
+        },
+        "keepdims": {
+            "type": "bool, optional",
+            "description": "If this is set to True, the axes that are counted are left in the result as dimensions with size one. With this option, the result will broadcast correctly against the input array.  New in version 1.19.0.  "
+        }
+    },
+    "return": {
+        "count": {
+            "type": "int or array of int",
+            "description": "Number of non-zero values in the array along a given axis. Otherwise, the total number of non-zero values in the array is returned. "
+        }
+    },
+    "note": "Examples '"
+}

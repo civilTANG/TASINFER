@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "array_split",
+        "description": "Split an array into multiple sub-arrays."
+    },
+    "parameter": {
+        "indices_or_sections": {
+            "type": "int or 1-D array",
+            "description": "Array to be divided into sub-arrays. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "If indices_or_sections is an integer, N, the array will be divided into N equal arrays along axis.  If such a split is not possible, an error is raised. If indices_or_sections is a 1-D array of sorted integers, the entries indicate where along axis the array is split.  For example, [2, 3] would, for axis=0, result in   ary[:2] ary[2:3] ary[3:]   If an index exceeds the dimension of the array along axis, an empty sub-array is returned correspondingly. "
+        },
+        "sub-arrays": {
+            "type": "list of ndarrays",
+            "description": "The axis along which to split, default is 0. "
+        }
+    },
+    "return": {},
+    "note": "Examples '"
+}

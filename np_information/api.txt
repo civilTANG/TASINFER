@@ -1,0 +1,376 @@
+https://numpy.org/doc/stable/reference/generated/numpy.frombuffer.html#numpy.frombuffer
+https://numpy.org/doc/stable/reference/generated/numpy.fromfile.html#numpy.fromfile
+https://numpy.org/doc/stable/reference/generated/numpy.core.records.fromarrays.html#numpy.core.records.fromarrays
+https://numpy.org/doc/stable/reference/generated/numpy.core.records.fromrecords.html#numpy.core.records.fromrecords
+https://numpy.org/doc/stable/reference/generated/numpy.core.records.fromstring.html#numpy.core.records.fromstring
+https://numpy.org/doc/stable/reference/generated/numpy.core.records.fromfile.html#numpy.core.records.fromfile
+https://numpy.org/doc/stable/reference/routines.char.html#module-numpy.char
+https://numpy.org/doc/stable/reference/generated/numpy.core.defchararray.array.html#numpy.core.defchararray.array
+https://numpy.org/doc/stable/reference/generated/numpy.chararray.html#numpy.chararray
+https://numpy.org/doc/stable/reference/generated/numpy.core.defchararray.asarray.html#numpy.core.defchararray.asarray
+https://numpy.org/doc/stable/reference/generated/numpy.chararray.html#numpy.chararray
+https://numpy.org/doc/stable/reference/generated/numpy.mgrid.html#numpy.mgrid
+https://numpy.org/doc/stable/reference/generated/numpy.ogrid.html#numpy.ogrid
+https://numpy.org/doc/stable/reference/generated/numpy.copyto.html#numpy.copyto
+https://numpy.org/doc/stable/reference/generated/numpy.ndarray.flat.html#numpy.ndarray.flat
+https://numpy.org/doc/stable/reference/generated/numpy.ndarray.flatten.html#numpy.ndarray.flatten
+https://numpy.org/doc/stable/reference/generated/numpy.ndarray.T.html#numpy.ndarray.T
+https://numpy.org/doc/stable/reference/generated/numpy.broadcast.html#numpy.broadcast
+https://numpy.org/doc/stable/reference/generated/numpy.bitwise_and.html#numpy.bitwise_and
+https://numpy.org/doc/stable/reference/generated/numpy.bitwise_or.html#numpy.bitwise_or
+https://numpy.org/doc/stable/reference/generated/numpy.bitwise_xor.html#numpy.bitwise_xor
+https://numpy.org/doc/stable/reference/generated/numpy.invert.html#numpy.invert
+https://numpy.org/doc/stable/reference/generated/numpy.left_shift.html#numpy.left_shift
+https://numpy.org/doc/stable/reference/generated/numpy.right_shift.html#numpy.right_shift
+https://numpy.org/doc/stable/reference/#module-numpy.char
+https://numpy.org/doc/stable/reference/generated/numpy.char.
+https://numpy.org/doc/stable/reference/generated/numpy.char.is
+https://numpy.org/doc/stable/reference/generated/numpy.char.array.html#numpy.char.array
+https://numpy.org/doc/stable/reference/generated/numpy.char.chararray.html#numpy.char.chararray
+https://numpy.org/doc/stable/reference/generated/numpy.char.asarray.html#numpy.char.asarray
+https://numpy.org/doc/stable/reference/generated/numpy.char.chararray.html#numpy.char.chararray
+https://numpy.org/doc/stable/reference/generated/numpy.char.chararray.html#numpy.char.chararray
+https://numpy.org/doc/stable/reference/#numpy.ctypeslib.load_library
+https://numpy.org/doc/stable/reference/generated/numpy.busdaycalendar.html#numpy.busdaycalendar
+https://numpy.org/doc/stable/reference/generated/numpy.dtype.html#numpy.dtype
+https://numpy.org/doc/stable/reference/generated/numpy.format_parser.html#numpy.format_parser
+https://numpy.org/doc/stable/reference/generated/numpy.finfo.html#numpy.finfo
+https://numpy.org/doc/stable/reference/generated/numpy.iinfo.html#numpy.iinfo
+https://numpy.org/doc/stable/reference/generated/numpy.MachAr.html#numpy.MachAr
+https://numpy.org/doc/stable/reference/#module-numpy.lib.scimath
+https://numpy.org/doc/stable/reference/generated/numpy.geterr.html#numpy.geterr
+https://numpy.org/doc/stable/reference/generated/numpy.geterrcall.html#numpy.geterrcall
+https://numpy.org/doc/stable/reference/generated/numpy.errstate.html#numpy.errstate
+https://numpy.org/doc/stable/reference/generated/numpy.seterrobj.html#numpy.seterrobj
+https://numpy.org/doc/stable/reference/generated/numpy.geterrobj.html#numpy.geterrobj
+https://numpy.org/doc/stable/reference/#module-numpy.fft
+<p>When the input is purely real, its transform is Hermitian, i.e., the
+component at frequency <img alt="f_k" class="math" src="../_images/math/0edac3a6b0973196c5005c560d87e755c0ea5c86.svg"/> is the complex conjugate of the
+component at frequency <img alt="-f_k" class="math" src="../_images/math/a9527fff1f9301ecdeff1120a4a4ddde090caac0.svg"/>, which means that for real
+inputs there is no information in the negative frequency components that
+is not already available from the positive frequency components.
+The family of <a class="reference internal" href="generated/numpy.fft.rfft.html#numpy.fft.rfft" title="numpy.fft.rfft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rfft</span></code></a> functions is
+designed to operate on real inputs, and exploits this symmetry by
+computing only the positive frequency components, up to and including the
+Nyquist frequency.  Thus, <code class="docutils literal notranslate"><span class="pre">n</span></code> input points produce <code class="docutils literal notranslate"><span class="pre">n/2+1</span></code> complex
+output points.  The inverses of this family assumes the same symmetry of
+its input, and for an output of <code class="docutils literal notranslate"><span class="pre">n</span></code> points uses <code class="docutils literal notranslate"><span class="pre">n/2+1</span></code> input points.</p>
+<p>Correspondingly, when the spectrum is purely real, the signal is
+Hermitian.  The <a class="reference internal" href="generated/numpy.fft.hfft.html#numpy.fft.hfft" title="numpy.fft.hfft"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hfft</span></code></a> family of functions exploits this symmetry by
+using <code class="docutils literal notranslate"><span class="pre">n/2+1</span></code> complex points in the input (time) domain for <code class="docutils literal notranslate"><span class="pre">n</span></code> real
+points in the frequency domain.</p>
+https://numpy.org/doc/stable/reference/generated/numpy.ppmt.html#numpy.ppmt
+https://numpy.org/doc/stable/reference/generated/numpy.nper.html#numpy.nper
+https://numpy.org/doc/stable/reference/generated/numpy.rate.html#numpy.rate
+https://numpy.org/doc/stable/reference/generated/numpy.vectorize.html#numpy.vectorize
+https://numpy.org/doc/stable/reference/generated/numpy.lookfor.html#numpy.lookfor
+https://numpy.org/doc/stable/reference/generated/numpy.info.html#numpy.info
+https://numpy.org/doc/stable/reference/generated/numpy.source.html#numpy.source
+https://numpy.org/doc/stable/reference/generated/numpy.c_.html#numpy.c_
+https://numpy.org/doc/stable/reference/generated/numpy.r_.html#numpy.r_
+https://numpy.org/doc/stable/reference/generated/numpy.s_.html#numpy.s_
+https://numpy.org/doc/stable/reference/generated/numpy.indices.html#numpy.indices
+https://numpy.org/doc/stable/reference/generated/numpy.ogrid.html#numpy.ogrid
+https://numpy.org/doc/stable/reference/generated/numpy.diag_indices.html#numpy.diag_indices
+https://numpy.org/doc/stable/reference/generated/numpy.diag_indices_from.html#numpy.diag_indices_from
+https://numpy.org/doc/stable/reference/generated/numpy.tril_indices_from.html#numpy.tril_indices_from
+https://numpy.org/doc/stable/reference/generated/numpy.take_along_axis.html#numpy.take_along_axis
+https://numpy.org/doc/stable/reference/generated/numpy.place.html#numpy.place
+https://numpy.org/doc/stable/reference/generated/numpy.put.html#numpy.put
+https://numpy.org/doc/stable/reference/generated/numpy.put_along_axis.html#numpy.put_along_axis
+https://numpy.org/doc/stable/reference/generated/numpy.putmask.html#numpy.putmask
+https://numpy.org/doc/stable/reference/generated/numpy.fill_diagonal.html#numpy.fill_diagonal
+https://numpy.org/doc/stable/reference/generated/numpy.nditer.html#numpy.nditer
+https://numpy.org/doc/stable/reference/generated/numpy.ndenumerate.html#numpy.ndenumerate
+https://numpy.org/doc/stable/reference/generated/numpy.ndindex.html#numpy.ndindex
+https://numpy.org/doc/stable/reference/generated/numpy.flatiter.html#numpy.flatiter
+https://numpy.org/doc/stable/reference/generated/numpy.lib.Arrayterator.html#numpy.lib.Arrayterator
+https://numpy.org/doc/stable/reference/generated/numpy.save.html#numpy.save
+https://numpy.org/doc/stable/reference/generated/numpy.savez.html#numpy.savez
+https://numpy.org/doc/stable/reference/generated/numpy.savez_compressed.html#numpy.savez_compressed
+<p>The format of these binary file types is documented in
+<a class="reference internal" href="generated/numpy.lib.format.html#module-numpy.lib.format" title="numpy.lib.format"><code class="xref py py-mod docutils literal notranslate"><span class="pre">numpy.lib.format</span></code></a></p>
+https://numpy.org/doc/stable/reference/generated/numpy.savetxt.html#numpy.savetxt
+https://numpy.org/doc/stable/reference/generated/numpy.ndarray.tofile.html#numpy.ndarray.tofile
+https://numpy.org/doc/stable/reference/generated/numpy.ndarray.tolist.html#numpy.ndarray.tolist
+https://numpy.org/doc/stable/reference/generated/numpy.fromfile.html#numpy.fromfile
+https://numpy.org/doc/stable/reference/generated/numpy.ndarray.tofile.html#numpy.ndarray.tofile
+https://numpy.org/doc/stable/reference/generated/numpy.array_str.html#numpy.array_str
+https://numpy.org/doc/stable/reference/generated/numpy.memmap.html#numpy.memmap
+https://numpy.org/doc/stable/reference/generated/numpy.set_printoptions.html#numpy.set_printoptions
+https://numpy.org/doc/stable/reference/generated/numpy.get_printoptions.html#numpy.get_printoptions
+https://numpy.org/doc/stable/reference/generated/numpy.set_string_function.html#numpy.set_string_function
+https://numpy.org/doc/stable/reference/generated/numpy.printoptions.html#numpy.printoptions
+https://numpy.org/doc/stable/reference/generated/numpy.DataSource.html#numpy.DataSource
+https://numpy.org/doc/stable/reference/generated/numpy.lib.format.html#module-numpy.lib.format
+https://numpy.org/doc/stable/reference/https://docs.scipy.org/doc/scipy/reference/linalg.html#module-scipy.linalg
+https://numpy.org/doc/stable/reference/generated/numpy.matmul.html#numpy.matmul
+https://numpy.org/doc/stable/reference/generated/numpy.linalg.slogdet.html#numpy.linalg.slogdet
+https://numpy.org/doc/stable/reference/generated/numpy.linalg.LinAlgError.html#numpy.linalg.LinAlgError
+https://numpy.org/doc/stable/reference/generated/numpy.isfinite.html#numpy.isfinite
+https://numpy.org/doc/stable/reference/generated/numpy.isinf.html#numpy.isinf
+https://numpy.org/doc/stable/reference/generated/numpy.isnan.html#numpy.isnan
+https://numpy.org/doc/stable/reference/generated/numpy.isnat.html#numpy.isnat
+https://numpy.org/doc/stable/reference/generated/numpy.logical_and.html#numpy.logical_and
+https://numpy.org/doc/stable/reference/generated/numpy.logical_or.html#numpy.logical_or
+https://numpy.org/doc/stable/reference/generated/numpy.logical_not.html#numpy.logical_not
+https://numpy.org/doc/stable/reference/generated/numpy.logical_xor.html#numpy.logical_xor
+https://numpy.org/doc/stable/reference/generated/numpy.greater.html#numpy.greater
+https://numpy.org/doc/stable/reference/generated/numpy.greater_equal.html#numpy.greater_equal
+https://numpy.org/doc/stable/reference/generated/numpy.less.html#numpy.less
+https://numpy.org/doc/stable/reference/generated/numpy.less_equal.html#numpy.less_equal
+https://numpy.org/doc/stable/reference/generated/numpy.equal.html#numpy.equal
+https://numpy.org/doc/stable/reference/generated/numpy.not_equal.html#numpy.not_equal
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskType.html#numpy.ma.MaskType
+https://numpy.org/doc/stable/reference/generated/numpy.ma.masked_array.html#numpy.ma.masked_array
+https://numpy.org/doc/stable/reference/generated/numpy.ma.array.html#numpy.ma.array
+https://numpy.org/doc/stable/reference/generated/numpy.ma.copy.html#numpy.ma.copy
+https://numpy.org/doc/stable/reference/generated/numpy.ma.frombuffer.html#numpy.ma.frombuffer
+https://numpy.org/doc/stable/reference/generated/numpy.ma.fromfunction.html#numpy.ma.fromfunction
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.copy.html#numpy.ma.MaskedArray.copy
+https://numpy.org/doc/stable/reference/generated/numpy.ma.empty.html#numpy.ma.empty
+https://numpy.org/doc/stable/reference/generated/numpy.ma.empty_like.html#numpy.ma.empty_like
+https://numpy.org/doc/stable/reference/generated/numpy.ma.ones.html#numpy.ma.ones
+https://numpy.org/doc/stable/reference/generated/numpy.ma.zeros.html#numpy.ma.zeros
+https://numpy.org/doc/stable/reference/generated/numpy.ma.all.html#numpy.ma.all
+https://numpy.org/doc/stable/reference/generated/numpy.ma.any.html#numpy.ma.any
+https://numpy.org/doc/stable/reference/generated/numpy.ma.count.html#numpy.ma.count
+https://numpy.org/doc/stable/reference/generated/numpy.ma.getmask.html#numpy.ma.getmask
+https://numpy.org/doc/stable/reference/generated/numpy.ma.getmaskarray.html#numpy.ma.getmaskarray
+https://numpy.org/doc/stable/reference/generated/numpy.ma.getdata.html#numpy.ma.getdata
+https://numpy.org/doc/stable/reference/generated/numpy.ma.nonzero.html#numpy.ma.nonzero
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.all.html#numpy.ma.MaskedArray.all
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.any.html#numpy.ma.MaskedArray.any
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.count.html#numpy.ma.MaskedArray.count
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.nonzero.html#numpy.ma.MaskedArray.nonzero
+https://numpy.org/doc/stable/reference/maskedarray.baseclass.html#numpy.ma.MaskedArray.data
+https://numpy.org/doc/stable/reference/maskedarray.baseclass.html#numpy.ma.MaskedArray.mask
+https://numpy.org/doc/stable/reference/maskedarray.baseclass.html#numpy.ma.MaskedArray.recordmask
+https://numpy.org/doc/stable/reference/generated/numpy.ma.ravel.html#numpy.ma.ravel
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.flatten.html#numpy.ma.MaskedArray.flatten
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.ravel.html#numpy.ma.MaskedArray.ravel
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.reshape.html#numpy.ma.MaskedArray.reshape
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.resize.html#numpy.ma.MaskedArray.resize
+https://numpy.org/doc/stable/reference/generated/numpy.ma.swapaxes.html#numpy.ma.swapaxes
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.swapaxes.html#numpy.ma.MaskedArray.swapaxes
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.transpose.html#numpy.ma.MaskedArray.transpose
+https://numpy.org/doc/stable/reference/generated/numpy.ma.atleast_1d.html#numpy.ma.atleast_1d
+https://numpy.org/doc/stable/reference/generated/numpy.ma.atleast_2d.html#numpy.ma.atleast_2d
+https://numpy.org/doc/stable/reference/generated/numpy.ma.atleast_3d.html#numpy.ma.atleast_3d
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.squeeze.html#numpy.ma.MaskedArray.squeeze
+https://numpy.org/doc/stable/reference/generated/numpy.ma.stack.html#numpy.ma.stack
+https://numpy.org/doc/stable/reference/generated/numpy.ma.column_stack.html#numpy.ma.column_stack
+https://numpy.org/doc/stable/reference/generated/numpy.ma.dstack.html#numpy.ma.dstack
+https://numpy.org/doc/stable/reference/generated/numpy.ma.hstack.html#numpy.ma.hstack
+https://numpy.org/doc/stable/reference/generated/numpy.ma.hsplit.html#numpy.ma.hsplit
+https://numpy.org/doc/stable/reference/generated/numpy.ma.mr_.html#numpy.ma.mr_
+https://numpy.org/doc/stable/reference/generated/numpy.ma.row_stack.html#numpy.ma.row_stack
+https://numpy.org/doc/stable/reference/generated/numpy.ma.vstack.html#numpy.ma.vstack
+https://numpy.org/doc/stable/reference/generated/numpy.ma.stack.html#numpy.ma.stack
+https://numpy.org/doc/stable/reference/generated/numpy.ma.vstack.html#numpy.ma.vstack
+https://numpy.org/doc/stable/reference/generated/numpy.ma.hstack.html#numpy.ma.hstack
+https://numpy.org/doc/stable/reference/generated/numpy.ma.dstack.html#numpy.ma.dstack
+https://numpy.org/doc/stable/reference/generated/numpy.ma.column_stack.html#numpy.ma.column_stack
+https://numpy.org/doc/stable/reference/generated/numpy.ma.getmask.html#numpy.ma.getmask
+https://numpy.org/doc/stable/reference/generated/numpy.ma.getmaskarray.html#numpy.ma.getmaskarray
+https://numpy.org/doc/stable/reference/generated/numpy.ma.masked_array.mask.html#numpy.ma.masked_array.mask
+https://numpy.org/doc/stable/reference/generated/numpy.ma.flatnotmasked_contiguous.html#numpy.ma.flatnotmasked_contiguous
+https://numpy.org/doc/stable/reference/generated/numpy.ma.harden_mask.html#numpy.ma.harden_mask
+https://numpy.org/doc/stable/reference/generated/numpy.ma.soften_mask.html#numpy.ma.soften_mask
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.harden_mask.html#numpy.ma.MaskedArray.harden_mask
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.soften_mask.html#numpy.ma.MaskedArray.soften_mask
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.shrink_mask.html#numpy.ma.MaskedArray.shrink_mask
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.unshare_mask.html#numpy.ma.MaskedArray.unshare_mask
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.compressed.html#numpy.ma.MaskedArray.compressed
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.filled.html#numpy.ma.MaskedArray.filled
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.tofile.html#numpy.ma.MaskedArray.tofile
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.tolist.html#numpy.ma.MaskedArray.tolist
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.torecords.html#numpy.ma.MaskedArray.torecords
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.tobytes.html#numpy.ma.MaskedArray.tobytes
+https://numpy.org/doc/stable/reference/generated/numpy.ma.set_fill_value.html#numpy.ma.set_fill_value
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.get_fill_value.html#numpy.ma.MaskedArray.get_fill_value
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.set_fill_value.html#numpy.ma.MaskedArray.set_fill_value
+https://numpy.org/doc/stable/reference/maskedarray.baseclass.html#numpy.ma.MaskedArray.fill_value
+https://numpy.org/doc/stable/reference/generated/numpy.ma.anom.html#numpy.ma.anom
+https://numpy.org/doc/stable/reference/generated/numpy.ma.anomalies.html#numpy.ma.anomalies
+https://numpy.org/doc/stable/reference/generated/numpy.ma.conjugate.html#numpy.ma.conjugate
+https://numpy.org/doc/stable/reference/generated/numpy.ma.corrcoef.html#numpy.ma.corrcoef
+https://numpy.org/doc/stable/reference/generated/numpy.ma.cov.html#numpy.ma.cov
+https://numpy.org/doc/stable/reference/generated/numpy.ma.cumsum.html#numpy.ma.cumsum
+https://numpy.org/doc/stable/reference/generated/numpy.ma.cumprod.html#numpy.ma.cumprod
+https://numpy.org/doc/stable/reference/generated/numpy.ma.mean.html#numpy.ma.mean
+https://numpy.org/doc/stable/reference/generated/numpy.ma.prod.html#numpy.ma.prod
+https://numpy.org/doc/stable/reference/generated/numpy.ma.std.html#numpy.ma.std
+https://numpy.org/doc/stable/reference/generated/numpy.ma.sum.html#numpy.ma.sum
+https://numpy.org/doc/stable/reference/generated/numpy.ma.var.html#numpy.ma.var
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.anom.html#numpy.ma.MaskedArray.anom
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.cumprod.html#numpy.ma.MaskedArray.cumprod
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.cumsum.html#numpy.ma.MaskedArray.cumsum
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.mean.html#numpy.ma.MaskedArray.mean
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.prod.html#numpy.ma.MaskedArray.prod
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.std.html#numpy.ma.MaskedArray.std
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.sum.html#numpy.ma.MaskedArray.sum
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.var.html#numpy.ma.MaskedArray.var
+https://numpy.org/doc/stable/reference/generated/numpy.ma.argmax.html#numpy.ma.argmax
+https://numpy.org/doc/stable/reference/generated/numpy.ma.argmin.html#numpy.ma.argmin
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.argmax.html#numpy.ma.MaskedArray.argmax
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.argmin.html#numpy.ma.MaskedArray.argmin
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.max.html#numpy.ma.MaskedArray.max
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.min.html#numpy.ma.MaskedArray.min
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.ptp.html#numpy.ma.MaskedArray.ptp
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.argsort.html#numpy.ma.MaskedArray.argsort
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.sort.html#numpy.ma.MaskedArray.sort
+https://numpy.org/doc/stable/reference/generated/numpy.ma.dot.html#numpy.ma.dot
+https://numpy.org/doc/stable/reference/generated/numpy.ma.identity.html#numpy.ma.identity
+https://numpy.org/doc/stable/reference/generated/numpy.ma.trace.html#numpy.ma.trace
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.trace.html#numpy.ma.MaskedArray.trace
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.transpose.html#numpy.ma.MaskedArray.transpose
+https://numpy.org/doc/stable/reference/generated/numpy.ma.around.html#numpy.ma.around
+https://numpy.org/doc/stable/reference/generated/numpy.ma.round.html#numpy.ma.round
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.clip.html#numpy.ma.MaskedArray.clip
+https://numpy.org/doc/stable/reference/generated/numpy.ma.MaskedArray.round.html#numpy.ma.MaskedArray.round
+https://numpy.org/doc/stable/reference/generated/numpy.ma.arange.html#numpy.ma.arange
+https://numpy.org/doc/stable/reference/generated/numpy.ma.indices.html#numpy.ma.indices
+https://numpy.org/doc/stable/reference/generated/numpy.sin.html#numpy.sin
+https://numpy.org/doc/stable/reference/generated/numpy.cos.html#numpy.cos
+https://numpy.org/doc/stable/reference/generated/numpy.tan.html#numpy.tan
+https://numpy.org/doc/stable/reference/generated/numpy.arcsin.html#numpy.arcsin
+https://numpy.org/doc/stable/reference/generated/numpy.arccos.html#numpy.arccos
+https://numpy.org/doc/stable/reference/generated/numpy.arctan.html#numpy.arctan
+https://numpy.org/doc/stable/reference/generated/numpy.hypot.html#numpy.hypot
+https://numpy.org/doc/stable/reference/generated/numpy.arctan2.html#numpy.arctan2
+https://numpy.org/doc/stable/reference/generated/numpy.degrees.html#numpy.degrees
+https://numpy.org/doc/stable/reference/generated/numpy.radians.html#numpy.radians
+https://numpy.org/doc/stable/reference/generated/numpy.deg2rad.html#numpy.deg2rad
+https://numpy.org/doc/stable/reference/generated/numpy.rad2deg.html#numpy.rad2deg
+https://numpy.org/doc/stable/reference/generated/numpy.sinh.html#numpy.sinh
+https://numpy.org/doc/stable/reference/generated/numpy.cosh.html#numpy.cosh
+https://numpy.org/doc/stable/reference/generated/numpy.tanh.html#numpy.tanh
+https://numpy.org/doc/stable/reference/generated/numpy.arcsinh.html#numpy.arcsinh
+https://numpy.org/doc/stable/reference/generated/numpy.arccosh.html#numpy.arccosh
+https://numpy.org/doc/stable/reference/generated/numpy.arctanh.html#numpy.arctanh
+https://numpy.org/doc/stable/reference/generated/numpy.rint.html#numpy.rint
+https://numpy.org/doc/stable/reference/generated/numpy.floor.html#numpy.floor
+https://numpy.org/doc/stable/reference/generated/numpy.ceil.html#numpy.ceil
+https://numpy.org/doc/stable/reference/generated/numpy.trunc.html#numpy.trunc
+https://numpy.org/doc/stable/reference/generated/numpy.exp.html#numpy.exp
+https://numpy.org/doc/stable/reference/generated/numpy.expm1.html#numpy.expm1
+https://numpy.org/doc/stable/reference/generated/numpy.exp2.html#numpy.exp2
+https://numpy.org/doc/stable/reference/generated/numpy.log.html#numpy.log
+https://numpy.org/doc/stable/reference/generated/numpy.log10.html#numpy.log10
+https://numpy.org/doc/stable/reference/generated/numpy.log2.html#numpy.log2
+https://numpy.org/doc/stable/reference/generated/numpy.log1p.html#numpy.log1p
+https://numpy.org/doc/stable/reference/generated/numpy.logaddexp.html#numpy.logaddexp
+https://numpy.org/doc/stable/reference/generated/numpy.logaddexp2.html#numpy.logaddexp2
+https://numpy.org/doc/stable/reference/generated/numpy.signbit.html#numpy.signbit
+https://numpy.org/doc/stable/reference/generated/numpy.copysign.html#numpy.copysign
+https://numpy.org/doc/stable/reference/generated/numpy.frexp.html#numpy.frexp
+https://numpy.org/doc/stable/reference/generated/numpy.ldexp.html#numpy.ldexp
+https://numpy.org/doc/stable/reference/generated/numpy.nextafter.html#numpy.nextafter
+https://numpy.org/doc/stable/reference/generated/numpy.spacing.html#numpy.spacing
+https://numpy.org/doc/stable/reference/generated/numpy.lcm.html#numpy.lcm
+https://numpy.org/doc/stable/reference/generated/numpy.gcd.html#numpy.gcd
+https://numpy.org/doc/stable/reference/generated/numpy.add.html#numpy.add
+https://numpy.org/doc/stable/reference/generated/numpy.reciprocal.html#numpy.reciprocal
+https://numpy.org/doc/stable/reference/generated/numpy.positive.html#numpy.positive
+https://numpy.org/doc/stable/reference/generated/numpy.negative.html#numpy.negative
+https://numpy.org/doc/stable/reference/generated/numpy.multiply.html#numpy.multiply
+https://numpy.org/doc/stable/reference/generated/numpy.divide.html#numpy.divide
+https://numpy.org/doc/stable/reference/generated/numpy.power.html#numpy.power
+https://numpy.org/doc/stable/reference/generated/numpy.subtract.html#numpy.subtract
+https://numpy.org/doc/stable/reference/generated/numpy.true_divide.html#numpy.true_divide
+https://numpy.org/doc/stable/reference/generated/numpy.floor_divide.html#numpy.floor_divide
+https://numpy.org/doc/stable/reference/generated/numpy.float_power.html#numpy.float_power
+https://numpy.org/doc/stable/reference/generated/numpy.fmod.html#numpy.fmod
+https://numpy.org/doc/stable/reference/generated/numpy.mod.html#numpy.mod
+https://numpy.org/doc/stable/reference/generated/numpy.modf.html#numpy.modf
+https://numpy.org/doc/stable/reference/generated/numpy.remainder.html#numpy.remainder
+https://numpy.org/doc/stable/reference/generated/numpy.divmod.html#numpy.divmod
+https://numpy.org/doc/stable/reference/generated/numpy.angle.html#numpy.angle
+https://numpy.org/doc/stable/reference/generated/numpy.conj.html#numpy.conj
+https://numpy.org/doc/stable/reference/generated/numpy.conjugate.html#numpy.conjugate
+https://numpy.org/doc/stable/reference/generated/numpy.sqrt.html#numpy.sqrt
+https://numpy.org/doc/stable/reference/generated/numpy.cbrt.html#numpy.cbrt
+https://numpy.org/doc/stable/reference/generated/numpy.square.html#numpy.square
+https://numpy.org/doc/stable/reference/generated/numpy.absolute.html#numpy.absolute
+https://numpy.org/doc/stable/reference/generated/numpy.fabs.html#numpy.fabs
+https://numpy.org/doc/stable/reference/generated/numpy.sign.html#numpy.sign
+https://numpy.org/doc/stable/reference/generated/numpy.heaviside.html#numpy.heaviside
+https://numpy.org/doc/stable/reference/generated/numpy.maximum.html#numpy.maximum
+https://numpy.org/doc/stable/reference/generated/numpy.minimum.html#numpy.minimum
+https://numpy.org/doc/stable/reference/generated/numpy.fmax.html#numpy.fmax
+https://numpy.org/doc/stable/reference/generated/numpy.fmin.html#numpy.fmin
+https://numpy.org/doc/stable/reference/constants.html#numpy.nan
+https://numpy.org/doc/stable/reference/index.html#module-numpy
+https://numpy.org/doc/stable/reference/generated/numpy.matrix.html#numpy.matrix
+https://numpy.org/doc/stable/reference/#module-numpy.matlib
+https://numpy.org/doc/stable/reference/generated/numpy.matlib.empty.html#numpy.matlib.empty
+https://numpy.org/doc/stable/reference/generated/numpy.setbufsize.html#numpy.setbufsize
+https://numpy.org/doc/stable/reference/generated/numpy.getbufsize.html#numpy.getbufsize
+https://numpy.org/doc/stable/reference/generated/numpy.lib.mixins.NDArrayOperatorsMixin.html#numpy.lib.mixins.NDArrayOperatorsMixin
+https://numpy.org/doc/stable/reference/generated/numpy.lib.NumpyVersion.html#numpy.lib.NumpyVersion
+https://numpy.org/doc/stable/reference/generated/numpy.deprecate_with_doc.html#numpy.deprecate_with_doc
+https://numpy.org/doc/stable/reference/generated/numpy.disp.html#numpy.disp
+<p>Polynomials in NumPy can be <em>created</em>, <em>manipulated</em>, and even <em>fitted</em> using
+the <a class="reference internal" href="routines.polynomials.classes.html"><span class="doc">convenience classes</span></a>
+of the <a class="reference internal" href="routines.polynomials.package.html#module-numpy.polynomial" title="numpy.polynomial"><code class="xref py py-obj docutils literal notranslate"><span class="pre">numpy.polynomial</span></code></a> package, introduced in NumPy 1.4.</p>
+https://numpy.org/doc/stable/reference/generated/numpy.poly1d.html#numpy.poly1d
+<p>Numpy¡¯s random number routines produce pseudo random numbers using
+combinations of a <a class="reference internal" href="bit_generators/generated/numpy.random.BitGenerator.html#numpy.random.BitGenerator" title="numpy.random.BitGenerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BitGenerator</span></code></a> to create sequences and a <a class="reference internal" href="generator.html#numpy.random.Generator" title="numpy.random.Generator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Generator</span></code></a>
+to use those sequences to sample from different statistical distributions:</p>
+<p>Since Numpy version 1.17.0 the Generator can be initialized with a
+number of different BitGenerators. It exposes many different probability
+distributions. See <a class="reference external" href="https://www.numpy.org/neps/nep-0019-rng-policy.html">NEP 19</a> for context on the updated random Numpy number
+routines. The legacy <a class="reference internal" href="legacy.html#numpy.random.RandomState" title="numpy.random.RandomState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RandomState</span></code></a> random number routines are still
+available, but limited to a single BitGenerator.</p>
+https://numpy.org/doc/stable/reference/legacy.html#numpy.random.RandomState
+https://numpy.org/doc/stable/reference/generator.html#numpy.random.Generator
+https://numpy.org/doc/stable/reference/legacy.html#numpy.random.RandomState
+https://numpy.org/doc/stable/reference/legacy.html#numpy.random.RandomState
+https://numpy.org/doc/stable/reference/generator.html#numpy.random.Generator
+https://numpy.org/doc/stable/reference/bit_generators/generated/numpy.random.SeedSequence.spawn.html#numpy.random.SeedSequence.spawn
+<p>Seeds can be passed to any of the BitGenerators. The provided value is mixed
+via <a class="reference internal" href="bit_generators/generated/numpy.random.SeedSequence.html#numpy.random.SeedSequence" title="numpy.random.SeedSequence"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SeedSequence</span></code></a> to spread a possible sequence of seeds across a wider
+range of initialization states for the BitGenerator. Here <a class="reference internal" href="bit_generators/pcg64.html#numpy.random.PCG64" title="numpy.random.PCG64"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PCG64</span></code></a> is used and
+is wrapped with a <a class="reference internal" href="generator.html#numpy.random.Generator" title="numpy.random.Generator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Generator</span></code></a>.</p>
+<p>The new infrastructure takes a different approach to producing random numbers
+from the <a class="reference internal" href="legacy.html#numpy.random.RandomState" title="numpy.random.RandomState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RandomState</span></code></a> object.  Random number generation is separated into
+two components, a bit generator and a random generator.</p>
+https://numpy.org/doc/stable/reference/bit_generators/generated/numpy.random.BitGenerator.html#numpy.random.BitGenerator
+https://numpy.org/doc/stable/reference/generator.html#numpy.random.Generator
+https://numpy.org/doc/stable/reference/generator.html#numpy.random.Generator
+https://numpy.org/doc/stable/reference/bit_generators/generated/numpy.random.BitGenerator.html#numpy.random.BitGenerator
+<p>The Box-Muller method used to produce NumPy¡¯s normals is no longer available
+in <a class="reference internal" href="generator.html#numpy.random.Generator" title="numpy.random.Generator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Generator</span></code></a>.  It is not possible to reproduce the exact random
+values using Generator for the normal distribution or any other
+distribution that relies on the normal such as the <a class="reference internal" href="generated/numpy.random.RandomState.gamma.html#numpy.random.RandomState.gamma" title="numpy.random.RandomState.gamma"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RandomState.gamma</span></code></a> or
+<a class="reference internal" href="generated/numpy.random.RandomState.standard_t.html#numpy.random.RandomState.standard_t" title="numpy.random.RandomState.standard_t"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RandomState.standard_t</span></code></a>. If you require bitwise backward compatible
+streams, use <a class="reference internal" href="legacy.html#numpy.random.RandomState" title="numpy.random.RandomState"><code class="xref py py-obj docutils literal notranslate"><span class="pre">RandomState</span></code></a>.</p>
+<p>All BitGenerators can produce doubles, uint64s and uint32s via CTypes
+(<a class="reference internal" href="bit_generators/generated/numpy.random.PCG64.ctypes.html#numpy.random.PCG64.ctypes" title="numpy.random.PCG64.ctypes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PCG64.ctypes</span></code></a>) and CFFI (<a class="reference internal" href="bit_generators/generated/numpy.random.PCG64.cffi.html#numpy.random.PCG64.cffi" title="numpy.random.PCG64.cffi"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PCG64.cffi</span></code></a>). This allows the bit generators
+to be used in numba.</p>
+https://numpy.org/doc/stable/reference/generated/numpy.random.Generator.integers.html#numpy.random.Generator.integers
+https://numpy.org/doc/stable/reference/generated/numpy.random.Generator.random.html#numpy.random.Generator.random
+https://numpy.org/doc/stable/reference/bit_generators/generated/numpy.random.SeedSequence.html#numpy.random.SeedSequence
+<p>The addition of an <code class="docutils literal notranslate"><span class="pre">axis</span></code> keyword argument to methods such as
+<a class="reference internal" href="generated/numpy.random.Generator.choice.html#numpy.random.Generator.choice" title="numpy.random.Generator.choice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Generator.choice</span></code></a>, <a class="reference internal" href="generated/numpy.random.Generator.permutation.html#numpy.random.Generator.permutation" title="numpy.random.Generator.permutation"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Generator.permutation</span></code></a>,  and <a class="reference internal" href="generated/numpy.random.Generator.shuffle.html#numpy.random.Generator.shuffle" title="numpy.random.Generator.shuffle"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Generator.shuffle</span></code></a>
+improves support for sampling from and shuffling multi-dimensional arrays.</p>
+https://numpy.org/doc/stable/reference/generated/numpy.ndarray.sort.html#numpy.ndarray.sort
+https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_almost_equal.html#numpy.testing.assert_almost_equal
+https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_approx_equal.html#numpy.testing.assert_approx_equal
+https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_array_almost_equal.html#numpy.testing.assert_array_almost_equal
+https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_allclose.html#numpy.testing.assert_allclose
+https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_array_almost_equal_nulp.html#numpy.testing.assert_array_almost_equal_nulp
+https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_array_equal.html#numpy.testing.assert_array_equal
+https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_array_less.html#numpy.testing.assert_array_less
+https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_equal.html#numpy.testing.assert_equal
+https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_raises.html#numpy.testing.assert_raises
+https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_raises_regex.html#numpy.testing.assert_raises_regex
+https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_warns.html#numpy.testing.assert_warns
+https://numpy.org/doc/stable/reference/generated/numpy.testing.assert_string_equal.html#numpy.testing.assert_string_equal
+https://numpy.org/doc/stable/reference/generated/numpy.testing.dec.setastest.html#numpy.testing.dec.setastest
+https://numpy.org/doc/stable/reference/generated/numpy.testing.decorate_methods.html#numpy.testing.decorate_methods
+https://numpy.org/doc/stable/reference/generated/numpy.testing.Tester.html#numpy.testing.Tester
+https://numpy.org/doc/stable/reference/generated/numpy.testing.run_module_suite.html#numpy.testing.run_module_suite
+https://numpy.org/doc/stable/reference/generated/numpy.testing.rundocs.html#numpy.testing.rundocs
+https://numpy.org/doc/stable/reference/generated/numpy.testing.suppress_warnings.html#numpy.testing.suppress_warnings

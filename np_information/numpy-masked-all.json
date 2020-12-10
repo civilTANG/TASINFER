@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "masked_all",
+        "description": "Empty masked array with all elements masked."
+    },
+    "parameter": {
+        "shape": {
+            "type": "tuple",
+            "description": "Shape of the required MaskedArray. "
+        },
+        "dtype": {
+            "type": "dtype, optional",
+            "description": "Data type of the output. "
+        }
+    },
+    "return": {
+        "a": {
+            "type": "MaskedArray",
+            "description": "A masked array with all data masked. "
+        }
+    }
+}

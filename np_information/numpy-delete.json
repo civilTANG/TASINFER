@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "delete",
+        "description": null
+    },
+    "parameter": {
+        "arr": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "obj": {
+            "type": "slice, int or array of ints",
+            "description": "Indicate indices of sub-arrays to remove along the specified axis.  Changed in version 1.19.0: Boolean indices are now treated as a mask of elements to remove, rather than being cast to the integers 0 and 1.  "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "The axis along which to delete the subarray defined by obj. If axis is None, obj is applied to the flattened array. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "A copy of arr with the elements specified by obj removed. Note that delete does not occur in-place. If axis is None, out is a flattened array. "
+        }
+    },
+    "note": "Often it is preferable to use a boolean mask. For example: '"
+}

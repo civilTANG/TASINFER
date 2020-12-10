@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "seterrcall",
+        "description": "Set the floating-point error callback function or log object."
+    },
+    "parameter": {
+        "func": {
+            "type": "callable f(err, flag) or object with write method",
+            "description": "Function to call upon floating-point errors (\u2018call\u2019-mode) or object whose \u2018write\u2019 method is used to log such message (\u2018log\u2019-mode). The call function takes two arguments. The first is a string describing the type of error (such as \u201cdivide by zero\u201d, \u201coverflow\u201d, \u201cunderflow\u201d, or \u201cinvalid value\u201d), and the second is the status flag.  The flag is a byte, whose four least-significant bits indicate the type of error, one of \u201cdivide\u201d, \u201cover\u201d, \u201cunder\u201d, \u201cinvalid\u201d: [0 0 0 0 divide over under invalid]   In other words, flags = divide + 2*over + 4*under + 8*invalid. If an object is provided, its write method should take one argument, a string. "
+        }
+    },
+    "return": {
+        "h": {
+            "type": "callable, log instance or None",
+            "description": "The old error handler. "
+        }
+    },
+    "note": "The second is to set the error-handler to &#8216;log&#8217;, using seterr. Floating-point errors then trigger a call to the &#8216;write&#8217; method of the provided object. '"
+}

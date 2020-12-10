@@ -1,0 +1,115 @@
+{
+    "overall": {
+        "api_name": "genfromtxt",
+        "description": "Load data from a text file, with missing values handled as specified."
+    },
+    "parameter": {
+        "fname": {
+            "type": "file, str, pathlib.Path, list of str, generator",
+            "description": "File, filename, list, or generator to read.  If the filename extension is gz or bz2, the file is first decompressed. Note that generators must return byte strings. The strings in a list or produced by a generator are treated as lines. "
+        },
+        "dtype": {
+            "type": "dtype, optional",
+            "description": "Data type of the resulting array. If None, the dtypes will be determined by the contents of each column, individually. "
+        },
+        "comments": {
+            "type": "str, optional",
+            "description": "The character used to indicate the start of a comment. All the characters occurring on a line after a comment are discarded "
+        },
+        "delimiter": {
+            "type": "str, int, or sequence, optional",
+            "description": "The string used to separate values.  By default, any consecutive whitespaces act as delimiter.  An integer or sequence of integers can also be provided as width(s) of each field. "
+        },
+        "skiprows": {
+            "type": "int, optional",
+            "description": "skiprows was removed in numpy 1.10. Please use skip_header instead. "
+        },
+        "skip_header": {
+            "type": "int, optional",
+            "description": "The number of lines to skip at the beginning of the file. "
+        },
+        "skip_footer": {
+            "type": "int, optional",
+            "description": "The number of lines to skip at the end of the file. "
+        },
+        "converters": {
+            "type": "variable, optional",
+            "description": "The set of functions that convert the data of a column to a value. The converters can also be used to provide a default value for missing data: converters = {3: lambda s: float(s or 0)}. "
+        },
+        "missing": {
+            "type": "variable, optional",
+            "description": "missing was removed in numpy 1.10. Please use missing_values instead. "
+        },
+        "missing_values": {
+            "type": "variable, optional",
+            "description": "The set of strings corresponding to missing data. "
+        },
+        "filling_values": {
+            "type": "variable, optional",
+            "description": "The set of values to be used as default when the data are missing. "
+        },
+        "usecols": {
+            "type": "sequence, optional",
+            "description": "Which columns to read, with 0 being the first.  For example, usecols = (1, 4, 5) will extract the 2nd, 5th and 6th columns. "
+        },
+        "names": {
+            "type": "{None, True, str, sequence}, optional",
+            "description": "If names is True, the field names are read from the first line after the first skip_header lines.  This line can optionally be proceeded by a comment delimiter. If names is a sequence or a single-string of comma-separated names, the names will be used to define the field names in a structured dtype. If names is None, the names of the dtype fields will be used, if any. "
+        },
+        "excludelist": {
+            "type": "sequence, optional",
+            "description": "A list of names to exclude. This list is appended to the default list [\u2018return\u2019,\u2019file\u2019,\u2019print\u2019]. Excluded names are appended an underscore: for example, file would become file_. "
+        },
+        "deletechars": {
+            "type": "str, optional",
+            "description": "A string combining invalid characters that must be deleted from the names. "
+        },
+        "defaultfmt": {
+            "type": "str, optional",
+            "description": "A format used to define default field names, such as \u201cf%i\u201d or \u201cf_%02i\u201d. "
+        },
+        "autostrip": {
+            "type": "bool, optional",
+            "description": "Whether to automatically strip white spaces from the variables. "
+        },
+        "replace_space": {
+            "type": "char, optional",
+            "description": "Character(s) used in replacement of white spaces in the variables names. By default, use a \u2018_\u2019. "
+        },
+        "case_sensitive": {
+            "type": "{True, False, \u2018upper\u2019, \u2018lower\u2019}, optional",
+            "description": "If True, field names are case sensitive. If False or \u2018upper\u2019, field names are converted to upper case. If \u2018lower\u2019, field names are converted to lower case. "
+        },
+        "unpack": {
+            "type": "bool, optional",
+            "description": "If True, the returned array is transposed, so that arguments may be unpacked using x, y, z = loadtxt(...) "
+        },
+        "usemask": {
+            "type": "bool, optional",
+            "description": "If True, return a masked array. If False, return a regular array. "
+        },
+        "loose": {
+            "type": "bool, optional",
+            "description": "If True, do not raise errors for invalid values. "
+        },
+        "invalid_raise": {
+            "type": "bool, optional",
+            "description": "If True, an exception is raised if an inconsistency is detected in the number of columns. If False, a warning is emitted and the offending lines are skipped. "
+        },
+        "max_rows": {
+            "type": "int,  optional",
+            "description": "The maximum number of rows to read. Must not be used with skip_footer at the same time.  If given, the value must be at least 1. Default is to read the entire file.  New in version 1.10.0.  "
+        },
+        "encoding": {
+            "type": "str, optional",
+            "description": "Encoding used to decode the inputfile. Does not apply when fname is a file object.  The special value \u2018bytes\u2019 enables backward compatibility workarounds that ensure that you receive byte arrays when possible and passes latin1 encoded strings to converters. Override this value to receive unicode arrays and pass strings as input to converters.  If set to None the system default is used. The default value is \u2018bytes\u2019.  New in version 1.14.0.  "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Data read from the text file. If usemask is True, this is a masked array. "
+        }
+    },
+    "note": "Notes '"
+}

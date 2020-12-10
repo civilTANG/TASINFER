@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "find",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        },
+        "sub": {
+            "type": "str or unicode",
+            "description": ""
+        },
+        "start, end": {
+            "type": "int, optional",
+            "description": "Optional arguments start and end are interpreted as in slice notation. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray or int",
+            "description": "Output array of ints.  Returns -1 if sub is not found. "
+        }
+    }
+}

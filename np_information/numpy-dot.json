@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "dot",
+        "description": "Dot product of two arrays. Specifically,"
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "First argument. "
+        },
+        "b": {
+            "type": "array_like",
+            "description": "Second argument. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Output argument. This must have the exact kind that would be returned if it was not used. In particular, it must have the right type, must be C-contiguous, and its dtype must be the dtype that would be returned for dot(a,b). This is a performance feature. Therefore, if these conditions are not met, an exception is raised, instead of attempting to be flexible. "
+        }
+    },
+    "return": {
+        "output": {
+            "type": "ndarray",
+            "description": "Returns the dot product of a and b.  If a and b are both scalars or both 1-D arrays then a scalar is returned; otherwise an array is returned. If out is given, then it is returned. "
+        }
+    },
+    "note": "Neither argument is complex-conjugated: '"
+}

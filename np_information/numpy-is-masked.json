@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "is_masked",
+        "description": "Determine whether input has masked values."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like",
+            "description": "Array to check for masked values. "
+        }
+    },
+    "return": {
+        "result": {
+            "type": "bool",
+            "description": "True if x is a MaskedArray with masked values, False otherwise. "
+        }
+    }
+}

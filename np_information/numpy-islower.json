@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "islower",
+        "description": "Returns true for each element if all cased characters in the\nstring are lowercase and there is at least one cased character,\nfalse otherwise."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of bools "
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "base_repr",
+        "description": "Return a string representation of a number in the given base system."
+    },
+    "parameter": {
+        "number": {
+            "type": "int",
+            "description": "The value to convert. Positive and negative values are handled. "
+        },
+        "base": {
+            "type": "int, optional",
+            "description": "Convert number to the base number system. The valid range is 2-36, the default value is 2. "
+        },
+        "padding": {
+            "type": "int, optional",
+            "description": "Number of zeros padded on the left. Default is 0 (no padding). "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "str",
+            "description": "String representation of number in base system. "
+        }
+    }
+}

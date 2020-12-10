@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "cond",
+        "description": "Compute the condition number of a matrix."
+    },
+    "parameter": {
+        "x": {
+            "type": "(\u2026, M, N) array_like",
+            "description": "The matrix whose condition number is sought. "
+        },
+        "p": {
+            "type": "{None, 1, -1, 2, -2, inf, -inf, \u2018fro\u2019}, optional",
+            "description": "Order of the norm:       p norm for matrices    None 2-norm, computed directly using the SVD  \u2018fro\u2019 Frobenius norm  inf max(sum(abs(x), axis=1))  -inf min(sum(abs(x), axis=1))  1 max(sum(abs(x), axis=0))  -1 min(sum(abs(x), axis=0))  2 2-norm (largest sing. value)  -2 smallest singular value    inf means the numpy.inf object, and the Frobenius norm is the root-of-sum-of-squares norm. "
+        }
+    },
+    "return": {
+        "c": {
+            "type": "{float, inf}",
+            "description": "The condition number of the matrix. May be infinite. "
+        }
+    }
+}

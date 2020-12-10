@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "fromfile",
+        "description": "Construct an array from data in a text or binary file."
+    },
+    "parameter": {
+        "file": {
+            "type": "file or str or Path",
+            "description": "Open file object or filename.  Changed in version 1.17.0: pathlib.Path objects are now accepted.  "
+        },
+        "dtype": {
+            "type": "data-type",
+            "description": "Data type of the returned array. For binary files, it is used to determine the size and byte-order of the items in the file. Most builtin numeric types are supported and extension types may be supported.  New in version 1.18.0: Complex dtypes.  "
+        },
+        "count": {
+            "type": "int",
+            "description": "Number of items to read. -1 means all items (i.e., the complete file). "
+        },
+        "sep": {
+            "type": "str",
+            "description": "Separator between items if file is a text file. Empty (\u201c\u201d) separator means the file should be treated as binary. Spaces (\u201d \u201c) in the separator match zero or more whitespace characters. A separator consisting only of spaces must match at least one whitespace. "
+        },
+        "offset": {
+            "type": "int",
+            "description": "The offset (in bytes) from the file\u2019s current position. Defaults to 0. Only permitted for binary files.  New in version 1.17.0.  "
+        }
+    },
+    "return": {},
+    "note": "Notes '"
+}

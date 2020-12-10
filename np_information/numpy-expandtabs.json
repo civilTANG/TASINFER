@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "expandtabs",
+        "description": "Return a copy of each string element where all tab characters are\nreplaced by one or more spaces."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": "Input array "
+        },
+        "tabsize": {
+            "type": "int, optional",
+            "description": "Replace tabs with tabsize number of spaces.  If not given defaults to 8 spaces. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of str or unicode, depending on input type "
+        }
+    }
+}

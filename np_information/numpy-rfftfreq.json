@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "rfftfreq",
+        "description": "Return the Discrete Fourier Transform sample frequencies\n(for usage with rfft, irfft)."
+    },
+    "parameter": {
+        "n": {
+            "type": "int",
+            "description": "Window length. "
+        },
+        "d": {
+            "type": "scalar, optional",
+            "description": "Sample spacing (inverse of the sampling rate). Defaults to 1. "
+        }
+    },
+    "return": {
+        "f": {
+            "type": "ndarray",
+            "description": "Array of length n//2 + 1 containing the sample frequencies. "
+        }
+    }
+}

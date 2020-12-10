@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "rstrip",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array-like of str or unicode",
+            "description": ""
+        },
+        "chars": {
+            "type": "str or unicode, optional",
+            "description": "The chars argument is a string specifying the set of characters to be removed. If omitted or None, the chars argument defaults to removing whitespace. The chars argument is not a suffix; rather, all combinations of its values are stripped. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of str or unicode, depending on input type "
+        }
+    }
+}

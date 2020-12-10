@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "trapz",
+        "description": "Integrate along the given axis using the composite trapezoidal rule."
+    },
+    "parameter": {
+        "y": {
+            "type": "array_like",
+            "description": "Input array to integrate. "
+        },
+        "x": {
+            "type": "array_like, optional",
+            "description": "The sample points corresponding to the y values. If x is None, the sample points are assumed to be evenly spaced dx apart. The default is None. "
+        },
+        "dx": {
+            "type": "scalar, optional",
+            "description": "The spacing between sample points when x is None. The default is 1. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "The axis along which to integrate. "
+        }
+    },
+    "return": {
+        "trapz": {
+            "type": "float",
+            "description": "Definite integral as approximated by trapezoidal rule. "
+        }
+    },
+    "note": "Notes '"
+}

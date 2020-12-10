@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "broadcast_to",
+        "description": "Broadcast an array to a new shape."
+    },
+    "parameter": {
+        "array": {
+            "type": "array_like",
+            "description": "The array to broadcast. "
+        },
+        "shape": {
+            "type": "tuple",
+            "description": "The shape of the desired array. "
+        },
+        "subok": {
+            "type": "bool, optional",
+            "description": "If True, then sub-classes will be passed-through, otherwise the returned array will be forced to be a base-class array (default). "
+        }
+    },
+    "return": {
+        "broadcast": {
+            "type": "array",
+            "description": "A readonly view on the original array with the given shape. It is typically not contiguous. Furthermore, more than one element of a broadcasted array may refer to a single memory location. "
+        }
+    },
+    "note": "Examples '"
+}

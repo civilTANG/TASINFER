@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "fromiter",
+        "description": "Create a new 1-dimensional array from an iterable object."
+    },
+    "parameter": {
+        "iterable": {
+            "type": "iterable object",
+            "description": "An iterable object providing data for the array. "
+        },
+        "dtype": {
+            "type": "data-type",
+            "description": "The data-type of the returned array. "
+        },
+        "count": {
+            "type": "int, optional",
+            "description": "The number of items to read from iterable.  The default is -1, which means all data is read. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "The output array. "
+        }
+    },
+    "note": "Specify count to improve performance.  It allows fromiter to pre-allocate the output array, instead of resizing it on demand. '"
+}

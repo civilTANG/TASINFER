@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "stack",
+        "description": "Join a sequence of arrays along a new axis."
+    },
+    "parameter": {
+        "arrays": {
+            "type": "sequence of array_like",
+            "description": "Each array must have the same shape. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "The axis in the result array along which the input arrays are stacked. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "If provided, the destination to place the result. The shape must be correct, matching that of what stack would have returned if no out argument were specified. "
+        }
+    },
+    "return": {
+        "stacked": {
+            "type": "ndarray",
+            "description": "The stacked array has one more dimension than the input arrays. "
+        }
+    },
+    "note": "Examples '"
+}

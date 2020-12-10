@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "masked_all_like",
+        "description": "Empty masked array with the properties of an existing array."
+    },
+    "parameter": {
+        "arr": {
+            "type": "ndarray",
+            "description": "An array describing the shape and dtype of the required MaskedArray. "
+        }
+    },
+    "return": {
+        "a": {
+            "type": "MaskedArray",
+            "description": "A masked array with all data masked. "
+        }
+    }
+}

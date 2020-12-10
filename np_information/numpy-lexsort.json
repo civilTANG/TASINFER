@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "lexsort",
+        "description": "Perform an indirect stable sort using a sequence of keys."
+    },
+    "parameter": {
+        "keys": {
+            "type": "(k, N) array or tuple containing k (N,)-shaped sequences",
+            "description": "The k different \u201ccolumns\u201d to be sorted.  The last column (or row if keys is a 2D array) is the primary sort key. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "Axis to be indirectly sorted.  By default, sort over the last axis. "
+        }
+    },
+    "return": {
+        "indices": {
+            "type": "(N,) ndarray of ints",
+            "description": "Array of indices that sort the keys along the specified axis. "
+        }
+    },
+    "note": "Examples '"
+}

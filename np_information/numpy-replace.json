@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "replace",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array-like of str or unicode",
+            "description": ""
+        },
+        "old, new": {
+            "type": "str or unicode",
+            "description": ""
+        },
+        "count": {
+            "type": "int, optional",
+            "description": "If the optional argument count is given, only the first count occurrences are replaced. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of str or unicode, depending on input type "
+        }
+    }
+}

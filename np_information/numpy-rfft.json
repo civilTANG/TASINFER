@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "rfft",
+        "description": "Compute the one-dimensional discrete Fourier Transform for real input."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array "
+        },
+        "n": {
+            "type": "int, optional",
+            "description": "Number of points along transformation axis in the input to use. If n is smaller than the length of the input, the input is cropped. If it is larger, the input is padded with zeros. If n is not given, the length of the input along the axis specified by axis is used. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "Axis over which to compute the FFT. If not given, the last axis is used. "
+        },
+        "norm": {
+            "type": "{None, \u201cortho\u201d}, optional",
+            "description": " New in version 1.10.0.  Normalization mode (see numpy.fft). Default is None. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "complex ndarray",
+            "description": "The truncated or zero-padded input, transformed along the axis indicated by axis, or the last one if axis is not specified. If n is even, the length of the transformed axis is (n/2)+1. If n is odd, the length is (n+1)/2. "
+        }
+    }
+}

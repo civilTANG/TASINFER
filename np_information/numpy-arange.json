@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "arange",
+        "description": "Return evenly spaced values within a given interval."
+    },
+    "parameter": {
+        "start": {
+            "type": "number, optional",
+            "description": "Start of interval.  The interval includes this value.  The default start value is 0. "
+        },
+        "stop": {
+            "type": "number",
+            "description": "End of interval.  The interval does not include this value, except in some cases where step is not an integer and floating point round-off affects the length of out. "
+        },
+        "step": {
+            "type": "number, optional",
+            "description": "Spacing between values.  For any output out, this is the distance between two adjacent values, out[i+1] - out[i].  The default step size is 1.  If step is specified as a position argument, start must also be given. "
+        },
+        "dtype": {
+            "type": "dtype",
+            "description": "The type of the output array.  If dtype is not given, infer the data type from the other input arguments. "
+        }
+    },
+    "return": {
+        "arange": {
+            "type": "ndarray",
+            "description": "Array of evenly spaced values. For floating point arguments, the length of the result is ceil((stop - start)/step).  Because of floating point overflow, this rule may result in the last element of out being greater than stop. "
+        }
+    },
+    "note": "When using a non-integer step, such as 0.1, the results will often not be consistent.  It is better to use numpy.linspace for these cases. '"
+}

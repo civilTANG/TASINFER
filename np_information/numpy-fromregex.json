@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "fromregex",
+        "description": "Construct an array from a text file, using regular expression parsing."
+    },
+    "parameter": {
+        "file": {
+            "type": "str or file",
+            "description": "Filename or file object to read. "
+        },
+        "regexp": {
+            "type": "str or regexp",
+            "description": "Regular expression used to parse the file. Groups in the regular expression correspond to fields in the dtype. "
+        },
+        "dtype": {
+            "type": "dtype or list of dtypes",
+            "description": "Dtype for the structured array. "
+        },
+        "encoding": {
+            "type": "str, optional",
+            "description": "Encoding used to decode the inputfile. Does not apply to input streams.  New in version 1.14.0.  "
+        }
+    },
+    "return": {
+        "output": {
+            "type": "ndarray",
+            "description": "The output array, containing the part of the content of file that was matched by regexp. output is always a structured array. "
+        }
+    },
+    "note": "Notes '"
+}

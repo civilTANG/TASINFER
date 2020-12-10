@@ -1,0 +1,25 @@
+{
+    "overall": {
+        "api_name": "masked_outside",
+        "description": "Mask an array outside a given interval."
+    },
+    "parameter": {
+        "value": {
+            "type": "object",
+            "description": "Array to mask "
+        },
+        "copy": {
+            "type": "{True, False}, optional",
+            "description": "Comparison value "
+        },
+        "shrink": {
+            "type": "{True, False}, optional",
+            "description": "Whether to return a copy of x. "
+        },
+        "result": {
+            "type": "MaskedArray",
+            "description": "Whether to collapse a mask full of False to nomask "
+        }
+    },
+    "return": {}
+}

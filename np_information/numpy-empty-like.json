@@ -1,0 +1,35 @@
+{
+    "overall": {
+        "api_name": "empty_like",
+        "description": "Return a new array with the same shape and type as a given array."
+    },
+    "parameter": {
+        "prototype": {
+            "type": "array_like",
+            "description": "The shape and data-type of prototype define these same attributes of the returned array. "
+        },
+        "dtype": {
+            "type": "data-type, optional",
+            "description": "Overrides the data type of the result.  New in version 1.6.0.  "
+        },
+        "order": {
+            "type": "{\u2018C\u2019, \u2018F\u2019, \u2018A\u2019, or \u2018K\u2019}, optional",
+            "description": "Overrides the memory layout of the result. \u2018C\u2019 means C-order, \u2018F\u2019 means F-order, \u2018A\u2019 means \u2018F\u2019 if prototype is Fortran contiguous, \u2018C\u2019 otherwise. \u2018K\u2019 means match the layout of prototype as closely as possible.  New in version 1.6.0.  "
+        },
+        "subok": {
+            "type": "bool, optional.",
+            "description": "If True, then the newly created array will use the sub-class type of \u2018a\u2019, otherwise it will be a base-class array. Defaults to True. "
+        },
+        "shape": {
+            "type": "int or sequence of ints, optional.",
+            "description": "Overrides the shape of the result. If order=\u2019K\u2019 and the number of dimensions is unchanged, will try to keep order, otherwise, order=\u2019C\u2019 is implied.  New in version 1.17.0.  "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Array of uninitialized (arbitrary) data with the same shape and type as prototype. "
+        }
+    },
+    "note": "This function does not initialize the returned array; to do that use zeros_like or ones_like instead.  It may be marginally faster than the functions that do set the array values. '"
+}

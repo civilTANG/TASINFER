@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "kron",
+        "description": "Kronecker product of two arrays."
+    },
+    "parameter": {
+        "a, b": {
+            "type": "array_like",
+            "description": ""
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": ""
+        }
+    },
+    "note": "Notes '"
+}

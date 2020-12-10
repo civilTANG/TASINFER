@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "pinv",
+        "description": "Compute the (Moore-Penrose) pseudo-inverse of a matrix."
+    },
+    "parameter": {
+        "a": {
+            "type": "(\u2026, M, N) array_like",
+            "description": "Matrix or stack of matrices to be pseudo-inverted. "
+        },
+        "rcond": {
+            "type": "(\u2026) array_like of float",
+            "description": "Cutoff for small singular values. Singular values less than or equal to rcond * largest_singular_value are set to zero. Broadcasts against the stack of matrices. "
+        },
+        "hermitian": {
+            "type": "bool, optional",
+            "description": "If True, a is assumed to be Hermitian (symmetric if real-valued), enabling a more efficient method for finding singular values. Defaults to False.  New in version 1.17.0.  "
+        }
+    },
+    "return": {
+        "B": {
+            "type": "(\u2026, N, M) ndarray",
+            "description": "The pseudo-inverse of a. If a is a matrix instance, then so is B. "
+        }
+    }
+}

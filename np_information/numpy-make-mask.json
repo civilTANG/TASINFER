@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "make_mask",
+        "description": "Create a boolean mask from an array."
+    },
+    "parameter": {
+        "m": {
+            "type": "array_like",
+            "description": "Potential mask. "
+        },
+        "copy": {
+            "type": "bool, optional",
+            "description": "Whether to return a copy of m (True) or m itself (False). "
+        },
+        "shrink": {
+            "type": "bool, optional",
+            "description": "Whether to shrink m to nomask if all its values are False. "
+        },
+        "dtype": {
+            "type": "dtype, optional",
+            "description": "Data-type of the output mask. By default, the output mask has a dtype of MaskType (bool). If the dtype is flexible, each field has a boolean dtype. This is ignored when m is nomask, in which case nomask is always returned. "
+        }
+    },
+    "return": {
+        "result": {
+            "type": "ndarray",
+            "description": "A boolean mask derived from m. "
+        }
+    }
+}

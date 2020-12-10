@@ -1,0 +1,35 @@
+{
+    "overall": {
+        "api_name": "pmt",
+        "description": "Compute the payment against loan principal plus interest."
+    },
+    "parameter": {
+        "rate": {
+            "type": "array_like",
+            "description": "Rate of interest (per period) "
+        },
+        "nper": {
+            "type": "array_like",
+            "description": "Number of compounding periods "
+        },
+        "pv": {
+            "type": "array_like",
+            "description": "Present value "
+        },
+        "fv": {
+            "type": "array_like,  optional",
+            "description": "Future value (default = 0) "
+        },
+        "when": {
+            "type": "{{\u2018begin\u2019, 1}, {\u2018end\u2019, 0}}, {string, int}",
+            "description": "When payments are due (\u2018begin\u2019 (1) or \u2018end\u2019 (0)) "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Payment against loan plus interest.  If all input is scalar, returns a scalar float.  If any input is array_like, returns payment for each input element. If multiple inputs are array_like, they all must have the same shape. "
+        }
+    },
+    "note": "The payment is computed by solving the equation: '"
+}

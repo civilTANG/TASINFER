@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "allequal",
+        "description": "Return True if all entries of a and b are equal, using\nfill_value as a truth value where either or both are masked."
+    },
+    "parameter": {
+        "a, b": {
+            "type": "array_like",
+            "description": "Input arrays to compare. "
+        },
+        "fill_value": {
+            "type": "bool, optional",
+            "description": "Whether masked values in a or b are considered equal (True) or not (False). "
+        }
+    },
+    "return": {
+        "y": {
+            "type": "bool",
+            "description": "Returns True if the two arrays are equal within the given tolerance, False otherwise. If either array contains NaN, then False is returned. "
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "binary_repr",
+        "description": "Return the binary representation of the input number as a string."
+    },
+    "parameter": {
+        "num": {
+            "type": "int",
+            "description": "Only an integer decimal number can be used. "
+        },
+        "width": {
+            "type": "int, optional",
+            "description": "The length of the returned string if num is positive, or the length of the two\u2019s complement if num is negative, provided that width is at least a sufficient number of bits for num to be represented in the designated form. If the width value is insufficient, it will be ignored, and num will be returned in binary (num &gt; 0) or two\u2019s complement (num &lt; 0) form with its width equal to the minimum number of bits needed to represent the number in the designated form. This behavior is deprecated and will later raise an error.  Deprecated since version 1.12.0.  "
+        }
+    },
+    "return": {
+        "bin": {
+            "type": "str",
+            "description": "Binary representation of num or two\u2019s complement of num. "
+        }
+    },
+    "note": "In a two&#8217;s-complement system negative numbers are represented by the two&#8217;s complement of the absolute value. This is the most common method of representing signed integers on computers [1]. A N-bit two&#8217;s-complement system can represent every integer in the range  to . '"
+}

@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "dstack",
+        "description": "Stack arrays in sequence depth wise (along third axis)."
+    },
+    "parameter": {
+        "tup": {
+            "type": "sequence of arrays",
+            "description": "The arrays must have the same shape along all but the third axis. 1-D or 2-D arrays must have the same shape. "
+        }
+    },
+    "return": {
+        "stacked": {
+            "type": "ndarray",
+            "description": "The array formed by stacking the given arrays, will be at least 3-D. "
+        }
+    },
+    "note": "This function makes most sense for arrays with up to 3 dimensions. For instance, for pixel-data with a height (first axis), width (second axis), and r/g/b channels (third axis). The functions concatenate, stack and block provide more general stacking and concatenation operations. '"
+}

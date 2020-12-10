@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "argwhere",
+        "description": "Find the indices of array elements that are non-zero, grouped by element."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input data. "
+        }
+    },
+    "return": {
+        "index_array": {
+            "type": "(N, a.ndim) ndarray",
+            "description": "Indices of elements that are non-zero. Indices are grouped by element. This array will have shape (N, a.ndim) where N is the number of non-zero items. "
+        }
+    },
+    "note": "np.argwhere(a) is almost the same as np.transpose(np.nonzero(a)), but produces a result of the correct shape for a 0D array. '"
+}

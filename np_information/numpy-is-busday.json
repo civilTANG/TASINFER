@@ -1,0 +1,34 @@
+{
+    "overall": {
+        "api_name": "is_busday",
+        "description": "Calculates which of the given dates are valid days, and which are not."
+    },
+    "parameter": {
+        "dates": {
+            "type": "array_like of datetime64[D]",
+            "description": "The array of dates to process. "
+        },
+        "weekmask": {
+            "type": "str or array_like of bool, optional",
+            "description": "A seven-element array indicating which of Monday through Sunday are valid days. May be specified as a length-seven list or array, like [1,1,1,1,1,0,0]; a length-seven string, like \u20181111100\u2019; or a string like \u201cMon Tue Wed Thu Fri\u201d, made up of 3-character abbreviations for weekdays, optionally separated by white space. Valid abbreviations are: Mon Tue Wed Thu Fri Sat Sun "
+        },
+        "holidays": {
+            "type": "array_like of datetime64[D], optional",
+            "description": "An array of dates to consider as invalid dates.  They may be specified in any order, and NaT (not-a-time) dates are ignored. This list is saved in a normalized form that is suited for fast calculations of valid days. "
+        },
+        "busdaycal": {
+            "type": "busdaycalendar, optional",
+            "description": "A busdaycalendar object which specifies the valid days. If this parameter is provided, neither weekmask nor holidays may be provided. "
+        },
+        "out": {
+            "type": "array of bool, optional",
+            "description": "If provided, this array is filled with the result. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "array of bool",
+            "description": "An array with the same shape as dates, containing True for each valid day, and False for each invalid day. "
+        }
+    }
+}

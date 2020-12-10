@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "isrealobj",
+        "description": "Return True if x is a not complex type or an array of complex numbers."
+    },
+    "parameter": {
+        "x": {
+            "type": "any",
+            "description": "The input can be of any type and shape. "
+        }
+    },
+    "return": {
+        "y": {
+            "type": "bool",
+            "description": "The return value, False if x is of a complex type. "
+        }
+    },
+    "note": "Examples '"
+}

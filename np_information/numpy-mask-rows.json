@@ -1,0 +1,17 @@
+{
+    "overall": {
+        "api_name": "mask_rows",
+        "description": "Mask rows of a 2D array that contain masked values."
+    },
+    "parameter": {
+        "axis": {
+            "type": "int, optional",
+            "description": "The array to mask.  If not a MaskedArray instance (or if no array elements are masked).  The result is a MaskedArray with mask set to nomask (False). Must be a 2D array. "
+        },
+        "a": {
+            "type": "MaskedArray",
+            "description": "Axis along which to perform the operation. If None, applies to a flattened version of the array. "
+        }
+    },
+    "return": {}
+}

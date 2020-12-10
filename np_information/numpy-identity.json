@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "identity",
+        "description": "Returns the square identity matrix of given size."
+    },
+    "parameter": {
+        "n": {
+            "type": "int",
+            "description": "Size of the returned identity matrix. "
+        },
+        "dtype": {
+            "type": "data-type, optional",
+            "description": "Data-type of the output. Defaults to float. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "matrix",
+            "description": "n x n matrix with its main diagonal set to one, and all other elements zero. "
+        }
+    }
+}

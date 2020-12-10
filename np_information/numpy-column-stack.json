@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "column_stack",
+        "description": "Stack 1-D arrays as columns into a 2-D array."
+    },
+    "parameter": {
+        "tup": {
+            "type": "sequence of 1-D or 2-D arrays.",
+            "description": "Arrays to stack. All of them must have the same first dimension. "
+        }
+    },
+    "return": {
+        "stacked": {
+            "type": "2-D array",
+            "description": "The array formed by stacking the given arrays. "
+        }
+    },
+    "note": "Examples '"
+}

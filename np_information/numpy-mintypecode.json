@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "mintypecode",
+        "description": "Return the character for the minimum-size type to which given types can\nbe safely cast."
+    },
+    "parameter": {
+        "typechars": {
+            "type": "list of str or array_like",
+            "description": "If a list of strings, each string should represent a dtype. If array_like, the character representation of the array dtype is used. "
+        },
+        "typeset": {
+            "type": "str or list of str, optional",
+            "description": "The set of characters that the returned character is chosen from. The default set is \u2018GDFgdf\u2019. "
+        },
+        "default": {
+            "type": "str, optional",
+            "description": "The default character, this is returned if none of the characters in typechars matches a character in typeset. "
+        }
+    },
+    "return": {
+        "typechar": {
+            "type": "str",
+            "description": "The character representing the minimum-size type that was found. "
+        }
+    },
+    "note": "Examples '"
+}

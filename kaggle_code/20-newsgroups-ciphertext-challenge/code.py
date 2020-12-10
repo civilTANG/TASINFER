@@ -105,6 +105,7 @@ def extract_features(df):
             ])
     cols = ['str_digit_sum', 'str_digit_mean', 'str_digit_std', 'str_digit_min', 
         'str_digit_max', 'str_digit_skew', 'str_digit_kurtosis']
+
     for c in cols:
         df[c] = 0
     tqdm.pandas(desc='str_digit_stat')

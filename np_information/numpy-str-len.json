@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "str_len",
+        "description": "Return len(a) element-wise."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of integers "
+        }
+    }
+}

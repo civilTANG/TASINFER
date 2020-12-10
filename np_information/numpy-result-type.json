@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "result_type",
+        "description": "Returns the type that results from applying the NumPy\ntype promotion rules to the arguments."
+    },
+    "parameter": {
+        "arrays_and_dtypes": {
+            "type": "list of arrays and dtypes",
+            "description": "The operands of some operation whose result type is needed. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "dtype",
+            "description": "The result type. "
+        }
+    },
+    "note": "For example, calculating 3*a, where a is an array of 32-bit floats, intuitively should result in a 32-bit float output.  If the 3 is a 32-bit integer, the NumPy rules indicate it can&#8217;t convert losslessly into a 32-bit float, so a 64-bit float should be the result type. By examining the value of the constant, &#8216;3&#8217;, we see that it fits in an 8-bit integer, which can be cast losslessly into the 32-bit float. '"
+}

@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "meshgrid",
+        "description": "Return coordinate matrices from coordinate vectors."
+    },
+    "parameter": {
+        "x1, x2,\u2026, xn": {
+            "type": "array_like",
+            "description": "1-D arrays representing the coordinates of a grid. "
+        },
+        "indexing": {
+            "type": "{\u2018xy\u2019, \u2018ij\u2019}, optional",
+            "description": "Cartesian (\u2018xy\u2019, default) or matrix (\u2018ij\u2019) indexing of output. See Notes for more details.  New in version 1.7.0.  "
+        },
+        "sparse": {
+            "type": "bool, optional",
+            "description": "If True a sparse grid is returned in order to conserve memory. Default is False.  New in version 1.7.0.  "
+        },
+        "copy": {
+            "type": "bool, optional",
+            "description": "If False, a view into the original arrays are returned in order to conserve memory.  Default is True.  Please note that sparse=False, copy=False will likely return non-contiguous arrays.  Furthermore, more than one element of a broadcast array may refer to a single memory location.  If you need to write to the arrays, make copies first.  New in version 1.7.0.  "
+        }
+    },
+    "return": {
+        "X1, X2,\u2026, XN": {
+            "type": "ndarray",
+            "description": "For vectors x1, x2,\u2026, \u2018xn\u2019 with lengths Ni=len(xi) , return (N1, N2, N3,...Nn) shaped arrays if indexing=\u2019ij\u2019 or (N2, N1, N3,...Nn) shaped arrays if indexing=\u2019xy\u2019 with the elements of xi repeated to fill the matrix along the first dimension for x1, the second for x2 and so on. "
+        }
+    },
+    "note": "Notes '"
+}

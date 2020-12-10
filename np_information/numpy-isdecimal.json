@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "isdecimal",
+        "description": "For each element, return True if there are only decimal\ncharacters in the element."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like, unicode",
+            "description": "Input array. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray, bool",
+            "description": "Array of booleans identical in shape to a. "
+        }
+    }
+}

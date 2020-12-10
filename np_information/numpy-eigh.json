@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "eigh",
+        "description": "Return the eigenvalues and eigenvectors of a complex Hermitian\n(conjugate symmetric) or a real symmetric matrix."
+    },
+    "parameter": {
+        "a": {
+            "type": "(\u2026, M, M) array",
+            "description": "Hermitian or real symmetric matrices whose eigenvalues and eigenvectors are to be computed. "
+        },
+        "UPLO": {
+            "type": "{\u2018L\u2019, \u2018U\u2019}, optional",
+            "description": "Specifies whether the calculation is done with the lower triangular part of a (\u2018L\u2019, default) or the upper triangular part (\u2018U\u2019). Irrespective of this value only the real parts of the diagonal will be considered in the computation to preserve the notion of a Hermitian matrix. It therefore follows that the imaginary part of the diagonal will always be treated as zero. "
+        }
+    },
+    "return": {
+        "w": {
+            "type": "(\u2026, M) ndarray",
+            "description": "The eigenvalues in ascending order, each repeated according to its multiplicity. "
+        },
+        "v": {
+            "type": "{(\u2026, M, M) ndarray, (\u2026, M, M) matrix}",
+            "description": "The column v[:, i] is the normalized eigenvector corresponding to the eigenvalue w[i].  Will return a matrix object if a is a matrix object. "
+        }
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "split",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        },
+        "sep": {
+            "type": "str or unicode, optional",
+            "description": "If sep is not specified or None, any whitespace string is a separator. "
+        },
+        "maxsplit": {
+            "type": "int, optional",
+            "description": "If maxsplit is given, at most maxsplit splits are done. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Array of list objects "
+        }
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "asscalar",
+        "description": "Convert an array of size 1 to its scalar equivalent."
+    },
+    "parameter": {
+        "a": {
+            "type": "ndarray",
+            "description": "Input array of size 1. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "scalar",
+            "description": "Scalar representation of a. The output data type is the same type returned by the input\u2019s item method. "
+        }
+    }
+}

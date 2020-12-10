@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "asarray",
+        "description": "Convert the input to a masked array of the given data-type."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input data, in any form that can be converted to a masked array. This includes lists, lists of tuples, tuples, tuples of tuples, tuples of lists, ndarrays and masked arrays. "
+        },
+        "dtype": {
+            "type": "dtype, optional",
+            "description": "By default, the data-type is inferred from the input data. "
+        },
+        "order": {
+            "type": "{\u2018C\u2019, \u2018F\u2019}, optional",
+            "description": "Whether to use row-major (\u2018C\u2019) or column-major (\u2018FORTRAN\u2019) memory representation.  Default is \u2018C\u2019. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "MaskedArray",
+            "description": "Masked array interpretation of a. "
+        }
+    }
+}

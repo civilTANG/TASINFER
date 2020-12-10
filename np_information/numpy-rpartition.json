@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "rpartition",
+        "description": "Partition (split) each element around the right-most separator."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": "Input array "
+        },
+        "sep": {
+            "type": "str or unicode",
+            "description": "Right-most separator to split each element in array. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of string or unicode, depending on input type.  The output array will have an extra dimension with 3 elements per input element. "
+        }
+    }
+}

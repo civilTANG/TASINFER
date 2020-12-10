@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "shape",
+        "description": "Return the shape of an array."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array. "
+        }
+    },
+    "return": {
+        "shape": {
+            "type": "tuple of ints",
+            "description": "The elements of the shape tuple give the lengths of the corresponding array dimensions. "
+        }
+    }
+}

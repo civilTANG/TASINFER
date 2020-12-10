@@ -1,0 +1,21 @@
+{
+    "overall": {
+        "api_name": "round_",
+        "description": "Round an array to the given number of decimals."
+    },
+    "parameter": {
+        "decimals": {
+            "type": "int, optional",
+            "description": "Input data. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Number of decimal places to round to (default: 0).  If decimals is negative, it specifies the number of positions to the left of the decimal point. "
+        },
+        "rounded_array": {
+            "type": "ndarray",
+            "description": "Alternative output array in which to place the result. It must have the same shape as the expected output, but the type of the output values will be cast if necessary. See ufuncs-output-type for more details. "
+        }
+    },
+    "return": {}
+}

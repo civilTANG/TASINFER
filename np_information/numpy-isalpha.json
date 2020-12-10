@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "isalpha",
+        "description": "Returns true for each element if all characters in the string are\nalphabetic and there is at least one character, false otherwise."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of bools "
+        }
+    }
+}

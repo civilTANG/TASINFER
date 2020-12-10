@@ -1,0 +1,17 @@
+{
+    "overall": {
+        "api_name": "transpose",
+        "description": "Permute the dimensions of an array."
+    },
+    "parameter": {
+        "b": {
+            "type": "(N,) array_like",
+            "description": "First input vector.  Input is flattened if not already 1-dimensional. "
+        },
+        "out": {
+            "type": "(M, N) ndarray",
+            "description": "A location where the result is stored  New in version 1.9.0.  "
+        }
+    },
+    "return": {}
+}

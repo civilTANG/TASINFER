@@ -1,0 +1,35 @@
+{
+    "overall": {
+        "api_name": "corrcoef",
+        "description": "Return Pearson product-moment correlation coefficients."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like",
+            "description": "A 1-D or 2-D array containing multiple variables and observations. Each row of x represents a variable, and each column a single observation of all those variables. Also see rowvar below. "
+        },
+        "y": {
+            "type": "array_like, optional",
+            "description": "An additional set of variables and observations. y has the same shape as x. "
+        },
+        "rowvar": {
+            "type": "bool, optional",
+            "description": "If rowvar is True (default), then each row represents a variable, with observations in the columns. Otherwise, the relationship is transposed: each column represents a variable, while the rows contain observations. "
+        },
+        "bias": {
+            "type": "_NoValue, optional",
+            "description": "Has no effect, do not use.  Deprecated since version 1.10.0.  "
+        },
+        "ddof": {
+            "type": "_NoValue, optional",
+            "description": "Has no effect, do not use.  Deprecated since version 1.10.0.  "
+        }
+    },
+    "return": {
+        "R": {
+            "type": "ndarray",
+            "description": "The correlation coefficient matrix of the variables. "
+        }
+    },
+    "note": "The values of R are between -1 and 1, inclusive. '"
+}

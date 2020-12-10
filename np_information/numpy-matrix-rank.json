@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "matrix_rank",
+        "description": "Return matrix rank of array using SVD method"
+    },
+    "parameter": {
+        "M": {
+            "type": "{(M,), (\u2026, M, N)} array_like",
+            "description": "Input vector or stack of matrices. "
+        },
+        "tol": {
+            "type": "(\u2026) array_like, float, optional",
+            "description": "Threshold below which SVD values are considered zero. If tol is None, and S is an array with singular values for M, and eps is the epsilon value for datatype of S, then tol is set to S.max() * max(M.shape) * eps.  Changed in version 1.14: Broadcasted against the stack of matrices  "
+        },
+        "hermitian": {
+            "type": "bool, optional",
+            "description": "If True, M is assumed to be Hermitian (symmetric if real-valued), enabling a more efficient method for finding singular values. Defaults to False.  New in version 1.14.  "
+        }
+    },
+    "return": {
+        "rank": {
+            "type": "(\u2026) array_like",
+            "description": "Rank of M. "
+        }
+    }
+}

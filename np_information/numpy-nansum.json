@@ -1,0 +1,35 @@
+{
+    "overall": {
+        "api_name": "nansum",
+        "description": "Return the sum of array elements over a given axis treating Not a\nNumbers (NaNs) as zero."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Array containing numbers whose sum is desired. If a is not an array, a conversion is attempted. "
+        },
+        "axis": {
+            "type": "{int, tuple of int, None}, optional",
+            "description": "Axis or axes along which the sum is computed. The default is to compute the sum of the flattened array. "
+        },
+        "dtype": {
+            "type": "data-type, optional",
+            "description": "The type of the returned array and of the accumulator in which the elements are summed.  By default, the dtype of a is used.  An exception is when a has an integer type with less precision than the platform (u)intp. In that case, the default will be either (u)int32 or (u)int64 depending on whether the platform is 32 or 64 bits. For inexact inputs, dtype must be inexact.  New in version 1.8.0.  "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Alternate output array in which to place the result.  The default is None. If provided, it must have the same shape as the expected output, but the type will be cast if necessary.  See ufuncs-output-type for more details. The casting of NaN to integer can yield unexpected results.  New in version 1.8.0.  "
+        },
+        "keepdims": {
+            "type": "bool, optional",
+            "description": "If this is set to True, the axes which are reduced are left in the result as dimensions with size one. With this option, the result will broadcast correctly against the original a. If the value is anything but the default, then keepdims will be passed through to the mean or sum methods of sub-classes of ndarray.  If the sub-classes methods does not implement keepdims any exceptions will be raised.  New in version 1.8.0.  "
+        }
+    },
+    "return": {
+        "nansum": {
+            "type": "ndarray.",
+            "description": "A new array holding the result is returned unless out is specified, in which it is returned. The result has the same size as a, and the same shape as a if axis is not None or a is a 1-d array. "
+        }
+    },
+    "note": "Notes '"
+}

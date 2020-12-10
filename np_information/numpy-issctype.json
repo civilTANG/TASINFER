@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "issctype",
+        "description": "Determines whether the given object represents a scalar data-type."
+    },
+    "parameter": {
+        "rep": {
+            "type": "any",
+            "description": "If rep is an instance of a scalar dtype, True is returned. If not, False is returned. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "bool",
+            "description": "Boolean result of check whether rep is a scalar dtype. "
+        }
+    },
+    "note": "Strings are also a scalar type: '"
+}

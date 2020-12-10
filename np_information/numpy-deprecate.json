@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "deprecate",
+        "description": null
+    },
+    "parameter": {
+        "func": {
+            "type": "function",
+            "description": "The function to be deprecated. "
+        },
+        "old_name": {
+            "type": "str, optional",
+            "description": "The name of the function to be deprecated. Default is None, in which case the name of func is used. "
+        },
+        "new_name": {
+            "type": "str, optional",
+            "description": "The new name for the function. Default is None, in which case the deprecation message is that old_name is deprecated. If given, the deprecation message is that old_name is deprecated and new_name should be used instead. "
+        },
+        "message": {
+            "type": "str, optional",
+            "description": "Additional explanation of the deprecation.  Displayed in the docstring after the warning. "
+        }
+    },
+    "return": {
+        "old_func": {
+            "type": "function",
+            "description": "The deprecated function. "
+        }
+    },
+    "note": "Examples '"
+}

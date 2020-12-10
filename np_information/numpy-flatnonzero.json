@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "flatnonzero",
+        "description": "Return indices that are non-zero in the flattened version of a."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input data. "
+        }
+    },
+    "return": {
+        "res": {
+            "type": "ndarray",
+            "description": "Output array, containing the indices of the elements of a.ravel() that are non-zero. "
+        }
+    },
+    "note": "Examples '"
+}

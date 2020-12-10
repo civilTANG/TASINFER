@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "lstrip",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array-like, {str, unicode}",
+            "description": "Input array. "
+        },
+        "chars": {
+            "type": "{str, unicode}, optional",
+            "description": "The chars argument is a string specifying the set of characters to be removed. If omitted or None, the chars argument defaults to removing whitespace. The chars argument is not a prefix; rather, all combinations of its values are stripped. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray, {str, unicode}",
+            "description": "Output array of str or unicode, depending on input type "
+        }
+    }
+}

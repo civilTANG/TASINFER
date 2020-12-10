@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "flipud",
+        "description": "Flip array in the up/down direction."
+    },
+    "parameter": {
+        "m": {
+            "type": "array_like",
+            "description": "Input array. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "array_like",
+            "description": "A view of m with the rows reversed.  Since a view is returned, this operation is . "
+        }
+    },
+    "note": "Notes '"
+}

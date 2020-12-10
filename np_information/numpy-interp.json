@@ -1,0 +1,39 @@
+{
+    "overall": {
+        "api_name": "interp",
+        "description": "One-dimensional linear interpolation."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like",
+            "description": "The x-coordinates at which to evaluate the interpolated values. "
+        },
+        "xp": {
+            "type": "1-D sequence of floats",
+            "description": "The x-coordinates of the data points, must be increasing if argument period is not specified. Otherwise, xp is internally sorted after normalizing the periodic boundaries with xp = xp % period. "
+        },
+        "fp": {
+            "type": "1-D sequence of float or complex",
+            "description": "The y-coordinates of the data points, same length as xp. "
+        },
+        "left": {
+            "type": "optional float or complex corresponding to fp",
+            "description": "Value to return for x &lt; xp[0], default is fp[0]. "
+        },
+        "right": {
+            "type": "optional float or complex corresponding to fp",
+            "description": "Value to return for x &gt; xp[-1], default is fp[-1]. "
+        },
+        "period": {
+            "type": "None or float, optional",
+            "description": "A period for the x-coordinates. This parameter allows the proper interpolation of angular x-coordinates. Parameters left and right are ignored if period is specified.  New in version 1.10.0.  "
+        }
+    },
+    "return": {
+        "y": {
+            "type": "float or complex (corresponding to fp) or ndarray",
+            "description": "The interpolated values, same shape as x. "
+        }
+    },
+    "note": "Notes '"
+}

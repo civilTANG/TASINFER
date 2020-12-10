@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "sinc",
+        "description": "Return the sinc function."
+    },
+    "parameter": {
+        "x": {
+            "type": "ndarray",
+            "description": "Array (possibly multi-dimensional) of values for which to to calculate sinc(x). "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "sinc(x), which has the same shape as the input. "
+        }
+    },
+    "note": "Notes '"
+}

@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "tensordot",
+        "description": "Compute tensor dot product along specified axes."
+    },
+    "parameter": {
+        "a, b": {
+            "type": "array_like",
+            "description": "Tensors to \u201cdot\u201d. "
+        },
+        "axes": {
+            "type": "int or (2,) array_like",
+            "description": " integer_like If an int N, sum over the last N axes of a and the first N axes of b in order. The sizes of the corresponding axes must match. (2,) array_like Or, a list of axes to be summed over, first sequence applying to a, second to b. Both elements array_like must be of the same length.  "
+        }
+    },
+    "return": {
+        "output": {
+            "type": "ndarray",
+            "description": "The tensor dot product of the input. "
+        }
+    },
+    "note": "Notes '"
+}

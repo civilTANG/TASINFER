@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "einsum_path",
+        "description": "Evaluates the lowest cost contraction order for an einsum expression by\nconsidering the creation of intermediate arrays."
+    },
+    "parameter": {
+        "subscripts": {
+            "type": "str",
+            "description": "Specifies the subscripts for summation. "
+        },
+        "*operands": {
+            "type": "list of array_like",
+            "description": "These are the arrays for the operation. "
+        },
+        "optimize": {
+            "type": "{bool, list, tuple, \u2018greedy\u2019, \u2018optimal\u2019}",
+            "description": "Choose the type of path. If a tuple is provided, the second argument is assumed to be the maximum intermediate size created. If only a single argument is provided the largest input or output array size is used as a maximum intermediate size.  if a list is given that starts with einsum_path, uses this as the contraction path if False no optimization is taken if True defaults to the \u2018greedy\u2019 algorithm \u2018optimal\u2019 An algorithm that combinatorially explores all possible ways of contracting the listed tensors and choosest the least costly path. Scales exponentially with the number of terms in the contraction. \u2018greedy\u2019 An algorithm that chooses the best pair contraction at each step. Effectively, this algorithm searches the largest inner, Hadamard, and then outer products at each step. Scales cubically with the number of terms in the contraction. Equivalent to the \u2018optimal\u2019 path for most contractions.  Default is \u2018greedy\u2019. "
+        }
+    },
+    "return": {
+        "path": {
+            "type": "list of tuples",
+            "description": "A list representation of the einsum path. "
+        },
+        "string_repr": {
+            "type": "str",
+            "description": "A printable representation of the einsum path. "
+        }
+    },
+    "note": "The resulting path indicates which terms of the input contraction should be contracted first, the result of this contraction is then appended to the end of the contraction list. This list can then be iterated over until all intermediate contractions are complete. '"
+}

@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "digitize",
+        "description": "Return the indices of the bins to which each value in input array belongs."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like",
+            "description": "Input array to be binned. Prior to NumPy 1.10.0, this array had to be 1-dimensional, but can now have any shape. "
+        },
+        "bins": {
+            "type": "array_like",
+            "description": "Array of bins. It has to be 1-dimensional and monotonic. "
+        },
+        "right": {
+            "type": "bool, optional",
+            "description": "Indicating whether the intervals include the right or the left bin edge. Default behavior is (right==False) indicating that the interval does not include the right edge. The left bin end is open in this case, i.e., bins[i-1] &lt;= x &lt; bins[i] is the default behavior for monotonically increasing bins. "
+        }
+    },
+    "return": {
+        "indices": {
+            "type": "ndarray of ints",
+            "description": "Output array of indices, of same shape as x. "
+        }
+    },
+    "note": "Notes '"
+}

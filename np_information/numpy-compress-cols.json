@@ -1,0 +1,21 @@
+{
+    "overall": {
+        "api_name": "compress_cols",
+        "description": "Suppress whole columns of a 2-D array that contain masked values."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Masking condition.  When condition tests floating point values for equality, consider using masked_values instead. "
+        },
+        "copy": {
+            "type": "bool",
+            "description": "Array to mask. "
+        },
+        "result": {
+            "type": "MaskedArray",
+            "description": "If True (default) make a copy of a in the result.  If False modify a in place and return a view. "
+        }
+    },
+    "return": {}
+}

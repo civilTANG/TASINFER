@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "frompyfunc",
+        "description": "Takes an arbitrary Python function and returns a NumPy ufunc."
+    },
+    "parameter": {
+        "func": {
+            "type": "Python function object",
+            "description": "An arbitrary Python function. "
+        },
+        "nin": {
+            "type": "int",
+            "description": "The number of input arguments. "
+        },
+        "nout": {
+            "type": "int",
+            "description": "The number of objects returned by func. "
+        },
+        "identity": {
+            "type": "object, optional",
+            "description": "The value to use for the identity attribute of the resulting object. If specified, this is equivalent to setting the underlying C identity field to PyUFunc_IdentityValue. If omitted, the identity is set to PyUFunc_None. Note that this is _not_ equivalent to setting the identity to None, which implies the operation is reorderable. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ufunc",
+            "description": "Returns a NumPy universal function (ufunc) object. "
+        }
+    },
+    "note": "Notes '"
+}

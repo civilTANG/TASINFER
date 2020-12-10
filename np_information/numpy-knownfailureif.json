@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "knownfailureif",
+        "description": "Make function raise KnownFailureException exception if given condition is true."
+    },
+    "parameter": {
+        "fail_condition": {
+            "type": "bool or callable",
+            "description": "Flag to determine whether to mark the decorated test as a known failure (if True) or not (if False). "
+        },
+        "msg": {
+            "type": "str, optional",
+            "description": "Message to give on raising a KnownFailureException exception. Default is None. "
+        }
+    },
+    "return": {
+        "decorator": {
+            "type": "function",
+            "description": "Decorator, which, when applied to a function, causes KnownFailureException to be raised when fail_condition is True, and the function to be called normally otherwise. "
+        }
+    }
+}

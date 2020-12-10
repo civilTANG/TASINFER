@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "setdiff1d",
+        "description": "Find the set difference of two arrays."
+    },
+    "parameter": {
+        "ar1": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "ar2": {
+            "type": "array_like",
+            "description": "Input comparison array. "
+        },
+        "assume_unique": {
+            "type": "bool",
+            "description": "If True, the input arrays are both assumed to be unique, which can speed up the calculation.  Default is False. "
+        }
+    },
+    "return": {
+        "setdiff1d": {
+            "type": "ndarray",
+            "description": "1D array of values in ar1 that are not in ar2. The result is sorted when assume_unique=False, but otherwise only sorted if the input is sorted. "
+        }
+    },
+    "note": "Examples '"
+}

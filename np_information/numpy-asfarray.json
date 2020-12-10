@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "asfarray",
+        "description": "Return an array converted to a float type."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "The input array. "
+        },
+        "dtype": {
+            "type": "str or dtype object, optional",
+            "description": "Float type code to coerce input array a.  If dtype is one of the \u2018int\u2019 dtypes, it is replaced with float64. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "The input a as a float ndarray. "
+        }
+    }
+}

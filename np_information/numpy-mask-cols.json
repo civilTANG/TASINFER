@@ -1,0 +1,13 @@
+{
+    "overall": {
+        "api_name": "mask_cols",
+        "description": "Mask columns of a 2D array that contain masked values."
+    },
+    "parameter": {
+        "slices": {
+            "type": "list of slice",
+            "description": "A one-dimensional masked array. "
+        }
+    },
+    "return": {}
+}

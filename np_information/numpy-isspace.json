@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "isspace",
+        "description": "Returns true for each element if there are only whitespace\ncharacters in the string and there is at least one character,\nfalse otherwise."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of bools "
+        }
+    }
+}

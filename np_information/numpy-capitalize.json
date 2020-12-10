@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "capitalize",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": "Input array of strings to capitalize. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of str or unicode, depending on input types "
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "overall": {
+        "api_name": "cov",
+        "description": "Estimate a covariance matrix, given data and weights."
+    },
+    "parameter": {
+        "m": {
+            "type": "array_like",
+            "description": "A 1-D or 2-D array containing multiple variables and observations. Each row of m represents a variable, and each column a single observation of all those variables. Also see rowvar below. "
+        },
+        "y": {
+            "type": "array_like, optional",
+            "description": "An additional set of variables and observations. y has the same form as that of m. "
+        },
+        "rowvar": {
+            "type": "bool, optional",
+            "description": "If rowvar is True (default), then each row represents a variable, with observations in the columns. Otherwise, the relationship is transposed: each column represents a variable, while the rows contain observations. "
+        },
+        "bias": {
+            "type": "bool, optional",
+            "description": "Default normalization (False) is by (N - 1), where N is the number of observations given (unbiased estimate). If bias is True, then normalization is by N. These values can be overridden by using the keyword ddof in numpy versions &gt;= 1.5. "
+        },
+        "ddof": {
+            "type": "int, optional",
+            "description": "If not None the default value implied by bias is overridden. Note that ddof=1 will return the unbiased estimate, even if both fweights and aweights are specified, and ddof=0 will return the simple average. See the notes for the details. The default value is None.  New in version 1.5.  "
+        },
+        "fweights": {
+            "type": "array_like, int, optional",
+            "description": "1-D array of integer frequency weights; the number of times each observation vector should be repeated.  New in version 1.10.  "
+        },
+        "aweights": {
+            "type": "array_like, optional",
+            "description": "1-D array of observation vector weights. These relative weights are typically large for observations considered \u201cimportant\u201d and smaller for observations considered less \u201cimportant\u201d. If ddof=0 the array of weights can be used to assign probabilities to observation vectors.  New in version 1.10.  "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "The covariance matrix of the variables. "
+        }
+    },
+    "note": "See the notes for an outline of the algorithm. '"
+}

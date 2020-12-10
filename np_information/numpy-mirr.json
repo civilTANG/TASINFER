@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "mirr",
+        "description": "Modified internal rate of return."
+    },
+    "parameter": {
+        "values": {
+            "type": "array_like",
+            "description": "Cash flows (must contain at least one positive and one negative value) or nan is returned.  The first value is considered a sunk cost at time zero. "
+        },
+        "finance_rate": {
+            "type": "scalar",
+            "description": "Interest rate paid on the cash flows "
+        },
+        "reinvest_rate": {
+            "type": "scalar",
+            "description": "Interest rate received on the cash flows upon reinvestment "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "float",
+            "description": "Modified internal rate of return "
+        }
+    }
+}

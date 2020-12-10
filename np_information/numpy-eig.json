@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "eig",
+        "description": "Compute the eigenvalues and right eigenvectors of a square array."
+    },
+    "parameter": {
+        "a": {
+            "type": "(\u2026, M, M) array",
+            "description": "Matrices for which the eigenvalues and right eigenvectors will be computed "
+        }
+    },
+    "return": {
+        "w": {
+            "type": "(\u2026, M) array",
+            "description": "The eigenvalues, each repeated according to its multiplicity. The eigenvalues are not necessarily ordered. The resulting array will be of complex type, unless the imaginary part is zero in which case it will be cast to a real type. When a is real the resulting eigenvalues will be real (0 imaginary part) or occur in conjugate pairs "
+        },
+        "v": {
+            "type": "(\u2026, M, M) array",
+            "description": "The normalized (unit \u201clength\u201d) eigenvectors, such that the column v[:,i] is the eigenvector corresponding to the eigenvalue w[i]. "
+        }
+    }
+}

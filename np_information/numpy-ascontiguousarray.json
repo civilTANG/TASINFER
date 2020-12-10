@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "ascontiguousarray",
+        "description": "Return a contiguous array (ndim >= 1) in memory (C order)."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "dtype": {
+            "type": "str or dtype object, optional",
+            "description": "Data-type of returned array. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Contiguous array of same shape and content as a, with type dtype if specified. "
+        }
+    },
+    "note": "Note: This function returns an array with at least one-dimension (1-d)  so it will not preserve 0-d arrays. '"
+}

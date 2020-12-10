@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "broadcast_arrays",
+        "description": "Broadcast any number of arrays against each other."
+    },
+    "parameter": {
+        "`*args`": {
+            "type": "array_likes",
+            "description": "The arrays to broadcast. "
+        },
+        "subok": {
+            "type": "bool, optional",
+            "description": "If True, then sub-classes will be passed-through, otherwise the returned arrays will be forced to be a base-class array (default). "
+        }
+    },
+    "return": {
+        "broadcasted": {
+            "type": "list of arrays",
+            "description": "These arrays are views on the original arrays.  They are typically not contiguous.  Furthermore, more than one element of a broadcasted array may refer to a single memory location. If you need to write to the arrays, make copies first. While you can set the writable flag True, writing to a single output value may end up changing more than one location in the output array.  Deprecated since version 1.17: The output is currently marked so that if written to, a deprecation warning will be emitted. A future version will set the writable flag False so writing to it will raise an error.  "
+        }
+    },
+    "note": "Here is a useful idiom for getting contiguous copies instead of non-contiguous views. '"
+}

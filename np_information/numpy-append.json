@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "append",
+        "description": "Append values to the end of an array."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Values are appended to a copy of this array. "
+        },
+        "b": {
+            "type": "array_like",
+            "description": "These values are appended to a copy of a.  It must be of the correct shape (the same shape as a, excluding axis).  If axis is not specified, b can be any shape and will be flattened before use. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "The axis along which v are appended.  If axis is not given, both a and b are flattened before use. "
+        }
+    },
+    "return": {
+        "append": {
+            "type": "MaskedArray",
+            "description": "A copy of a with b appended to axis.  Note that append does not occur in-place: a new array is allocated and filled.  If axis is None, the result is a flattened array. "
+        }
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "promote_types",
+        "description": null
+    },
+    "parameter": {
+        "type1": {
+            "type": "dtype or dtype specifier",
+            "description": "First data type. "
+        },
+        "type2": {
+            "type": "dtype or dtype specifier",
+            "description": "Second data type. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "dtype",
+            "description": "The promoted data type. "
+        }
+    },
+    "note": "Notes '"
+}

@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "copy",
+        "description": "Return an array copy of the given object."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input data. "
+        },
+        "order": {
+            "type": "{\u2018C\u2019, \u2018F\u2019, \u2018A\u2019, \u2018K\u2019}, optional",
+            "description": "Controls the memory layout of the copy. \u2018C\u2019 means C-order, \u2018F\u2019 means F-order, \u2018A\u2019 means \u2018F\u2019 if a is Fortran contiguous, \u2018C\u2019 otherwise. \u2018K\u2019 means match the layout of a as closely as possible. (Note that this function and ndarray.copy are very similar, but have different default values for their order= arguments.) "
+        },
+        "subok": {
+            "type": "bool, optional",
+            "description": "If True, then sub-classes will be passed-through, otherwise the returned array will be forced to be a base-class array (defaults to False).  New in version 1.19.0.  "
+        }
+    },
+    "return": {
+        "arr": {
+            "type": "ndarray",
+            "description": "Array interpretation of a. "
+        }
+    },
+    "note": "This is equivalent to: '"
+}

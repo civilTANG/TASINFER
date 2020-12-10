@@ -1,0 +1,34 @@
+{
+    "overall": {
+        "api_name": "apply_along_axis",
+        "description": "Apply a function to 1-D slices along the given axis."
+    },
+    "parameter": {
+        "func1d": {
+            "type": "function (M,) -> (Nj\u2026)",
+            "description": "This function should accept 1-D arrays. It is applied to 1-D slices of arr along the specified axis. "
+        },
+        "axis": {
+            "type": "integer",
+            "description": "Axis along which arr is sliced. "
+        },
+        "arr": {
+            "type": "ndarray (Ni\u2026, M, Nk\u2026)",
+            "description": "Input array. "
+        },
+        "args": {
+            "type": "any",
+            "description": "Additional arguments to func1d. "
+        },
+        "kwargs": {
+            "type": "any",
+            "description": "Additional named arguments to func1d.  New in version 1.9.0.  "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray  (Ni\u2026, Nj\u2026, Nk\u2026)",
+            "description": "The output array. The shape of out is identical to the shape of arr, except along the axis dimension. This axis is removed, and replaced with new dimensions equal to the shape of the return value of func1d. So if func1d returns a scalar out will have one fewer dimensions than arr. "
+        }
+    }
+}

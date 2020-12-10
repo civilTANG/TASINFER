@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "make_mask_none",
+        "description": "Return a boolean mask of the given shape, filled with False."
+    },
+    "parameter": {
+        "newshape": {
+            "type": "tuple",
+            "description": "A tuple indicating the shape of the mask. "
+        },
+        "dtype": {
+            "type": "{None, dtype}, optional",
+            "description": "If None, use a MaskType instance. Otherwise, use a new datatype with the same fields as dtype, converted to boolean types. "
+        }
+    },
+    "return": {
+        "result": {
+            "type": "ndarray",
+            "description": "An ndarray of appropriate shape and dtype, filled with False. "
+        }
+    }
+}

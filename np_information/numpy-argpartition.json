@@ -1,0 +1,35 @@
+{
+    "overall": {
+        "api_name": "argpartition",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Array to sort. "
+        },
+        "kth": {
+            "type": "int or sequence of ints",
+            "description": "Element index to partition by. The k-th element will be in its final sorted position and all smaller elements will be moved before it and all larger elements behind it. The order all elements in the partitions is undefined. If provided with a sequence of k-th it will partition all of them into their sorted position at once. "
+        },
+        "axis": {
+            "type": "int or None, optional",
+            "description": "Axis along which to sort. The default is -1 (the last axis). If None, the flattened array is used. "
+        },
+        "kind": {
+            "type": "{\u2018introselect\u2019}, optional",
+            "description": "Selection algorithm. Default is \u2018introselect\u2019 "
+        },
+        "order": {
+            "type": "str or list of str, optional",
+            "description": "When a is an array with fields defined, this argument specifies which fields to compare first, second, etc. A single field can be specified as a string, and not all fields need be specified, but unspecified fields will still be used, in the order in which they come up in the dtype, to break ties. "
+        }
+    },
+    "return": {
+        "index_array": {
+            "type": "ndarray, int",
+            "description": "Array of indices that partition a along the specified axis. If a is one-dimensional, a[index_array] yields a partitioned a. More generally, np.take_along_axis(a, index_array, axis=a) always yields the partitioned a, irrespective of dimensionality. "
+        }
+    },
+    "note": "See partition for notes on the different selection algorithms. '"
+}

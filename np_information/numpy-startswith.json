@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "startswith",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        },
+        "prefix": {
+            "type": "str",
+            "description": ""
+        },
+        "start, end": {
+            "type": "int, optional",
+            "description": "With optional start, test beginning at that position. With optional end, stop comparing at that position. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Array of booleans "
+        }
+    }
+}

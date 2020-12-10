@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "deprecated",
+        "description": "Filter deprecation warnings while running the test suite."
+    },
+    "parameter": {
+        "conditional": {
+            "type": "bool or callable, optional",
+            "description": "Flag to determine whether to mark test as deprecated or not. If the condition is a callable, it is used at runtime to dynamically make the decision. Default is True. "
+        }
+    },
+    "return": {
+        "decorator": {
+            "type": "function",
+            "description": "The deprecated decorator itself. "
+        }
+    }
+}

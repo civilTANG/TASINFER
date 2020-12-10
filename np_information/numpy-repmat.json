@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "repmat",
+        "description": "Repeat a 0-D to 2-D array or matrix MxN times."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "The array or matrix to be repeated. "
+        },
+        "m, n": {
+            "type": "int",
+            "description": "The number of times a is repeated along the first and second axes. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "The result of repeating a. "
+        }
+    }
+}

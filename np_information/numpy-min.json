@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "min",
+        "description": "Return the minimum along a given axis."
+    },
+    "parameter": {
+        "axis": {
+            "type": "{None, int}, optional",
+            "description": "Axis along which to operate.  By default, axis is None and the flattened input is used. "
+        },
+        "out": {
+            "type": "array_like, optional",
+            "description": "Alternative output array in which to place the result.  Must be of the same shape and buffer length as the expected output. "
+        },
+        "fill_value": {
+            "type": "{var}, optional",
+            "description": "Value used to fill in the masked values. If None, use the output of minimum_fill_value. "
+        },
+        "keepdims": {
+            "type": "bool, optional",
+            "description": "If this is set to True, the axes which are reduced are left in the result as dimensions with size one. With this option, the result will broadcast correctly against the array. "
+        }
+    },
+    "return": {
+        "amin": {
+            "type": "array_like",
+            "description": "New array holding the result. If out was specified, out is returned. "
+        }
+    }
+}

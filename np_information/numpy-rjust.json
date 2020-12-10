@@ -1,0 +1,26 @@
+{
+    "overall": {
+        "api_name": "rjust",
+        "description": null
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like of str or unicode",
+            "description": ""
+        },
+        "width": {
+            "type": "int",
+            "description": "The length of the resulting strings "
+        },
+        "fillchar": {
+            "type": "str or unicode, optional",
+            "description": "The character to use for padding "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Output array of str or unicode, depending on input type "
+        }
+    }
+}

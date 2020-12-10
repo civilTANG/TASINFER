@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "convolve",
+        "description": "Returns the discrete, linear convolution of two one-dimensional sequences."
+    },
+    "parameter": {
+        "a": {
+            "type": "(N,) array_like",
+            "description": "First one-dimensional input array. "
+        },
+        "v": {
+            "type": "(M,) array_like",
+            "description": "Second one-dimensional input array. "
+        },
+        "mode": {
+            "type": "{\u2018full\u2019, \u2018valid\u2019, \u2018same\u2019}, optional",
+            "description": " \u2018full\u2019:By default, mode is \u2018full\u2019.  This returns the convolution at each point of overlap, with an output shape of (N+M-1,). At the end-points of the convolution, the signals do not overlap completely, and boundary effects may be seen.  \u2018same\u2019:Mode \u2018same\u2019 returns output of length max(M, N).  Boundary effects are still visible.  \u2018valid\u2019:Mode \u2018valid\u2019 returns output of length max(M, N) - min(M, N) + 1.  The convolution product is only given for points where the signals overlap completely.  Values outside the signal boundary have no effect.   "
+        },
+        "out": {
+            "type": "ndarray",
+            "description": "Mode \u2018valid\u2019 returns output of length max(M, N) - min(M, N) + 1.  The convolution product is only given for points where the signals overlap completely.  Values outside the signal boundary have no effect. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "Discrete, linear convolution of a and v. "
+        }
+    },
+    "note": "If v is longer than a, the arrays are swapped before computation. '"
+}

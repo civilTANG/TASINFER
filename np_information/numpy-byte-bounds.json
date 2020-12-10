@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "byte_bounds",
+        "description": "Returns pointers to the end-points of an array."
+    },
+    "parameter": {
+        "a": {
+            "type": "ndarray",
+            "description": "Input array. It must conform to the Python-side of the array interface. "
+        }
+    },
+    "return": {
+        "(low, high)": {
+            "type": "tuple of 2 integers",
+            "description": "The first integer is the first byte of the array, the second integer is just past the last byte of the array.  If a is not contiguous it will not use every byte between the (low, high) values. "
+        }
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "overall": {
+        "api_name": "compress",
+        "description": "Return selected slices of an array along given axis."
+    },
+    "parameter": {
+        "condition": {
+            "type": "1-D array of bools",
+            "description": "Array that selects which entries to return. If len(condition) is less than the size of a along the given axis, then output is truncated to the length of the condition array. "
+        },
+        "a": {
+            "type": "array_like",
+            "description": "Array from which to extract a part. "
+        },
+        "axis": {
+            "type": "int, optional",
+            "description": "Axis along which to take slices. If None (default), work on the flattened array. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Output array.  Its type is preserved and it must be of the right shape to hold the output. "
+        }
+    },
+    "return": {
+        "compressed_array": {
+            "type": "ndarray",
+            "description": "A copy of a without the slices along axis for which condition is false. "
+        }
+    },
+    "note": "Examples '"
+}

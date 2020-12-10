@@ -1,0 +1,23 @@
+{
+    "overall": {
+        "api_name": "asfortranarray",
+        "description": "Return an array (ndim >= 1) laid out in Fortran order in memory."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array. "
+        },
+        "dtype": {
+            "type": "str or dtype object, optional",
+            "description": "By default, the data-type is inferred from the input data. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray",
+            "description": "The input a in Fortran, or column-major, order. "
+        }
+    },
+    "note": "Note: This function returns an array with at least one-dimension (1-d)  so it will not preserve 0-d arrays. '"
+}

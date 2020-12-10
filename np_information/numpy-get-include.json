@@ -1,0 +1,14 @@
+{
+    "overall": {
+        "api_name": "get_include",
+        "description": "Return the directory that contains the NumPy *.h header files."
+    },
+    "parameter": {
+        "(low, high)": {
+            "type": "tuple of 2 integers",
+            "description": "Input array. It must conform to the Python-side of the array interface. "
+        }
+    },
+    "return": {},
+    "note": "Notes '"
+}

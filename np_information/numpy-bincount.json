@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "bincount",
+        "description": "Count number of occurrences of each value in array of non-negative ints."
+    },
+    "parameter": {
+        "x": {
+            "type": "array_like, 1 dimension, nonnegative ints",
+            "description": "Input array. "
+        },
+        "weights": {
+            "type": "array_like, optional",
+            "description": "Weights, array of the same shape as x. "
+        },
+        "minlength": {
+            "type": "int, optional",
+            "description": "A minimum number of bins for the output array.  New in version 1.6.0.  "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "ndarray of ints",
+            "description": "The result of binning the input array. The length of out is equal to np.amax(x)+1. "
+        }
+    },
+    "note": "Examples '"
+}

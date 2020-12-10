@@ -1,0 +1,30 @@
+{
+    "overall": {
+        "api_name": "fft2",
+        "description": "Compute the 2-dimensional discrete Fourier Transform"
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Input array, can be complex "
+        },
+        "s": {
+            "type": "sequence of ints, optional",
+            "description": "Shape (length of each transformed axis) of the output (s[0] refers to axis 0, s[1] to axis 1, etc.). This corresponds to n for fft(x, n). Along each axis, if the given shape is smaller than that of the input, the input is cropped.  If it is larger, the input is padded with zeros. if s is not given, the shape of the input along the axes specified by axes is used. "
+        },
+        "axes": {
+            "type": "sequence of ints, optional",
+            "description": "Axes over which to compute the FFT.  If not given, the last two axes are used.  A repeated index in axes means the transform over that axis is performed multiple times.  A one-element sequence means that a one-dimensional FFT is performed. "
+        },
+        "norm": {
+            "type": "{None, \u201cortho\u201d}, optional",
+            "description": " New in version 1.10.0.  Normalization mode (see numpy.fft). Default is None. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "complex ndarray",
+            "description": "The truncated or zero-padded input, transformed along the axes indicated by axes, or the last two axes if axes is not given. "
+        }
+    }
+}

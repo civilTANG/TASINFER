@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "msort",
+        "description": "Return a copy of an array sorted along the first axis."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Array to be sorted. "
+        }
+    },
+    "return": {
+        "sorted_array": {
+            "type": "ndarray",
+            "description": "Array of the same type and shape as a. "
+        }
+    },
+    "note": "np.msort(a) is equivalent to  np.sort(a, axis=0). '"
+}

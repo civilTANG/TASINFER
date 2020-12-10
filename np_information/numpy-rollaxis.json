@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "rollaxis",
+        "description": "Roll the specified axis backwards, until it lies in a given position."
+    },
+    "parameter": {
+        "a": {
+            "type": "ndarray",
+            "description": "Input array. "
+        },
+        "axis": {
+            "type": "int",
+            "description": "The axis to be rolled. The positions of the other axes do not change relative to one another. "
+        },
+        "start": {
+            "type": "int, optional",
+            "description": "When start &lt;= axis, the axis is rolled back until it lies in this position. When start &gt; axis, the axis is rolled until it lies before this position. The default, 0, results in a \u201ccomplete\u201d roll. The following table describes how negative values of start are interpreted:       start Normalized start    -(arr.ndim+1) raise AxisError  -arr.ndim 0  \u22ee \u22ee  -1 arr.ndim-1  0 0  \u22ee \u22ee  arr.ndim arr.ndim  arr.ndim + 1 raise AxisError    "
+        }
+    },
+    "return": {
+        "res": {
+            "type": "ndarray",
+            "description": "For NumPy &gt;= 1.10.0 a view of a is always returned. For earlier NumPy versions a view of a is returned only if the order of the axes is changed, otherwise the input array is returned. "
+        }
+    },
+    "note": "Examples '"
+}

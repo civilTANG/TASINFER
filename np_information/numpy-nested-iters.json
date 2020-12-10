@@ -1,0 +1,27 @@
+{
+    "overall": {
+        "api_name": "nested_iters",
+        "description": "Create nditers for use in nested loops"
+    },
+    "parameter": {
+        "op": {
+            "type": "ndarray or sequence of array_like",
+            "description": "The array(s) to iterate over. "
+        },
+        "axes": {
+            "type": "list of list of int",
+            "description": "Each item is used as an \u201cop_axes\u201d argument to an nditer "
+        },
+        "flags, op_flags, op_dtypes, order, casting, buffersize (optional)": {
+            "type": "tuple of nditer",
+            "description": "See nditer parameters of the same name "
+        }
+    },
+    "return": {
+        "iters": {
+            "type": "tuple of nditer",
+            "description": "An nditer for each item in axes, outermost first "
+        }
+    },
+    "note": "Examples '"
+}

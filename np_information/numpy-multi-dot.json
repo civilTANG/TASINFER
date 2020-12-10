@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "multi_dot",
+        "description": "Compute the dot product of two or more arrays in a single function call,\nwhile automatically selecting the fastest evaluation order."
+    },
+    "parameter": {
+        "arrays": {
+            "type": "sequence of array_like",
+            "description": "If the first argument is 1-D it is treated as row vector. If the last argument is 1-D it is treated as column vector. The other arguments must be 2-D. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Output argument. This must have the exact kind that would be returned if it was not used. In particular, it must have the right type, must be C-contiguous, and its dtype must be the dtype that would be returned for dot(a, b). This is a performance feature. Therefore, if these conditions are not met, an exception is raised, instead of attempting to be flexible.  New in version 1.19.0.  "
+        }
+    },
+    "return": {
+        "output": {
+            "type": "ndarray",
+            "description": "Returns the dot product of the supplied arrays. "
+        }
+    }
+}

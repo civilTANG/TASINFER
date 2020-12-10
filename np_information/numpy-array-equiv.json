@@ -1,0 +1,19 @@
+{
+    "overall": {
+        "api_name": "array_equiv",
+        "description": "Returns True if input arrays are shape consistent and all elements equal."
+    },
+    "parameter": {
+        "a1, a2": {
+            "type": "array_like",
+            "description": "Input arrays. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "bool",
+            "description": "True if equivalent, False otherwise. "
+        }
+    },
+    "note": "Examples '"
+}

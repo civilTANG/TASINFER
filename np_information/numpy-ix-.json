@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "ix_",
+        "description": "Construct an open mesh from multiple sequences."
+    },
+    "parameter": {
+        "args": {
+            "type": "1-D sequences",
+            "description": "Each sequence should be of integer or boolean type. Boolean sequences will be interpreted as boolean masks for the corresponding dimension (equivalent to passing in np.nonzero(boolean_sequence)). "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "tuple of ndarrays",
+            "description": "N arrays with N dimensions each, with N the number of input sequences. Together these arrays form an open mesh. "
+        }
+    }
+}

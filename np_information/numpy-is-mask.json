@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "is_mask",
+        "description": "Return True if m is a valid, standard mask."
+    },
+    "parameter": {
+        "m": {
+            "type": "array_like",
+            "description": "Array to test. "
+        }
+    },
+    "return": {
+        "result": {
+            "type": "bool",
+            "description": "True if m.dtype.type is MaskType, False otherwise. "
+        }
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "overall": {
+        "api_name": "sum",
+        "description": "Sum of array elements over a given axis."
+    },
+    "parameter": {
+        "a": {
+            "type": "array_like",
+            "description": "Elements to sum. "
+        },
+        "axis": {
+            "type": "None or int or tuple of ints, optional",
+            "description": "Axis or axes along which a sum is performed.  The default, axis=None, will sum all of the elements of the input array.  If axis is negative it counts from the last to the first axis.  New in version 1.7.0.  If axis is a tuple of ints, a sum is performed on all of the axes specified in the tuple instead of a single axis or all the axes as before. "
+        },
+        "dtype": {
+            "type": "dtype, optional",
+            "description": "The type of the returned array and of the accumulator in which the elements are summed.  The dtype of a is used by default unless a has an integer dtype of less precision than the default platform integer.  In that case, if a is signed then the platform integer is used while if a is unsigned then an unsigned integer of the same precision as the platform integer is used. "
+        },
+        "out": {
+            "type": "ndarray, optional",
+            "description": "Alternative output array in which to place the result. It must have the same shape as the expected output, but the type of the output values will be cast if necessary. "
+        },
+        "keepdims": {
+            "type": "bool, optional",
+            "description": "If this is set to True, the axes which are reduced are left in the result as dimensions with size one. With this option, the result will broadcast correctly against the input array. If the default value is passed, then keepdims will not be passed through to the sum method of sub-classes of ndarray, however any non-default value will be.  If the sub-class\u2019 method does not implement keepdims any exceptions will be raised. "
+        },
+        "initial": {
+            "type": "scalar, optional",
+            "description": "Starting value for the sum. See reduce for details.  New in version 1.15.0.  "
+        },
+        "where": {
+            "type": "array_like of bool, optional",
+            "description": "Elements to include in the sum. See reduce for details.  New in version 1.17.0.  "
+        }
+    },
+    "return": {
+        "sum_along_axis": {
+            "type": "ndarray",
+            "description": "An array with the same shape as a, with the specified axis removed.   If a is a 0-d array, or if axis is None, a scalar is returned.  If an output array is specified, a reference to out is returned. "
+        }
+    },
+    "note": "Arithmetic is modular when using integer types, and no error is raised on overflow. '"
+}

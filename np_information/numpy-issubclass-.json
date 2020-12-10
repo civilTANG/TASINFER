@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "issubclass_",
+        "description": "Determine if a class is a subclass of a second class."
+    },
+    "parameter": {
+        "arg1": {
+            "type": "class",
+            "description": "Input class. True is returned if arg1 is a subclass of arg2. "
+        },
+        "arg2": {
+            "type": "class or tuple of classes.",
+            "description": "Input class. If a tuple of classes, True is returned if arg1 is a subclass of any of the tuple elements. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "bool",
+            "description": "Whether arg1 is a subclass of arg2 or not. "
+        }
+    }
+}

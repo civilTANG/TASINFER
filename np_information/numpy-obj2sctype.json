@@ -1,0 +1,22 @@
+{
+    "overall": {
+        "api_name": "obj2sctype",
+        "description": "Return the scalar dtype or NumPy equivalent of Python type of an object."
+    },
+    "parameter": {
+        "rep": {
+            "type": "any",
+            "description": "The object of which the type is returned. "
+        },
+        "default": {
+            "type": "any, optional",
+            "description": "If given, this is returned for objects whose types can not be determined. If not given, None is returned for those objects. "
+        }
+    },
+    "return": {
+        "dtype": {
+            "type": "dtype or Python type",
+            "description": "The data type of rep. "
+        }
+    }
+}

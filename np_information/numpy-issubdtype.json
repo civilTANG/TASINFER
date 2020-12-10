@@ -1,0 +1,18 @@
+{
+    "overall": {
+        "api_name": "issubdtype",
+        "description": "Returns True if first argument is a typecode lower/equal in type hierarchy."
+    },
+    "parameter": {
+        "arg1, arg2": {
+            "type": "dtype_like",
+            "description": "dtype or string representing a typecode. "
+        }
+    },
+    "return": {
+        "out": {
+            "type": "bool",
+            "description": ""
+        }
+    }
+}
