@@ -1,1 +1,0 @@
-https://www.kaggle.com/ceshine/pytorch-multilayer-perceptron-mlp-baseline

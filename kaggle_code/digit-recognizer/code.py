@@ -44,7 +44,7 @@ def init_dnn_parameters(n, activations, epsilons, filter1=None):
         # Experiment, multiply filter in case of input layer weights 
         if filter1 is not None and l == 1:
             W = np.dot(W, filter1) 
-        b = np.zeros((n[l],1))
+        b = np.zeros((n[l], 1))
         params["W"+str(l)] = W
         params["b"+str(l)] = b
         # Normalization Parameters
@@ -266,18 +266,8 @@ def batch_back_propagation(X, Y, params, cache, alpha = 0.01,
     
             A, cache, params = forward_dnn_propagation(X_train, params)
             #grads, params= back_dnn_propagation(X_train, y_train, params, cache, alpha ,_lambda, keep_prob)
-            grads, params, vgrad, d_rms= back_dnn_propagation_with_momentum( X_train, 
-                                                                    y_train, 
-                                                                    params, 
-                                                                    cache, 
-                                                                    alpha, # * ((1-alpha) ** (counter-1)),
-                                                                    _lambda, 
-                                                                    keep_prob,
-                                                                    beta,
-                                                                    vgrad,
-                                                                    d_rms,
-                                                                    counter)
-            #print(" Tr. Score {:.2E}".format(np.mean(get_dnn_cost(A, y_train))))
+            grads, params, vgrad, d_rms= back_dnn_propagation_with_momentum(X_train, y_train, params, cache, alpha,_lambda,keep_prob,beta,vgrad,d_rms,counter)
+
         idx_from += batch_size
         idx_from = min(m, idx_from)
         idx_to += batch_size
@@ -331,8 +321,6 @@ for j in range(oinst):
         n.append((17)**2) #((28-layer*3))**2)
         acts.append('lReLU') #tanh')
         gamma.append(np.sqrt(2/n[layer-1]))
-        print("Hidden Layer[{: ^3d}] n = {: >4}, Activation Fn [{: >8}], Weight init Factor = {:.2E}".format(
-            len(n)-1, n[-1], acts[-1], gamma[-1]))
     #for layer in range(h_layers):
     #    n.append((28)**2) #((28-layer*3))**2)
     #    acts.append('lReLU') #tanh')
@@ -343,8 +331,6 @@ for j in range(oinst):
     n.append(y.shape[1])
     acts.append('softmax')
     gamma.append(np.sqrt(1/n[layer-1]))
-    print("Output Layer n = {}, Activation Function [{}], Weight init Factor = {:3.2f}".format(
-            n[-1], acts[-1], gamma[-1]))
     n_1.append(j+4)
     np.random.seed(1)
    
@@ -352,10 +338,7 @@ for j in range(oinst):
     _lambda = lambdas[j] # 0.5#
     keep_prob = keep_probs[j]
     epsilon = 0.76#epsilons[j] #0.02 
-    print("Hyper-parameters")
-    print("alpha = {:.2E}, # Epochs = {}, lambda = {:3.2f}, keep probability = {:3.2f} % ".format(
-        alpha, iterations, _lambda, keep_prob*100))
-    print("Momentum (Beta) = {:3.2f}".format(beta))
+
 
     L = len(n) - 1
 
@@ -380,7 +363,7 @@ for j in range(oinst):
             denom = np.sqrt(np.sum(np.dot((X_sample-X_mean).T,(X_sample-X_mean))))*np.sqrt(np.dot((y_sample - y_mean).T,(y_sample - y_mean)))
             filter1 += np.abs(np.diag((numer/denom)[:,0]))
     filter1 /= np.linalg.norm(filter1)
-    filter2 = 1*(np.abs(filter1) > 0.0001 )
+    filter2 = 1*(np.abs(filter1) > 0.0001)
     params, vgrad, d_rms = init_dnn_parameters(n, acts,gamma) #,np.abs(filter1))
     #alpha /= np.linalg.norm(np.abs(filter1)) # Normalize alpha to match weight adjustment 
     # Experiment 
@@ -410,17 +393,7 @@ for j in range(oinst):
             #batch_power = np.random.randint(0,int(np.log2(2048/base_batch_size)))
             batch_size = base_batch_size #* 2 ** batch_power
             #print("Epoch [{}], batch size [{}] [pwr {}], Training".format(i, batch_size, batch_power))
-            grads, params, vgrad, d_rms = batch_back_propagation(X_train, 
-                                                   y_train, 
-                                                   params, 
-                                                   cache, 
-                                                   alpha * ( batch_size/2048),
-                                                   _lambda, 
-                                                   keep_prob,                                                  
-                                                   batch_size,
-                                                   beta **( batch_size/2048),
-                                                   vgrad,
-                                                   d_rms)
+            grads, params, vgrad, d_rms = batch_back_propagation(X_train, y_train, params, cache, alpha * ( batch_size/2048), _lambda, keep_prob,batch_size,beta **( batch_size/2048), vgrad,d_rms)
             print("Epoch [{}], Evaluating, [Training] ".format(i),end="")
             A, cache, params = forward_dnn_propagation(X_train, params)
             cost.append(np.mean(get_dnn_cost(A, y_train)))
@@ -431,9 +404,7 @@ for j in range(oinst):
         else:
             A, cache = forward_dnn_propagation(X_train, params)
             cost.append(get_dnn_cost(A, y_train))
-            grads, params= back_dnn_propagation(X_train, 
-                                                y_train, 
-                                                params, 
+            grads, params= back_dnn_propagation(X_train, y_train, params,
                                                 cache, 
                                                 alpha,
                                                 _lambda, 
@@ -446,10 +417,6 @@ for j in range(oinst):
             break
         if i % 1 == 0:
             alpha *= (1-alpha) #alph_decays[j]
-            print("---------------------------------------------------------------")
-            print("i = {:3d}, trc = {:3.2f}, tsc={:3.2f}, |dWL|_L = {:.2E}".format(i,cost[-1],
-                                                                   tcost[-1], 
-                                                                   alpha*np.abs(np.linalg.norm(grads["dW"+str(L)]))))
             print(" active alpha = {:.2E}".format(alpha))
             if 1==1:
                 print("Number Matching (Dev. Set)")
@@ -465,14 +432,6 @@ for j in range(oinst):
                     m_test = sum(y_test[num,:]==1)
                     y_size = y_test.shape[1]
                     pct = matched/m_test
-                    print("[{}] Dst {:5.2f}".format(num, distance ), end='')
-                    print(" T+ve {: >6d}/{: <6d}, T-ve {: >6d}/{: <6d}, F+ve {: >6d}, F-ve {: >6d}".format(int(tp), 
-                                                                                int(np.sum(y_star)),
-                                                                                int(tn),
-                                                                                int(np.sum((1-y_star))),
-                                                                                int(fp),
-                                                                                int(fn)))
-                print("---------------------------------------------------------------")
     etscost.append(tcost[-1])
     etrcost.append(cost[-1])
 

@@ -1,1 +1,0 @@
-https://www.kaggle.com/liorbrag/pretrained-xception-on-2gb-gpu-vram-lb-0-95843

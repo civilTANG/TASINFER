@@ -1,1 +1,0 @@
-https://www.kaggle.com/fmuetsch/keras-nn-with-rec-layers-sentiment-etc-2

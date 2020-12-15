@@ -1,1 +1,0 @@
-https://www.kaggle.com/srogovtsev/a-simple-demo-of-sklearn-pipelines

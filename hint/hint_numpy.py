@@ -2,6 +2,13 @@ import numpy as np
 from numpy import ndarray
 from typing import Union,Iterable,Any,Optional
 
+def array(p_object: Union[ndarray, Iterable, int, float],
+          dtype: Optional[object] = None,
+          copy: Optional[bool] = True,
+          order: Optional[str] = 'K',
+          subok: Optional[bool] = False,
+          ndmin: Optional[int] = 0) -> ndarray:...
+
 def where(condition: Union[ndarray, Iterable, int, float, bool],
           x: Union[ndarray, Iterable, int, float] = None,
           y: Union[ndarray, Iterable, int, float] = None) -> ndarray:...
@@ -40,7 +47,7 @@ def arange(start: Union[int, float, complex, None] = None,
 
 def fill(self, value: Union[int, float, complex]) -> None: ...
 
-def sum(self, axis: Any = None, dtype: Any = None, out: Any = None,keepdims: bool = False) -> None:...
+def sum(self, axis: Any = None, dtype: Any = None, out: Any = None,keepdims: bool = False) -> Union[ndarray, int, float]:...
 
 def dot(self,
         b: Any,
@@ -85,7 +92,7 @@ def atleast_2d(*arys: Any) -> list:...
 def norm(x: Union[ndarray, Iterable, int, float],
          ord: Union[int, str, None] = None,
          axis: Optional[int] = None,
-         keepdims: Optional[bool] = False) -> float:...
+         keepdims: Optional[bool] = False) -> Union[float,ndarray]:...
 
 def empty(shape: Union[int, Iterable, tuple[int]],
           dtype: Optional[object] = None,
@@ -171,3 +178,12 @@ def std(a: Union[ndarray, Iterable, int, float],
         out: Optional[ndarray] = None,
         ddof: Optional[int] = 0,
         keepdims: Optional[bool] = np._NoValue) -> ndarray:...
+
+def reshape(a: Union[ndarray, Iterable, int, float],
+            newshape: Union[int, Iterable, tuple[int]],
+            order: Optional[str] = 'C') -> ndarray:...
+
+def clip(a: Union[ndarray, Iterable, int, float],
+         a_min: Union[int, float, complex, ndarray, Iterable, None],
+         a_max: Union[int, float, complex, ndarray, Iterable, None],
+         out: Optional[ndarray] = None) -> ndarray:...

@@ -22,15 +22,7 @@ tcurrent   = start_time
 
 # read datasets
 dtypes = {'id':'int64', 'item_nbr':'int32', 'store_nbr':'int8', 'onpromotion':str}
-data = {
-    'tra': pd.read_csv('../input/train.csv', dtype=dtypes, parse_dates=['date']),
-    'tes': pd.read_csv('../input/test.csv', dtype=dtypes, parse_dates=['date']),
-    'ite': pd.read_csv('../input/items.csv'),
-    'sto': pd.read_csv('../input/stores.csv'),
-    'trn': pd.read_csv('../input/transactions.csv', parse_dates=['date']),
-    'hol': pd.read_csv('../input/holidays_events.csv', dtype={'transferred':str}, parse_dates=['date']),
-    'oil': pd.read_csv('../input/oil.csv', parse_dates=['date']),
-    }
+data = {'tra': pd.read_csv('../input/train.csv', dtype=dtypes, parse_dates=['date']),'tes': pd.read_csv('../input/test.csv', dtype=dtypes, parse_dates=['date']), 'ite': pd.read_csv('../input/items.csv'),'sto': pd.read_csv('../input/stores.csv'),'trn': pd.read_csv('../input/transactions.csv', parse_dates=['date']),'hol': pd.read_csv('../input/holidays_events.csv', dtype={'transferred':str}, parse_dates=['date']),'oil': pd.read_csv('../input/oil.csv', parse_dates=['date']),}
 
 # dataset processing
 print('Datasets processing')

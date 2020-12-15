@@ -1,1 +1,0 @@
-https://www.kaggle.com/andrelopes1705/lasagne-based-of-zfturbo-keras-code

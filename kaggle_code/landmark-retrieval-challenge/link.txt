@@ -1,1 +1,0 @@
-https://www.kaggle.com/bestaar/deep-metric-learning-with-pretrained-keras-models

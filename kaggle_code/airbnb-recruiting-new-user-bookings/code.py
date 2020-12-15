@@ -24,8 +24,8 @@ print(check_output(["ls", "../input"]).decode("utf8"))
 
 import xgboost as xgb
 
-from sklearn import cross_validation, decomposition, grid_search
-from sklearn.preprocessing import LabelEncoder
+#from sklearn import cross_validation, decomposition, grid_search
+#from sklearn.preprocessing import LabelEncoder
 
 ####################################################
 # Functions                                        #

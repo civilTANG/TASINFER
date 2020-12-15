@@ -1,1 +1,0 @@
-https://www.kaggle.com/protan/keras-resnet50-with-batch-generator

@@ -1,1 +1,0 @@
-https://www.kaggle.com/aialenti/simple-resnet-with-fasttext-embeddings

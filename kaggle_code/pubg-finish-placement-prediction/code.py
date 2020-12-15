@@ -435,11 +435,7 @@ for train_index, valid_index in kf.split(x_train):
         wrapped_optimizer, max_mul=1024, ratio=7,
         steps_per_cycle=n_steps
     )
-    bot.train(
-        n_steps,
-        log_interval=int(batches_per_epoch / 10),
-        snapshot_interval=int(batches_per_epoch / 10 * 5),
-        early_stopping_cnt=10, scheduler=scheduler)
+    bot.train(n_steps,log_interval=int(batches_per_epoch / 10),snapshot_interval=int(batches_per_epoch / 10 * 5),early_stopping_cnt=10, scheduler=scheduler)
     val_preds = bot.predict_avg(
         val_loader, k=2, is_test=True)[:, 0].cpu().numpy()
     val_losses.append(np.mean(np.abs(val_preds - y_train[valid_index])))

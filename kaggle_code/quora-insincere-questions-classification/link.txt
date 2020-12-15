@@ -1,1 +1,0 @@
-https://www.kaggle.com/hireme/fun-api-keras-f1-metric-cyclical-learning-rate
