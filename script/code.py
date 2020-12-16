@@ -421,8 +421,8 @@ for j in range(oinst):
             if 1==1:
                 print("Number Matching (Dev. Set)")
                 for num in range(10):
-                    y_hat = A2[num, :] > 0.5
-                    y_star = y_test[num, :]
+                    y_hat = A2[num,:] > 0.5
+                    y_star = y_test[num,:]
                     matched = np.sum((1-np.abs(y_star-y_hat))*y_star)
                     tp = np.sum((y_hat == y_star) * y_star * 1)
                     tn = np.sum((y_hat == y_star)* (1-y_star) * 1)
