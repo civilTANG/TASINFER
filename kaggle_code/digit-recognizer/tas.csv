@@ -1,71 +1,71 @@
 ,,type,shape,mypy,our_type,our_shape,our_D,mypy,our
-_lambda,396,<class 'numpy.float64'>,0,any,"[int,float]",0,,3,2
+_lambda,396,<class 'numpy.float64'>,0,any,"[int,float]",0,0,3,2
 A2,446,<class 'numpy.ndarray'>,"(10, 28000)",any,ndarray,none,none,3,1
 train_raw,279,<class 'pandas.core.frame.DataFrame'>,"(42000, 785)",dataframe,dataframe,"(42000, 785)",2,1,1
 X2,279,<class 'numpy.ndarray'>,"(42000, 784)",int,any,none,none,3,3
 labels,282,<class 'numpy.ndarray'>,"(42000,)",ndarray,ndarray,"(42000,)",1,1,1
-k,287,<class 'int'>,0,int,int,0,,1,1
-h_layers,290,<class 'int'>,0,int,int,0,,1,1
-folds,293,<class 'int'>,0,int,int,0,,1,1
-oinst,299,<class 'int'>,0,any,int,0,,3,1
+k,287,<class 'int'>,0,int,int,0,0,1,1
+h_layers,290,<class 'int'>,0,int,int,0,0,1,1
+folds,293,<class 'int'>,0,int,int,0,0,1,1
+oinst,299,<class 'int'>,0,any,int,0,0,3,1
 gammas,300,<class 'numpy.ndarray'>,"(1,)",any,ndarray,"(1,)",1,3,3
 lambdas,301,<class 'numpy.ndarray'>,"(1,)",any,ndarray,"(1,)",1,3,3
 keep_probs,302,<class 'numpy.ndarray'>,"(1,)",any,ndarray,"(1,)",1,3,3
 alph_decays,303,<class 'numpy.ndarray'>,"(1,)",any,ndarray,"(1,)",1,3,3
-iterations,304,<class 'int'>,0,int,int,0,,1,1
-etscost,307,<class 'list'>,0,list,list,0,,1,1
-seeds,309,<class 'list'>,0,list,list,0,,1,1
-gamma,323,<class 'list'>,2,list,list,1,,1,1
-layers,330,<class 'list'>,1,list,list,1,,1,1
-layer,333,<class 'int'>,0,int,int,0,,1,1
-n_1,334,<class 'list'>,1,list,list,1,,1,1
+iterations,304,<class 'int'>,0,int,int,0,0,1,1
+etscost,307,<class 'list'>,0,list,list,0,0,1,1
+seeds,309,<class 'list'>,0,list,list,0,0,1,1
+gamma,323,<class 'list'>,2,list,list,1,0,1,1
+layers,330,<class 'list'>,1,list,list,1,0,1,1
+layer,333,<class 'int'>,0,int,int,0,0,1,1
+n_1,334,<class 'list'>,1,list,list,1,0,1,1
 alphas,337,<class 'numpy.ndarray'>,"(1,)",any,ndarray,"(1,)",1,3,1
-j,338,<class 'int'>,0,int,int,0,,1,1
-keep_prob,339,<class 'numpy.float64'>,0,any,any,0,,3,3
-epsilon,340,<class 'float'>,0,float,float,0,,1,1
+j,338,<class 'int'>,0,int,int,0,0,1,1
+keep_prob,339,<class 'numpy.float64'>,0,any,any,0,0,3,3
+epsilon,340,<class 'float'>,0,float,float,0,0,1,1
 labels_train,348,<class 'numpy.ndarray'>,"(33600,)",None,ndarray,"(42000,)",1,3,1
-monomial,355,<class 'int'>,0,int,int,0,,1,1
-depth,356,<class 'int'>,0,int,int,0,,1,1
-dim,358,<class 'int'>,0,int,int,0,,1,1
+monomial,355,<class 'int'>,0,int,int,0,0,1,1
+depth,356,<class 'int'>,0,int,int,0,0,1,1
+dim,358,<class 'int'>,0,int,int,0,0,1,1
 X_sample,361,<class 'numpy.ndarray'>,"(1024, 784)",any,ndarray,"(1024, None)",2,3,1
 y_var,362,<class 'numpy.ndarray'>,"(1024, 784)",any,ndarray,"(1024, None)",2,3,1
 X_mean,363,<class 'numpy.ndarray'>,"(1, 784)",ndarray,ndarray,"(1, None)",1,1,1
-y_mean,363,<class 'numpy.float64'>,0,ndarray,ndarray,,,3,3
+y_mean,363,<class 'numpy.float64'>,0,ndarray,ndarray,,0,3,3
 y_sample,363,<class 'numpy.ndarray'>,"(1024, 1)",ndarray,ndarray,"(1024, None)",2,1,1
 denom,364,<class 'numpy.ndarray'>,"(1, 1)",ndarray,ndarray,"(1, 1)",2,1,1
 numer,364,<class 'numpy.ndarray'>,"(784, 784)",ndarray,ndarray,none,none,1,1
 filter2,366,<class 'numpy.ndarray'>,"(784, 784)",ndarray,ndarray,none,none,1,1
-cv_groups,371,<class 'list'>,5,list,"[list,ndarray,dataframe]",,,1,2
+cv_groups,371,<class 'list'>,5,list,"[list,ndarray,dataframe]",,0,1,2
 y,372,<class 'numpy.ndarray'>,"(42000, 10)",ndarray,ndarray,"(42000, 10)",2,1,1
 X_test,374,<class 'numpy.ndarray'>,"(784, 8400)",any,"[ndarray,dataframe]","(None, 8400)",2,3,2
-acts,377,<class 'list'>,6,list,list,,,1,1
-base_batch_size,380,<class 'int'>,0,int,int,,,1,1
-i,391,<class 'int'>,0,int,int,,,1,1
-batch_processing,392,<class 'bool'>,0,bool,bool,,,1,1
-batch_size,396,<class 'int'>,0,int,int,,,1,1
-params,396,<class 'dict'>,0,any,any,,,3,3
+acts,377,<class 'list'>,6,list,list,,0,1,1
+base_batch_size,380,<class 'int'>,0,int,int,,0,1,1
+i,391,<class 'int'>,0,int,int,,0,1,1
+batch_processing,392,<class 'bool'>,0,bool,bool,,0,1,1
+batch_size,396,<class 'int'>,0,int,int,,0,1,1
+params,396,<class 'dict'>,0,any,any,,0,3,3
 X_train,396,<class 'numpy.ndarray'>,"(784, 33600)",any,"[ndarray,dataframe]","(None,42000)",2,3,2
-break_tol,415,<class 'float'>,0,float,float,,,1,1
-alpha,420,<class 'numpy.float64'>,0,any,"[int,float]",,,3,2
-num,424,<class 'int'>,0,int,int,,,1,1
-y_test,425,<class 'numpy.ndarray'>,"(10, 8400)",any,ndarray,"(10, 8400)",,3,1
-matched,426,<class 'numpy.float64'>,0,ndarray,"[int,float]",,,3,2
-tp,427,<class 'numpy.float64'>,0,ndarray,"[ndarray,int,float]",,,3,2
+break_tol,415,<class 'float'>,0,float,float,,0,1,1
+alpha,420,<class 'numpy.float64'>,0,any,"[int,float]",,0,3,2
+num,424,<class 'int'>,0,int,int,,0,1,1
+y_test,425,<class 'numpy.ndarray'>,"(10, 8400)",any,ndarray,"(10, 8400)",0,3,1
+matched,426,<class 'numpy.float64'>,0,ndarray,"[int,float]",,0,3,2
+tp,427,<class 'numpy.float64'>,0,ndarray,"[ndarray,int,float]",,0,3,2
 y_hat,427,<class 'numpy.ndarray'>,"(8400,)",any,"[ndarray,list,series]","(8400,)",1,3,2
 y_star,427,<class 'numpy.ndarray'>,"(8400,)",any,"[ndarray,list,series]","(8400,)",1,3,2
-tn,428,<class 'numpy.float64'>,0,ndarray,"[ndarray,int,float]",,,3,2
-fp,429,<class 'numpy.float64'>,0,ndarray,"[ndarray,int,float]",,,3,2
-fn,430,<class 'numpy.float64'>,0,ndarray,"[ndarray,int,float]",,,3,2
-distance,431,<class 'numpy.float64'>,0,"[ndarray,float]","[ndarray,float]",,,2,2
-m_test,432,<class 'numpy.int32'>,0,int,int,,,2,2
-y_size,433,<class 'int'>,0,any,int,,,3,1
-pct,434,<class 'numpy.float64'>,0,any,"[int,float]",,,3,2
-etrcost,436,<class 'list'>,1,list,list,,,1,1
+tn,428,<class 'numpy.float64'>,0,ndarray,"[ndarray,int,float]",,0,3,2
+fp,429,<class 'numpy.float64'>,0,ndarray,"[ndarray,int,float]",,0,3,2
+fn,430,<class 'numpy.float64'>,0,ndarray,"[ndarray,int,float]",,0,3,2
+distance,431,<class 'numpy.float64'>,0,"[ndarray,float]","[ndarray,float]",,0,2,2
+m_test,432,<class 'numpy.int32'>,0,int,int,,0,2,2
+y_size,433,<class 'int'>,0,any,int,,0,3,1
+pct,434,<class 'numpy.float64'>,0,any,"[int,float]",,0,3,2
+etrcost,436,<class 'list'>,1,list,list,,0,1,1
 test_raw,441,<class 'pandas.core.frame.DataFrame'>,"(28000, 784)",dataframe,dataframe,"(28000, None)",2,1,1
-vectors,443,<class 'dict'>,,"[float,int,None]",any,,,3,3
+vectors,443,<class 'dict'>,,"[float,int,None]",any,,0,3,3
 data,451,<class 'numpy.ndarray'>,"(28000, 1)",None,ndarray,"(28000, 1)",2,3,1
 index,454,<class 'numpy.ndarray'>,"(28000, 1)",ndarray,ndarray,"(28000, 1)",2,1,1
 s1,455,<class 'pandas.core.series.Series'>,"(28000,)",series,series,"(28000,)",1,1,1
 s0,456,<class 'pandas.core.series.Series'>,"(28000,)",series,series,"(28000,)",1,1,1
 df,459,<class 'pandas.core.frame.DataFrame'>,"(28000, 1)",dataframe,dataframe,"(28000, 1)",2,1,1
-file_name,464,<class 'str'>,0,str,str,,,1,1
+file_name,464,<class 'str'>,0,str,str,,0,1,1

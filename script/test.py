@@ -133,8 +133,8 @@ def use_constrain_pattern(statement, var):
             min_len = temp_len
     if isinstance(all_node[tag][0], ast.Call):
         return [1, all_node[tag][1]]  # 函数调用
-    elif isinstance(all_node[tag][0],ast.BinOp) or isinstance(all_node[tag][0],ast.Compare):
-        return [2, all_node[tag][1]] # 二目操作
+    elif isinstance(all_node[tag][0], ast.BinOp) or isinstance(all_node[tag][0],ast.Compare):
+        return [2, all_node[tag][1]]  # 二目操作
     else:
         return None
 

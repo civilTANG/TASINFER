@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8bea2093-da22-4e20-b2b1-09481adf714d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaggle_code/airbnb-recruiting-new-user-bookings/gender_distribution.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaggle_code/digit-recognizer/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/kaggle_code/digit-recognizer/code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kaggle_code/digit-recognizer/tas.csv" beforeDir="false" afterPath="$PROJECT_DIR$/kaggle_code/digit-recognizer/tas.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result_type.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result_type.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/script/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/script/test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1715">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+            <state relative-caret-position="315">
+              <caret line="136" column="38" selection-start-line="136" selection-start-column="38" selection-end-line="136" selection-end-column="38" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
                 <element signature="e#54#4695#0" />
@@ -33,20 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kaggle_code/digit-recognizer/tas.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="53" selection-start-line="53" selection-end-line="53" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kaggle_code/digit-recognizer/code.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="361" column="51" selection-start-line="361" selection-start-column="51" selection-end-line="361" selection-end-column="51" />
+            <state relative-caret-position="325">
+              <caret line="358" lean-forward="true" selection-start-line="358" selection-end-line="358" />
               <folding>
                 <element signature="e#233#268#0" expanded="true" />
                 <element signature="e#627#682#0" />
@@ -68,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/numpy/core/fromnumeric.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2326">
+            <state relative-caret-position="105035">
               <caret line="3014" column="4" selection-start-line="3014" selection-start-column="4" selection-end-line="3014" selection-end-column="4" />
             </state>
           </provider>
@@ -361,11 +347,12 @@
       <workItem from="1607924702487" duration="26277000" />
       <workItem from="1608012447248" duration="26908000" />
       <workItem from="1608049491809" duration="2588000" />
+      <workItem from="1608081888187" duration="1403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132378000" />
+    <option name="totallyTimeSpent" value="133781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -377,10 +364,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19364598" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19667171" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -419,6 +406,11 @@
           <url>file://$PROJECT_DIR$/kaggle_code/digit-recognizer/code.py</url>
           <line>278</line>
           <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/kaggle_code/digit-recognizer/code.py</url>
+          <line>362</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -730,15 +722,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kaggle_code/digit-recognizer/tas.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="53" selection-start-line="53" selection-end-line="53" selection-end-column="5" />
+        <state relative-caret-position="1855">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/numpy/core/fromnumeric.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105035">
+          <caret line="3014" column="4" selection-start-line="3014" selection-start-column="4" selection-end-line="3014" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1715">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="315">
+          <caret line="136" column="38" selection-start-line="136" selection-start-column="38" selection-end-line="136" selection-end-column="38" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
             <element signature="e#54#4695#0" />
@@ -746,17 +745,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/numpy/core/fromnumeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2326">
-          <caret line="3014" column="4" selection-start-line="3014" selection-start-column="4" selection-end-line="3014" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kaggle_code/digit-recognizer/code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="361" column="51" selection-start-line="361" selection-start-column="51" selection-end-line="361" selection-end-column="51" />
+        <state relative-caret-position="325">
+          <caret line="358" lean-forward="true" selection-start-line="358" selection-end-line="358" />
           <folding>
             <element signature="e#233#268#0" expanded="true" />
             <element signature="e#627#682#0" />
