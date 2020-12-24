@@ -1,15 +1,10 @@
-tr_filepath,91,<class 'str'>,any
-tr_filepath,91,<class 'str'>,any
-list,11,<class 'type'>,any
-te_filepath,93,<class 'str'>,any
-tr_filepath,91,<class 'str'>,any
-list,11,<class 'type'>,any
-te_filepath,93,<class 'str'>,any
-df_test,94,<class 'pandas.core.frame.DataFrame'>,"(62096, 15)"
-df_train,100,<class 'pandas.core.frame.DataFrame'>,"(213451, 16)"
-features,107,<class 'list'>,16
-feature,111,<class 'str'>,any
-df_all,119,<class 'pandas.core.frame.DataFrame'>,"(275547, 16)"
-print,135,<class 'builtin_function_or_method'>,any
-categorical_feature,162,<class 'str'>,any
-categorical_features,161,<class 'list'>,10
+var,line,type,shape,mypy,ourtype,ourshape,ourdem,mypy,ourtype
+tr_filepath,91,<class 'str'>,0,str,str,,,1,1
+te_filepath,93,<class 'str'>,0,str,str,,,1,1
+df_test,94,<class 'pandas.core.frame.DataFrame'>,"(62096, 15)",dataframe,dataframe,"(62096, 15)",2,1,1
+df_train,100,<class 'pandas.core.frame.DataFrame'>,"(213451, 16)",dataframe,dataframe,"(213451, 16)",2,1,1
+features,107,<class 'list'>,16,list,list,,,1,1
+feature,111,<class 'str'>,0,any,"[int,str]",,,3,2
+df_all,119,<class 'pandas.core.frame.DataFrame'>,"(275547, 16)",any,dataframe,"(None, 16)",2,3,1
+categorical_features,161,<class 'list'>,10,list,list,,,1,1
+categorical_feature,162,<class 'str'>,0,str,"[int,str]",,,1,2

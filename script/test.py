@@ -88,6 +88,9 @@ class DataFlow(object):
     def collect_chain(self):
         root = ast.parse(self.code)
         for node in ast.iter_child_nodes(root):
+
+            if isinstance(node, ast.Expr):
+                print(astor.to_source(node))
             for find_point in ast.walk(node):
                 if isinstance(find_point, ast.Name):
                     if find_point.id == self.identifier:
@@ -139,20 +142,24 @@ def use_constrain_pattern(statement, var):
         return None
 
 
-var = 'y_hat'
+var = 'y_train'
 x = DataFlow('code.py', var)
 x.collect()
-line = 427
+line = 88
 rely_var = []
 
 # print(x.result)
-
+print(x.module_identifier)
+print(x.use_definition_identifier)
+for i in x.result:
+    print(i)
+exit(0)
 for i in range(len(x.result)):
     if x.result[i][1] == line:
         tag = i
 left = tag
 right = tag+1
-print(x.result)
+
 while left >= 0:
     if isinstance(x.result[left][2], ast.Store):
         break

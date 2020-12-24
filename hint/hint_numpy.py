@@ -187,3 +187,7 @@ def clip(a: Union[ndarray, Iterable, int, float],
          a_min: Union[int, float, complex, ndarray, Iterable, None],
          a_max: Union[int, float, complex, ndarray, Iterable, None],
          out: Optional[ndarray] = None) -> ndarray:...
+
+def exp(x: Union[Number, ndarray, Iterable],
+        *args: Any,
+        **kwargs: Any) -> ndarray:...

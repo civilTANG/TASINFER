@@ -11,11 +11,9 @@ if '{}'not in TANGSHAN:   \n
     if isinstance({}, np.ndarray) or isinstance({},pd.DataFrame) or isinstance({},pd.Series):\n
         shape_size ={}.shape\n    
     
-    elif isinstance({},list):\n
-        shape_size = len({})\n
     
     else:
-        shape_size = 'any'\n  
+        shape_size = 0\n  
     
     check_type = type({})\n
     with open("tas.csv", "a+") as f:\n
@@ -89,6 +87,7 @@ for competition in competitions:
     if 'test_code.py' in items_of_file or 'v.csv' not in items_of_file:
         continue
     print(code_path)
+
     with open(code_path, "r", encoding='utf-8') as f:
           code_text = f.read()
     f.close()
@@ -107,7 +106,7 @@ for competition in competitions:
             if item[1] == '0':
                 continue
             var = item[1]
-            if var == 'len' or var == 'type' or var == 'isinstance' or var == 'open':
+            if var == 'len' or var == 'type' or var == 'isinstance' or var == 'open' or var == 'min' or var == 'list':
                 continue
             v = CallParser(var)
             v.visit(root)
@@ -116,7 +115,7 @@ for competition in competitions:
             # print(len(candidates))
             num = random.randint(0, len(candidates)-1)
             node = candidates[num]
-            to_add = template.format(var, var, var, var, var, var, var, var, var,var,node.lineno)
+            to_add = template.format(var, var, var, var, var, var, var, var, node.lineno)
             to_insert = ast.parse(to_add)
 
             # insert the new node

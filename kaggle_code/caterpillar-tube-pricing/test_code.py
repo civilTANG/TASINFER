@@ -12,9 +12,10 @@ from sklearn.utils import shuffle
 from sklearn.ensemble import ExtraTreesClassifier
 import seaborn as sns
 import matplotlib.pyplot as plt
-from sklearn.cross_validation import ShuffleSplit
+from sklearn.model_selection import ShuffleSplit
 from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.ensemble.partial_dependence import plot_partial_dependence
+TANGSHAN =[]
 np.random.seed(42)
 numerics = ['int16', 'int32', 'int64', 'float16', 'float32', 'float64']
 if 'numerics' not in TANGSHAN:
@@ -31,9 +32,9 @@ if 'numerics' not in TANGSHAN:
         TANGSHAN.append('numerics')
         writer = csv.writer(f)
         writer.writerow(['numerics', 22, check_type, shape_size])
-train = pd.read_csv(os.path.join('..', 'input', 'train_set.csv'),
+train = pd.read_csv(r'D:\dataset\caterpillar-tube-pricing/train_set.csv',
     parse_dates=[2])
-tube_data = pd.read_csv(os.path.join('..', 'input', 'tube.csv'))
+tube_data = pd.read_csv(r'D:\dataset\caterpillar-tube-pricing/tube.csv')
 train = pd.merge(train, tube_data, on='tube_assembly_id')
 if 'tube_data' not in TANGSHAN:
     import csv
@@ -53,8 +54,7 @@ train['year'] = train.quote_date.dt.year
 train['month'] = train.quote_date.dt.month
 train['week'] = train.quote_date.dt.dayofyear % 52
 train = train.drop(['quote_date', 'tube_assembly_id'], axis=1)
-rs = ShuffleSplit(train.shape[0], n_iter=3, train_size=0.2, test_size=0.8,
-    random_state=0)
+rs = ShuffleSplit(n_splits=3, train_size=0.2, test_size=0.8, random_state=0)
 for train_index, _ in rs:
     pass
 if '_' not in TANGSHAN:
@@ -462,20 +462,7 @@ print('Bins are {0}'.format(q))
 train['cost_5'] = q
 fig = plt.figure()
 featurenames = [names[feature] for feature in features]
-if 'feature' not in TANGSHAN:
-    import csv
-    if isinstance(feature, np.ndarray) or isinstance(feature, pd.DataFrame
-        ) or isinstance(feature, pd.Series):
-        shape_size = feature.shape
-    elif isinstance(feature, list):
-        shape_size = len(feature)
-    else:
-        shape_size = 'any'
-    check_type = type(feature)
-    with open('tas.csv', 'a+') as f:
-        TANGSHAN.append('feature')
-        writer = csv.writer(f)
-        writer.writerow(['feature', 107, check_type, shape_size])
+
 if 'featurenames' not in TANGSHAN:
     import csv
     if isinstance(featurenames, np.ndarray) or isinstance(featurenames, pd.

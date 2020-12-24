@@ -19,7 +19,7 @@ import theano
 from theano import tensor as T
 from theano.tensor.nnet import sigmoid
 
-
+TANGSHAN = []
 class AdjustVariable(object):
 
     def __init__(self, name, start=0.03, stop=0.001):
@@ -118,8 +118,8 @@ def pdFillNAN(df, strategy='mean'):
         return df.fillna(strategy)
 
 
-train = pd.read_csv('../input/train.csv')
-test = pd.read_csv('../input/test.csv')
+train = pd.read_csv(r'D:\dataset\bnp-paribas-cardif-claims-management/train.csv')
+test = pd.read_csv(r'D:\dataset\bnp-paribas-cardif-claims-management/test.csv')
 np.random.seed(3210)
 train = train.iloc[np.random.permutation(len(train))]
 labels = train['target']
