@@ -1,0 +1,2045 @@
+D://crw_data//df.apply\source10\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int64)\' and \'int\',"writer.writerow([url, 63, ""app_ev['app_id'].map(app_lab)"",
+    ""app_ev['app_id'].replace(app_lab)"", t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",TypeError,pd.Series.map,pd.Series.replace
+D://crw_data//df.apply\source107\code\pd.DataFrame.apply_where_replace0.py,"TypeError: \'Series\' objects are mutable, thus they cannot be hashed","writer.writerow([url, 19,
+    ""df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >\t    20 else row['combined_shot_type'], axis=1)""
+    ,
+    "" actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >\t    20 else row['combined_shot_type'])""
+    , t1, t2, 'pd.DataFrame.apply', 'pd.Series.apply'])
+",TypeError,pd.DataFrame.apply,pd.Series.apply
+D://crw_data//df.apply\source13\code\pd.Series.apply_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 49, 'logmean_df.apply(mean_fill, axis=1)',
+    'logmean_df.map(mean_fill, axis=1)', t1, t2, 'pd.Series.apply',
+    'pd.Series.map'])
+",AttributeError,pd.Series.apply,pd.Series.map
+D://crw_data//df.apply\source13\code\pd.Series.apply_map_replace1.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 55,
+    ""data[date_cols].apply(lambda x: x.fillna(value=data['imputed_values']))"",
+    ""data[date_cols].map(lambda x: x.fillna(value=data['imputed_values']))"",
+    t1, t2, 'pd.Series.apply', 'pd.Series.map'])
+",AttributeError,pd.Series.apply,pd.Series.map
+D://crw_data//df.apply\source14\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 21, 'colonne.fillna(moyenne)',
+    'colonne.combine_first(colonne.applymap(lambda x: moyenne))', t1, t2,
+    'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.apply\source14\code\pd.DataFrame.fillna_replace1.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 50, ""dataFrame['Cabin'].fillna(0)"",
+    ""dataFrame['Cabin'].combine_first(dataFrame['Cabin'].applymap(lambda x: 0))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.apply\source14\code\pd.DataFrame.fillna_replace2.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 56, ""dataFrame['Embarked'].fillna('S')"",
+    ""dataFrame['Embarked'].combine_first(dataFrame['Embarked'].applymap(lambda x: 'S'))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.apply\source14\code\pd.Series.apply_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 14, 'df.apply(np.random.shuffle, axis=axis)',
+    'df.map(np.random.shuffle, axis=axis)', t1, t2, 'pd.Series.apply',
+    'pd.Series.map'])
+",AttributeError,pd.Series.apply,pd.Series.map
+D://crw_data//df.apply\source17\code\pd.Series.apply_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 80, 'df.apply(process, axis=1)',
+    'df.map(process, axis=1)', t1, t2, 'pd.Series.apply', 'pd.Series.map'])
+",AttributeError,pd.Series.apply,pd.Series.map
+D://crw_data//df.apply\source20\code\pd.DataFrame.apply_where_replace0.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 31,
+    ""df.apply(lambda row: 1 if row['month'] == 1 and row['day'] == 1 or row[\t    'month'] == 7 and row['day'] == 4 or row['month'] == 11 and row['day'] ==\t    11 or row['month'] == 12 and row['day'] == 25 or row['month'] == 1 and \t    row['day'] >= 15 and row['day'] <= 21 and row['weekday'] == 0 or row[\t    'month'] == 2 and row['day'] >= 15 and row['day'] <= 21 and row[\t    'weekday'] == 0 or row['month'] == 5 and row['day'] >= 25 and row['day'\t    ] <= 31 and row['weekday'] == 0 or row['month'] == 9 and row['day'] >= \t    1 and row['day'] <= 7 and row['weekday'] == 0 or row['month'] == 10 and\t    row['day'] >= 8 and row['day'] <= 14 and row['weekday'] == 0 or row[\t    'month'] == 11 and row['day'] >= 22 and row['day'] <= 28 and row[\t    'weekday'] == 3 else 0, axis=1)""
+    ,
+    "" df['month'] == 1 and df['day'] == 1 or df[\t    'month'] == 7 and df['day'] == 4 or df['month'] == 11 and df['day'] ==\t    11 or df['month'] == 12 and df['day'] == 25 or df['month'] == 1 and \t    df['day'] >= 15 and df['day'] <= 21 and df['weekday'] == 0 or df[\t    'month'] == 2 and df['day'] >= 15 and df['day'] <= 21 and df[\t    'weekday'] == 0 or df['month'] == 5 and df['day'] >= 25 and df['day'\t    ] <= 31 and df['weekday'] == 0 or df['month'] == 9 and df['day'] >= \t    1 and df['day'] <= 7 and df['weekday'] == 0 or df['month'] == 10 and\t    df['day'] >= 8 and df['day'] <= 14 and df['weekday'] == 0 or df[\t    'month'] == 11 and df['day'] >= 22 and df['day'] <= 28 and df[\t    'weekday'].apply(lambda row: 1 if row == 3 else 0)""
+    , t1, t2, 'pd.DataFrame.apply', 'pd.Series.apply'])
+",ValueError,pd.DataFrame.apply,pd.Series.apply
+D://crw_data//df.apply\source20\code\pd.DataFrame.apply_where_replace1.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 32,
+    ""df.apply(lambda row: 1 if row['month'] == 12 and row['day'] == 31 or row[\t    'month'] == 7 and row['day'] == 3 or row['month'] == 11 and row['day'] ==\t    10 or row['month'] == 12 and row['day'] == 24 or row['month'] == 1 and \t    row['day'] >= 14 and row['day'] <= 20 and row['weekday'] == 6 or row[\t    'month'] == 2 and row['day'] >= 14 and row['day'] <= 20 and row[\t    'weekday'] == 6 or row['month'] == 5 and row['day'] >= 24 and row['day'\t    ] <= 30 and row['weekday'] == 6 or (row['month'] == 9 and row['day'] >=\t    1 and row['day'] <= 6 or (row['month'] == 8 and row['day'] == 31) and \t    row['weekday'] == 6) or row['month'] == 10 and row['day'] >= 7 and row[\t    'day'] <= 13 and row['weekday'] == 6 or row['month'] == 11 and row[\t    'day'] >= 21 and row['day'] <= 27 and row['weekday'] == 2 else 0, axis=1)""
+    ,
+    "" df['month'] == 12 and df['day'] == 31 or df[\t    'month'] == 7 and df['day'] == 3 or df['month'] == 11 and df['day'] ==\t    10 or df['month'] == 12 and df['day'] == 24 or df['month'] == 1 and \t    df['day'] >= 14 and df['day'] <= 20 and df['weekday'] == 6 or df[\t    'month'] == 2 and df['day'] >= 14 and df['day'] <= 20 and df[\t    'weekday'] == 6 or df['month'] == 5 and df['day'] >= 24 and df['day'\t    ] <= 30 and df['weekday'] == 6 or (df['month'] == 9 and df['day'] >=\t    1 and df['day'] <= 6 or (df['month'] == 8 and df['day'] == 31) and \t    df['weekday'] == 6) or df['month'] == 10 and df['day'] >= 7 and df[\t    'day'] <= 13 and df['weekday'] == 6 or df['month'] == 11 and df[\t    'day'] >= 21 and df['day'] <= 27 and df['weekday'].apply(lambda row: 1 if row == 2 else 0)""
+    , t1, t2, 'pd.DataFrame.apply', 'pd.Series.apply'])
+",ValueError,pd.DataFrame.apply,pd.Series.apply
+D://crw_data//df.apply\source20\code\pd.Series.astype_replace0.py,AttributeError: \'datetime64[ns]\' is not a valid function for \'Series\' object,"writer.writerow([url, 29, ""df.pickup_datetime.astype('datetime64[ns]')"",
+    ""df.pickup_datetime.apply('datetime64[ns]')"", t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.apply\source23\code\pd.Series.apply_map_replace1.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 16,
+    'train.apply(lambda x: x.nunique(dropna=False), axis=0)',
+    'train.map(lambda x: x.nunique(dropna=False), axis=0)', t1, t2,
+    'pd.Series.apply', 'pd.Series.map'])
+",AttributeError,pd.Series.apply,pd.Series.map
+D://crw_data//df.apply\source25\code\pd.DataFrame.apply_where_replace0.py,"TypeError: \'Series\' objects are mutable, thus they cannot be hashed","writer.writerow([url, 28,
+    ""df.apply(lambda row: row[field] if row[field] in filtered else float('NaN'),\t    axis=1)""
+    ,
+    "" df[field].apply(lambda row:row if row in filtered else float('NaN'))"",
+    t1, t2, 'pd.DataFrame.apply', 'pd.Series.apply'])
+",TypeError,pd.DataFrame.apply,pd.Series.apply
+D://crw_data//df.apply\source25\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 59, 'test.id.values.astype(int)',
+    'test.id.values.apply(int)', t1, t2, 'pd.Series.astype', 'pd.Series.apply']
+    )
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.apply\source25\code\pd.Series.astype_replace1.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 85, 'np.array(train_values).astype(float)',
+    'np.array(train_values).apply(float)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.apply\source25\code\pd.Series.astype_replace2.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 86, 'np.array(train_values).astype(float)',
+    'np.array(train_values).apply(float)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.apply\source30\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 47, ""df['Embarked'].fillna('S')"",
+    ""df['Embarked'].combine_first(df['Embarked'].applymap(lambda x: 'S'))"",
+    t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.apply\source30\code\pd.DataFrame.fillna_replace1.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 55, ""df['Fare'].fillna(df['Fare'].mean())"",
+    ""df['Fare'].combine_first(df['Fare'].applymap(lambda x: df['Fare'].mean()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.apply\source34\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 103,
+    ""new_full_data['Embarked'].fillna(most_frequent_value)"",
+    ""new_full_data['Embarked'].combine_first(new_full_data['Embarked'].applymap(lambda x: most_frequent_value))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.apply\source34\code\pd.DataFrame.fillna_replace1.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 106, 'new_full_data.Fare.fillna(meanFare)',
+    'new_full_data.Fare.combine_first(new_full_data.Fare.applymap(lambda x: meanFare))'
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.apply\source34\code\pd.Series.replace_map_replace0.py,"AttributeError: (""\'str\' object has no attribute \'map\'"", \'occurred at index 0\')","writer.writerow([url, 53, ""split_name[1].split('.')[0].replace(' ', '')"",
+    ""split_name[1].split('.')[0].map(' ', '')"", t1, t2, 'pd.Series.replace',
+    'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.apply\source37\code\pd.Series.apply_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 114,
+    'tmp_df.apply(distance_between_two_points, axis=1)',
+    'tmp_df.map(distance_between_two_points, axis=1)', t1, t2,
+    'pd.Series.apply', 'pd.Series.map'])
+",AttributeError,pd.Series.apply,pd.Series.map
+D://crw_data//df.apply\source38\code\pd.Series.apply_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 47, 'df.apply(lambda row: freq_hours(row), axis=1)',
+    'df.map(lambda row: freq_hours(row), axis=1)', t1, t2,
+    'pd.Series.apply', 'pd.Series.map'])
+",AttributeError,pd.Series.apply,pd.Series.map
+D://crw_data//df.apply\source40\code\pd.Series.apply_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 173,
+    'df_train[QUANT_COLS].apply(lambda x: st.skew(x))',
+    'df_train[QUANT_COLS].map(lambda x: st.skew(x))', t1, t2,
+    'pd.Series.apply', 'pd.Series.map'])
+",AttributeError,pd.Series.apply,pd.Series.map
+D://crw_data//df.apply\source42\code\np.sum_einsum_replace0.py,AssertionError: occurred at index 0,"writer.writerow([url, 49, 'np.sum(total_weights)',
+    ""np.einsum('i->',total_weights)"", t1, t2, 'np.sum', 'np.einsum'])
+",AssertionError,np.sum,np.einsum
+D://crw_data//df.apply\source54\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 35, ""labelCategories.category.fillna('unknown')"",
+    ""labelCategories.category.combine_first(labelCategories.category.applymap(lambda x: 'unknown'))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.apply\source58\code\pd.DataFrame.apply_where_replace0.py,"TypeError: \'Series\' objects are mutable, thus they cannot be hashed","writer.writerow([url, 16,
+    ""df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >\t    20 else row['combined_shot_type'], axis=1)""
+    ,
+    "" actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >\t    20 else row['combined_shot_type'])""
+    , t1, t2, 'pd.DataFrame.apply', 'pd.Series.apply'])
+",TypeError,pd.DataFrame.apply,pd.Series.apply
+D://crw_data//df.apply\source60\code\pd.DataFrame.apply_where_replace0.py,"TypeError: \'Series\' objects are mutable, thus they cannot be hashed","writer.writerow([url, 33,
+    ""df.apply(lambda row: row[field] if row[field] in filtered else float('NaN'),\t    axis=1)""
+    ,
+    "" df[field].apply(lambda row:row if row in filtered else float('NaN'))"",
+    t1, t2, 'pd.DataFrame.apply', 'pd.Series.apply'])
+",TypeError,pd.DataFrame.apply,pd.Series.apply
+D://crw_data//df.apply\source69\code\pd.DataFrame.apply_where_replace0.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 41,
+    ""df.apply(lambda row: 1 if row['month'] == 1 and row['day'] == 1 or row[\t    'month'] == 7 and row['day'] == 4 or row['month'] == 11 and row['day'] ==\t    11 or row['month'] == 12 and row['day'] == 25 or row['month'] == 1 and \t    row['day'] >= 15 and row['day'] <= 21 and row['weekday'] == 0 or row[\t    'month'] == 2 and row['day'] >= 15 and row['day'] <= 21 and row[\t    'weekday'] == 0 or row['month'] == 5 and row['day'] >= 25 and row['day'\t    ] <= 31 and row['weekday'] == 0 or row['month'] == 9 and row['day'] >= \t    1 and row['day'] <= 7 and row['weekday'] == 0 or row['month'] == 10 and\t    row['day'] >= 8 and row['day'] <= 14 and row['weekday'] == 0 or row[\t    'month'] == 11 and row['day'] >= 22 and row['day'] <= 28 and row[\t    'weekday'] == 3 else 0, axis=1)""
+    ,
+    "" df['month'] == 1 and df['day'] == 1 or df[\t    'month'] == 7 and df['day'] == 4 or df['month'] == 11 and df['day'] ==\t    11 or df['month'] == 12 and df['day'] == 25 or df['month'] == 1 and \t    df['day'] >= 15 and df['day'] <= 21 and df['weekday'] == 0 or df[\t    'month'] == 2 and df['day'] >= 15 and df['day'] <= 21 and df[\t    'weekday'] == 0 or df['month'] == 5 and df['day'] >= 25 and df['day'\t    ] <= 31 and df['weekday'] == 0 or df['month'] == 9 and df['day'] >= \t    1 and df['day'] <= 7 and df['weekday'] == 0 or df['month'] == 10 and\t    df['day'] >= 8 and df['day'] <= 14 and df['weekday'] == 0 or df[\t    'month'] == 11 and df['day'] >= 22 and df['day'] <= 28 and df[\t    'weekday'].apply(lambda row: 1 if row == 3 else 0)""
+    , t1, t2, 'pd.DataFrame.apply', 'pd.Series.apply'])
+",ValueError,pd.DataFrame.apply,pd.Series.apply
+D://crw_data//df.apply\source69\code\pd.DataFrame.apply_where_replace1.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 42,
+    ""df.apply(lambda row: 1 if row['month'] == 12 and row['day'] == 31 or row[\t    'month'] == 7 and row['day'] == 3 or row['month'] == 11 and row['day'] ==\t    10 or row['month'] == 12 and row['day'] == 24 or row['month'] == 1 and \t    row['day'] >= 14 and row['day'] <= 20 and row['weekday'] == 6 or row[\t    'month'] == 2 and row['day'] >= 14 and row['day'] <= 20 and row[\t    'weekday'] == 6 or row['month'] == 5 and row['day'] >= 24 and row['day'\t    ] <= 30 and row['weekday'] == 6 or (row['month'] == 9 and row['day'] >=\t    1 and row['day'] <= 6 or (row['month'] == 8 and row['day'] == 31) and \t    row['weekday'] == 6) or row['month'] == 10 and row['day'] >= 7 and row[\t    'day'] <= 13 and row['weekday'] == 6 or row['month'] == 11 and row[\t    'day'] >= 21 and row['day'] <= 27 and row['weekday'] == 2 else 0, axis=1)""
+    ,
+    "" df['month'] == 12 and df['day'] == 31 or df[\t    'month'] == 7 and df['day'] == 3 or df['month'] == 11 and df['day'] ==\t    10 or df['month'] == 12 and df['day'] == 24 or df['month'] == 1 and \t    df['day'] >= 14 and df['day'] <= 20 and df['weekday'] == 6 or df[\t    'month'] == 2 and df['day'] >= 14 and df['day'] <= 20 and df[\t    'weekday'] == 6 or df['month'] == 5 and df['day'] >= 24 and df['day'\t    ] <= 30 and df['weekday'] == 6 or (df['month'] == 9 and df['day'] >=\t    1 and df['day'] <= 6 or (df['month'] == 8 and df['day'] == 31) and \t    df['weekday'] == 6) or df['month'] == 10 and df['day'] >= 7 and df[\t    'day'] <= 13 and df['weekday'] == 6 or df['month'] == 11 and df[\t    'day'] >= 21 and df['day'] <= 27 and df['weekday'].apply(lambda row: 1 if row == 2 else 0)""
+    , t1, t2, 'pd.DataFrame.apply', 'pd.Series.apply'])
+",ValueError,pd.DataFrame.apply,pd.Series.apply
+D://crw_data//df.apply\source69\code\pd.Series.astype_replace0.py,AttributeError: \'datetime64[ns]\' is not a valid function for \'Series\' object,"writer.writerow([url, 39, ""df.pickup_datetime.astype('datetime64[ns]')"",
+    ""df.pickup_datetime.apply('datetime64[ns]')"", t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.astype\source2\code\np.linalg.norm_replace1.py,AssertionError,"writer.writerow([url, 444, ""np.linalg.norm(grads['dW' + str(L)])"",
+    ""np.sqrt(np.square(grads['dW' + str(L)]).sum())"", t1, t2,
+    'np.linalg.norm', 'np.sqrt_sum'])
+",AssertionError,np.linalg.norm,np.sqrt_sum
+D://crw_data//df.astype\source2\code\np.ndarray.sum_einsum_replace0.py,ValueError: einstein sum subscripts string contains too many subscripts for operand 0,"writer.writerow([url, 74, 'np.sum(t, axis=0)', ""np.einsum('ij->j',np)"", t1,
+    t2, 'np.ndarray.sum', 'np.einsum'])
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//df.astype\source2\code\np.ndarray.sum_einsum_replace1.py,ValueError: einstein sum subscripts string contains too many subscripts for operand 0,"writer.writerow([url, 96, 'np.sum(logprobs)', ""np.einsum('i->',np)"", t1, t2,
+    'np.ndarray.sum', 'np.einsum'])
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//df.astype\source2\code\np.sum_einsum_replace1.py,"ValueError: operand has more dimensions than subscripts given in einstein sum, but no \'...\' ellipsis provided to broadcast the extra dimensions.","writer.writerow([url, 96, 'np.sum(logprobs)', ""np.einsum('i->',logprobs)"",
+    t1, t2, 'np.sum', 'np.einsum'])
+",ValueError,np.sum,np.einsum
+D://crw_data//df.at\source14\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 42, 'df_all.iloc[:num_train]',
+    'df_all.iat[:num_train]', t1, t2, 'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.at\source16\code\pd.Series.replace_map_replace0.py,TypeError: \'tuple\' object is not callable,"writer.writerow([url, 3399, ""df_all['search_term'].replace(keys, values)"",
+    ""df_all['search_term'].map(keys, values)"", t1, t2, 'pd.Series.replace',
+    'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.at\source21\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 47, ""s.replace(' x ', ' xby ')"",
+    ""s.map(' x ', ' xby ')"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.at\source23\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 44, ""str1.replace(' in.', 'in.')"",
+    ""str1.map(' in.', 'in.')"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.at\source26\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 26, ""s.replace('inches', 'in.')"",
+    ""s.map('inches', 'in.')"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.at\source9\code\pd.Series.replace_map_replace1.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 34, ""s.replace('inch', 'in.')"",
+    ""s.map('inch', 'in.')"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.fillna\source10\code\pd.Series.astype_replace0.py,AttributeError: \'DatetimeIndex\' object has no attribute \'apply\',"writer.writerow([url, 67,
+    ""pd.DatetimeIndex(df['purchase_date']).astype(np.int64)"",
+    ""pd.DatetimeIndex(df['purchase_date']).apply(np.int64)"", t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.fillna\source13\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 141, 'properties[c].fillna(-1)',
+    'properties[c].combine_first(properties[c].applymap(lambda x: -1))', t1,
+    t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.fillna\source20\code\np.ndarray.sum_einsum_replace0.py,"ValueError: operand has more dimensions than subscripts given in einstein sum, but no \'...\' ellipsis provided to broadcast the extra dimensions.","writer.writerow([url, 63, 'dataset.isnull().values.sum()',
+    ""np.einsum('i->',dataset.isnull().values)"", t1, t2, 'np.ndarray.sum',
+    'np.einsum'])
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//df.fillna\source20\code\np.ndarray.sum_einsum_replace1.py,"ValueError: operand has more dimensions than subscripts given in einstein sum, but no \'...\' ellipsis provided to broadcast the extra dimensions.","writer.writerow([url, 75, 'dataset.isnull().sum()',
+    ""np.einsum('i->',dataset.isnull())"", t1, t2, 'np.ndarray.sum', 'np.einsum']
+    )
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//df.fillna\source23\code\np.arange_replace0.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 53, 'np.arange(0.046, 0.051, 1e-07)',
+    'np.array(range(0.046, 0.051, 1e-07))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//df.fillna\source23\code\pd.Series.astype_replace3.py,AttributeError: \'category\' is not a valid function for \'Series\' object,"writer.writerow([url, 19,
+    ""df['Name'].str.contains(' Mrs. ').astype('category')"",
+    ""df['Name'].str.contains(' Mrs. ').apply('category')"", t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.fillna\source23\code\pd.Series.astype_replace4.py,AttributeError: \'category\' is not a valid function for \'Series\' object,"writer.writerow([url, 20,
+    ""df['Name'].str.contains(' Miss. ').astype('category')"",
+    ""df['Name'].str.contains(' Miss. ').apply('category')"", t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.fillna\source23\code\pd.Series.astype_replace5.py,AttributeError: \'category\' is not a valid function for \'Series\' object,"writer.writerow([url, 21,
+    ""df['Name'].str.contains(' Ms. ').astype('category')"",
+    ""df['Name'].str.contains(' Ms. ').apply('category')"", t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.fillna\source23\code\pd.Series.astype_replace6.py,AttributeError: \'category\' is not a valid function for \'Series\' object,"writer.writerow([url, 27, ""df['title'].astype('category')"",
+    ""df['title'].apply('category')"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.fillna\source25\code\pd.Series.astype_replace0.py,AssertionError,"writer.writerow([url, 21, 'properties[c].astype(np.float32)',
+    'properties[c].apply(np.float32)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.fillna\source26\code\pd.Series.astype_replace0.py,AssertionError,"writer.writerow([url, 221, 'prop[c].astype(np.float32)',
+    'prop[c].apply(np.float32)', t1, t2, 'pd.Series.astype', 'pd.Series.apply']
+    )
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.fillna\source3\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 35, ""df.fillna('unknown')"",
+    ""df.combine_first(df.applymap(lambda x: 'unknown'))"", t1, t2,
+    'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.fillna\source32\code\np.dot_einsum_replace1.py,ValueError: einstein sum subscripts string contains too many subscripts for operand 1,"writer.writerow([url, 200,
+    'np.dot(input_x.transpose().iloc[1:], h - true_output_y)',
+    ""np.einsum('ij,jm->im',input_x.transpose().iloc[1:], h - true_output_y)"",
+    t1, t2, 'np.dot', 'np.einsum'])
+",ValueError,np.dot,np.einsum
+D://crw_data//df.fillna\source32\code\np.transpose_column_stack_replace2.py,AttributeError: \'DataFrame\' object has no attribute \'column_stack\',"writer.writerow([url, 197, 'input_x.transpose()', 'input_x.column_stack()',
+    t1, t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//df.fillna\source32\code\np.transpose_column_stack_replace3.py,AttributeError: \'DataFrame\' object has no attribute \'column_stack\',"writer.writerow([url, 200, 'input_x.transpose()', 'input_x.column_stack()',
+    t1, t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//df.fillna\source33\code\np.ndarray.sum_einsum_replace0.py,ValueError: einstein sum subscripts string contains too many subscripts for operand 0,"writer.writerow([url, 29, 'np.sum(probs ** 2)', ""np.einsum('i->',np)"", t1,
+    t2, 'np.ndarray.sum', 'np.einsum'])
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//df.fillna\source33\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 27,
+    'np.unique(column_df, return_counts=True)[1].astype(float)',
+    'np.unique(column_df, return_counts=True)[1].apply(float)', t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.fillna\source41\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'to_map\',"writer.writerow([url, 451,
+    ""df[c].replace(to_replace=minor, value='minor', inplace=True)"",
+    ""df[c].map(to_map=minor, value='minor', inplace=True)"", t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.fillna\source44\code\np.ndarray.sum_einsum_replace0.py,"ValueError: operand has more dimensions than subscripts given in einstein sum, but no \'...\' ellipsis provided to broadcast the extra dimensions.","writer.writerow([url, 96, 'test_df.isnull().sum()',
+    ""np.einsum('i->',test_df.isnull())"", t1, t2, 'np.ndarray.sum', 'np.einsum']
+    )
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//df.fillna\source44\code\pd.Series.replace_map_replace1.py,TypeError: map() got an unexpected keyword argument \'inplace\',"writer.writerow([url, 76,
+    'train_df.Assortment.replace(mappings, inplace=True)',
+    'train_df.Assortment.map(mappings, inplace=True)', t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.fillna\source48\code\np.ndarray.sum_count_nonzero_replace0.py,AssertionError,"writer.writerow([url, 47, 'df.memory_usage().sum()',
+    'np.count_nonzero(df.memory_usage(),)', t1, t2, 'np.ndarray.sum',
+    'np.count_nonzero'])
+",AssertionError,np.ndarray.sum,np.count_nonzero
+D://crw_data//df.fillna\source48\code\np.ndarray.sum_count_nonzero_replace1.py,AssertionError,"writer.writerow([url, 72, 'df.memory_usage().sum()',
+    'np.count_nonzero(df.memory_usage(),)', t1, t2, 'np.ndarray.sum',
+    'np.count_nonzero'])
+",AssertionError,np.ndarray.sum,np.count_nonzero
+D://crw_data//df.fillna\source48\code\pd.Series.astype_replace1.py,AssertionError,"writer.writerow([url, 68, 'df[col].astype(np.float32)',
+    'df[col].apply(np.float32)', t1, t2, 'pd.Series.astype', 'pd.Series.apply']
+    )
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.fillna\source48\code\pd.Series.astype_replace2.py,AssertionError,"writer.writerow([url, 66, 'df[col].astype(np.float16)',
+    'df[col].apply(np.float16)', t1, t2, 'pd.Series.astype', 'pd.Series.apply']
+    )
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.fillna\source52\code\pd.Series.astype_replace0.py,AssertionError,"writer.writerow([url, 117,
+    '(train_df.iloc[:, 2:].sum(axis=1) == 0).astype(int)',
+    '(train_df.iloc[:, 2:].sum(axis=1) == 0).apply(int)', t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.fillna\source54\code\pd.Series.iloc_replace0.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 447, 'y.iloc[train_index]', 'y.iat[train_index]', t1,
+    t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.fillna\source54\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 447, 'y.iloc[test_index]', 'y.iat[test_index]', t1,
+    t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.fillna\source54\code\pd.Series.iloc_replace4.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 499, 'y_valid_pred.iloc[test_index]',
+    'y_valid_pred.iat[test_index]', t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source12\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 188, 'y_.iloc[trn_idx]', 'y_.iat[trn_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source12\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 189, 'y_.iloc[val_idx]', 'y_.iat[val_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source19\code\pd.Series.iloc_replace5.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 237, 'target.iloc[valid_idx]',
+    'target.iat[valid_idx]', t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source19\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'inplace\',"writer.writerow([url, 100,
+    ""merged_df['boostsRatio'].replace(np.inf, 0, inplace=True)"",
+    ""merged_df['boostsRatio'].map(np.inf, 0, inplace=True)"", t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.iloc\source2\code\pd.DataFrame.iloc_replace0.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 185, 'trn_df.iloc[trn_idx]', 'trn_df.iat[trn_idx]',
+    t1, t2, 'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iloc\source2\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 185, 'target.iloc[trn_idx]', 'target.iat[trn_idx]',
+    t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source2\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 186, 'target.iloc[val_idx]', 'target.iat[val_idx]',
+    t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source2\code\pd.Series.iloc_replace5.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 211, 'trn_tgt.iloc[idx]', 'trn_tgt.iat[idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source20\code\np.ndarray.sum_einsum_replace0.py,"ValueError: operand has more dimensions than subscripts given in einstein sum, but no \'...\' ellipsis provided to broadcast the extra dimensions.","writer.writerow([url, 44, 'df.iloc[:, a:b].sum(1)',
+    ""np.einsum('i->',df.iloc[:, a:b])"", t1, t2, 'np.ndarray.sum', 'np.einsum'])
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//df.iloc\source20\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 44, 'df.iloc[:, a:b]', 'df.iat[:, a:b]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iloc\source21\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 32, 'df.iloc[:df_train.shape[0],]',
+    'df.iat[:df_train.shape[0],]', t1, t2, 'pd.DataFrame.iloc',
+    'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iloc\source21\code\pd.DataFrame.iloc_replace1.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 33, 'df.iloc[df_train.shape[0]:,]',
+    'df.iat[df_train.shape[0]:,]', t1, t2, 'pd.DataFrame.iloc',
+    'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iloc\source22\code\pd.DataFrame.iloc_replace0.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 184, 'trn_df.iloc[trn_idx]', 'trn_df.iat[trn_idx]',
+    t1, t2, 'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iloc\source22\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 184, 'target.iloc[trn_idx]', 'target.iat[trn_idx]',
+    t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source22\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 185, 'target.iloc[val_idx]', 'target.iat[val_idx]',
+    t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source22\code\pd.Series.iloc_replace5.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 210, 'trn_tgt.iloc[idx]', 'trn_tgt.iat[idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source29\code\pd.Series.iloc_replace0.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 25, 'd[t].iloc[i]', 'd[t].iat[i]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source30\code\np.ndarray.sum_count_nonzero_replace0.py,AssertionError,"writer.writerow([url, 69, 'df.sum(axis=0)', 'np.count_nonzero(df,axis=0)',
+    t1, t2, 'np.ndarray.sum', 'np.count_nonzero'])
+",AssertionError,np.ndarray.sum,np.count_nonzero
+D://crw_data//df.iloc\source30\code\np.ndarray.sum_einsum_replace0.py,AssertionError,"writer.writerow([url, 69, 'df.sum(axis=0)', ""np.einsum('ij->j',df)"", t1, t2,
+    'np.ndarray.sum', 'np.einsum'])
+",AssertionError,np.ndarray.sum,np.einsum
+D://crw_data//df.iloc\source30\code\pd.DataFrame.iloc_replace0.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 105, 'df.iloc[train_idx]', 'df.iat[train_idx]', t1,
+    t2, 'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iloc\source30\code\pd.Series.astype_replace0.py,AttributeError: apply not found,"writer.writerow([url, 59, 'dummies.astype(np.int8)',
+    'dummies.apply(np.int8)', t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.iloc\source31\code\pd.DataFrame.iloc_replace0.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 102, 'merged_df.iloc[train_idx]',
+    'merged_df.iat[train_idx]', t1, t2, 'pd.DataFrame.iloc',
+    'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iloc\source31\code\pd.Series.astype_replace0.py,AssertionError,"writer.writerow([url, 69, ""merged_df['dependency'].astype(np.float32)"",
+    ""merged_df['dependency'].apply(np.float32)"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.iloc\source31\code\pd.Series.astype_replace1.py,AssertionError,"writer.writerow([url, 70, ""merged_df['edjefe'].astype(np.int8)"",
+    ""merged_df['edjefe'].apply(np.int8)"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.iloc\source31\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 102, 'target.iloc[train_idx]',
+    'target.iat[train_idx]', t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source31\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 103, 'target.iloc[valid_idx]',
+    'target.iat[valid_idx]', t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source33\code\np.ndarray.sum_count_nonzero_replace0.py,AssertionError: occurred at index E\xe6\xb4\xbe,"writer.writerow([url, 104, 'row.sum()', 'np.count_nonzero(row,)', t1, t2,
+    'np.ndarray.sum', 'np.count_nonzero'])
+",AssertionError,np.ndarray.sum,np.count_nonzero
+D://crw_data//df.iloc\source33\code\pd.Series.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 80, 'features.iloc[:classes.shape[0]]',
+    'features.iat[:classes.shape[0]]', t1, t2, 'pd.Series.iloc',
+    'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.iloc\source38\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 154, 'df.iloc[:train.shape[0], :]',
+    'df.iat[:train.shape[0], :]', t1, t2, 'pd.DataFrame.iloc',
+    'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iloc\source40\code\np.column_stack_transpose_replace0.py,"ValueError: could not broadcast input array from shape (891,3) into shape (891)","writer.writerow([url, 88,
+    'np.column_stack((X_initial, train_df_as_dic[key]))',
+    'np.transpose((X_initial, train_df_as_dic[key]))', t1, t2,
+    'np.column_stack', 'np.transpose'])
+",ValueError,np.column_stack,np.transpose
+D://crw_data//df.iloc\source40\code\np.column_stack_transpose_replace2.py,"ValueError: could not broadcast input array from shape (418,3) into shape (418)","writer.writerow([url, 179,
+    'np.column_stack((X_initial, test_df_as_dic[key]))',
+    'np.transpose((X_initial, test_df_as_dic[key]))', t1, t2,
+    'np.column_stack', 'np.transpose'])
+",ValueError,np.column_stack,np.transpose
+D://crw_data//df.iloc\source40\code\np.column_stack_transpose_replace4.py,"ValueError: could not broadcast input array from shape (418,1) into shape (418)","writer.writerow([url, 199, 'np.column_stack((passenger, y_pred_test))',
+    'np.transpose((passenger, y_pred_test))', t1, t2, 'np.column_stack',
+    'np.transpose'])
+",ValueError,np.column_stack,np.transpose
+D://crw_data//df.iloc\source45\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 17, 'train_df.iloc[0:5000, 1:]',
+    'train_df.iat[0:5000, 1:]', t1, t2, 'pd.DataFrame.iloc',
+    'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iloc\source46\code\pd.DataFrame.iloc_replace0.py,TypeError: _get_value() missing 1 required positional argument: \'col\',"writer.writerow([url, 78, 'train_df.iloc[0]', 'train_df.iat[0]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",TypeError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iloc\source46\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 186, ""dataset['Sex'].map({'male': 0, 'female': 1})"",
+    ""pd.DataFrame(dataset['Sex']).replace({'male': 0, 'female': 1})"", t1,
+    t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.iloc\source46\code\pd.Series.map_replace_replace1.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 240,
+    ""dataset['Embarked'].map({'S': 0, 'Q': 1, 'C': 2})"",
+    ""pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'Q': 1, 'C': 2})"",
+    t1, t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.iloc\source55\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'regex\',"writer.writerow([url, 281,
+    ""main_all_df['Name'].replace('(\\,..*)', '', regex=True)"",
+    ""main_all_df['Name'].map('(\\,..*)', '', regex=True)"", t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.iloc\source56\code\np.column_stack_transpose_replace0.py,"ValueError: could not broadcast input array from shape (20000,2) into shape (20000)","writer.writerow([url, 97, 'np.column_stack(features)',
+    'np.transpose(features)', t1, t2, 'np.column_stack', 'np.transpose'])
+",ValueError,np.column_stack,np.transpose
+D://crw_data//df.iloc\source60\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 15, 'df.iloc[:, (i)]', 'df.iat[:, (i)]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iloc\source62\code\np.sum_einsum_replace0.py,AssertionError,"writer.writerow([url, 249, 'np.sum(yyy)', ""np.einsum('i->',yyy)"", t1, t2,
+    'np.sum', 'np.einsum'])
+",AssertionError,np.sum,np.einsum
+D://crw_data//df.iloc\source65\code\np.ndarray.sum_einsum_replace0.py,ValueError: einstein sum subscripts string contains too many subscripts for operand 0,"writer.writerow([url, 93, 'np.sum(b_s)', ""np.einsum('i->',np)"", t1, t2,
+    'np.ndarray.sum', 'np.einsum'])
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//df.iloc\source65\code\pd.DataFrame.fillna_replace0.py,AssertionError,"writer.writerow([url, 561, 'full_test.fillna(self.fill_nan)',
+    'full_test.combine_first(full_test.applymap(lambda x: self.fill_nan))',
+    t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AssertionError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.iloc\source70\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 65,
+    'shuffle(fold0, random_state=123).iloc[0:300000, :]',
+    'shuffle(fold0, random_state=123).iat[0:300000, :]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iloc\source73\code\np.column_stack_vstack_replace0.py,AttributeError: \'list\' object has no attribute \'T\',"writer.writerow([url, 203, 'np.column_stack((ids, cts))',
+    'np.vstack((ids.T, cts.T)).T', t1, t2, 'np.column_stack', 'np.vstack'])
+",AttributeError,np.column_stack,np.vstack
+D://crw_data//df.iloc\source79\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 45, 'X[:, self.left:self.right].astype(int)',
+    'X[:, self.left:self.right].apply(int)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.iloc\source79\code\pd.Series.astype_replace1.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 52, 'X[:, self.left:self.right].astype(int)',
+    'X[:, self.left:self.right].apply(int)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.iloc\source87\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 92, 'train_df.iloc[:, :-1]', 'train_df.iat[:, :-1]',
+    t1, t2, 'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.iterrows\source18\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'inplace\',"writer.writerow([url, 547, ""p_df[x].replace('yes', 1, inplace=True)"",
+    ""p_df[x].map('yes', 1, inplace=True)"", t1, t2, 'pd.Series.replace',
+    'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.iterrows\source7\code\pd.Series.replace_map_replace0.py,TypeError: \'str\' object is not callable,"writer.writerow([url, 159, ""df_data['Title'].replace('Mlle', 'Miss')"",
+    ""df_data['Title'].map('Mlle', 'Miss')"", t1, t2, 'pd.Series.replace',
+    'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.join\source1\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'inplace\',"writer.writerow([url, 62,
+    ""df['DAYS_EMPLOYED'].replace(365243, np.nan, inplace=True)"",
+    ""df['DAYS_EMPLOYED'].map(365243, np.nan, inplace=True)"", t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.join\source10\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 62,
+    ""df['NEW_SCORES_STD'].fillna(df['NEW_SCORES_STD'].mean())"",
+    ""df['NEW_SCORES_STD'].combine_first(df['NEW_SCORES_STD'].applymap(lambda x: df['NEW_SCORES_STD'].mean()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.join\source10\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'inplace\',"writer.writerow([url, 47,
+    ""df['DAYS_EMPLOYED'].replace(365243, np.nan, inplace=True)"",
+    ""df['DAYS_EMPLOYED'].map(365243, np.nan, inplace=True)"", t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.join\source11\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 75, 'y.iloc[trn_idx]', 'y.iat[trn_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.join\source11\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 77, 'y.iloc[val_idx]', 'y.iat[val_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.join\source46\code\pd.DataFrame.loc_replace11.py,AttributeError: \'float\' object has no attribute \'equals\',"writer.writerow([url, 512, ""test_df.loc[1116, 'GarageType']"",
+    ""test_df.ix[1116, 'GarageType']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.join\source59\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 274, ""train_df['TARGET'].iloc[train_idx]"",
+    ""train_df['TARGET'].iat[train_idx]"", t1, t2, 'pd.Series.iloc',
+    'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.join\source59\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 275, ""train_df['TARGET'].iloc[valid_idx]"",
+    ""train_df['TARGET'].iat[valid_idx]"", t1, t2, 'pd.Series.iloc',
+    'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//df.join\source61\code\pd.DataFrame.loc_replace0.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 30, ""test_df.loc[666, 'GarageQual']"",
+    ""test_df.ix[666, 'GarageQual']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.join\source61\code\pd.DataFrame.loc_replace1.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 31, ""test_df.loc[666, 'GarageCond']"",
+    ""test_df.ix[666, 'GarageCond']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.join\source61\code\pd.DataFrame.loc_replace2.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 32, ""test_df.loc[666, 'GarageFinish']"",
+    ""test_df.ix[666, 'GarageFinish']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.join\source61\code\pd.DataFrame.loc_replace3.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 33, ""test_df.loc[666, 'GarageYrBlt']"",
+    ""test_df.ix[666, 'GarageYrBlt']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.join\source61\code\pd.DataFrame.loc_replace4.py,AttributeError: \'float\' object has no attribute \'equals\',"writer.writerow([url, 37, ""test_df.loc[1116, 'GarageType']"",
+    ""test_df.ix[1116, 'GarageType']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.join\source62\code\pd.DataFrame.loc_replace0.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 29, ""test_df.loc[666, 'GarageQual']"",
+    ""test_df.ix[666, 'GarageQual']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.join\source62\code\pd.DataFrame.loc_replace1.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 30, ""test_df.loc[666, 'GarageCond']"",
+    ""test_df.ix[666, 'GarageCond']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.join\source62\code\pd.DataFrame.loc_replace2.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 31, ""test_df.loc[666, 'GarageFinish']"",
+    ""test_df.ix[666, 'GarageFinish']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.join\source62\code\pd.DataFrame.loc_replace3.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 32, ""test_df.loc[666, 'GarageYrBlt']"",
+    ""test_df.ix[666, 'GarageYrBlt']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.join\source62\code\pd.DataFrame.loc_replace4.py,AttributeError: \'float\' object has no attribute \'equals\',"writer.writerow([url, 36, ""test_df.loc[1116, 'GarageType']"",
+    ""test_df.ix[1116, 'GarageType']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.join\source7\code\pd.DataFrame.loc_replace1.py,"KeyError: ""None of [Index([\'EXT_SOURCE_1\', \'EXT_SOURCE_2\', \'EXT_SOURCE_3\', \'DAYS_BIRTH\',\\n       \'CNT_PAYMENT\', \'AMT_CREDIT\', \'AMT_ANNUITY\', \'AMT_GOODS_PRICE\',\\n       \'AMT_APPLICATION\', \'DAYS_EMPLOYED\', \'AMT_CREDIT_SUM_DEBT\',\\n       \'AMT_CREDIT_SUM\', \'DAYS_ID_PUBLISH\', \'AMT_CREDIT_MAX_OVERDUE\',\\n       \'SELLERPLACE_AREA\', \'DAYS_CREDIT\', \'AMT_DOWN_PAYMENT\',\\n       \'DAYS_CREDIT_ENDDATE\', \'DAYS_REGISTRATION\', \'CNT_DRAWINGS_ATM_CURRENT\',\\n       \'DAYS_ENDDATE_FACT\', \'OWN_CAR_AGE\', \'DAYS_DECISION\',\\n       \'DAYS_LAST_PHONE_CHANGE\', \'DAYS_LAST_DUE_1ST_VERSION\',\\n       \'DAYS_CREDIT_UPDATE\', \'DAYS_FIRST_DUE\', \'DAYS_TERMINATION\',\\n       \'DAYS_LAST_DUE\', \'cnt_SK_ID_BUREAU\', \'CNT_DRAWINGS_CURRENT\',\\n       \'CODE_GENDER\', \'AMT_INCOME_TOTAL\', \'ORGANIZATION_TYPE\',\\n       \'bureau_balance_r=0\', \'RATE_DOWN_PAYMENT\', \'REGION_POPULATION_RELATIVE\',\\n       \'NAME_EDUCATION_TYPE\', \'AMT_CREDIT_SUM_LIMIT\', \'LONGEST_MONTHS\',\\n       \'cnt_SK_ID_PREV\', \'AMT_CREDIT_LIMIT_ACTUAL\', \'OCCUPATION_TYPE\',\\n       \'AMT_PAYMENT_CURRENT\', \'NAME_FAMILY_STATUS\',\\n       \'NFLAG_INSURED_ON_APPROVAL\', \'bureau_balance_r=C\', \'TOTALAREA_MODE\',\\n       \'bureau_balance_r=X\', \'bureau_balance_r=1\'],\\n      dtype=\'object\', name=\'feature\')] are in the [columns]""","writer.writerow([url, 293,
+    'pd.concat(feature_importance_dfs, axis=0).loc[cols]',
+    'pd.concat(feature_importance_dfs, axis=0)[cols]', t1, t2,
+    'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//df.loc\source101\code\pd.DataFrame.loc_replace0.py,KeyError: 14712,"writer.writerow([url, 57, ""train_df.loc[train_df['q1_freq'].idxmax()]"",
+    ""train_df[train_df['q1_freq'].idxmax()]"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//df.loc\source101\code\pd.DataFrame.loc_replace1.py,KeyError: 0,"writer.writerow([url, 62, 'test_df.loc[test_1_int_idx]',
+    'test_df[test_1_int_idx]', t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//df.loc\source106\code\np.column_stack_transpose_replace0.py,"ValueError: could not broadcast input array from shape (8395,3) into shape (8395)","writer.writerow([url, 163, 'np.column_stack((row_ids, pred_labels))',
+    'np.transpose((row_ids, pred_labels))', t1, t2, 'np.column_stack',
+    'np.transpose'])
+",ValueError,np.column_stack,np.transpose
+D://crw_data//df.loc\source106\code\pd.Series.astype_replace1.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 129, 'cell_test[:, (-1)].flatten().astype(np.int32)',
+    'cell_test[:, (-1)].flatten().apply(np.int32)', t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.loc\source107\code\pd.DataFrame.loc_replace0.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 63, ""train_df.loc[iter, 'Name']"",
+    ""train_df.ix[iter, 'Name']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix']
+    )
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.loc\source107\code\pd.DataFrame.loc_replace1.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 63, ""train_df.loc[iter, 'Title']"",
+    ""train_df.ix[iter, 'Title']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.loc\source107\code\pd.DataFrame.loc_replace4.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 165, ""test_df.loc[iter, 'Name']"",
+    ""test_df.ix[iter, 'Name']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.loc\source107\code\pd.DataFrame.loc_replace5.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 165, ""test_df.loc[iter, 'Title']"",
+    ""test_df.ix[iter, 'Title']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix']
+    )
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.loc\source120\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 134, ""dataset['Sex'].map({'female': 1, 'male': 0})"",
+    ""pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})"", t1,
+    t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.loc\source120\code\pd.Series.map_replace_replace1.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 238,
+    ""dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})"",
+    ""pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})"",
+    t1, t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.loc\source122\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 120, ""dataset['Sex'].map({'female': 1, 'male': 0})"",
+    ""pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})"", t1,
+    t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.loc\source122\code\pd.Series.map_replace_replace1.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 213,
+    ""dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})"",
+    ""pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})"",
+    t1, t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.loc\source125\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'inplace\',"writer.writerow([url, 64, 'names.replace(item, 2, inplace=True)',
+    'names.map(item, 2, inplace=True)', t1, t2, 'pd.Series.replace',
+    'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.loc\source135\code\pd.Series.astype_replace0.py,AssertionError,"writer.writerow([url, 209, '(df[col] > d_median[col]).astype(np.uint8)',
+    '(df[col] > d_median[col]).apply(np.uint8)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//df.loc\source135\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'inplace\',"writer.writerow([url, 179,
+    ""df['ps_reg_03_A'].replace(19, -1, inplace=True)"",
+    ""df['ps_reg_03_A'].map(19, -1, inplace=True)"", t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.loc\source136\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 104, ""dataset['Sex'].map({'female': 1, 'male': 0})"",
+    ""pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})"", t1,
+    t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.loc\source136\code\pd.Series.map_replace_replace1.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 189,
+    ""dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})"",
+    ""pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})"",
+    t1, t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.loc\source143\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 72, ""dataset['Sex'].map({'female': 1, 'male': 0})"",
+    ""pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})"", t1,
+    t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.loc\source143\code\pd.Series.map_replace_replace1.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 142,
+    ""dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})"",
+    ""pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})"",
+    t1, t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.loc\source154\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 128, ""dataset['Sex'].map({'female': 1, 'male': 0})"",
+    ""pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})"", t1,
+    t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.loc\source154\code\pd.Series.map_replace_replace1.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 234,
+    ""dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})"",
+    ""pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})"",
+    t1, t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.loc\source162\code\pd.Series.replace_map_replace0.py,TypeError: \'list\' object is not callable,"writer.writerow([url, 73, ""df['Title'].replace(['Mme', 'Ms'], 'Mrs')"",
+    ""df['Title'].map(['Mme', 'Ms'], 'Mrs')"", t1, t2, 'pd.Series.replace',
+    'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.loc\source180\code\np.arange_replace0.py,b'TypeError: range() does not take keyword arguments\r\n',"writer.writerow([url, 65,
+    'np.arange(predictions.shape[1], dtype=np.float32)',
+    'np.array(range(predictions.shape[1], dtype=np.float32))', t1, t2,
+    'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//df.loc\source180\code\np.column_stack_transpose_replace0.py,"ValueError: could not broadcast input array from shape (7574,3) into shape (7574)","writer.writerow([url, 129, 'np.column_stack((row_ids, pred_labels))',
+    'np.transpose((row_ids, pred_labels))', t1, t2, 'np.column_stack',
+    'np.transpose'])
+",ValueError,np.column_stack,np.transpose
+D://crw_data//df.loc\source19\code\pd.Series.str_replace0.py,MemoryError,"writer.writerow([url, 33, 'df.click_time.str[14:16]',
+    'df.click_time.map(lambda x: x[14:16])', t1, t2, 'pd.Series.str',
+    'pd.Series.map'])
+",MemoryError,pd.Series.str,pd.Series.map
+D://crw_data//df.loc\source19\code\pd.Series.str_replace1.py,MemoryError,"writer.writerow([url, 33, 'df.click_time.str[11:13]',
+    'df.click_time.map(lambda x: x[11:13])', t1, t2, 'pd.Series.str',
+    'pd.Series.map'])
+",MemoryError,pd.Series.str,pd.Series.map
+D://crw_data//df.loc\source220\code\pd.DataFrame.loc_replace0.py,AttributeError: \'numpy.float64\' object has no attribute \'equals\',"writer.writerow([url, 14, ""df.loc[passenger, 'Age']"",
+    ""df.ix[passenger, 'Age']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//df.loc\source242\code\np.column_stack_transpose_replace0.py,"ValueError: could not broadcast input array from shape (5733,3) into shape (5733)","writer.writerow([url, 127, 'np.column_stack((row_ids, pred_labels))',
+    'np.transpose((row_ids, pred_labels))', t1, t2, 'np.column_stack',
+    'np.transpose'])
+",ValueError,np.column_stack,np.transpose
+D://crw_data//df.loc\source254\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 119, ""dataset['Sex'].map({'female': 1, 'male': 0})"",
+    ""pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})"", t1,
+    t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.loc\source254\code\pd.Series.map_replace_replace1.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 195,
+    ""dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})"",
+    ""pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})"",
+    t1, t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//df.loc\source267\code\np.column_stack_transpose_replace0.py,"ValueError: could not broadcast input array from shape (8395,3) into shape (8395)","writer.writerow([url, 165, 'np.column_stack((row_ids, pred_labels))',
+    'np.transpose((row_ids, pred_labels))', t1, t2, 'np.column_stack',
+    'np.transpose'])
+",ValueError,np.column_stack,np.transpose
+D://crw_data//df.loc\source268\code\np.column_stack_transpose_replace0.py,"ValueError: could not broadcast input array from shape (5733,3) into shape (5733)","writer.writerow([url, 109, 'np.column_stack((row_ids, pred_labels))',
+    'np.transpose((row_ids, pred_labels))', t1, t2, 'np.column_stack',
+    'np.transpose'])
+",ValueError,np.column_stack,np.transpose
+D://crw_data//df.loc\source83\code\np.column_stack_transpose_replace0.py,"ValueError: could not broadcast input array from shape (4392,3) into shape (4392)","writer.writerow([url, 50, 'np.column_stack((row_ids, pred_labels))',
+    'np.transpose((row_ids, pred_labels))', t1, t2, 'np.column_stack',
+    'np.transpose'])
+",ValueError,np.column_stack,np.transpose
+D://crw_data//df.loc\source88\code\np.ndarray.sum_count_nonzero_replace0.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 61,
+    ""df_train.groupby('idhogar')['parentesco1'].sum()"",
+    ""np.count_nonzero(df_train.groupby('idhogar')['parentesco1'],)"", t1, t2,
+    'np.ndarray.sum', 'np.count_nonzero'])
+",ValueError,np.ndarray.sum,np.count_nonzero
+D://crw_data//df.loc\source88\code\np.ndarray.sum_einsum_replace0.py,"ValueError: operand has more dimensions than subscripts given in einstein sum, but no \'...\' ellipsis provided to broadcast the extra dimensions.","writer.writerow([url, 61,
+    ""df_train.groupby('idhogar')['parentesco1'].sum()"",
+    ""np.einsum('i->',df_train.groupby('idhogar')['parentesco1'])"", t1, t2,
+    'np.ndarray.sum', 'np.einsum'])
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//df.merge\source81\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 67, 'train.iloc[:, (i)]', 'train.iat[:, (i)]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//df.merge\source88\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 59, 'df_2017.prev_unit_sales.fillna(0)',
+    'df_2017.prev_unit_sales.combine_first(df_2017.prev_unit_sales.applymap(lambda x: 0))'
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//df.replace\source1\code\pd.Series.replace_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 72, ""df.replace(cols_to_replace, 'NA')"",
+    ""df.map(cols_to_map, 'NA')"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//df.sum\source5\code\pd.Series.astype_replace0.py,"TypeError: (""cannot convert the series to <class \'int\'>"", \'occurred at index v1\')","writer.writerow([url, 21, 'pd.isnull(train).astype(int)',
+    'pd.isnull(train).apply(int)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",TypeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.abs\source105\code\np.hstack_concatenate_replace0.py,AssertionError,"writer.writerow([url, 163,
+    'np.hstack([X_train, month_model.predict(month_values.reshape(-1, 1))])',
+    'np.concatenate([X_train, month_model.predict(month_values.reshape(-1, 1))], axis=1)'
+    , t1, t2, 'np.hstack', 'np.concatenate'])
+",AssertionError,np.hstack,np.concatenate
+D://crw_data//np.abs\source105\code\np.hstack_replace0.py,AssertionError,"writer.writerow([url, 163,
+    'np.hstack([X_train, month_model.predict(month_values.reshape(-1, 1))])',
+    'np.append(X_train, month_model.predict(month_values.reshape(-1, 1)), axis=1)'
+    , t1, t2, 'np.hstack', 'np.append'])
+",AssertionError,np.hstack,np.append
+D://crw_data//np.abs\source108\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 77, 'train_test.iloc[:ntrain, :]',
+    'train_test.iat[:ntrain, :]', t1, t2, 'pd.DataFrame.iloc',
+    'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//np.abs\source109\code\pd.Series.astype_replace1.py,"TypeError: (""cannot convert the series to <class \'int\'>"", \'occurred at index var3\')","writer.writerow([url, 41, '(test[features] == 0).astype(int)',
+    '(test[features] == 0).apply(int)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",TypeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.abs\source3\code\np.hstack_concatenate_replace0.py,AssertionError,"writer.writerow([url, 193, 'np.hstack([X_train, month_avg_values])',
+    'np.concatenate([X_train, month_avg_values], axis=1)', t1, t2,
+    'np.hstack', 'np.concatenate'])
+",AssertionError,np.hstack,np.concatenate
+D://crw_data//np.abs\source3\code\np.hstack_replace0.py,AssertionError,"writer.writerow([url, 193, 'np.hstack([X_train, month_avg_values])',
+    'np.append(X_train, month_avg_values, axis=1)', t1, t2, 'np.hstack',
+    'np.append'])
+",AssertionError,np.hstack,np.append
+D://crw_data//np.abs\source33\code\pd.Series.replace_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 169, 'complete_data.replace(-inf, 0)',
+    'complete_data.map(-inf, 0)', t1, t2, 'pd.Series.replace', 'pd.Series.map']
+    )
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.abs\source4\code\pd.Series.replace_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 43, 'train.replace(-1, np.nan)',
+    'train.map(-1, np.nan)', t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.abs\source67\code\np.arange_replace0.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 7, 'arange(0.0, math.pi * 4, 0.01)',
+    'array(range(0.0, math.pi * 4, 0.01))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.abs\source67\code\np.arange_replace1.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 27, 'np.arange(-5.0, 5.0, 0.1)',
+    'np.array(range(-5.0, 5.0, 0.1))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.abs\source67\code\np.arange_replace2.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 29, 'np.arange(-5.0, 5.0, 0.1)',
+    'np.array(range(-5.0, 5.0, 0.1))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.abs\source9\code\np.transpose_column_stack_replace0.py,AttributeError: column_stack not found,"writer.writerow([url, 37, 'D.transpose()', 'D.column_stack()', t1, t2,
+    'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.abs\source96\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 82, 'train.iloc[:, 1:]', 'train.iat[:, 1:]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//np.abs\source96\code\pd.DataFrame.loc_replace0.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 93, ""keys.loc[newkey, 'Id']"", ""keys.ix[newkey, 'Id']"",
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.append\source15\code\pd.DataFrame.iloc_replace0.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 100, 'ppl.iloc[testset]', 'ppl.iat[testset]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//np.append\source15\code\pd.Series.astype_replace0.py,"TypeError: (""cannot convert the series to <class \'int\'>"", \'occurred at index char_10\')","writer.writerow([url, 63, 'ppl[ppl_logi].astype(int)',
+    'ppl[ppl_logi].apply(int)', t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",TypeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.append\source20\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'regex\',"writer.writerow([url, 29,
+    ""dataset.iloc[:, (i)].replace(np.nan, 'None', regex=True)"",
+    ""dataset.iloc[:, (i)].map(np.nan, 'None', regex=True)"", t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.append\source23\code\np.array_fromiter_replace0.py,ValueError: invalid literal for int() with base 10: \'pixel0\',"writer.writerow([url, 38, ""np.array(data, dtype='uint8')"",
+    ""np.fromiter(data, dtype='uint8')"", t1, t2, 'np.array', 'np.fromiter'])
+",ValueError,np.array,np.fromiter
+D://crw_data//np.append\source23\code\np.array_fromiter_replace1.py,ValueError: invalid literal for int() with base 10: \'pixel0\',"writer.writerow([url, 39, ""np.array(test, dtype='uint8')"",
+    ""np.fromiter(test, dtype='uint8')"", t1, t2, 'np.array', 'np.fromiter'])
+",ValueError,np.array,np.fromiter
+D://crw_data//np.append\source28\code\pd.DataFrame.ix_replace1.py,"b""KeyError: 'plocel0'\r\n""","writer.writerow([url, 89, ""train.ix[:, 'pixel0':]"",
+    ""train.loc[:, 'plocel0':]"", t1, t2, 'pd.DataFrame.ix', 'pd.DataFrame.loc'])
+",KeyError,pd.DataFrame.ix,pd.DataFrame.loc
+D://crw_data//np.append\source30\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 61, ""i.replace(' Shorthair', '')"",
+    ""i.map(' Shorthair', '')"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.append\source31\code\pd.Series.iloc_replace1.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 159, ""data['x'].iloc[i:j]"", ""data['x'].iat[i:j]"", t1,
+    t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.append\source31\code\pd.Series.iloc_replace2.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 159, ""data['u_x'].iloc[i:j]"", ""data['u_x'].iat[i:j]"",
+    t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.append\source31\code\pd.Series.iloc_replace3.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 161, ""data['y'].iloc[i:j]"", ""data['y'].iat[i:j]"", t1,
+    t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.append\source31\code\pd.Series.iloc_replace4.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 161, ""data['u_y'].iloc[i:j]"", ""data['u_y'].iat[i:j]"",
+    t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.append\source31\code\pd.Series.iloc_replace5.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 163, ""data['x'].iloc[i:j]"", ""data['x'].iat[i:j]"", t1,
+    t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.append\source31\code\pd.Series.iloc_replace6.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 163, ""data['sigma_x'].iloc[i:j]"",
+    ""data['sigma_x'].iat[i:j]"", t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.append\source31\code\pd.Series.iloc_replace7.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 165, ""data['y'].iloc[i:j]"", ""data['y'].iat[i:j]"", t1,
+    t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.append\source31\code\pd.Series.iloc_replace8.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 165, ""data['sigma_y'].iloc[i:j]"",
+    ""data['sigma_y'].iat[i:j]"", t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.append\source32\code\np.count_nonzero_sum_replace0.py,ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all(),"writer.writerow([url, 22, ""np.count_nonzero(data[:, (1)] == '1')"",
+    ""np.sum(data[:, (1)] == '1'!=0)"", t1, t2, 'np.count_nonzero', 'np.sum'])
+",ValueError,np.count_nonzero,np.sum
+D://crw_data//np.append\source32\code\pd.Series.replace_map_replace0.py,AttributeError: \'numpy.str_\' object has no attribute \'map\',"writer.writerow([url, 191,
+    'term[NAME].replace(\', )"", ""term[NAME].map(\', \'\')', t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.append\source47\code\np.ndarray.sum_einsum_replace0.py,ValueError: einstein sum subscripts string contains too many subscripts for operand 0,"writer.writerow([url, 143, 'np.sum(fractions_dog[1:, :1], axis=1)',
+    ""np.einsum('ij->i',np)"", t1, t2, 'np.ndarray.sum', 'np.einsum'])
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//np.append\source49\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'regex\',"writer.writerow([url, 18,
+    ""train['Embarked'].replace(np.nan, 'S', regex=True)"",
+    ""train['Embarked'].map(np.nan, 'S', regex=True)"", t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.append\source5\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.float64\' object has no attribute \'apply\',"writer.writerow([url, 67, 'onep[dista == min(dista)][0][0].astype(int)',
+    'onep[dista == min(dista)][0][0].apply(int)', t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.arange\source120\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 89, 'xx_func.iloc[:train_.shape[0], :]',
+    'xx_func.iat[:train_.shape[0], :]', t1, t2, 'pd.DataFrame.iloc',
+    'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//np.arange\source120\code\pd.Series.replace_map_replace0.py,AttributeError: \'StringMethods\' object has no attribute \'map\',"writer.writerow([url, 75, ""tmp_cat.str.replace(s_, '')"",
+    ""tmp_cat.str.map(s_, '')"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.arange\source13\code\pd.Series.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 28, 'row.iloc[start[0] + 1:]',
+    'row.iat[start[0] + 1:]', t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.arange\source13\code\pd.Series.iloc_replace1.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 33, 'row.iloc[-W:]', 'row.iat[-W:]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.arange\source150\code\np.full_empty_replace0.py,MemoryError,"writer.writerow([url, 26, 'np.full((1000000, 1000), -1, dtype=np.int16)',
+    'np.empty((1000000, 1000), dtype=np.int16) ; r2[:] = -1', t1, t2,
+    'np.full', 'np.empty'])
+",MemoryError,np.full,np.empty
+D://crw_data//np.arange\source2\code\np.arange_replace0.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 116, 'np.arange(0, len(P) + 1, 1.0)',
+    'np.array(range(0, len(P) + 1, 1.0))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source204\code\np.arange_replace0.py,"b""TypeError: 'numpy.float64' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 24, 'np.arange(x_min, x_max, h)',
+    'np.array(range(x_min, x_max, h))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source215\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 101, ""frame[datename].fillna('2015-01-01')"",
+    ""frame[datename].combine_first(frame[datename].applymap(lambda x: '2015-01-01'))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.arange\source219\code\np.arange_replace0.py,"b""TypeError: 'numpy.float64' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 173, 'np.arange(x_min, x_max, h)',
+    'np.array(range(x_min, x_max, h))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source219\code\np.arange_replace1.py,"b""TypeError: 'numpy.float64' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 173, 'np.arange(y_min, y_max, h)',
+    'np.array(range(y_min, y_max, h))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source227\code\np.arange_replace0.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 41, 'np.arange(0.0, 5.0, 0.01)',
+    'np.array(range(0.0, 5.0, 0.01))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source232\code\pd.Series.astype_replace0.py,AttributeError: \'category\' is not a valid function for \'Series\' object,"writer.writerow([url, 181, ""train[i].astype('category')"",
+    ""train[i].apply('category')"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.arange\source235\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 148,
+    'promo_df[t2017 + timedelta(days=i)].values.astype(np.uint8)',
+    'promo_df[t2017 + timedelta(days=i)].values.apply(np.uint8)', t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.arange\source253\code\np.ndarray.sum_einsum_replace0.py,AssertionError,"writer.writerow([url, 151, 'np.sum(train_unique_counts)',
+    ""np.einsum('i->',np)"", t1, t2, 'np.ndarray.sum', 'np.einsum'])
+",AssertionError,np.ndarray.sum,np.einsum
+D://crw_data//np.arange\source257\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 161, 'Y.iloc[train_index]', 'Y.iat[train_index]', t1,
+    t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.arange\source257\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 164, 'Y.iloc[test_index]', 'Y.iat[test_index]', t1,
+    t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.arange\source267\code\pd.DataFrame.loc_replace0.py,"KeyError: ""None of [Int64Index([     0,      1,      2,      4,      5,      6,      7,      8,\\n                 9,     10,\\n            ...\\n            595199, 595200, 595203, 595204, 595205, 595206, 595207, 595209,\\n            595210, 595211],\\n           dtype=\'int64\', length=476169)] are in the [columns]""","writer.writerow([url, 89, 'X_train.loc[train_index]',
+    'X_train[train_index]', t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//np.arange\source281\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 60, ""train1.ix[:, (i)].fillna('NAvalue')"",
+    ""train1.ix[:, (i)].combine_first(train1.ix[:, (i)].applymap(lambda x: 'NAvalue'))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.arange\source296\code\np.arange_replace0.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 22, 'np.arange(0, size, x_step)',
+    'np.array(range(0, size, x_step))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source296\code\np.arange_replace1.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 22, 'np.arange(x_step, size + x_step, x_step)',
+    'np.array(range(x_step, size + x_step, x_step))', t1, t2, 'np.arange',
+    'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source296\code\np.arange_replace2.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 23, 'np.arange(0, size, y_step)',
+    'np.array(range(0, size, y_step))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source296\code\np.arange_replace3.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 23, 'np.arange(y_step, size + y_step, y_step)',
+    'np.array(range(y_step, size + y_step, y_step))', t1, t2, 'np.arange',
+    'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source302\code\np.arange_replace0.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 15, 'np.arange(3.915, 3.917, 0.0001)',
+    'np.array(range(3.915, 3.917, 0.0001))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source303\code\np.arange_replace0.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 16, 'np.arange(3, 5, 0.1)',
+    'np.array(range(3, 5, 0.1))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source311\code\np.ndarray.sum_count_nonzero_replace0.py,ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all().,"writer.writerow([url, 34, 'sa.sum(axis=0)', 'np.count_nonzero(sa,axis=0)',
+    t1, t2, 'np.ndarray.sum', 'np.count_nonzero'])
+",ValueError,np.ndarray.sum,np.count_nonzero
+D://crw_data//np.arange\source311\code\np.ndarray.sum_einsum_replace0.py,ValueError: einstein sum subscripts string contains too many subscripts for operand 0,"writer.writerow([url, 34, 'sa.sum(axis=0)', ""np.einsum('ij->j',sa)"", t1, t2,
+    'np.ndarray.sum', 'np.einsum'])
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//np.arange\source315\code\np.ndarray.sum_einsum_replace0.py,ValueError: einstein sum subscripts string contains too many subscripts for operand 0,"writer.writerow([url, 112, 'np.sum(np.sqrt(np.power(y_test - y_pre, 2)))',
+    ""np.einsum('i->',np)"", t1, t2, 'np.ndarray.sum', 'np.einsum'])
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//np.arange\source315\code\np.sum_sum_replace0.py,ValueError: invalid number of arguments,"writer.writerow([url, 112, 'np.sum(np.sqrt(np.power(y_test - y_pre, 2)))',
+    '(np.sqrt(np.power(y_test - y_pre).sum( 2)))', t1, t2, 'np.sum',
+    'np.ndarray.sum'])
+",ValueError,np.sum,np.ndarray.sum
+D://crw_data//np.arange\source315\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 29, 'np.around(result).astype(int)',
+    'np.around(result).apply(int)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.arange\source33\code\np.ndarray.sum_einsum_replace0.py,ValueError: einstein sum subscripts string contains too many subscripts for operand 0,"writer.writerow([url, 184,
+    'np.sum((np.log1p(tr_preds) - np.log1p(tr_test_y)) ** 2)',
+    ""np.einsum('i->',np)"", t1, t2, 'np.ndarray.sum', 'np.einsum'])
+",ValueError,np.ndarray.sum,np.einsum
+D://crw_data//np.arange\source33\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'regex\',"writer.writerow([url, 62,
+    ""train['material_id'].replace(np.nan, ' ', regex=True, inplace=True)"",
+    ""train['material_id'].map(np.nan, ' ', regex=True, inplace=True)"", t1,
+    t2, 'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.arange\source345\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 54, 'all_data.iloc[:num_train]',
+    'all_data.iat[:num_train]', t1, t2, 'pd.DataFrame.iloc',
+    'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//np.arange\source35\code\np.arange_replace0.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 36, 'np.arange(min_float, max_float, 0.1)',
+    'np.array(range(min_float, max_float, 0.1))', t1, t2, 'np.arange',
+    'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source385\code\np.arange_replace0.py,"b""TypeError: 'numpy.float64' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 113, 'np.arange(x_min, x_max, h)',
+    'np.array(range(x_min, x_max, h))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source385\code\np.arange_replace1.py,"b""TypeError: 'numpy.float64' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 113, 'np.arange(y_min, y_max, h)',
+    'np.array(range(y_min, y_max, h))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source385\code\np.sumcount_nonzero_replace0.py,AssertionError,"writer.writerow([url, 131, ""np.sum(data_p[data_p['Pclass'] == 3]['Fare'])"",
+    ""np.count_nonzero(data_p[data_p['Pclass'] == 3]['Fare'])"", t1, t2,
+    'np.sum', 'np.count_nonzero'])
+",AssertionError,np.sum,np.count_nonzero
+D://crw_data//np.arange\source404\code\np.arange_replace0.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 25, 'np.arange(0, size, x_step)',
+    'np.array(range(0, size, x_step))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source404\code\np.arange_replace1.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 25, 'np.arange(x_step, size + x_step, x_step)',
+    'np.array(range(x_step, size + x_step, x_step))', t1, t2, 'np.arange',
+    'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source404\code\np.arange_replace2.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 26, 'np.arange(0, size, y_step)',
+    'np.array(range(0, size, y_step))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source404\code\np.arange_replace3.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 26, 'np.arange(y_step, size + y_step, y_step)',
+    'np.array(range(y_step, size + y_step, y_step))', t1, t2, 'np.arange',
+    'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source406\code\np.ndarray.sum_count_nonzero_replace0.py,AssertionError,"writer.writerow([url, 98, 'preds.score.sum()',
+    'np.count_nonzero(preds.score,)', t1, t2, 'np.ndarray.sum',
+    'np.count_nonzero'])
+",AssertionError,np.ndarray.sum,np.count_nonzero
+D://crw_data//np.arange\source409\code\np.ndarray.sum_count_nonzero_replace0.py,AssertionError,"writer.writerow([url, 42, 'temp[features].sum(axis=1)',
+    'np.count_nonzero(temp[features],axis=1)', t1, t2, 'np.ndarray.sum',
+    'np.count_nonzero'])
+",AssertionError,np.ndarray.sum,np.count_nonzero
+D://crw_data//np.arange\source99\code\np.arange_replace0.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 94, 'np.arange(-10, 10, 0.1)',
+    'np.array(range(-10, 10, 0.1))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.arange\source99\code\np.arange_replace1.py,"b""TypeError: 'float' object cannot be interpreted as an integer\r\n""","writer.writerow([url, 104, 'np.arange(-10, 10, 0.1)',
+    'np.array(range(-10, 10, 0.1))', t1, t2, 'np.arange', 'np.array'])
+",TypeError,np.arange,np.array
+D://crw_data//np.argmax\source110\code\np.transpose_column_stack_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 103, 'activations[-2].transpose()',
+    'activations[-2].column_stack()', t1, t2, 'np.transpose',
+    'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.argmax\source110\code\np.transpose_column_stack_replace1.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 113, 'self.weights[-l + 1].transpose()',
+    'self.weights[-l + 1].column_stack()', t1, t2, 'np.transpose',
+    'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.argmax\source110\code\np.transpose_column_stack_replace2.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 115, 'activations[-l - 1].transpose()',
+    'activations[-l - 1].column_stack()', t1, t2, 'np.transpose',
+    'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.argmax\source22\code\np.c__nonzero_replace0.py,ValueError: all the input arrays must have same number of dimensions,"writer.writerow([url, 229,
+    'np.c_[range(1, m_test + 1), p2.reshape(len(p2), 1)]',
+    'np.hstack([range(1, m_test + 1), p2.reshape(len(p2), 1)])', t1, t2,
+    'np.c_', 'np.hstack'])
+",ValueError,np.c_,np.hstack
+D://crw_data//np.argmax\source29\code\np.vstack_concatenate_replace0.py,"ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 1 dimension(s) and the array at index 1 has 2 dimension(s)","writer.writerow([url, 179, 'np.vstack((a_0, X.T))',
+    'np.concatenate((a_0, X.T), axis=0)', t1, t2, 'np.vstack',
+    'np.concatenate'])
+",ValueError,np.vstack,np.concatenate
+D://crw_data//np.argmax\source29\code\np.vstack_concatenate_replace1.py,"ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 1 dimension(s) and the array at index 1 has 2 dimension(s)","writer.writerow([url, 187, 'np.vstack((a_0, A2))',
+    'np.concatenate((a_0, A2), axis=0)', t1, t2, 'np.vstack', 'np.concatenate']
+    )
+",ValueError,np.vstack,np.concatenate
+D://crw_data//np.argmax\source76\code\np.array_fromiter_replace0.py,ValueError: could not convert string to float: \'bone_length\',"writer.writerow([url, 77, 'np.array(X_train, dtype=np.float32)',
+    'np.fromiter(X_train, dtype=np.float32)', t1, t2, 'np.array',
+    'np.fromiter'])
+",ValueError,np.array,np.fromiter
+D://crw_data//np.argmax\source76\code\np.array_fromiter_replace1.py,ValueError: could not convert string to float: \'_Ghost\',"writer.writerow([url, 78, 'np.array(y_train, dtype=np.float32)',
+    'np.fromiter(y_train, dtype=np.float32)', t1, t2, 'np.array',
+    'np.fromiter'])
+",ValueError,np.array,np.fromiter
+D://crw_data//np.argmax\source76\code\np.ndarray.sum_count_nonzero_replace0.py,AssertionError,"writer.writerow([url, 39, 'np.exp(X).sum()', 'np.count_nonzero(np.exp(X),)',
+    t1, t2, 'np.ndarray.sum', 'np.count_nonzero'])
+",AssertionError,np.ndarray.sum,np.count_nonzero
+D://crw_data//np.argmax\source76\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 26, 'train_test.iloc[:len(y_train)]',
+    'train_test.iat[:len(y_train)]', t1, t2, 'pd.DataFrame.iloc',
+    'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//np.argmax\source76\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 44,
+    '(np.random.random_sample((num_input, num_hidden)) - 0.5).astype(np.float32)'
+    ,
+    '(np.random.random_sample((num_input, num_hidden)) - 0.5).apply(np.float32)'
+    , t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.argmax\source76\code\pd.Series.astype_replace3.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 47, 'np.zeros((1, num_output)).astype(np.float32)',
+    'np.zeros((1, num_output)).apply(np.float32)', t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.argsort\source126\code\pd.Series.iloc_replace0.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 439, 'y.iloc[train_index]', 'y.iat[train_index]', t1,
+    t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.argsort\source126\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 439, 'y.iloc[test_index]', 'y.iat[test_index]', t1,
+    t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.argsort\source37\code\np.where_apply_replace0.py,NameError: name \'df\' is not defined,"writer.writerow([url, 40,
+    'np.where(np.logical_or(av < 14, av > 100), -1, av)',
+    'pd.DataFrame(df.y.values).apply(lambda x : x < eps).replace({True: 0,False: df.y.values - eps}).values.flatten()'
+    , t1, t2, 'np.where', 'pd.DataFrame.apply'])
+",NameError,np.where,pd.DataFrame.apply
+D://crw_data//np.argsort\source56\code\np.ndarray.sum_count_nonzero_replace0.py,AssertionError,"writer.writerow([url, 31, 'df_all.isnull().sum()',
+    'np.count_nonzero(df_all.isnull(),)', t1, t2, 'np.ndarray.sum',
+    'np.count_nonzero'])
+",AssertionError,np.ndarray.sum,np.count_nonzero
+D://crw_data//np.argsort\source56\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'inplace\',"writer.writerow([url, 30,
+    ""df_all.gender.replace('-unknown-', np.nan, inplace=True)"",
+    ""df_all.gender.map('-unknown-', np.nan, inplace=True)"", t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.argsort\source90\code\np.where_map_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'map\',"writer.writerow([url, 40,
+    'np.where(np.logical_or(av < 14, av > 90), -1, av)',
+    '(av).map(lambda x : 2015 - av if x >= 1900 else  av).values', t1, t2,
+    'np.where', 'pd.Series.map'])
+",AttributeError,np.where,pd.Series.map
+D://crw_data//np.array\source100\code\np.where_apply_replace0.py,NameError: name \'df\' is not defined,"writer.writerow([url, 115, 'np.where(p, 1.0, 1.1)',
+    'pd.DataFrame(df.y.values).apply(lambda x : x < eps).replace({True: 0,False: df.y.values - eps}).values.flatten()'
+    , t1, t2, 'np.where', 'pd.DataFrame.apply'])
+",NameError,np.where,pd.DataFrame.apply
+D://crw_data//np.array\source1007\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 77, 'test.id.values.astype(int)',
+    'test.id.values.apply(int)', t1, t2, 'pd.Series.astype', 'pd.Series.apply']
+    )
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source1065\code\np.transpose_column_stack_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 165, 'pro_data.transpose()',
+    'pro_data.column_stack()', t1, t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source1065\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 89, ""a[1].replace('years', '365')"",
+    ""a[1].map('years', '365')"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.array\source1083\code\np.transpose_column_stack_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 89, 'np.array([y_true, y_pred]).transpose()',
+    'np.array([y_true, y_pred]).column_stack()', t1, t2, 'np.transpose',
+    'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source1124\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 39, 'train_test.iloc[:ntrain, :]',
+    'train_test.iat[:ntrain, :]', t1, t2, 'pd.DataFrame.iloc',
+    'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//np.array\source1124\code\pd.Series.astype_replace0.py,AttributeError: \'category\' is not a valid function for \'Series\' object,"writer.writerow([url, 38, ""train_test[cat_features[c]].astype('category')"",
+    ""train_test[cat_features[c]].apply('category')"", t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source1174\code\np.column_stack_vstack_replace0.py,AttributeError: \'list\' object has no attribute \'T\',"writer.writerow([url, 61, 'np.column_stack([y_preds[k][i] for k in clfs])',
+    'np.vstack((y_preds[k][i] for k in clfs.T)).T', t1, t2,
+    'np.column_stack', 'np.vstack'])
+",AttributeError,np.column_stack,np.vstack
+D://crw_data//np.array\source1174\code\np.dot_einsum_replace0.py,ValueError: einstein sum subscripts string contains too many subscripts for operand 0,"writer.writerow([url, 238, 'np.dot(weights_mean, y_model_preds)',
+    ""np.einsum('ij,jm->im',weights_mean, y_model_preds)"", t1, t2, 'np.dot',
+    'np.einsum'])
+",ValueError,np.dot,np.einsum
+D://crw_data//np.array\source1215\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 167, 'np.logspace(0, 2, num=3).astype(int)',
+    'np.logspace(0, 2, num=3).apply(int)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source181\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'regex\',"writer.writerow([url, 65,
+    ""train['material_id'].replace(np.nan, ' ', regex=True, inplace=True)"",
+    ""train['material_id'].map(np.nan, ' ', regex=True, inplace=True)"", t1,
+    t2, 'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.array\source19\code\pd.Series.astype_replace3.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 178,
+    ""pd.to_datetime(df['project_submitted_datetime']).values.astype(np.int64)"",
+    ""pd.to_datetime(df['project_submitted_datetime']).values.apply(np.int64)"",
+    t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source195\code\pd.Series.replace_map_replace0.py,AttributeError: \'StringMethods\' object has no attribute \'map\',"writer.writerow([url, 39, ""train.Cader.str.replace('Mme', 'Mlle')"",
+    ""train.Cader.str.map('Mme', 'Mlle')"", t1, t2, 'pd.Series.replace',
+    'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.array\source199\code\pd.Series.astype_replace1.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 101, 'test.astype(float)', 'test.apply(float)', t1,
+    t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source201\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'regex\',"writer.writerow([url, 89,
+    ""train['material_id'].replace(np.nan, ' ', regex=True, inplace=True)"",
+    ""train['material_id'].map(np.nan, ' ', regex=True, inplace=True)"", t1,
+    t2, 'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.array\source204\code\pd.Series.replace_map_replace0.py,TypeError: map() got an unexpected keyword argument \'regex\',"writer.writerow([url, 121,
+    ""train['material_id'].replace(np.nan, ' ', regex=True, inplace=True)"",
+    ""train['material_id'].map(np.nan, ' ', regex=True, inplace=True)"", t1,
+    t2, 'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.array\source224\code\np.array_fromiter_replace1.py,ValueError: setting an array element with a sequence.,"writer.writerow([url, 23, 'np.array(x_train, dtype=np.int32)',
+    'np.fromiter(x_train, dtype=np.int32)', t1, t2, 'np.array', 'np.fromiter'])
+",ValueError,np.array,np.fromiter
+D://crw_data//np.array\source238\code\np.transpose_column_stack_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 27,
+    'np.array(test_validate[target_name]).transpose()',
+    'np.array(test_validate[target_name]).column_stack()', t1, t2,
+    'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source247\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 92, ""x.replace('years', '')"", ""x.map('years', '')"",
+    t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.array\source249\code\pd.Series.replace_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 19, 'training.replace(-999999, 2)',
+    'training.map(-999999, 2)', t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.array\source259\code\np.transpose_column_stack_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 159, 'np.array([y_true, y_pred]).transpose()',
+    'np.array([y_true, y_pred]).column_stack()', t1, t2, 'np.transpose',
+    'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source313\code\pd.DataFrame.iloc_replace0.py,TypeError: _get_value() missing 1 required positional argument: \'col\',"writer.writerow([url, 91, 'gifts.iloc[i]', 'gifts.iat[i]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",TypeError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//np.array\source331\code\np.array_fromiter_replace0.py,ValueError: Must specify length when using variable-size data-type.,"writer.writerow([url, 36, 'np.array(train[i], dtype=str)',
+    'np.fromiter(train[i], dtype=str)', t1, t2, 'np.array', 'np.fromiter'])
+",ValueError,np.array,np.fromiter
+D://crw_data//np.array\source331\code\np.array_fromiter_replace1.py,ValueError: Must specify length when using variable-size data-type.,"writer.writerow([url, 82, 'np.array(test[i], dtype=str)',
+    'np.fromiter(test[i], dtype=str)', t1, t2, 'np.array', 'np.fromiter'])
+",ValueError,np.array,np.fromiter
+D://crw_data//np.array\source397\code\np.nonzero_replace0.py,ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all().,"writer.writerow([url, 115, 'row.nonzero()', 'np.where(row)', t1, t2,
+    'np.nonzero', 'np.where'])
+",ValueError,np.nonzero,np.where
+D://crw_data//np.array\source422\code\np.transpose_column_stack_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 26,
+    'np.stack((trainX, np.ones(np.shape(trainX)[0])), axis=0).transpose()',
+    'np.stack((trainX, np.ones(np.shape(trainX)[0])), axis=0).column_stack()',
+    t1, t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source422\code\np.transpose_column_stack_replace1.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 28, 'trainX_.transpose()', 'trainX_.column_stack()',
+    t1, t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source422\code\np.transpose_column_stack_replace3.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 31, 'q.transpose()', 'q.column_stack()', t1, t2,
+    'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source422\code\np.transpose_column_stack_replace4.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 35, 'V.transpose()', 'V.column_stack()', t1, t2,
+    'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source422\code\np.transpose_column_stack_replace5.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 35, 'U.transpose()', 'U.column_stack()', t1, t2,
+    'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source429\code\np.array_fromiter_replace0.py,ValueError: setting an array element with a sequence.,"writer.writerow([url, 57, 'np.array(X, dtype=float)',
+    'np.fromiter(X, dtype=float)', t1, t2, 'np.array', 'np.fromiter'])
+",ValueError,np.array,np.fromiter
+D://crw_data//np.array\source429\code\np.c__nonzero_replace6.py,ValueError: all the input arrays must have same number of dimensions,"writer.writerow([url, 170,
+    'np.c_[np.ones(hiddenLayerOutput.shape[0]), hiddenLayerOutput]',
+    'np.hstack([np.ones(hiddenLayerOutput.shape[0]), hiddenLayerOutput])',
+    t1, t2, 'np.c_', 'np.hstack'])
+",ValueError,np.c_,np.hstack
+D://crw_data//np.array\source429\code\np.transpose_column_stack_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 90, 'Theta1.transpose()', 'Theta1.column_stack()', t1,
+    t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source429\code\np.transpose_column_stack_replace1.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 93, 'Theta2.transpose()', 'Theta2.column_stack()', t1,
+    t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source429\code\np.transpose_column_stack_replace2.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 119, 'Theta1.transpose()', 'Theta1.column_stack()',
+    t1, t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source429\code\np.transpose_column_stack_replace3.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 122, 'Theta2.transpose()', 'Theta2.column_stack()',
+    t1, t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source429\code\np.transpose_column_stack_replace4.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 132, 'delta2.transpose()', 'delta2.column_stack()',
+    t1, t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source429\code\np.transpose_column_stack_replace5.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 134, 'delta3.transpose()', 'delta3.column_stack()',
+    t1, t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source429\code\np.transpose_column_stack_replace6.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 169, 'Theta1.transpose()', 'Theta1.column_stack()',
+    t1, t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source429\code\np.transpose_column_stack_replace7.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 171, 'Theta2.transpose()', 'Theta2.column_stack()',
+    t1, t2, 'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source474\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 19, 'line.replace(\', )"", ""line.map(\', \'\')', t1,
+    t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.array\source575\code\pd.DataFrame.loc_replace0.py,"KeyError: MemoryError((116, 313864), dtype(\'O\'))","writer.writerow([url, 17, ""c.loc[:, (c.columns.str.startswith('cat'))]"",
+    ""c.ix[:, (c.columns.str.startswith('cat'))]"", t1, t2,
+    'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.array\source60\code\pd.Series.astype_replace0.py,AssertionError,"writer.writerow([url, 26, ""df[col].astype('str')"", ""df[col].apply('str')"",
+    t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source608\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 583, ""np.array(test['ID']).astype(int)"",
+    ""np.array(test['ID']).apply(int)"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source608\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 63, ""i.replace(' Shorthair', '')"",
+    ""i.map(' Shorthair', '')"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.array\source609\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 309, ""np.array(test['ID']).astype(int)"",
+    ""np.array(test['ID']).apply(int)"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source721\code\pd.Series.astype_replace5.py,AssertionError,"writer.writerow([url, 227, ""people['char_' + str(i)].astype(np.int32)"",
+    ""people['char_' + str(i)].apply(np.int32)"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source742\code\np.transpose_column_stack_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 159, 'np.vstack((target, target_pred)).transpose()',
+    'np.vstack((target, target_pred)).column_stack()', t1, t2,
+    'np.transpose', 'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source752\code\pd.Series.astype_replace6.py,AssertionError,"writer.writerow([url, 22, 'df[col].astype(np.float32)',
+    'df[col].apply(np.float32)', t1, t2, 'pd.Series.astype', 'pd.Series.apply']
+    )
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source832\code\pd.Series.astype_replace8.py,AssertionError,"writer.writerow([url, 45, 'products.product_id.astype(np.int32)',
+    'products.product_id.apply(np.int32)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source832\code\pd.Series.astype_replace9.py,AssertionError,"writer.writerow([url, 47, 'train.reordered.astype(np.int8)',
+    'train.reordered.apply(np.int8)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source888\code\pd.Series.astype_replace0.py,AttributeError: \'category\' is not a valid function for \'Series\' object,"writer.writerow([url, 57, ""train[cat_features[c]].astype('category')"",
+    ""train[cat_features[c]].apply('category')"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source891\code\pd.Series.astype_replace1.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 87, 'train.astype(np.float32)',
+    'train.apply(np.float32)', t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source891\code\pd.Series.astype_replace2.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 89, 'test.astype(np.float32)',
+    'test.apply(np.float32)', t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source919\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 30, ""train_df['logerror'].values.astype(np.float32)"",
+    ""train_df['logerror'].values.apply(np.float32)"", t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source919\code\pd.Series.astype_replace1.py,AssertionError,"writer.writerow([url, 71, ""properties['parcelid'].astype(np.int32)"",
+    ""properties['parcelid'].apply(np.int32)"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source930\code\pd.Series.astype_replace1.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 50, 'train.astype(float)', 'train.apply(float)', t1,
+    t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source930\code\pd.Series.astype_replace2.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 51, 'test.astype(float)', 'test.apply(float)', t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source939\code\pd.Series.astype_replace1.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 76,
+    '(promo_2017[t2017 + timedelta(days=i)] - 1).values.astype(np.uint8)',
+    '(promo_2017[t2017 + timedelta(days=i)] - 1).values.apply(np.uint8)',
+    t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source960\code\np.transpose_column_stack_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 31, 'np.array([y_true, y_pred]).transpose()',
+    'np.array([y_true, y_pred]).column_stack()', t1, t2, 'np.transpose',
+    'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.array\source961\code\pd.Series.astype_replace1.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 103, 'test_s.astype(float)', 'test_s.apply(float)',
+    t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source962\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 317, 'test.id.values.astype(int)',
+    'test.id.values.apply(int)', t1, t2, 'pd.Series.astype', 'pd.Series.apply']
+    )
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source970\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 73,
+    'promo_2017[t2017 + timedelta(days=i)].values.astype(np.uint8)',
+    'promo_2017[t2017 + timedelta(days=i)].values.apply(np.uint8)', t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source977\code\pd.Series.astype_replace0.py,AssertionError,"writer.writerow([url, 89, 'prop[c].astype(np.float32)',
+    'prop[c].apply(np.float32)', t1, t2, 'pd.Series.astype', 'pd.Series.apply']
+    )
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source977\code\pd.Series.astype_replace3.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 194, ""train_df['logerror'].values.astype(np.float32)"",
+    ""train_df['logerror'].values.apply(np.float32)"", t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source977\code\pd.Series.astype_replace4.py,AssertionError,"writer.writerow([url, 277, ""properties['parcelid'].astype(np.int32)"",
+    ""properties['parcelid'].apply(np.int32)"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source994\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 17, 'y.astype(int)', 'y.apply(int)', t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source994\code\pd.Series.astype_replace2.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 59, 'data[0].astype(int)', 'data[0].apply(int)', t1,
+    t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source994\code\pd.Series.astype_replace4.py,AssertionError,"writer.writerow([url, 139, ""all_data['Response'].astype(int)"",
+    ""all_data['Response'].apply(int)"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source994\code\pd.Series.astype_replace6.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 195, 'data[0].astype(int)', 'data[0].apply(int)', t1,
+    t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.array\source998\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 102, 'train_s.astype(float)', 'train_s.apply(float)',
+    t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.column_stack\source17\code\pd.DataFrame.loc_replace10.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 206, ""test.loc[i, 'numFam']"", ""test.ix[i, 'numFam']"",
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source17\code\pd.DataFrame.loc_replace11.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 204, ""test.loc[i, 'numFam']"", ""test.ix[i, 'numFam']"",
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source17\code\pd.DataFrame.loc_replace12.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 202, ""test.loc[i, 'numFam']"", ""test.ix[i, 'numFam']"",
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source17\code\pd.DataFrame.loc_replace13.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 200, ""test.loc[i, 'numFam']"", ""test.ix[i, 'numFam']"",
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source17\code\pd.DataFrame.loc_replace6.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 194, ""train.loc[i, 'numFam']"",
+    ""train.ix[i, 'numFam']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source17\code\pd.DataFrame.loc_replace7.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 192, ""train.loc[i, 'numFam']"",
+    ""train.ix[i, 'numFam']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source17\code\pd.DataFrame.loc_replace8.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 190, ""train.loc[i, 'numFam']"",
+    ""train.ix[i, 'numFam']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source17\code\pd.DataFrame.loc_replace9.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 188, ""train.loc[i, 'numFam']"",
+    ""train.ix[i, 'numFam']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source17\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 379, ""output.astype('int')"", ""output.apply('int')"",
+    t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.column_stack\source18\code\pd.DataFrame.loc_replace11.py,AttributeError: \'numpy.int64\' object has no attribute \'equals\',"writer.writerow([url, 140, ""train.loc[i, 'Parch']"", ""train.ix[i, 'Parch']"",
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source18\code\pd.DataFrame.loc_replace12.py,AttributeError: \'numpy.int64\' object has no attribute \'equals\',"writer.writerow([url, 148, ""test.loc[i, 'Parch']"", ""test.ix[i, 'Parch']"",
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source18\code\pd.DataFrame.loc_replace6.py,AttributeError: \'numpy.int64\' object has no attribute \'equals\',"writer.writerow([url, 121, ""train.loc[i, 'SibSp']"", ""train.ix[i, 'SibSp']"",
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source18\code\pd.DataFrame.loc_replace7.py,AttributeError: \'numpy.int64\' object has no attribute \'equals\',"writer.writerow([url, 119, ""train.loc[i, 'SibSp']"", ""train.ix[i, 'SibSp']"",
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source18\code\pd.DataFrame.loc_replace8.py,AttributeError: \'numpy.int64\' object has no attribute \'equals\',"writer.writerow([url, 127, ""test.loc[i, 'SibSp']"", ""test.ix[i, 'SibSp']"",
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source18\code\pd.DataFrame.loc_replace9.py,AttributeError: \'numpy.int64\' object has no attribute \'equals\',"writer.writerow([url, 125, ""test.loc[i, 'SibSp']"", ""test.ix[i, 'SibSp']"",
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//np.column_stack\source18\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 205, ""output.astype('int')"", ""output.apply('int')"",
+    t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.column_stack\source21\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 169, ""output.astype('int')"", ""output.apply('int')"",
+    t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.column_stack\source28\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 32, 'X.astype(np.float32)', 'X.apply(np.float32)', t1,
+    t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.concatenate\source104\code\pd.Series.astype_replace0.py,AttributeError: \'category\' is not a valid function for \'Series\' object,"writer.writerow([url, 43, ""training_set['Sex'].astype('category')"",
+    ""training_set['Sex'].apply('category')"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.concatenate\source104\code\pd.Series.astype_replace1.py,AttributeError: \'category\' is not a valid function for \'Series\' object,"writer.writerow([url, 45, ""training_set['Embarked'].astype('category')"",
+    ""training_set['Embarked'].apply('category')"", t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.concatenate\source104\code\pd.Series.astype_replace2.py,AttributeError: \'category\' is not a valid function for \'Series\' object,"writer.writerow([url, 47, ""prediction_set['Sex'].astype('category')"",
+    ""prediction_set['Sex'].apply('category')"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.concatenate\source113\code\np.dot_einsum_replace2.py,ValueError: einstein sum subscripts string contains too many subscripts for operand 0,"writer.writerow([url, 155, 'np.dot((one_y - y).T, np.log(one_H - H))',
+    ""np.einsum('ij,jm->im',(one_y - y).T, np.log(one_H - H))"", t1, t2,
+    'np.dot', 'np.einsum'])
+",ValueError,np.dot,np.einsum
+D://crw_data//np.concatenate\source113\code\np.dot_einsum_replace3.py,ValueError: einstein sum subscripts string contains too many subscripts for operand 0,"writer.writerow([url, 155, 'np.dot(-y.T, np.log(H))',
+    ""np.einsum('ij,jm->im',-y.T, np.log(H))"", t1, t2, 'np.dot', 'np.einsum'])
+",ValueError,np.dot,np.einsum
+D://crw_data//np.concatenate\source113\code\np.vstack_concatenate_replace0.py,ValueError: zero-dimensional arrays cannot be concatenated,"writer.writerow([url, 177, 'np.vstack((1.0, a_1))',
+    'np.concatenate((1.0, a_1), axis=0)', t1, t2, 'np.vstack',
+    'np.concatenate'])
+",ValueError,np.vstack,np.concatenate
+D://crw_data//np.concatenate\source113\code\np.vstack_concatenate_replace1.py,ValueError: zero-dimensional arrays cannot be concatenated,"writer.writerow([url, 185, 'np.vstack((1.0, np.dot(theta_0, a_0)))',
+    'np.concatenate((1.0, np.dot(theta_0, a_0)), axis=0)', t1, t2,
+    'np.vstack', 'np.concatenate'])
+",ValueError,np.vstack,np.concatenate
+D://crw_data//np.concatenate\source114\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 63, ""train['Survived'].iloc[xx]"",
+    ""train['Survived'].iat[xx]"", t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.concatenate\source116\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 56, ""train['Survived'].iloc[train1]"",
+    ""train['Survived'].iat[train1]"", t1, t2, 'pd.Series.iloc', 'pd.Series.iat']
+    )
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.concatenate\source128\code\pd.Series.astype_replace0.py,AssertionError,"writer.writerow([url, 101, ""df['label'].astype(int)"",
+    ""df['label'].apply(int)"", t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.concatenate\source133\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 43, ""train['Category'].fillna(2)"",
+    ""train['Category'].combine_first(train['Category'].applymap(lambda x: 2))"",
+    t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.concatenate\source196\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 3, ""pd.read_csv('../input/cities.csv').iloc[1:]"",
+    ""pd.read_csv('../input/cities.csv').iat[1:]"", t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//np.concatenate\source215\code\pd.DataFrame.fillna_replace1.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 22, ""titanic['Embarked'].fillna('S')"",
+    ""titanic['Embarked'].combine_first(titanic['Embarked'].applymap(lambda x: 'S'))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.concatenate\source235\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 95, ""dataset['Embarked'].fillna('S')"",
+    ""dataset['Embarked'].combine_first(dataset['Embarked'].applymap(lambda x: 'S'))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.concatenate\source235\code\pd.DataFrame.fillna_replace1.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 101, ""dataset['Fare'].fillna(train['Fare'].median())"",
+    ""dataset['Fare'].combine_first(dataset['Fare'].applymap(lambda x: train['Fare'].median()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.concatenate\source235\code\pd.DataFrame.fillna_replace2.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 173, ""dataset['Title'].fillna(0)"",
+    ""dataset['Title'].combine_first(dataset['Title'].applymap(lambda x: 0))"",
+    t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.concatenate\source244\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 19, ""data['Age'].fillna(data['Age'].median())"",
+    ""data['Age'].combine_first(data['Age'].applymap(lambda x: data['Age'].median()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.concatenate\source244\code\pd.DataFrame.fillna_replace1.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 23, ""data['Embarked'].fillna('S')"",
+    ""data['Embarked'].combine_first(data['Embarked'].applymap(lambda x: 'S'))"",
+    t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.concatenate\source244\code\pd.DataFrame.fillna_replace2.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 28, ""data['Fare'].fillna(data['Fare'].median())"",
+    ""data['Fare'].combine_first(data['Fare'].applymap(lambda x: data['Fare'].median()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.concatenate\source32\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 79,
+    'promo_2017[t2017 + timedelta(days=i)].values.astype(np.uint8)',
+    'promo_2017[t2017 + timedelta(days=i)].values.apply(np.uint8)', t1, t2,
+    'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.concatenate\source44\code\pd.Series.astype_replace0.py,AssertionError,"writer.writerow([url, 33, ""app_train[col].astype('str')"",
+    ""app_train[col].apply('str')"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.concatenate\source44\code\pd.Series.astype_replace1.py,AssertionError,"writer.writerow([url, 34, ""app_test[col].astype('str')"",
+    ""app_test[col].apply('str')"", t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.concatenate\source44\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 96, 'Target.iloc[trn_idx]', 'Target.iat[trn_idx]', t1,
+    t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.concatenate\source44\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 97, 'Target.iloc[val_idx]', 'Target.iat[val_idx]', t1,
+    t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.concatenate\source44\code\pd.Series.iloc_replace5.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 101, 'Target.iloc[val_idx]', 'Target.iat[val_idx]',
+    t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.concatenate\source84\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 19, ""t_train['Age'].fillna(t_train['Age'].median())"",
+    ""t_train['Age'].combine_first(t_train['Age'].applymap(lambda x: t_train['Age'].median()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.concatenate\source84\code\pd.DataFrame.fillna_replace1.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 20, ""t_train['Embarked'].fillna('S')"",
+    ""t_train['Embarked'].combine_first(t_train['Embarked'].applymap(lambda x: 'S'))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.concatenate\source96\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 26,
+    ""test_data['Fare'].fillna(test_data['Fare'].mean())"",
+    ""test_data['Fare'].combine_first(test_data['Fare'].applymap(lambda x: test_data['Fare'].mean()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.concatenate\source96\code\pd.DataFrame.fillna_replace1.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 27,
+    ""train_data['Age'].fillna(train_data['Age'].mean())"",
+    ""train_data['Age'].combine_first(train_data['Age'].applymap(lambda x: train_data['Age'].mean()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.concatenate\source96\code\pd.DataFrame.fillna_replace2.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 28,
+    ""test_data['Age'].fillna(test_data['Age'].mean())"",
+    ""test_data['Age'].combine_first(test_data['Age'].applymap(lambda x: test_data['Age'].mean()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.count_nonzero\source6\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 29, ""titanic['Age'].fillna(titanic['Age'].median())"",
+    ""titanic['Age'].combine_first(titanic['Age'].applymap(lambda x: titanic['Age'].median()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.count_nonzero\source6\code\pd.DataFrame.fillna_replace1.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 37,
+    ""titanic['Fare'].fillna(titanic['Fare'].median())"",
+    ""titanic['Fare'].combine_first(titanic['Fare'].applymap(lambda x: titanic['Fare'].median()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.count_nonzero\source6\code\pd.DataFrame.fillna_replace2.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 41, ""titanic['Embarked'].fillna('S')"",
+    ""titanic['Embarked'].combine_first(titanic['Embarked'].applymap(lambda x: 'S'))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.count_nonzero\source6\code\pd.DataFrame.fillna_replace3.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 53,
+    ""titanic_test['Age'].fillna(titanic['Age'].median())"",
+    ""titanic_test['Age'].combine_first(titanic_test['Age'].applymap(lambda x: titanic['Age'].median()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.count_nonzero\source6\code\pd.DataFrame.fillna_replace4.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 61, ""titanic_test['Embarked'].fillna('S')"",
+    ""titanic_test['Embarked'].combine_first(titanic_test['Embarked'].applymap(lambda x: 'S'))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.count_nonzero\source6\code\pd.DataFrame.fillna_replace5.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 63,
+    ""titanic_test['Fare'].fillna(titanic_test['Fare'].median())"",
+    ""titanic_test['Fare'].combine_first(titanic_test['Fare'].applymap(lambda x: titanic_test['Fare'].median()))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//np.dot\source17\code\np.ones_empty_replace0.py,"MemoryError: Unable to allocate array with shape (4000000, 14) and data type float64","writer.writerow([url, 163, 'np.ones((number_of_data_points, col + 1))',
+    'np.empty((number_of_data_points, col + 1)); r2.fill(1)', t1, t2,
+    'np.ones', 'np.empty'])
+",MemoryError,np.ones,np.empty
+D://crw_data//np.dot\source9\code\pd.DataFrame.iloc_replace0.py,TypeError: _get_value() missing 1 required positional argument: \'col\',"writer.writerow([url, 42, 'traind.iloc[0]', 'traind.iat[0]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",TypeError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//np.flatnonzero\source1\code\pd.Series.astype_replace0.py,AssertionError,"writer.writerow([url, 41, 'y_train.astype(int)', 'y_train.apply(int)', t1,
+    t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AssertionError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.full\source28\code\pd.Series.astype_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'int\',"writer.writerow([url, 97, ""ppl[p_logi].astype('int')"",
+    ""ppl[p_logi].apply('int')"", t1, t2, 'pd.Series.astype', 'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.hstack\source16\code\pd.DataFrame.apply_where_replace0.py,TypeError: cannot convert the series to <class \'int\'>,"writer.writerow([url, 215,
+    ""sub.apply(lambda r: leaks[int(r['ID'])] if int(r['ID']) in leaks else r['y'\t    ], axis=1)""
+    ,
+    ""np.where( int(sub['ID']) in leaks , leaks[int(sub['ID'])] ,sub['y'\t    ])""
+    , t1, t2, 'pd.DataFrame.apply', 'np.where'])
+",TypeError,pd.DataFrame.apply,np.where
+D://crw_data//np.hstack\source31\code\pd.Series.astype_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'apply\',"writer.writerow([url, 42, 'np.arange(0, 60, time_step).astype(int)',
+    'np.arange(0, 60, time_step).apply(int)', t1, t2, 'pd.Series.astype',
+    'pd.Series.apply'])
+",AttributeError,pd.Series.astype,pd.Series.apply
+D://crw_data//np.hstack\source53\code\np.vstack_concatenate_replace0.py,"ValueError: all the input arrays must have same number of dimensions, but the array at index 0 has 2 dimension(s) and the array at index 1 has 1 dimension(s)","writer.writerow([url, 23, 'np.vstack((catData, temp))',
+    'np.concatenate((catData, temp), axis=0)', t1, t2, 'np.vstack',
+    'np.concatenate'])
+",ValueError,np.vstack,np.concatenate
+D://crw_data//np.linalg.norm\source4\code\np.linalg.norm_replace0.py,TypeError: \'axis\' is an invalid keyword to ufunc \'square\',"writer.writerow([url, 16, 'np.linalg.norm(c[1:] - c[:-1], axis=1)',
+    'np.sqrt(np.square(c[1:] - c[:-1], axis=1).sum())', t1, t2,
+    'np.linalg.norm', 'np.sqrt_sum'])
+",TypeError,np.linalg.norm,np.sqrt_sum
+D://crw_data//np.linalg.norm\source4\code\np.where_apply_replace0.py,NameError: name \'mask\' is not defined,"writer.writerow([url, 17,
+    'np.where(np.isin(path[9:-1:10], primes, True, True))',
+    'pd.DataFrame(mask).apply(lambda x : x > 128).replace({True: True,False: False}).values.flatten()'
+    , t1, t2, 'np.where', 'pd.DataFrame.apply'])
+",NameError,np.where,pd.DataFrame.apply
+D://crw_data//np.sum\source101\code\np.sum_sum_replace0.py,ValueError: invalid number of arguments,"writer.writerow([url, 134,
+    'np.sum(np.logical_and(y_pred == 1, y_test == 1))',
+    '(np.logical_and(y_pred == 1).sum( y_test == 1))', t1, t2, 'np.sum',
+    'np.ndarray.sum'])
+",ValueError,np.sum,np.ndarray.sum
+D://crw_data//np.sum\source172\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 37, ""i.replace('&', '')"", ""i.map('&', '')"", t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.sum\source238\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 30, ""i.replace('&', '')"", ""i.map('&', '')"", t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.vectorize\source5\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 38, ""c.replace('cat', 'bool')"",
+    ""c.map('cat', 'bool')"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.where\source155\code\np.where_apply_replace0.py,NameError: name \'pred_test_y\' is not defined,"writer.writerow([url, 37,
+    'np.where(df_macro.cpi.isnull(), 1, df_macro.cpi)',
+    'pd.DataFrame(pred_test_y).apply(lambda x : x > 0.5).replace({True: 1,False: 0}).values.flatten()'
+    , t1, t2, 'np.where', 'pd.DataFrame.apply'])
+",NameError,np.where,pd.DataFrame.apply
+D://crw_data//np.where\source156\code\pd.Series.map_where_replace1.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 222,
+    ""family['FamilySize'].map(lambda s: 1 if 2 <= s <= 4 else 0)"",
+    ""np.where( 2 <= family['FamilySize'] <= 4 , 1 ,0)"", t1, t2,
+    'pd.Series.map', 'np.where'])
+",ValueError,pd.Series.map,np.where
+D://crw_data//np.where\source21\code\np.transpose_column_stack_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'column_stack\',"writer.writerow([url, 51, 'trainData.describe().transpose()',
+    'trainData.describe().column_stack()', t1, t2, 'np.transpose',
+    'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//np.where\source21\code\np.where_apply_replace0.py,NameError: name \'y_pred\' is not defined,"writer.writerow([url, 95, 'np.where(fullData.Age.isnull(), 0, 1)',
+    'pd.DataFrame(y_pred[:]).apply(lambda x : x > 0.95).replace({True: 1,False: 0}).values.flatten()'
+    , t1, t2, 'np.where', 'pd.DataFrame.apply'])
+",NameError,np.where,pd.DataFrame.apply
+D://crw_data//np.where\source74\code\pd.Series.map_where_replace1.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 142,
+    ""family['FamilySize'].map(lambda s: 1 if 2 <= s <= 4 else 0)"",
+    ""np.where( 2 <= family['FamilySize'] <= 4 , 1 ,0)"", t1, t2,
+    'pd.Series.map', 'np.where'])
+",ValueError,pd.Series.map,np.where
+D://crw_data//np.zeros\source113\code\pd.Series.replace_map_replace0.py,AttributeError: \'bytes\' object has no attribute \'map\',"writer.writerow([url, 96, """"""clean.replace(b'
+', b' ')"""""",
+    """"""clean.map(b'
+', b' ')"""""", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.zeros\source137\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 137, 'y_train.iloc[fit_index]',
+    'y_train.iat[fit_index]', t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source137\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 139, 'y_train.iloc[val_index]',
+    'y_train.iat[val_index]', t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source137\code\pd.Series.replace_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 62, 'X_train.replace(-1, np.nan)',
+    'X_train.map(-1, np.nan)', t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.zeros\source14\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 102, ""y['target'].iloc[val_idx]"",
+    ""y['target'].iat[val_idx]"", t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source14\code\pd.Series.replace_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 38, 'data.replace(0, np.nan, inplace=True)',
+    'data.map(0, np.nan, inplace=True)', t1, t2, 'pd.Series.replace',
+    'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.zeros\source141\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 33, 'y.iloc[trn_idx]', 'y.iat[trn_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source141\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 34, 'y.iloc[val_idx]', 'y.iat[val_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source142\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 32, 'y.iloc[trn_idx]', 'y.iat[trn_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source142\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 33, 'y.iloc[val_idx]', 'y.iat[val_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source160\code\pd.Series.map_replace_replace1.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 143,
+    ""dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})"",
+    ""pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})"",
+    t1, t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//np.zeros\source18\code\pd.Series.replace_map_replace0.py,AttributeError: \'bytes\' object has no attribute \'map\',"writer.writerow([url, 54, """"""clean.replace(b'
+', b' ')"""""",
+    """"""clean.map(b'
+', b' ')"""""", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.zeros\source183\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 87, 'y_train.iloc[fit_idx]', 'y_train.iat[fit_idx]',
+    t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source183\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 89, 'y_train.iloc[val_idx]', 'y_train.iat[val_idx]',
+    t1, t2, 'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source2\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 174, 'y_.iloc[trn_idx]', 'y_.iat[trn_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source2\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 175, 'y_.iloc[val_idx]', 'y_.iat[val_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source305\code\pd.Series.map_replace_replace1.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 85,
+    ""dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})"",
+    ""pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})"",
+    t1, t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//np.zeros\source313\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 42, ""dataset['Sex'].map({'female': 1, 'male': 0})"",
+    ""pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})"", t1,
+    t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//np.zeros\source313\code\pd.Series.map_replace_replace1.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 103,
+    ""dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})"",
+    ""pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})"",
+    t1, t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//np.zeros\source340\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 68, ""dataset['Sex'].map({'female': 1, 'male': 0})"",
+    ""pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})"", t1,
+    t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//np.zeros\source344\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 55, ""dataset['Sex'].map({'female': 1, 'male': 0})"",
+    ""pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})"", t1,
+    t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//np.zeros\source344\code\pd.Series.map_replace_replace1.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 116,
+    ""dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})"",
+    ""pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})"",
+    t1, t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//np.zeros\source353\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 52, ""data['Sex'].map({'female': 0, 'male': 1})"",
+    ""pd.DataFrame(data['Sex']).replace({'female': 0, 'male': 1})"", t1, t2,
+    'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//np.zeros\source366\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int32)\' and \'str\',"writer.writerow([url, 12, ""dataset['Sex'].map({'female': 1, 'male': 0})"",
+    ""pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})"", t1,
+    t2, 'pd.Series.map', 'pd.DataFrame.replace'])
+",TypeError,pd.Series.map,pd.DataFrame.replace
+D://crw_data//np.zeros\source520\code\pd.Series.replace_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 47, 'train.replace({(0): np.nan})',
+    'train.map({(0): np.nan})', t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//np.zeros\source73\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 62, 'y.iloc[trn_idx]', 'y.iat[trn_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source73\code\pd.Series.iloc_replace3.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 63, 'y.iloc[val_idx]', 'y.iat[val_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//np.zeros\source87\code\pd.Series.iloc_replace1.py,ValueError: Invalid call for scalar access (getting)!,"writer.writerow([url, 65, 'y.iloc[trn_idx]', 'y.iat[trn_idx]', t1, t2,
+    'pd.Series.iloc', 'pd.Series.iat'])
+",ValueError,pd.Series.iloc,pd.Series.iat
+D://crw_data//pd.concat\source1002\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 55, 'line.replace(*pair)', 'line.map(*pair)', t1, t2,
+    'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//pd.concat\source1054\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 515, ""ticket.replace('.', '')"", ""ticket.map('.', '')"",
+    t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//pd.concat\source1065\code\pd.DataFrame.apply_where_replace0.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 411,
+    ""combined.apply(lambda r: fillAges(r) if np.isnan(r['Age']) else r['Age'],\t    axis=1)""
+    ,
+    ""np.where( np.isnan(combined['Age']) , fillAges(combined) ,combined['Age'])""
+    , t1, t2, 'pd.DataFrame.apply', 'np.where'])
+",ValueError,pd.DataFrame.apply,np.where
+D://crw_data//pd.concat\source1118\code\pd.DataFrame.apply_where_replace0.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 167,
+    ""combined.apply(lambda r: fillAges(r) if np.isnan(r['Age']) else r['Age'],\t    axis=1)""
+    ,
+    ""np.where( np.isnan(combined['Age']) , fillAges(combined) ,combined['Age'])""
+    , t1, t2, 'pd.DataFrame.apply', 'np.where'])
+",ValueError,pd.DataFrame.apply,np.where
+D://crw_data//pd.concat\source1118\code\pd.Series.map_where_replace1.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 289,
+    ""combined['FamilySize'].map(lambda s: 1 if 2 <= s <= 4 else 0)"",
+    ""np.where( 2 <= combined['FamilySize'] <= 4 , 1 ,0)"", t1, t2,
+    'pd.Series.map', 'np.where'])
+",ValueError,pd.Series.map,np.where
+D://crw_data//pd.concat\source1118\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 259, ""ticket.replace('.', '')"", ""ticket.map('.', '')"",
+    t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//pd.concat\source114\code\pd.DataFrame.loc_replace0.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 30, ""Surname_list.loc[ctr, 'Surname']"",
+    ""Surname_list.ix[ctr, 'Surname']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//pd.concat\source114\code\pd.DataFrame.loc_replace1.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 35, ""Title_list.loc[ctr, 'Title']"",
+    ""Title_list.ix[ctr, 'Title']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//pd.concat\source114\code\pd.DataFrame.loc_replace10.py,"AttributeError: (""\'numpy.float64\' object has no attribute \'equals\'"", \'occurred at index 19\')","writer.writerow([url, 146,
+    ""Filler_Ages.female.loc[row['Title'], row['Pclass']]"",
+    ""Filler_Ages.female.ix[row['Title'], row['Pclass']]"", t1, t2,
+    'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//pd.concat\source114\code\pd.DataFrame.loc_replace9.py,"AttributeError: (""\'numpy.float64\' object has no attribute \'equals\'"", \'occurred at index 5\')","writer.writerow([url, 150,
+    ""Filler_Ages.male.loc[row['Title'], row['Pclass']]"",
+    ""Filler_Ages.male.ix[row['Title'], row['Pclass']]"", t1, t2,
+    'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//pd.concat\source114\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 34, ""FullName.replace(' ', '')"",
+    ""FullName.map(' ', '')"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//pd.concat\source195\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 13, 'c.iloc[0:1]', 'c.iat[0:1]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//pd.concat\source263\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 17, ""s.replace('craftsm,an', 'craftsman')"",
+    ""s.map('craftsm,an', 'craftsman')"", t1, t2, 'pd.Series.replace',
+    'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//pd.concat\source350\code\pd.Series.map_where_replace1.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 316,
+    ""combined['FamilySize'].map(lambda s: 1 if 2 <= s <= 4 else 0)"",
+    ""np.where( 2 <= combined['FamilySize'] <= 4 , 1 ,0)"", t1, t2,
+    'pd.Series.map', 'np.where'])
+",ValueError,pd.Series.map,np.where
+D://crw_data//pd.concat\source401\code\pd.Series.str_replace0.py,TypeError: \'float\' object is not subscriptable,"writer.writerow([url, 40, 'train_test.Cabin.str[0]',
+    'train_test.Cabin.map(lambda x: x[0])', t1, t2, 'pd.Series.str',
+    'pd.Series.map'])
+",TypeError,pd.Series.str,pd.Series.map
+D://crw_data//pd.concat\source41\code\pd.DataFrame.loc_replace0.py,"KeyError: ""None of [Int64Index([     2,      6,      7,     13,     26,     29,     33,     34,\\n                39,     44,\\n            ...\\n            595165, 595166, 595169, 595178, 595180, 595183, 595184, 595187,\\n            595203, 595211],\\n           dtype=\'int64\', length=119043)] are in the [columns]""","writer.writerow([url, 898, 'train.loc[test_index]', 'train[test_index]', t1,
+    t2, 'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.concat\source41\code\pd.DataFrame.loc_replace1.py,"KeyError: ""None of [Int64Index([     0,      1,      3,      4,      5,      8,      9,     10,\\n                11,     12,\\n            ...\\n            595200, 595201, 595202, 595204, 595205, 595206, 595207, 595208,\\n            595209, 595210],\\n           dtype=\'int64\', length=476169)] are in the [columns]""","writer.writerow([url, 899, 'train.loc[train_index]', 'train[train_index]',
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.concat\source493\code\pd.DataFrame.loc_replace0.py,"KeyError: ""None of [Int64Index([692, 481, 527, 855, 801, 652, 509, 557, 828,  18,\\n            ...\\n            104, 177, 544, 680, 476, 359, 258, 736, 462, 507],\\n           dtype=\'int64\', length=712)] are in the [columns]""","writer.writerow([url, 88, 'train_data.loc[train_index]',
+    'train_data[train_index]', t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.concat\source493\code\pd.DataFrame.loc_replace1.py,"KeyError: ""None of [Int64Index([565, 160, 553, 860, 241, 559, 387, 536, 698,  99,\\n            ...\\n            142, 349, 354, 295, 143, 880,  91, 883, 473, 637],\\n           dtype=\'int64\', length=179)] are in the [columns]""","writer.writerow([url, 89, 'train_data.loc[test_index]',
+    'train_data[test_index]', t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.concat\source499\code\pd.Series.map_where_replace1.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 282,
+    'combined.FamilySize.map(lambda s: 1 if 2 <= s <= 4 else 0)',
+    'np.where( 2 <= combined.FamilySize <= 4 , 1 ,0)', t1, t2,
+    'pd.Series.map', 'np.where'])
+",ValueError,pd.Series.map,np.where
+D://crw_data//pd.concat\source511\code\pd.DataFrame.iloc_replace0.py,TypeError: _get_value() missing 1 required positional argument: \'col\',"writer.writerow([url, 52, 'train.iloc[0]', 'train.iat[0]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",TypeError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//pd.concat\source571\code\pd.Series.map_where_replace1.py,"ValueError: The truth value of a Series is ambiguous. Use a.empty, a.bool(), a.item(), a.any() or a.all().","writer.writerow([url, 99,
+    ""all_datas['FamilySize'].map(lambda s: 1 if 2 <= s <= 4 else 0)"",
+    ""np.where( 2 <= all_datas['FamilySize'] <= 4 , 1 ,0)"", t1, t2,
+    'pd.Series.map', 'np.where'])
+",ValueError,pd.Series.map,np.where
+D://crw_data//pd.concat\source596\code\pd.DataFrame.loc_replace1.py,AttributeError: \'numpy.float64\' object has no attribute \'equals\',"writer.writerow([url, 185, ""full.loc[1043, 'Fare']"",
+    ""full.ix[1043, 'Fare']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//pd.concat\source596\code\pd.DataFrame.loc_replace2.py,AttributeError: \'numpy.int64\' object has no attribute \'equals\',"writer.writerow([url, 197, ""full.loc[i - 1, 'Pclass']"",
+    ""full.ix[i - 1, 'Pclass']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//pd.concat\source596\code\pd.DataFrame.loc_replace3.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 198, ""full.loc[i - 1, 'Sex']"",
+    ""full.ix[i - 1, 'Sex']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//pd.concat\source596\code\pd.DataFrame.loc_replace4.py,AttributeError: \'numpy.float64\' object has no attribute \'equals\',"writer.writerow([url, 199, ""full.loc[i - 1, 'Age']"",
+    ""full.ix[i - 1, 'Age']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//pd.concat\source672\code\np.transpose_column_stack_replace0.py,AttributeError: \'numpy.ndarray\' object has no attribute \'column_stack\',"writer.writerow([url, 22, 'np.array([y_true, y_pred]).transpose()',
+    'np.array([y_true, y_pred]).column_stack()', t1, t2, 'np.transpose',
+    'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//pd.concat\source672\code\pd.DataFrame.loc_replace0.py,"KeyError: ""None of [Int64Index([     1,      2,      3,      4,      5,     12,     15,     19,\\n                21,     22,\\n            ...\\n            101984, 101986, 101987, 101988, 101991, 101992, 101993, 101994,\\n            101998, 101999],\\n           dtype=\'int64\', name=\'Id\', length=50999)] are in the [columns]""","writer.writerow([url, 104, 'data.loc[train.index]', 'data[train.index]', t1,
+    t2, 'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.concat\source672\code\pd.DataFrame.loc_replace1.py,"KeyError: ""None of [Int64Index([     6,      7,      8,      9,     10,     11,     13,     14,\\n                16,     17,\\n            ...\\n            101977, 101979, 101982, 101983, 101985, 101989, 101990, 101995,\\n            101996, 101997],\\n           dtype=\'int64\', name=\'Id\', length=51000)] are in the [columns]""","writer.writerow([url, 106, 'data.loc[test.index]', 'data[test.index]', t1,
+    t2, 'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.concat\source707\code\pd.Series.map_replace_replace0.py,TypeError: Cannot compare types \'ndarray(dtype=int64)\' and \'int\',"writer.writerow([url, 71, ""events['event_id'].map(app_ev)"",
+    ""events['event_id'].replace(app_ev)"", t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",TypeError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.concat\source759\code\pd.Series.map_replace_replace0.py,AssertionError,"writer.writerow([url, 82, ""df['app'].map(app_averages['average'])"",
+    ""df['app'].replace(app_averages['average'])"", t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",AssertionError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.concat\source797\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 19, 'x.fillna(x.mean())',
+    'x.combine_first(x.applymap(lambda x: x.mean()))', t1, t2,
+    'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//pd.concat\source857\code\pd.Series.map_replace_replace0.py,NameError: name \'title_replaceping\' is not defined,"writer.writerow([url, 29, ""combined2.loc[:, ('Title')].map(title_mapping)"",
+    ""combined2.loc[:, ('Title')].replace(title_replaceping)"", t1, t2,
+    'pd.Series.map', 'pd.Series.replace'])
+",NameError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.crosstab\source40\code\pd.DataFrame.apply_where_replace0.py,"TypeError: \'Series\' objects are mutable, thus they cannot be hashed","writer.writerow([url, 17,
+    ""data.apply(lambda row: row['action_type'] if total_actions[row[\t    'action_type']] >= threshold else row['combined_shot_type'], axis=1)""
+    ,
+    "" total_actions[data[\t    'action_type']].apply(lambda row: row['action_type'] if row >= threshold else row['combined_shot_type'])""
+    , t1, t2, 'pd.DataFrame.apply', 'pd.Series.apply'])
+",TypeError,pd.DataFrame.apply,pd.Series.apply
+D://crw_data//pd.read_csv\source1025\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 56, ""train['Age'].fillna(np.mean(train['Age']))"",
+    ""train['Age'].combine_first(train['Age'].applymap(lambda x: np.mean(train['Age'])))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//pd.read_csv\source1025\code\pd.DataFrame.fillna_replace1.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 57, ""test['Age'].fillna(np.mean(test['Age']))"",
+    ""test['Age'].combine_first(test['Age'].applymap(lambda x: np.mean(test['Age'])))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//pd.read_csv\source1025\code\pd.DataFrame.fillna_replace2.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 58, ""test['Fare'].fillna(np.mean(test['Fare']))"",
+    ""test['Fare'].combine_first(test['Fare'].applymap(lambda x: np.mean(test['Fare'])))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//pd.read_csv\source1076\code\pd.Series.map_replace_replace0.py,AttributeError: \'FacetGrid\' object has no attribute \'replace\',"writer.writerow([url, 57,
+    ""sns.FacetGrid(train, hue='Pclass', size=6).map(sns.kdeplot, 'Fare')"",
+    ""sns.FacetGrid(train, hue='Pclass', size=6).replace(sns.kdeplot, 'Fare')"",
+    t1, t2, 'pd.Series.map', 'pd.Series.replace'])
+",AttributeError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1089\code\pd.Series.map_replace_replace0.py,NameError: name \'logreplace\' is not defined,"writer.writerow([url, 44, ""X['saldo_medio_var29_hace3'].map(logmap)"",
+    ""X['saldo_medio_var29_hace3'].replace(logreplace)"", t1, t2,
+    'pd.Series.map', 'pd.Series.replace'])
+",NameError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1181\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 19, 'df_train[column].fillna(mean_value)',
+    'df_train[column].combine_first(df_train[column].applymap(lambda x: mean_value))'
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//pd.read_csv\source1230\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 9, 'train_data.iloc[1:10000]',
+    'train_data.iat[1:10000]', t1, t2, 'pd.DataFrame.iloc', 'pd.DataFrame.iat']
+    )
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//pd.read_csv\source1268\code\pd.Series.map_replace_replace0.py,NameError: name \'title_replaceping\' is not defined,"writer.writerow([url, 22, ""dataset['Title'].map(title_mapping)"",
+    ""dataset['Title'].replace(title_replaceping)"", t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",NameError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1268\code\pd.Series.str_replace0.py,TypeError: \'float\' object is not subscriptable,"writer.writerow([url, 58, ""dataset['Cabin'].str[:1]"",
+    ""dataset['Cabin'].map(lambda x: x[:1])"", t1, t2, 'pd.Series.str',
+    'pd.Series.map'])
+",TypeError,pd.Series.str,pd.Series.map
+D://crw_data//pd.read_csv\source1390\code\pd.DataFrame.loc_replace0.py,KeyError: \'LotFrontage_missed\',"writer.writerow([url, 37, ""copy.loc[col + '_missed']"",
+    ""copy[col + '_missed']"", t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.read_csv\source1448\code\pd.DataFrame.loc_replace4.py,KeyError: 5,"writer.writerow([url, 97, 'X.loc[5]', 'X[5]', t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.read_csv\source1448\code\pd.DataFrame.loc_replace6.py,KeyError: 3,"writer.writerow([url, 127, 'X.loc[3]', 'X[3]', t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.read_csv\source1451\code\pd.Series.map_replace_replace0.py,AttributeError: \'FacetGrid\' object has no attribute \'replace\',"writer.writerow([url, 59, ""g.map(plt.hist, 'Age', bins=20)"",
+    ""g.replace(plt.hist, 'Age', bins=20)"", t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",AttributeError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1467\code\pd.DataFrame.loc_replace0.py,AttributeError: \'str\' object has no attribute \'equals\',"writer.writerow([url, 67, ""df_titanic_train_mod.loc[index, 'Title']"",
+    ""df_titanic_train_mod.ix[index, 'Title']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//pd.read_csv\source1522\code\pd.Series.map_replace_replace0.py,NameError: name \'replace\' is not defined,"writer.writerow([url, 28, 'map(float, data[1])', 'replace(float, data[1])',
+    t1, t2, 'pd.Series.map', 'pd.Series.replace'])
+",NameError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1523\code\pd.Series.map_replace_replace0.py,AssertionError,"writer.writerow([url, 50, 'df_train.Dates.map(get_hour_norm)',
+    'df_train.Dates.replace(get_hour_norm)', t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",AssertionError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1587\code\pd.Series.str_replace0.py,TypeError: \'int\' object is not subscriptable,"writer.writerow([url, 135, 'data.Cabin.str[0]',
+    'data.Cabin.map(lambda x: x[0])', t1, t2, 'pd.Series.str', 'pd.Series.map']
+    )
+",TypeError,pd.Series.str,pd.Series.map
+D://crw_data//pd.read_csv\source1587\code\pd.Series.str_replace1.py,TypeError: \'int\' object is not subscriptable,"writer.writerow([url, 137, 'data.Cabin.str[0]',
+    'data.Cabin.map(lambda x: x[0])', t1, t2, 'pd.Series.str', 'pd.Series.map']
+    )
+",TypeError,pd.Series.str,pd.Series.map
+D://crw_data//pd.read_csv\source1587\code\pd.Series.str_replace2.py,TypeError: \'int\' object is not subscriptable,"writer.writerow([url, 139, 'data.Cabin.str[0]',
+    'data.Cabin.map(lambda x: x[0])', t1, t2, 'pd.Series.str', 'pd.Series.map']
+    )
+",TypeError,pd.Series.str,pd.Series.map
+D://crw_data//pd.read_csv\source1593\code\pd.Series.map_replace_replace0.py,NameError: name \'month_year_cnt_replace\' is not defined,"writer.writerow([url, 173, 'month_year.map(month_year_cnt_map)',
+    'month_year.replace(month_year_cnt_replace)', t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",NameError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1618\code\pd.Series.map_replace_replace0.py,AttributeError: \'FacetGrid\' object has no attribute \'replace\',"writer.writerow([url, 37, ""g.map(plt.hist, 'Age', bins=20)"",
+    ""g.replace(plt.hist, 'Age', bins=20)"", t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",AttributeError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1622\code\pd.Series.map_replace_replace0.py,AttributeError: \'FacetGrid\' object has no attribute \'replace\',"writer.writerow([url, 44, ""g.map(plt.hist, 'Age', bins=20)"",
+    ""g.replace(plt.hist, 'Age', bins=20)"", t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",AttributeError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1641\code\pd.Series.map_replace_replace0.py,AttributeError: \'FacetGrid\' object has no attribute \'replace\',"writer.writerow([url, 47, 'facet.map(sns.kdeplot, var, shade=True)',
+    'facet.replace(sns.kdeplot, var, shade=True)', t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",AttributeError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1685\code\pd.Series.map_replace_replace0.py,AttributeError: \'FacetGrid\' object has no attribute \'replace\',"writer.writerow([url, 95, 'facet.map(sns.kdeplot, var, shade=True)',
+    'facet.replace(sns.kdeplot, var, shade=True)', t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",AttributeError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1686\code\pd.DataFrame.loc_replace0.py,KeyError: 0,"writer.writerow([url, 143, 'data.loc[i]', 'data[i]', t1, t2,
+    'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.read_csv\source1686\code\pd.DataFrame.loc_replace1.py,KeyError: 0,"writer.writerow([url, 147, 'data.loc[i]', 'data[i]', t1, t2,
+    'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.read_csv\source1686\code\pd.DataFrame.loc_replace3.py,KeyError: 0,"writer.writerow([url, 151, 'data.loc[i]', 'data[i]', t1, t2,
+    'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.read_csv\source1699\code\pd.Series.map_replace_replace0.py,AttributeError: \'FacetGrid\' object has no attribute \'replace\',"writer.writerow([url, 58, ""g.map(plt.hist, 'Age', bins=20)"",
+    ""g.replace(plt.hist, 'Age', bins=20)"", t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",AttributeError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1711\code\pd.Series.map_replace_replace0.py,AttributeError: \'FacetGrid\' object has no attribute \'replace\',"writer.writerow([url, 77, ""g.map(plt.hist, 'Age', bins=20)"",
+    ""g.replace(plt.hist, 'Age', bins=20)"", t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",AttributeError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1713\code\pd.Series.map_replace_replace0.py,AttributeError: \'FacetGrid\' object has no attribute \'replace\',"writer.writerow([url, 53, ""g.map(plt.hist, 'Age', bins=20)"",
+    ""g.replace(plt.hist, 'Age', bins=20)"", t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",AttributeError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1736\code\pd.Series.map_replace_replace0.py,AttributeError: \'FacetGrid\' object has no attribute \'replace\',"writer.writerow([url, 68, ""g.map(plt.hist, 'Age', bins=20)"",
+    ""g.replace(plt.hist, 'Age', bins=20)"", t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",AttributeError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1761\code\np.ndarray.dot_tensordot_replace3.py,AssertionError,"writer.writerow([url, 130, 'test.dot(Theta)',
+    'np.tensordot(test,Theta,axes=1)', t1, t2, 'np.ndarray.dot',
+    'np.tensordot'])
+",AssertionError,np.ndarray.dot,np.tensordot
+D://crw_data//pd.read_csv\source1761\code\np.transpose_column_stack_replace0.py,AttributeError: \'Series\' object has no attribute \'column_stack\',"writer.writerow([url, 66, '(anstrain - Pred).transpose()',
+    '(anstrain - Pred).column_stack()', t1, t2, 'np.transpose',
+    'np.column_stack'])
+",AttributeError,np.transpose,np.column_stack
+D://crw_data//pd.read_csv\source183\code\pd.Series.map_replace_replace0.py,NameError: name \'replace\' is not defined,"writer.writerow([url, 61,
+    'map(np.radians, [pickup_lat, pickup_lon, dropoff_lat, dropoff_lon])',
+    'replace(np.radians, [pickup_lat, pickup_lon, dropoff_lat, dropoff_lon])',
+    t1, t2, 'pd.Series.map', 'pd.Series.replace'])
+",NameError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source1841\code\pd.DataFrame.loc_replace10.py,AttributeError: \'numpy.float64\' object has no attribute \'equals\',"writer.writerow([url, 51, ""test2.loc[152, 'Fare']"", ""test2.ix[152, 'Fare']"",
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//pd.read_csv\source1878\code\pd.Series.map_replace_replace0.py,AttributeError: \'FacetGrid\' object has no attribute \'replace\',"writer.writerow([url, 137, ""facet.map(sns.kdeplot, 'Age', shade=True)"",
+    ""facet.replace(sns.kdeplot, 'Age', shade=True)"", t1, t2,
+    'pd.Series.map', 'pd.Series.replace'])
+",AttributeError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source2168\code\pd.DataFrame.ix_replace2.py,TypeError: cannot do slice indexing on <class \'pandas.core.indexes.base.Index\'> with these indexers [1] of <class \'int\'>,"writer.writerow([url, 51, ""train.ix[(train['label'] == y), 1:]"",
+    ""train.loc[(train['label'] == y), 1:]"", t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.loc'])
+",TypeError,pd.DataFrame.ix,pd.DataFrame.loc
+D://crw_data//pd.read_csv\source2232\code\pd.DataFrame.loc_replace0.py,AttributeError: \'int\' object has no attribute \'equals\',"writer.writerow([url, 36, ""dftest.loc[index, 'predict']"",
+    ""dftest.ix[index, 'predict']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//pd.read_csv\source2232\code\pd.DataFrame.loc_replace1.py,AttributeError: \'int\' object has no attribute \'equals\',"writer.writerow([url, 47, ""dftest.loc[index, 'predict']"",
+    ""dftest.ix[index, 'predict']"", t1, t2, 'pd.DataFrame.loc',
+    'pd.DataFrame.ix'])
+",AttributeError,pd.DataFrame.loc,pd.DataFrame.ix
+D://crw_data//pd.read_csv\source2251\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 53,
+    ""test['Demanda_uni_equil'].fillna(test['Demanda_uni_equil_y'])"",
+    ""test['Demanda_uni_equil'].combine_first(test['Demanda_uni_equil'].applymap(lambda x: test['Demanda_uni_equil_y']))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//pd.read_csv\source2358\code\pd.Series.map_replace_replace0.py,NameError: name \'gender_replace\' is not defined,"writer.writerow([url, 16, ""train['Sex'].map(gender_map)"",
+    ""train['Sex'].replace(gender_replace)"", t1, t2, 'pd.Series.map',
+    'pd.Series.replace'])
+",NameError,pd.Series.map,pd.Series.replace
+D://crw_data//pd.read_csv\source2507\code\pd.DataFrame.ix_replace1.py,TypeError: cannot do slice indexing on <class \'pandas.core.indexes.base.Index\'> with these indexers [4] of <class \'int\'>,"writer.writerow([url, 21, 'train_sample.ix[:, start_col:end_col]',
+    'train_sample.loc[:, start_col:end_col]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.loc'])
+",TypeError,pd.DataFrame.ix,pd.DataFrame.loc
+D://crw_data//pd.read_csv\source2525\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 49, 'complete_data.iloc[0:train_length,]',
+    'complete_data.iat[0:train_length,]', t1, t2, 'pd.DataFrame.iloc',
+    'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//pd.read_csv\source2528\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 10, 'train.iloc[:, :20]', 'train.iat[:, :20]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//pd.read_csv\source2528\code\pd.DataFrame.iloc_replace1.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 13, 'train.iloc[:, 20:40]', 'train.iat[:, 20:40]', t1,
+    t2, 'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//pd.read_csv\source2629\code\pd.Series.replace_map_replace0.py,TypeError: \'str\' object is not callable,"writer.writerow([url, 34, ""train[tf].replace('N', 0)"",
+    ""train[tf].map('N', 0)"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//pd.read_csv\source2771\code\pd.Series.replace_map_replace0.py,TypeError: \'int\' object is not callable,"writer.writerow([url, 19, 'gifts.Weight.replace(1, np.nan)',
+    'gifts.Weight.map(1, np.nan)', t1, t2, 'pd.Series.replace',
+    'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map
+D://crw_data//pd.read_csv\source2829\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 43, 'train.iloc[:, (i)]', 'train.iat[:, (i)]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//pd.read_csv\source2829\code\pd.DataFrame.iloc_replace1.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 49, 'train.iloc[:, (i)]', 'train.iat[:, (i)]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//pd.read_csv\source283\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 39, 'Y_train.iloc[:, (i)]', 'Y_train.iat[:, (i)]', t1,
+    t2, 'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//pd.read_csv\source3006\code\pd.DataFrame.iloc_replace0.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 44, 'train.iloc[:, (i)]', 'train.iat[:, (i)]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//pd.read_csv\source3006\code\pd.DataFrame.iloc_replace1.py,ValueError: iAt based indexing can only have integer indexers,"writer.writerow([url, 50, 'train.iloc[:, (i)]', 'train.iat[:, (i)]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",ValueError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//pd.read_csv\source3198\code\pd.Series.replace_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 39, ""weather.replace('M', -1)"",
+    ""weather.map('M', -1)"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//pd.read_csv\source3423\code\pd.DataFrame.loc_replace0.py,"KeyError: ""None of [Int64Index([ 4063,  2476,  5679,  7184,  1589, 10117,   203,  3798,  9441,\\n             2262,\\n            ...\\n              753,  6281,  1279,  4184,  7501,  9974,  8578,  5196,  8765,\\n             1307],\\n           dtype=\'int64\', length=4063)] are in the [columns]""","writer.writerow([url, 33,
+    'train.loc[np.random.choice(train.index, round(0.4 * rows), replace=False)]'
+    ,
+    'train[np.random.choice(train.index, round(0.4 * rows), replace=False)]',
+    t1, t2, 'pd.DataFrame.loc', 'pd.DataFrame'])
+",KeyError,pd.DataFrame.loc,pd.DataFrame
+D://crw_data//pd.read_csv\source3653\code\pd.Series.replace_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 19,
+    'train.replace(to_replace=to_replace, value=np.nan)',
+    'train.map(to_map=to_map, value=np.nan)', t1, t2, 'pd.Series.replace',
+    'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//pd.read_csv\source3772\code\pd.Series.replace_map_replace0.py,AttributeError: \'str\' object has no attribute \'map\',"writer.writerow([url, 27, 's[0].replace(\', )"", ""s[0].map(\', \'\')', t1,
+    t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//pd.read_csv\source40\code\pd.Series.replace_map_replace0.py,AttributeError: \'DataFrame\' object has no attribute \'map\',"writer.writerow([url, 31, ""weather.replace('M', -1)"",
+    ""weather.map('M', -1)"", t1, t2, 'pd.Series.replace', 'pd.Series.map'])
+",AttributeError,pd.Series.replace,pd.Series.map
+D://crw_data//pd.read_csv\source4139\code\pd.DataFrame.iloc_replace0.py,TypeError: _get_value() missing 1 required positional argument: \'col\',"writer.writerow([url, 343, 't2.iloc[i]', 't2.iat[i]', t1, t2,
+    'pd.DataFrame.iloc', 'pd.DataFrame.iat'])
+",TypeError,pd.DataFrame.iloc,pd.DataFrame.iat
+D://crw_data//pd.read_csv\source476\code\np.ndarray.sum_einsum_replace0.py,NameError: name \'np\' is not defined,"writer.writerow([url, 84, 'svd.explained_variance_ratio_.sum()',
+    ""np.einsum('i->',svd.explained_variance_ratio_)"", t1, t2,
+    'np.ndarray.sum', 'np.einsum'])
+",NameError,np.ndarray.sum,np.einsum
+D://crw_data//pd.read_csv\source695\code\pd.DataFrame.fillna_replace0.py,AttributeError: \'Series\' object has no attribute \'applymap\',"writer.writerow([url, 38, ""np.log(train['v2a1'] + 1).fillna(0)"",
+    ""np.log(train['v2a1'] + 1).combine_first(np.log(train['v2a1'] + 1).applymap(lambda x: 0))""
+    , t1, t2, 'pd.DataFrame.fillna', 'pd.DataFrame.combine_first'])
+",AttributeError,pd.DataFrame.fillna,pd.DataFrame.combine_first
+D://crw_data//pd.read_csv\source695\code\pd.Series.replace_map_replace0.py,TypeError: \'str\' object is not callable,"writer.writerow([url, 53, ""train['edjefa'].replace('yes', '1')"",
+    ""train['edjefa'].map('yes', '1')"", t1, t2, 'pd.Series.replace',
+    'pd.Series.map'])
+",TypeError,pd.Series.replace,pd.Series.map

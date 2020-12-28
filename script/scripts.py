@@ -2,6 +2,24 @@ import os
 import csv
 import ast
 import astor
+import numpy as np
+import  pandas as pd
+
+a = pd.Series(np.arange(16))
+b = pd.DataFrame(np.arange(16).reshape(2, 8))
+c = np.arange(16)
+d = np.ones(16)
+print(np.hstack((c, d)))
+print(np.append(c, d, axis=0))
+
+#print(d)
+print(b.shape)
+print(dir(a))
+print(dir(b))
+print(dir(c))
+print(type(c))
+#print(help(a.apply))
+exit(0)
 path = r'D:\experiment\project'
 csv.field_size_limit(500 * 1024 * 1024)
 c = set() # 执行的文件
@@ -18,7 +36,9 @@ for root, dirs, files in os.walk(path, topdown=False):
                 for line in csv_read:
                     if len(line):
                         c.add(line[0])
-                        #print(line)
+
+                        print(line)
+                        exit(0)
         elif name.endswith('error_type.csv'):
             with open(os.path.join(root, name), 'r') as f2:
                 csv_read = csv.reader(f2)

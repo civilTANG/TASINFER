@@ -2486,3 +2486,107 @@ D://crw_data//pd.read_csv\source1587\code\pd.Series.str_replace2.py,TypeError: \
     'data.Cabin.map(lambda x: x[0])', t1, t2, 'pd.Series.str', 'pd.Series.map']
     )
 ",TypeError
+D://crw_data//df.fillna\source41\code\pd.DataFrame.ix_replace0.py,b'NotImplementedError: iLocation based boolean indexing on an integer type is not available\r\n',"writer.writerow([url, 607, 'df.ix[df[c] < 0, c]', 'df.iloc[df[c] < 0, c]',
+    t1, t2, 'pd.DataFrame.ix', 'pd.DataFrame.iloc'])
+",NotImplementedError
+D://crw_data//df.fillna\source41\code\pd.DataFrame.ix_replace0.py,b'NotImplementedError: iLocation based boolean indexing on an integer type is not available\r\n',"writer.writerow([url, 607, 'df.ix[df[c] < 0, c]', 'df.iloc[df[c] < 0, c]',
+    t1, t2, 'pd.DataFrame.ix', 'pd.DataFrame.iloc'])
+",NotImplementedError
+D://crw_data//np.append\source28\code\pd.DataFrame.ix_replace1.py,"b""KeyError: 'plocel0'\r\n""","writer.writerow([url, 89, ""train.ix[:, 'pixel0':]"",
+    ""train.loc[:, 'plocel0':]"", t1, t2, 'pd.DataFrame.ix', 'pd.DataFrame.loc'])
+",KeyError
+D://crw_data//np.arange\source229\code\pd.DataFrame.ix_replace0.py,b'NotImplementedError: iLocation based boolean indexing on an integer type is not available\r\n',"writer.writerow([url, 22, 'train.ix[train.day < 19,]',
+    'train.iloc[train.day < 19,]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",NotImplementedError
+D://crw_data//np.arange\source229\code\pd.DataFrame.ix_replace1.py,b'NotImplementedError: iLocation based boolean indexing on an integer type is not available\r\n',"writer.writerow([url, 23, 'train.ix[train.day >= 19,]',
+    'train.iloc[train.day >= 19,]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",NotImplementedError
+D://crw_data//np.zeros\source398\code\pd.DataFrame.ix_replace0.py,AssertionError,"writer.writerow([url, 142, 'data.ix[0:890]', 'data.iloc[0:890]', t1, t2,
+    'pd.DataFrame.ix', 'pd.DataFrame.iloc'])
+",AssertionError
+D://crw_data//np.zeros\source400\code\pd.DataFrame.ix_replace0.py,AssertionError,"writer.writerow([url, 141, 'data.ix[0:890]', 'data.iloc[0:890]', t1, t2,
+    'pd.DataFrame.ix', 'pd.DataFrame.iloc'])
+",AssertionError
+D://crw_data//pd.concat\source1065\code\pd.DataFrame.ix_replace0.py,AssertionError,"writer.writerow([url, 921, 'combined.ix[0:train_rows]',
+    'combined.iloc[0:train_rows]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",AssertionError
+D://crw_data//pd.concat\source1066\code\pd.DataFrame.ix_replace0.py,AssertionError,"writer.writerow([url, 921, 'combined.ix[0:train_rows]',
+    'combined.iloc[0:train_rows]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",AssertionError
+D://crw_data//pd.concat\source1067\code\pd.DataFrame.ix_replace0.py,AssertionError,"writer.writerow([url, 921, 'combined.ix[0:train_rows]',
+    'combined.iloc[0:train_rows]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",AssertionError
+D://crw_data//pd.concat\source1068\code\pd.DataFrame.ix_replace0.py,AssertionError,"writer.writerow([url, 921, 'combined.ix[0:train_rows]',
+    'combined.iloc[0:train_rows]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",AssertionError
+D://crw_data//pd.concat\source1069\code\pd.DataFrame.ix_replace0.py,AssertionError,"writer.writerow([url, 921, 'combined.ix[0:train_rows]',
+    'combined.iloc[0:train_rows]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",AssertionError
+D://crw_data//pd.concat\source1118\code\pd.DataFrame.ix_replace0.py,AssertionError,"writer.writerow([url, 314, 'combined.ix[0:890]', 'combined.iloc[0:890]', t1,
+    t2, 'pd.DataFrame.ix', 'pd.DataFrame.iloc'])
+",AssertionError
+D://crw_data//pd.concat\source357\code\pd.DataFrame.ix_replace0.py,NotImplementedError: iLocation based boolean indexing on an integer type is not available,"writer.writerow([url, 86, 'df_train.ix[(df_train.Year == 2003), 1:]',
+    'df_train.iloc[(df_train.Year == 2003), 1:]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",NotImplementedError
+D://crw_data//pd.concat\source357\code\pd.DataFrame.ix_replace2.py,NotImplementedError: iLocation based boolean indexing on an integer type is not available,"writer.writerow([url, 94, 'df_test.ix[(df_test.Year == y), 2:]',
+    'df_test.iloc[(df_test.Year == y), 2:]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",NotImplementedError
+D://crw_data//pd.concat\source357\code\pd.DataFrame.ix_replace4.py,NotImplementedError: iLocation based boolean indexing on an integer type is not available,"writer.writerow([url, 109, 'df_train.ix[(df_train.Year == y1), 1:]',
+    'df_train.iloc[(df_train.Year == y1), 1:]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",NotImplementedError
+D://crw_data//pd.concat\source357\code\pd.DataFrame.ix_replace6.py,NotImplementedError: iLocation based boolean indexing on an integer type is not available,"writer.writerow([url, 112, 'df_test.ix[(df_test.Year == y2), 2:]',
+    'df_test.iloc[(df_test.Year == y2), 2:]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",NotImplementedError
+D://crw_data//pd.concat\source571\code\pd.DataFrame.ix_replace0.py,AssertionError,"writer.writerow([url, 106, 'all_datas.ix[0:890]', 'all_datas.iloc[0:890]',
+    t1, t2, 'pd.DataFrame.ix', 'pd.DataFrame.iloc'])
+",AssertionError
+D://crw_data//pd.read_csv\source2168\code\pd.DataFrame.ix_replace2.py,TypeError: cannot do slice indexing on <class \'pandas.core.indexes.base.Index\'> with these indexers [1] of <class \'int\'>,"writer.writerow([url, 51, ""train.ix[(train['label'] == y), 1:]"",
+    ""train.loc[(train['label'] == y), 1:]"", t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.loc'])
+",TypeError
+D://crw_data//pd.read_csv\source2507\code\pd.DataFrame.ix_replace1.py,TypeError: cannot do slice indexing on <class \'pandas.core.indexes.base.Index\'> with these indexers [4] of <class \'int\'>,"writer.writerow([url, 21, 'train_sample.ix[:, start_col:end_col]',
+    'train_sample.loc[:, start_col:end_col]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.loc'])
+",TypeError
+D://crw_data//pd.read_csv\source2507\code\pd.DataFrame.ix_replace6.py,AssertionError,"writer.writerow([url, 41, 'train.ix[10001:10010, start_col:end_col]',
+    'train.iloc[10001:10010, start_col:end_col]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",AssertionError
+D://crw_data//pd.read_csv\source3198\code\pd.DataFrame.ix_replace0.py,"ValueError: Location based indexing can only have [integer, integer slice (START point is INCLUDED, END point is EXCLUDED), listlike of integers, boolean array] types","writer.writerow([url, 77, 'train.ix[:, ((train != -1).any(axis=0))]',
+    'train.iloc[:, ((train != -1).any(axis=0))]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",ValueError
+D://crw_data//pd.read_csv\source3198\code\pd.DataFrame.ix_replace1.py,"ValueError: Location based indexing can only have [integer, integer slice (START point is INCLUDED, END point is EXCLUDED), listlike of integers, boolean array] types","writer.writerow([url, 78, 'test.ix[:, ((test != -1).any(axis=0))]',
+    'test.iloc[:, ((test != -1).any(axis=0))]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",ValueError
+D://crw_data//pd.read_csv\source40\code\pd.DataFrame.ix_replace0.py,"ValueError: Location based indexing can only have [integer, integer slice (START point is INCLUDED, END point is EXCLUDED), listlike of integers, boolean array] types","writer.writerow([url, 81, 'train.ix[:, ((train != -1).any(axis=0))]',
+    'train.iloc[:, ((train != -1).any(axis=0))]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",ValueError
+D://crw_data//pd.read_csv\source40\code\pd.DataFrame.ix_replace1.py,"ValueError: Location based indexing can only have [integer, integer slice (START point is INCLUDED, END point is EXCLUDED), listlike of integers, boolean array] types","writer.writerow([url, 82, 'test.ix[:, ((test != -1).any(axis=0))]',
+    'test.iloc[:, ((test != -1).any(axis=0))]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",ValueError
+D://crw_data//pd.read_csv\source484\code\pd.DataFrame.ix_replace0.py,AssertionError,"writer.writerow([url, 24, 'train.ix[0:10000]', 'train.iloc[0:10000]', t1,
+    t2, 'pd.DataFrame.ix', 'pd.DataFrame.iloc'])
+",AssertionError
+D://crw_data//pd.read_csv\source846\code\pd.DataFrame.ix_replace0.py,"ValueError: Location based indexing can only have [integer, integer slice (START point is INCLUDED, END point is EXCLUDED), listlike of integers, boolean array] types","writer.writerow([url, 77, 'train.ix[:, ((train != -1).any(axis=0))]',
+    'train.iloc[:, ((train != -1).any(axis=0))]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",ValueError
+D://crw_data//pd.read_csv\source846\code\pd.DataFrame.ix_replace1.py,"ValueError: Location based indexing can only have [integer, integer slice (START point is INCLUDED, END point is EXCLUDED), listlike of integers, boolean array] types","writer.writerow([url, 78, 'test.ix[:, ((test != -1).any(axis=0))]',
+    'test.iloc[:, ((test != -1).any(axis=0))]', t1, t2, 'pd.DataFrame.ix',
+    'pd.DataFrame.iloc'])
+",ValueError
