@@ -4,22 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/script/unimportance/crw_shape.py" line="12" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bea2093-da22-4e20-b2b1-09481adf714d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/script/finally_candidate.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/kaggle_result.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/no_type_candidate.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/optimize.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/optimizetion.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script/unimportance/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/12_24_error.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/crw_shape.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/unimportance/crw_shape.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/get_competion.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/unimportance/get_competion.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/new_replace.csv" beforeDir="false" afterPath="$PROJECT_DIR$/script/unimportance/new_replace.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/optimization_fliter.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/scripts.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/scripts.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/script/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/temp.py" afterDir="false" />
-    </list>
+    <list default="true" id="8bea2093-da22-4e20-b2b1-09481adf714d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +119,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1774" />
     <option name="y" value="-188" />
     <option name="width" value="1382" />
@@ -354,7 +339,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-331" width="1936" height="1056" extended-state="7" />
+    <frame x="-1928" y="-331" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14179105" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
