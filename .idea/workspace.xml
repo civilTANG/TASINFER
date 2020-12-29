@@ -32,7 +32,7 @@
         <entry file="file://$PROJECT_DIR$/script/count_result.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -337,12 +337,12 @@
       <workItem from="1608049491809" duration="2588000" />
       <workItem from="1608081888187" duration="22584000" />
       <workItem from="1608546667993" duration="8347000" />
-      <workItem from="1608700166106" duration="128304000" />
+      <workItem from="1608700166106" duration="128902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="291613000" />
+    <option name="totallyTimeSpent" value="292211000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -774,7 +774,7 @@
     <entry file="file://$PROJECT_DIR$/script/count_result.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="31" column="38" lean-forward="true" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
