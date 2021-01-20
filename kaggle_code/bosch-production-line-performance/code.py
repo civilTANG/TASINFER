@@ -15,6 +15,7 @@ print(check_output(["ls", "../input"]).decode("utf8"))
 df = pd.read_csv("../input/train_numeric.csv", nrows = 5000)#, usecols = ['Id', 'L0_S0_F0', 'L0_S0_F2', 'L0_S0_F4', 'L0_S0_F6', 'L0_S0_F8', 'L0_S0_F10', 'Response'])
 #print(df[df['Response'] == 1], '\n')
 #print("Failed mean ", df[df['Response'] == 1].mean(axis = 0), '\n')
+a = df['a']
 print("Total rows", df.count().get_value(label = "Response"), '\n')
 failedmean = df[df['Response'] == 1].mean(axis = 0)
 failedstd = df[df['Response'] == 1].std(axis = 0)

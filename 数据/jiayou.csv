@@ -1,0 +1,589 @@
+2,airbnb-recruiting-new-user-bookings,D://crw_data//df.iloc\source73,"np.column_stack((ids, cts))","np.vstack((ids.T, cts.T)).T",np.column_stack,np.vstack
+2,airbnb-recruiting-new-user-bookings,D://crw_data//np.argsort\source56,df_all.isnull().sum(),"np.count_nonzero(df_all.isnull(),)",np.ndarray.sum,np.count_nonzero
+2,airbnb-recruiting-new-user-bookings,D://crw_data//np.argsort\source90,"np.where(np.logical_or(av < 14, av > 90), -1, av)",(av).map(lambda x : 2015 - av if x >= 1900 else  av).values,np.where,pd.Series.map
+2,airbnb-recruiting-new-user-bookings,D://crw_data//np.argsort\source37,"np.where(np.logical_or(av < 14, av > 100), -1, av)","pd.DataFrame(df.y.values).apply(lambda x : x < eps).replace({True: 0,False: df.y.values - eps}).values.flatten()",np.where,pd.DataFrame.apply
+2,airbnb-recruiting-new-user-bookings,D://crw_data//np.argsort\source56,"df_all.gender.replace('-unknown-', np.nan, inplace=True)","df_all.gender.map('-unknown-', np.nan, inplace=True)",pd.Series.replace,pd.Series.map
+2,allstate-claims-severity,D://crw_data//df.iloc\source56,np.column_stack(features),np.transpose(features),np.column_stack,np.transpose
+2,allstate-claims-severity,D://crw_data//df.iloc\source56,np.column_stack(features),np.transpose(features),np.column_stack,np.transpose
+2,allstate-claims-severity,D://crw_data//np.hstack\source53,"np.vstack((catData, temp))","np.concatenate((catData, temp), axis=0)",np.vstack,np.concatenate
+2,allstate-claims-severity,D://crw_data//pd.concat\source797,x.fillna(x.mean()),x.combine_first(x.applymap(lambda x: x.mean())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,allstate-claims-severity,D://crw_data//np.abs\source108,"train_test.iloc[:ntrain, :]","train_test.iat[:ntrain, :]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,allstate-claims-severity,D://crw_data//np.array\source575,"c.loc[:, (c.columns.str.startswith('cat'))]","c.ix[:, (c.columns.str.startswith('cat'))]",pd.DataFrame.loc,pd.DataFrame.ix
+2,allstate-claims-severity,D://crw_data//np.array\source888,train[cat_features[c]].astype('category'),train[cat_features[c]].apply('category'),pd.Series.astype,pd.Series.apply
+2,allstate-claims-severity,D://crw_data//np.array\source872,train_test[cat_features[c]].astype('category'),train_test[cat_features[c]].apply('category'),pd.Series.astype,pd.Series.apply
+2,allstate-claims-severity,D://crw_data//np.vectorize\source5,"c.replace('cat', 'bool')","c.map('cat', 'bool')",pd.Series.replace,pd.Series.map
+2,bnp-paribas-cardif-claims-management,D://crw_data//np.array\source331,"np.array(train[i], dtype=str)","np.fromiter(train[i], dtype=str)",np.array,np.fromiter
+2,bnp-paribas-cardif-claims-management,D://crw_data//np.array\source331,"np.array(test[i], dtype=str)","np.fromiter(test[i], dtype=str)",np.array,np.fromiter
+2,bnp-paribas-cardif-claims-management,D://crw_data//np.arange\source345,all_data.iloc[:num_train],all_data.iat[:num_train],pd.DataFrame.iloc,pd.DataFrame.iat
+2,bnp-paribas-cardif-claims-management,D://crw_data//df.sum\source5,pd.isnull(train).astype(int),pd.isnull(train).apply(int),pd.Series.astype,pd.Series.apply
+2,bnp-paribas-cardif-claims-management,D://crw_data//np.array\source199,test.astype(float),test.apply(float),pd.Series.astype,pd.Series.apply
+2,catch-me-if-you-can-intruder-detection-through-webpage-session-tracking2,D://crw_data//df.iloc\source79,"X[:, self.left:self.right].astype(int)","X[:, self.left:self.right].apply(int)",pd.Series.astype,pd.Series.apply
+2,catch-me-if-you-can-intruder-detection-through-webpage-session-tracking2,D://crw_data//df.iloc\source79,"X[:, self.left:self.right].astype(int)","X[:, self.left:self.right].apply(int)",pd.Series.astype,pd.Series.apply
+2,caterpillar-tube-pricing,D://crw_data//np.arange\source33,np.sum((np.log1p(tr_preds) - np.log1p(tr_test_y)) ** 2),"np.einsum('i->',np)",np.ndarray.sum,np.einsum
+2,caterpillar-tube-pricing,D://crw_data//df.apply\source25,"df.apply(lambda row: row[field] if row[field] in filtered else float('NaN'),	    axis=1)", df[field].apply(lambda row:row if row in filtered else float('NaN')),pd.DataFrame.apply,pd.Series.apply
+2,caterpillar-tube-pricing,D://crw_data//df.apply\source60,"df.apply(lambda row: row[field] if row[field] in filtered else float('NaN'),	    axis=1)", df[field].apply(lambda row:row if row in filtered else float('NaN')),pd.DataFrame.apply,pd.Series.apply
+2,caterpillar-tube-pricing,D://crw_data//df.apply\source80,"df.apply(lambda row: row[field] if row[field] in filtered else float('NaN'),	    axis=1)", df[field].apply(lambda row:row if row in filtered else float('NaN')),pd.DataFrame.apply,pd.Series.apply
+2,caterpillar-tube-pricing,D://crw_data//df.apply\source25,"df.apply(lambda row: row[field] if row[field] in filtered else float('NaN'),	    axis=1)", df[field].apply(lambda row:row if row in filtered else float('NaN')),pd.DataFrame.apply,pd.Series.apply
+2,caterpillar-tube-pricing,D://crw_data//df.apply\source60,"df.apply(lambda row: row[field] if row[field] in filtered else float('NaN'),	    axis=1)", df[field].apply(lambda row:row if row in filtered else float('NaN')),pd.DataFrame.apply,pd.Series.apply
+2,caterpillar-tube-pricing,D://crw_data//df.apply\source80,"df.apply(lambda row: row[field] if row[field] in filtered else float('NaN'),	    axis=1)", df[field].apply(lambda row:row if row in filtered else float('NaN')),pd.DataFrame.apply,pd.Series.apply
+2,caterpillar-tube-pricing,D://crw_data//np.arange\source281,"train1.ix[:, (i)].fillna('NAvalue')","train1.ix[:, (i)].combine_first(train1.ix[:, (i)].applymap(lambda x: 'NAvalue'))",pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,caterpillar-tube-pricing,D://crw_data//pd.concat\source195,c.iloc[0:1],c.iat[0:1],pd.DataFrame.iloc,pd.DataFrame.iat
+2,caterpillar-tube-pricing,D://crw_data//df.apply\source25,test.id.values.astype(int),test.id.values.apply(int),pd.Series.astype,pd.Series.apply
+2,caterpillar-tube-pricing,D://crw_data//df.apply\source25,np.array(train_values).astype(float),np.array(train_values).apply(float),pd.Series.astype,pd.Series.apply
+2,caterpillar-tube-pricing,D://crw_data//df.apply\source25,np.array(train_values).astype(float),np.array(train_values).apply(float),pd.Series.astype,pd.Series.apply
+2,caterpillar-tube-pricing,D://crw_data//np.array\source930,test.astype(float),test.apply(float),pd.Series.astype,pd.Series.apply
+2,caterpillar-tube-pricing,D://crw_data//np.array\source930,train.astype(float),train.apply(float),pd.Series.astype,pd.Series.apply
+2,caterpillar-tube-pricing,D://crw_data//np.array\source181,"train['material_id'].replace(np.nan, ' ', regex=True, inplace=True)","train['material_id'].map(np.nan, ' ', regex=True, inplace=True)",pd.Series.replace,pd.Series.map
+2,caterpillar-tube-pricing,D://crw_data//np.array\source201,"train['material_id'].replace(np.nan, ' ', regex=True, inplace=True)","train['material_id'].map(np.nan, ' ', regex=True, inplace=True)",pd.Series.replace,pd.Series.map
+2,caterpillar-tube-pricing,D://crw_data//np.array\source204,"train['material_id'].replace(np.nan, ' ', regex=True, inplace=True)","train['material_id'].map(np.nan, ' ', regex=True, inplace=True)",pd.Series.replace,pd.Series.map
+2,caterpillar-tube-pricing,D://crw_data//np.arange\source33,"train['material_id'].replace(np.nan, ' ', regex=True, inplace=True)","train['material_id'].map(np.nan, ' ', regex=True, inplace=True)",pd.Series.replace,pd.Series.map
+2,caterpillar-tube-pricing,D://crw_data//np.array\source262,"train['material_id'].replace(np.nan, ' ', regex=True, inplace=True)","train['material_id'].map(np.nan, ' ', regex=True, inplace=True)",pd.Series.replace,pd.Series.map
+2,costa-rican-household-poverty-prediction,D://crw_data//df.loc\source88,df_train.groupby('idhogar')['parentesco1'].sum(),"np.einsum('i->',df_train.groupby('idhogar')['parentesco1'])",np.ndarray.sum,np.einsum
+2,costa-rican-household-poverty-prediction,D://crw_data//df.loc\source88,df_train.groupby('idhogar')['parentesco1'].sum(),"np.count_nonzero(df_train.groupby('idhogar')['parentesco1'],)",np.ndarray.sum,np.count_nonzero
+2,costa-rican-household-poverty-prediction,D://crw_data//pd.read_csv\source695,np.log(train['v2a1'] + 1).fillna(0),np.log(train['v2a1'] + 1).combine_first(np.log(train['v2a1'] + 1).applymap(lambda x: 0)),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,costa-rican-household-poverty-prediction,D://crw_data//df.iloc\source31,merged_df.iloc[train_idx],merged_df.iat[train_idx],pd.DataFrame.iloc,pd.DataFrame.iat
+2,costa-rican-household-poverty-prediction,D://crw_data//df.iloc\source31,merged_df['dependency'].astype(np.float32),merged_df['dependency'].apply(np.float32),pd.Series.astype,pd.Series.apply
+2,costa-rican-household-poverty-prediction,D://crw_data//df.iloc\source31,merged_df['edjefe'].astype(np.int8),merged_df['edjefe'].apply(np.int8),pd.Series.astype,pd.Series.apply
+2,costa-rican-household-poverty-prediction,D://crw_data//df.iloc\source31,target.iloc[train_idx],target.iat[train_idx],pd.Series.iloc,pd.Series.iat
+2,costa-rican-household-poverty-prediction,D://crw_data//df.iloc\source31,target.iloc[valid_idx],target.iat[valid_idx],pd.Series.iloc,pd.Series.iat
+2,costa-rican-household-poverty-prediction,D://crw_data//pd.read_csv\source695,"train['edjefa'].replace('yes', '1')","train['edjefa'].map('yes', '1')",pd.Series.replace,pd.Series.map
+2,crowdflower-search-relevance,D://crw_data//np.dot\source9,traind.iloc[0],traind.iat[0],pd.DataFrame.iloc,pd.DataFrame.iat
+2,crowdflower-search-relevance,D://crw_data//np.array\source1007,test.id.values.astype(int),test.id.values.apply(int),pd.Series.astype,pd.Series.apply
+2,crowdflower-search-relevance,D://crw_data//np.array\source962,test.id.values.astype(int),test.id.values.apply(int),pd.Series.astype,pd.Series.apply
+2,digit-recognizer,D://crw_data//np.abs\source67,"arange(0.0, math.pi * 4, 0.01)","array(range(0.0, math.pi * 4, 0.01))",np.arange,np.array
+2,digit-recognizer,D://crw_data//np.abs\source67,"np.arange(-5.0, 5.0, 0.1)","np.array(range(-5.0, 5.0, 0.1))",np.arange,np.array
+2,digit-recognizer,D://crw_data//np.abs\source67,"np.arange(-5.0, 5.0, 0.1)","np.array(range(-5.0, 5.0, 0.1))",np.arange,np.array
+2,digit-recognizer,D://crw_data//np.arange\source219,"np.arange(x_min, x_max, h)","np.array(range(x_min, x_max, h))",np.arange,np.array
+2,digit-recognizer,D://crw_data//np.arange\source219,"np.arange(y_min, y_max, h)","np.array(range(y_min, y_max, h))",np.arange,np.array
+2,digit-recognizer,D://crw_data//np.append\source23,"np.array(data, dtype='uint8')","np.fromiter(data, dtype='uint8')",np.array,np.fromiter
+2,digit-recognizer,D://crw_data//np.append\source23,"np.array(test, dtype='uint8')","np.fromiter(test, dtype='uint8')",np.array,np.fromiter
+2,digit-recognizer,D://crw_data//np.argmax\source22,"np.c_[range(1, m_test + 1), p2.reshape(len(p2), 1)]","np.hstack([range(1, m_test + 1), p2.reshape(len(p2), 1)])",np.c_,np.hstack
+2,digit-recognizer,D://crw_data//df.astype\source2,np.linalg.norm(grads['dW' + str(L)]),np.sqrt(np.square(grads['dW' + str(L)]).sum()),np.linalg.norm,np.sqrt_sum
+2,digit-recognizer,D://crw_data//df.astype\source2,"np.sum(t, axis=0)","np.einsum('ij->j',np)",np.ndarray.sum,np.einsum
+2,digit-recognizer,D://crw_data//df.astype\source2,np.sum(logprobs),"np.einsum('i->',np)",np.ndarray.sum,np.einsum
+2,digit-recognizer,D://crw_data//df.astype\source2,np.sum(logprobs),"np.einsum('i->',logprobs)",np.sum,np.einsum
+2,digit-recognizer,D://crw_data//np.argmax\source110,activations[-2].transpose(),activations[-2].column_stack(),np.transpose,np.column_stack
+2,digit-recognizer,D://crw_data//np.argmax\source110,self.weights[-l + 1].transpose(),self.weights[-l + 1].column_stack(),np.transpose,np.column_stack
+2,digit-recognizer,D://crw_data//np.argmax\source110,activations[-l - 1].transpose(),activations[-l - 1].column_stack(),np.transpose,np.column_stack
+2,digit-recognizer,D://crw_data//np.argmax\source29,"np.vstack((a_0, X.T))","np.concatenate((a_0, X.T), axis=0)",np.vstack,np.concatenate
+2,digit-recognizer,D://crw_data//np.argmax\source29,"np.vstack((a_0, A2))","np.concatenate((a_0, A2), axis=0)",np.vstack,np.concatenate
+2,digit-recognizer,D://crw_data//df.iloc\source45,"train_df.iloc[0:5000, 1:]","train_df.iat[0:5000, 1:]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,digit-recognizer,D://crw_data//np.append\source28,"train.ix[:, 'pixel0':]","train.loc[:, 'plocel0':]",pd.DataFrame.ix,pd.DataFrame.loc
+2,digit-recognizer,D://crw_data//pd.read_csv\source2168,"train.ix[(train['label'] == y), 1:]","train.loc[(train['label'] == y), 1:]",pd.DataFrame.ix,pd.DataFrame.loc
+2,digit-recognizer,D://crw_data//np.concatenate\source128,df['label'].astype(int),df['label'].apply(int),pd.Series.astype,pd.Series.apply
+2,donorschoose-application-screening,D://crw_data//np.array\source19,pd.to_datetime(df['project_submitted_datetime']).values.astype(np.int64),pd.to_datetime(df['project_submitted_datetime']).values.apply(np.int64),pd.Series.astype,pd.Series.apply
+2,elo-merchant-category-recommendation,D://crw_data//df.fillna\source10,pd.DatetimeIndex(df['purchase_date']).astype(np.int64),pd.DatetimeIndex(df['purchase_date']).apply(np.int64),pd.Series.astype,pd.Series.apply
+2,expedia-hotel-recommendations,D://crw_data//np.arange\source409,temp[features].sum(axis=1),"np.count_nonzero(temp[features],axis=1)",np.ndarray.sum,np.count_nonzero
+2,expedia-hotel-recommendations,D://crw_data//np.arange\source215,frame[datename].fillna('2015-01-01'),frame[datename].combine_first(frame[datename].applymap(lambda x: '2015-01-01')),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,expedia-hotel-recommendations,D://crw_data//pd.read_csv\source4139,t2.iloc[i],t2.iat[i],pd.DataFrame.iloc,pd.DataFrame.iat
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source180,"np.arange(predictions.shape[1], dtype=np.float32)","np.array(range(predictions.shape[1], dtype=np.float32))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source181,"np.arange(predictions.shape[1], dtype=np.float32)","np.array(range(predictions.shape[1], dtype=np.float32))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source296,"np.arange(0, size, x_step)","np.array(range(0, size, x_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source296,"np.arange(x_step, size + x_step, x_step)","np.array(range(x_step, size + x_step, x_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source296,"np.arange(0, size, y_step)","np.array(range(0, size, y_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source296,"np.arange(y_step, size + y_step, y_step)","np.array(range(y_step, size + y_step, y_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source404,"np.arange(0, size, x_step)","np.array(range(0, size, x_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source404,"np.arange(x_step, size + x_step, x_step)","np.array(range(x_step, size + x_step, x_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source404,"np.arange(0, size, y_step)","np.array(range(0, size, y_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source404,"np.arange(y_step, size + y_step, y_step)","np.array(range(y_step, size + y_step, y_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source405,"np.arange(0, size, x_step)","np.array(range(0, size, x_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source405,"np.arange(x_step, size + x_step, x_step)","np.array(range(x_step, size + x_step, x_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source405,"np.arange(0, size, y_step)","np.array(range(0, size, y_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source405,"np.arange(y_step, size + y_step, y_step)","np.array(range(y_step, size + y_step, y_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//pd.concat\source1142,"np.arange(0, size, x_step)","np.array(range(0, size, x_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//pd.concat\source1142,"np.arange(x_step, size + x_step, x_step)","np.array(range(x_step, size + x_step, x_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//pd.concat\source1142,"np.arange(0, size, y_step)","np.array(range(0, size, y_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//pd.concat\source1142,"np.arange(y_step, size + y_step, y_step)","np.array(range(y_step, size + y_step, y_step))",np.arange,np.array
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source106,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source180,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source181,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source224,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source242,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source264,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source265,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source266,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source267,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source268,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source269,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source82,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source83,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source28,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source106,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source180,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source181,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source224,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source242,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source264,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source265,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source266,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source267,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source268,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source269,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source82,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source83,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source28,"np.column_stack((row_ids, pred_labels))","np.transpose((row_ids, pred_labels))",np.column_stack,np.transpose
+2,facebook-v-predicting-check-ins,D://crw_data//np.arange\source406,preds.score.sum(),"np.count_nonzero(preds.score,)",np.ndarray.sum,np.count_nonzero
+2,facebook-v-predicting-check-ins,D://crw_data//df.loc\source106,"cell_test[:, (-1)].flatten().astype(np.int32)","cell_test[:, (-1)].flatten().apply(np.int32)",pd.Series.astype,pd.Series.apply
+2,facebook-v-predicting-check-ins,D://crw_data//np.append\source31,data['x'].iloc[i:j],data['x'].iat[i:j],pd.Series.iloc,pd.Series.iat
+2,facebook-v-predicting-check-ins,D://crw_data//np.append\source31,data['u_x'].iloc[i:j],data['u_x'].iat[i:j],pd.Series.iloc,pd.Series.iat
+2,facebook-v-predicting-check-ins,D://crw_data//np.append\source31,data['y'].iloc[i:j],data['y'].iat[i:j],pd.Series.iloc,pd.Series.iat
+2,facebook-v-predicting-check-ins,D://crw_data//np.append\source31,data['u_y'].iloc[i:j],data['u_y'].iat[i:j],pd.Series.iloc,pd.Series.iat
+2,facebook-v-predicting-check-ins,D://crw_data//np.append\source31,data['x'].iloc[i:j],data['x'].iat[i:j],pd.Series.iloc,pd.Series.iat
+2,facebook-v-predicting-check-ins,D://crw_data//np.append\source31,data['sigma_x'].iloc[i:j],data['sigma_x'].iat[i:j],pd.Series.iloc,pd.Series.iat
+2,facebook-v-predicting-check-ins,D://crw_data//np.append\source31,data['y'].iloc[i:j],data['y'].iat[i:j],pd.Series.iloc,pd.Series.iat
+2,facebook-v-predicting-check-ins,D://crw_data//np.append\source31,data['sigma_y'].iloc[i:j],data['sigma_y'].iat[i:j],pd.Series.iloc,pd.Series.iat
+2,favorita-grocery-sales-forecasting,D://crw_data//df.merge\source88,df_2017.prev_unit_sales.fillna(0),df_2017.prev_unit_sales.combine_first(df_2017.prev_unit_sales.applymap(lambda x: 0)),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,favorita-grocery-sales-forecasting,D://crw_data//np.concatenate\source32,promo_2017[t2017 + timedelta(days=i)].values.astype(np.uint8),promo_2017[t2017 + timedelta(days=i)].values.apply(np.uint8),pd.Series.astype,pd.Series.apply
+2,favorita-grocery-sales-forecasting,D://crw_data//np.arange\source235,promo_df[t2017 + timedelta(days=i)].values.astype(np.uint8),promo_df[t2017 + timedelta(days=i)].values.apply(np.uint8),pd.Series.astype,pd.Series.apply
+2,favorita-grocery-sales-forecasting,D://crw_data//np.array\source970,promo_2017[t2017 + timedelta(days=i)].values.astype(np.uint8),promo_2017[t2017 + timedelta(days=i)].values.apply(np.uint8),pd.Series.astype,pd.Series.apply
+2,favorita-grocery-sales-forecasting,D://crw_data//np.array\source939,(promo_2017[t2017 + timedelta(days=i)] - 1).values.astype(np.uint8),(promo_2017[t2017 + timedelta(days=i)] - 1).values.apply(np.uint8),pd.Series.astype,pd.Series.apply
+2,forest-cover-type-kernels-only,D://crw_data//np.arange\source120,"xx_func.iloc[:train_.shape[0], :]","xx_func.iat[:train_.shape[0], :]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,forest-cover-type-kernels-only,D://crw_data//np.arange\source120,"tmp_cat.str.replace(s_, '')","tmp_cat.str.map(s_, '')",pd.Series.replace,pd.Series.map
+2,ga-customer-revenue-prediction,D://crw_data//df.replace\source1,"df.replace(cols_to_replace, 'NA')","df.map(cols_to_map, 'NA')",pd.Series.replace,pd.Series.map
+2,ghouls-goblins-and-ghosts-boo,D://crw_data//np.argmax\source76,"np.array(X_train, dtype=np.float32)","np.fromiter(X_train, dtype=np.float32)",np.array,np.fromiter
+2,ghouls-goblins-and-ghosts-boo,D://crw_data//np.argmax\source76,"np.array(y_train, dtype=np.float32)","np.fromiter(y_train, dtype=np.float32)",np.array,np.fromiter
+2,ghouls-goblins-and-ghosts-boo,D://crw_data//np.argmax\source76,np.exp(X).sum(),"np.count_nonzero(np.exp(X),)",np.ndarray.sum,np.count_nonzero
+2,ghouls-goblins-and-ghosts-boo,D://crw_data//np.argmax\source76,train_test.iloc[:len(y_train)],train_test.iat[:len(y_train)],pd.DataFrame.iloc,pd.DataFrame.iat
+2,ghouls-goblins-and-ghosts-boo,D://crw_data//np.argmax\source76,"(np.random.random_sample((num_input, num_hidden)) - 0.5).astype(np.float32)","(np.random.random_sample((num_input, num_hidden)) - 0.5).apply(np.float32)",pd.Series.astype,pd.Series.apply
+2,ghouls-goblins-and-ghosts-boo,D://crw_data//np.argmax\source76,"np.zeros((1, num_output)).astype(np.float32)","np.zeros((1, num_output)).apply(np.float32)",pd.Series.astype,pd.Series.apply
+2,grupo-bimbo-inventory-demand,D://crw_data//np.arange\source302,"np.arange(3.915, 3.917, 0.0001)","np.array(range(3.915, 3.917, 0.0001))",np.arange,np.array
+2,grupo-bimbo-inventory-demand,D://crw_data//np.arange\source303,"np.arange(3, 5, 0.1)","np.array(range(3, 5, 0.1))",np.arange,np.array
+2,grupo-bimbo-inventory-demand,D://crw_data//np.arange\source35,"np.arange(min_float, max_float, 0.1)","np.array(range(min_float, max_float, 0.1))",np.arange,np.array
+2,grupo-bimbo-inventory-demand,D://crw_data//pd.read_csv\source2251,test['Demanda_uni_equil'].fillna(test['Demanda_uni_equil_y']),test['Demanda_uni_equil'].combine_first(test['Demanda_uni_equil'].applymap(lambda x: test['Demanda_uni_equil_y'])),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,grupo-bimbo-inventory-demand,D://crw_data//df.iloc\source60,"df.iloc[:, (i)]","df.iat[:, (i)]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,grupo-bimbo-inventory-demand,D://crw_data//pd.read_csv\source2232,"dftest.loc[index, 'predict']","dftest.ix[index, 'predict']",pd.DataFrame.loc,pd.DataFrame.ix
+2,grupo-bimbo-inventory-demand,D://crw_data//pd.read_csv\source2232,"dftest.loc[index, 'predict']","dftest.ix[index, 'predict']",pd.DataFrame.loc,pd.DataFrame.ix
+2,home-credit-default-risk,D://crw_data//df.join\source10,df['NEW_SCORES_STD'].fillna(df['NEW_SCORES_STD'].mean()),df['NEW_SCORES_STD'].combine_first(df['NEW_SCORES_STD'].applymap(lambda x: df['NEW_SCORES_STD'].mean())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,home-credit-default-risk,D://crw_data//df.iloc\source38,"df.iloc[:train.shape[0], :]","df.iat[:train.shape[0], :]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,home-credit-default-risk,D://crw_data//np.concatenate\source44,app_train[col].astype('str'),app_train[col].apply('str'),pd.Series.astype,pd.Series.apply
+2,home-credit-default-risk,D://crw_data//np.concatenate\source44,app_test[col].astype('str'),app_test[col].apply('str'),pd.Series.astype,pd.Series.apply
+2,home-credit-default-risk,D://crw_data//np.array\source60,df[col].astype('str'),df[col].apply('str'),pd.Series.astype,pd.Series.apply
+2,home-credit-default-risk,D://crw_data//df.join\source11,y.iloc[trn_idx],y.iat[trn_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//df.join\source11,y.iloc[val_idx],y.iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//df.join\source59,train_df['TARGET'].iloc[train_idx],train_df['TARGET'].iat[train_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//df.join\source59,train_df['TARGET'].iloc[valid_idx],train_df['TARGET'].iat[valid_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//df.iloc\source12,y_.iloc[trn_idx],y_.iat[trn_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//df.iloc\source12,y_.iloc[val_idx],y_.iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//np.concatenate\source44,Target.iloc[trn_idx],Target.iat[trn_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//np.concatenate\source44,Target.iloc[val_idx],Target.iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//np.concatenate\source44,Target.iloc[val_idx],Target.iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//np.zeros\source183,y_train.iloc[fit_idx],y_train.iat[fit_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//np.zeros\source183,y_train.iloc[val_idx],y_train.iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//np.zeros\source2,y_.iloc[trn_idx],y_.iat[trn_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//np.zeros\source2,y_.iloc[val_idx],y_.iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//np.zeros\source73,y.iloc[trn_idx],y.iat[trn_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//np.zeros\source73,y.iloc[val_idx],y.iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//np.zeros\source87,y.iloc[trn_idx],y.iat[trn_idx],pd.Series.iloc,pd.Series.iat
+2,home-credit-default-risk,D://crw_data//df.join\source1,"df['DAYS_EMPLOYED'].replace(365243, np.nan, inplace=True)","df['DAYS_EMPLOYED'].map(365243, np.nan, inplace=True)",pd.Series.replace,pd.Series.map
+2,home-credit-default-risk,D://crw_data//df.join\source10,"df['DAYS_EMPLOYED'].replace(365243, np.nan, inplace=True)","df['DAYS_EMPLOYED'].map(365243, np.nan, inplace=True)",pd.Series.replace,pd.Series.map
+2,home-depot-product-search-relevance,D://crw_data//pd.read_csv\source476,svd.explained_variance_ratio_.sum(),"np.einsum('i->',svd.explained_variance_ratio_)",np.ndarray.sum,np.einsum
+2,home-depot-product-search-relevance,D://crw_data//df.at\source14,df_all.iloc[:num_train],df_all.iat[:num_train],pd.DataFrame.iloc,pd.DataFrame.iat
+2,home-depot-product-search-relevance,D://crw_data//pd.concat\source263,"s.replace('craftsm,an', 'craftsman')","s.map('craftsm,an', 'craftsman')",pd.Series.replace,pd.Series.map
+2,home-depot-product-search-relevance,D://crw_data//df.at\source16,"df_all['search_term'].replace(keys, values)","df_all['search_term'].map(keys, values)",pd.Series.replace,pd.Series.map
+2,home-depot-product-search-relevance,D://crw_data//df.at\source21,"s.replace(' x ', ' xby ')","s.map(' x ', ' xby ')",pd.Series.replace,pd.Series.map
+2,home-depot-product-search-relevance,D://crw_data//df.at\source23,"str1.replace(' in.', 'in.')","str1.map(' in.', 'in.')",pd.Series.replace,pd.Series.map
+2,home-depot-product-search-relevance,D://crw_data//df.at\source26,"s.replace('inches', 'in.')","s.map('inches', 'in.')",pd.Series.replace,pd.Series.map
+2,home-depot-product-search-relevance,D://crw_data//df.at\source9,"s.replace('inch', 'in.')","s.map('inch', 'in.')",pd.Series.replace,pd.Series.map
+2,homesite-quote-conversion,D://crw_data//pd.read_csv\source2525,"complete_data.iloc[0:train_length,]","complete_data.iat[0:train_length,]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,homesite-quote-conversion,D://crw_data//np.array\source891,test.astype(np.float32),test.apply(np.float32),pd.Series.astype,pd.Series.apply
+2,homesite-quote-conversion,D://crw_data//np.array\source891,train.astype(np.float32),train.apply(np.float32),pd.Series.astype,pd.Series.apply
+2,house-prices-advanced-regression-techniques,D://crw_data//np.array\source1174,np.column_stack([y_preds[k][i] for k in clfs]),np.vstack((y_preds[k][i] for k in clfs.T)).T,np.column_stack,np.vstack
+2,house-prices-advanced-regression-techniques,D://crw_data//np.array\source1174,"np.dot(weights_mean, y_model_preds)","np.einsum('ij,jm->im',weights_mean, y_model_preds)",np.dot,np.einsum
+2,house-prices-advanced-regression-techniques,D://crw_data//df.fillna\source20,dataset.isnull().values.sum(),"np.einsum('i->',dataset.isnull().values)",np.ndarray.sum,np.einsum
+2,house-prices-advanced-regression-techniques,D://crw_data//df.fillna\source20,dataset.isnull().sum(),"np.einsum('i->',dataset.isnull())",np.ndarray.sum,np.einsum
+2,house-prices-advanced-regression-techniques,D://crw_data//np.array\source422,"np.stack((trainX, np.ones(np.shape(trainX)[0])), axis=0).transpose()","np.stack((trainX, np.ones(np.shape(trainX)[0])), axis=0).column_stack()",np.transpose,np.column_stack
+2,house-prices-advanced-regression-techniques,D://crw_data//np.array\source422,trainX_.transpose(),trainX_.column_stack(),np.transpose,np.column_stack
+2,house-prices-advanced-regression-techniques,D://crw_data//np.array\source422,trainX_.transpose(),trainX_.column_stack(),np.transpose,np.column_stack
+2,house-prices-advanced-regression-techniques,D://crw_data//np.array\source422,q.transpose(),q.column_stack(),np.transpose,np.column_stack
+2,house-prices-advanced-regression-techniques,D://crw_data//np.array\source422,V.transpose(),V.column_stack(),np.transpose,np.column_stack
+2,house-prices-advanced-regression-techniques,D://crw_data//np.array\source422,U.transpose(),U.column_stack(),np.transpose,np.column_stack
+2,house-prices-advanced-regression-techniques,D://crw_data//df.iloc\source21,"df.iloc[:df_train.shape[0],]","df.iat[:df_train.shape[0],]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,house-prices-advanced-regression-techniques,D://crw_data//df.iloc\source21,"df.iloc[df_train.shape[0]:,]","df.iat[df_train.shape[0]:,]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,house-prices-advanced-regression-techniques,D://crw_data//df.join\source46,"test_df.loc[1116, 'GarageType']","test_df.ix[1116, 'GarageType']",pd.DataFrame.loc,pd.DataFrame.ix
+2,house-prices-advanced-regression-techniques,D://crw_data//df.join\source61,"test_df.loc[666, 'GarageQual']","test_df.ix[666, 'GarageQual']",pd.DataFrame.loc,pd.DataFrame.ix
+2,house-prices-advanced-regression-techniques,D://crw_data//df.join\source61,"test_df.loc[666, 'GarageCond']","test_df.ix[666, 'GarageCond']",pd.DataFrame.loc,pd.DataFrame.ix
+2,house-prices-advanced-regression-techniques,D://crw_data//df.join\source61,"test_df.loc[666, 'GarageFinish']","test_df.ix[666, 'GarageFinish']",pd.DataFrame.loc,pd.DataFrame.ix
+2,house-prices-advanced-regression-techniques,D://crw_data//df.join\source61,"test_df.loc[666, 'GarageYrBlt']","test_df.ix[666, 'GarageYrBlt']",pd.DataFrame.loc,pd.DataFrame.ix
+2,house-prices-advanced-regression-techniques,D://crw_data//df.join\source61,"test_df.loc[1116, 'GarageType']","test_df.ix[1116, 'GarageType']",pd.DataFrame.loc,pd.DataFrame.ix
+2,house-prices-advanced-regression-techniques,D://crw_data//df.join\source62,"test_df.loc[666, 'GarageQual']","test_df.ix[666, 'GarageQual']",pd.DataFrame.loc,pd.DataFrame.ix
+2,house-prices-advanced-regression-techniques,D://crw_data//df.join\source62,"test_df.loc[666, 'GarageCond']","test_df.ix[666, 'GarageCond']",pd.DataFrame.loc,pd.DataFrame.ix
+2,house-prices-advanced-regression-techniques,D://crw_data//df.join\source62,"test_df.loc[666, 'GarageFinish']","test_df.ix[666, 'GarageFinish']",pd.DataFrame.loc,pd.DataFrame.ix
+2,house-prices-advanced-regression-techniques,D://crw_data//df.join\source62,"test_df.loc[666, 'GarageYrBlt']","test_df.ix[666, 'GarageYrBlt']",pd.DataFrame.loc,pd.DataFrame.ix
+2,house-prices-advanced-regression-techniques,D://crw_data//df.join\source62,"test_df.loc[1116, 'GarageType']","test_df.ix[1116, 'GarageType']",pd.DataFrame.loc,pd.DataFrame.ix
+2,house-prices-advanced-regression-techniques,D://crw_data//df.apply\source40,df_train[QUANT_COLS].apply(lambda x: st.skew(x)),df_train[QUANT_COLS].map(lambda x: st.skew(x)),pd.Series.apply,pd.Series.map
+2,house-prices-advanced-regression-techniques,D://crw_data//np.flatnonzero\source1,y_train.astype(int),y_train.apply(int),pd.Series.astype,pd.Series.apply
+2,house-prices-advanced-regression-techniques,D://crw_data//df.fillna\source41,"df[c].replace(to_replace=minor, value='minor', inplace=True)","df[c].map(to_map=minor, value='minor', inplace=True)",pd.Series.replace,pd.Series.map
+2,house-prices-advanced-regression-techniques,D://crw_data//np.abs\source33,"complete_data.replace(-inf, 0)","complete_data.map(-inf, 0)",pd.Series.replace,pd.Series.map
+2,house-prices-advanced-regression-techniques,D://crw_data//np.append\source20,"dataset.iloc[:, (i)].replace(np.nan, 'None', regex=True)","dataset.iloc[:, (i)].map(np.nan, 'None', regex=True)",pd.Series.replace,pd.Series.map
+2,instacart-market-basket-analysis,D://crw_data//np.arange\source2,"np.arange(0, len(P) + 1, 1.0)","np.array(range(0, len(P) + 1, 1.0))",np.arange,np.array
+2,instacart-market-basket-analysis,D://crw_data//np.array\source832,train.reordered.astype(np.int8),train.reordered.apply(np.int8),pd.Series.astype,pd.Series.apply
+2,instacart-market-basket-analysis,D://crw_data//np.array\source832,products.product_id.astype(np.int32),products.product_id.apply(np.int32),pd.Series.astype,pd.Series.apply
+2,introducing-kaggle-scripts,D://crw_data//np.abs\source9,D.transpose(),D.column_stack(),np.transpose,np.column_stack
+2,jigsaw-toxic-comment-classification-challenge,D://crw_data//df.fillna\source3,df.fillna('unknown'),df.combine_first(df.applymap(lambda x: 'unknown')),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,jigsaw-toxic-comment-classification-challenge,D://crw_data//pd.read_csv\source283,"Y_train.iloc[:, (i)]","Y_train.iat[:, (i)]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,jigsaw-toxic-comment-classification-challenge,D://crw_data//df.fillna\source52,"(train_df.iloc[:, 2:].sum(axis=1) == 0).astype(int)","(train_df.iloc[:, 2:].sum(axis=1) == 0).apply(int)",pd.Series.astype,pd.Series.apply
+2,jigsaw-toxic-comment-classification-challenge,D://crw_data//np.zeros\source113,"clean.replace(b' ', b' ')","clean.map(b' ', b' ')",pd.Series.replace,pd.Series.map
+2,jigsaw-toxic-comment-classification-challenge,D://crw_data//np.zeros\source18,"clean.replace(b' ', b' ')","clean.map(b' ', b' ')",pd.Series.replace,pd.Series.map
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source107,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source108,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source109,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source58,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source71,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source78,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source90,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//pd.crosstab\source40,"data.apply(lambda row: row['action_type'] if total_actions[row[	    'action_type']] >= threshold else row['combined_shot_type'], axis=1)"," total_actions[data[	    'action_type']].apply(lambda row: row['action_type'] if row >= threshold else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source107,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source108,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source109,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source58,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source71,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source78,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//df.apply\source90,"df.apply(lambda row: row['action_type'] if actiontypes[row['action_type']] >	    20 else row['combined_shot_type'], axis=1)"," actiontypes[df['action_type']].apply(lambda row: row['action_type'] if row >	    20 else row['combined_shot_type'])",pd.DataFrame.apply,pd.Series.apply
+2,kobe-bryant-shot-selection,D://crw_data//np.array\source1215,"np.logspace(0, 2, num=3).astype(int)","np.logspace(0, 2, num=3).apply(int)",pd.Series.astype,pd.Series.apply
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//np.array\source1083,"np.array([y_true, y_pred]).transpose()","np.array([y_true, y_pred]).column_stack()",np.transpose,np.column_stack
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//np.array\source259,"np.array([y_true, y_pred]).transpose()","np.array([y_true, y_pred]).column_stack()",np.transpose,np.column_stack
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//np.array\source960,"np.array([y_true, y_pred]).transpose()","np.array([y_true, y_pred]).column_stack()",np.transpose,np.column_stack
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//pd.concat\source672,"np.array([y_true, y_pred]).transpose()","np.array([y_true, y_pred]).column_stack()",np.transpose,np.column_stack
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//pd.read_csv\source2829,"train.iloc[:, (i)]","train.iat[:, (i)]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//pd.read_csv\source3006,"train.iloc[:, (i)]","train.iat[:, (i)]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//pd.read_csv\source2829,"train.iloc[:, (i)]","train.iat[:, (i)]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//pd.read_csv\source3006,"train.iloc[:, (i)]","train.iat[:, (i)]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//np.arange\source232,train[i].astype('category'),train[i].apply('category'),pd.Series.astype,pd.Series.apply
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//np.array\source998,train_s.astype(float),train_s.apply(float),pd.Series.astype,pd.Series.apply
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//np.array\source998,test_s.astype(float),test_s.apply(float),pd.Series.astype,pd.Series.apply
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//np.array\source999,train_s.astype(float),train_s.apply(float),pd.Series.astype,pd.Series.apply
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//np.array\source999,test_s.astype(float),test_s.apply(float),pd.Series.astype,pd.Series.apply
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//np.column_stack\source28,X.astype(np.float32),X.apply(np.float32),pd.Series.astype,pd.Series.apply
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//np.array\source961,test_s.astype(float),test_s.apply(float),pd.Series.astype,pd.Series.apply
+2,liberty-mutual-group-property-inspection-prediction,D://crw_data//pd.read_csv\source2629,"train[tf].replace('N', 0)","train[tf].map('N', 0)",pd.Series.replace,pd.Series.map
+2,mercedes-benz-greener-manufacturing,D://crw_data//np.array\source742,"np.vstack((target, target_pred)).transpose()","np.vstack((target, target_pred)).column_stack()",np.transpose,np.column_stack
+2,mercedes-benz-greener-manufacturing,D://crw_data//np.hstack\source16,"sub.apply(lambda r: leaks[int(r['ID'])] if int(r['ID']) in leaks else r['y'	    ], axis=1)","np.where( int(sub['ID']) in leaks , leaks[int(sub['ID'])] ,sub['y'	    ])",pd.DataFrame.apply,np.where
+2,mercedes-benz-greener-manufacturing,D://crw_data//np.array\source1124,"train_test.iloc[:ntrain, :]","train_test.iat[:ntrain, :]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,mercedes-benz-greener-manufacturing,D://crw_data//np.array\source1124,train_test[cat_features[c]].astype('category'),train_test[cat_features[c]].apply('category'),pd.Series.astype,pd.Series.apply
+2,microsoft-malware-prediction,D://crw_data//np.zeros\source141,y.iloc[trn_idx],y.iat[trn_idx],pd.Series.iloc,pd.Series.iat
+2,microsoft-malware-prediction,D://crw_data//np.zeros\source141,y.iloc[val_idx],y.iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,microsoft-malware-prediction,D://crw_data//np.zeros\source142,y.iloc[trn_idx],y.iat[trn_idx],pd.Series.iloc,pd.Series.iat
+2,microsoft-malware-prediction,D://crw_data//np.zeros\source142,y.iloc[val_idx],y.iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,new-york-city-taxi-fare-prediction,D://crw_data//df.apply\source37,"tmp_df.apply(distance_between_two_points, axis=1)","tmp_df.map(distance_between_two_points, axis=1)",pd.Series.apply,pd.Series.map
+2,new-york-city-taxi-fare-prediction,D://crw_data//pd.read_csv\source183,"map(np.radians, [pickup_lat, pickup_lon, dropoff_lat, dropoff_lon])","replace(np.radians, [pickup_lat, pickup_lon, dropoff_lat, dropoff_lon])",pd.Series.map,pd.Series.replace
+2,nyc-taxi-trip-duration,D://crw_data//df.apply\source20,"df.apply(lambda row: 1 if row['month'] == 1 and row['day'] == 1 or row[	    'month'] == 7 and row['day'] == 4 or row['month'] == 11 and row['day'] ==	    11 or row['month'] == 12 and row['day'] == 25 or row['month'] == 1 and 	    row['day'] >= 15 and row['day'] <= 21 and row['weekday'] == 0 or row[	    'month'] == 2 and row['day'] >= 15 and row['day'] <= 21 and row[	    'weekday'] == 0 or row['month'] == 5 and row['day'] >= 25 and row['day'	    ] <= 31 and row['weekday'] == 0 or row['month'] == 9 and row['day'] >= 	    1 and row['day'] <= 7 and row['weekday'] == 0 or row['month'] == 10 and	    row['day'] >= 8 and row['day'] <= 14 and row['weekday'] == 0 or row[	    'month'] == 11 and row['day'] >= 22 and row['day'] <= 28 and row[	    'weekday'] == 3 else 0, axis=1)"," df['month'] == 1 and df['day'] == 1 or df[	    'month'] == 7 and df['day'] == 4 or df['month'] == 11 and df['day'] ==	    11 or df['month'] == 12 and df['day'] == 25 or df['month'] == 1 and 	    df['day'] >= 15 and df['day'] <= 21 and df['weekday'] == 0 or df[	    'month'] == 2 and df['day'] >= 15 and df['day'] <= 21 and df[	    'weekday'] == 0 or df['month'] == 5 and df['day'] >= 25 and df['day'	    ] <= 31 and df['weekday'] == 0 or df['month'] == 9 and df['day'] >= 	    1 and df['day'] <= 7 and df['weekday'] == 0 or df['month'] == 10 and	    df['day'] >= 8 and df['day'] <= 14 and df['weekday'] == 0 or df[	    'month'] == 11 and df['day'] >= 22 and df['day'] <= 28 and df[	    'weekday'].apply(lambda row: 1 if row == 3 else 0)",pd.DataFrame.apply,pd.Series.apply
+2,nyc-taxi-trip-duration,D://crw_data//df.apply\source20,"df.apply(lambda row: 1 if row['month'] == 12 and row['day'] == 31 or row[	    'month'] == 7 and row['day'] == 3 or row['month'] == 11 and row['day'] ==	    10 or row['month'] == 12 and row['day'] == 24 or row['month'] == 1 and 	    row['day'] >= 14 and row['day'] <= 20 and row['weekday'] == 6 or row[	    'month'] == 2 and row['day'] >= 14 and row['day'] <= 20 and row[	    'weekday'] == 6 or row['month'] == 5 and row['day'] >= 24 and row['day'	    ] <= 30 and row['weekday'] == 6 or (row['month'] == 9 and row['day'] >=	    1 and row['day'] <= 6 or (row['month'] == 8 and row['day'] == 31) and 	    row['weekday'] == 6) or row['month'] == 10 and row['day'] >= 7 and row[	    'day'] <= 13 and row['weekday'] == 6 or row['month'] == 11 and row[	    'day'] >= 21 and row['day'] <= 27 and row['weekday'] == 2 else 0, axis=1)"," df['month'] == 12 and df['day'] == 31 or df[	    'month'] == 7 and df['day'] == 3 or df['month'] == 11 and df['day'] ==	    10 or df['month'] == 12 and df['day'] == 24 or df['month'] == 1 and 	    df['day'] >= 14 and df['day'] <= 20 and df['weekday'] == 6 or df[	    'month'] == 2 and df['day'] >= 14 and df['day'] <= 20 and df[	    'weekday'] == 6 or df['month'] == 5 and df['day'] >= 24 and df['day'	    ] <= 30 and df['weekday'] == 6 or (df['month'] == 9 and df['day'] >=	    1 and df['day'] <= 6 or (df['month'] == 8 and df['day'] == 31) and 	    df['weekday'] == 6) or df['month'] == 10 and df['day'] >= 7 and df[	    'day'] <= 13 and df['weekday'] == 6 or df['month'] == 11 and df[	    'day'] >= 21 and df['day'] <= 27 and df['weekday'].apply(lambda row: 1 if row == 2 else 0)",pd.DataFrame.apply,pd.Series.apply
+2,nyc-taxi-trip-duration,D://crw_data//df.apply\source69,"df.apply(lambda row: 1 if row['month'] == 1 and row['day'] == 1 or row[	    'month'] == 7 and row['day'] == 4 or row['month'] == 11 and row['day'] ==	    11 or row['month'] == 12 and row['day'] == 25 or row['month'] == 1 and 	    row['day'] >= 15 and row['day'] <= 21 and row['weekday'] == 0 or row[	    'month'] == 2 and row['day'] >= 15 and row['day'] <= 21 and row[	    'weekday'] == 0 or row['month'] == 5 and row['day'] >= 25 and row['day'	    ] <= 31 and row['weekday'] == 0 or row['month'] == 9 and row['day'] >= 	    1 and row['day'] <= 7 and row['weekday'] == 0 or row['month'] == 10 and	    row['day'] >= 8 and row['day'] <= 14 and row['weekday'] == 0 or row[	    'month'] == 11 and row['day'] >= 22 and row['day'] <= 28 and row[	    'weekday'] == 3 else 0, axis=1)"," df['month'] == 1 and df['day'] == 1 or df[	    'month'] == 7 and df['day'] == 4 or df['month'] == 11 and df['day'] ==	    11 or df['month'] == 12 and df['day'] == 25 or df['month'] == 1 and 	    df['day'] >= 15 and df['day'] <= 21 and df['weekday'] == 0 or df[	    'month'] == 2 and df['day'] >= 15 and df['day'] <= 21 and df[	    'weekday'] == 0 or df['month'] == 5 and df['day'] >= 25 and df['day'	    ] <= 31 and df['weekday'] == 0 or df['month'] == 9 and df['day'] >= 	    1 and df['day'] <= 7 and df['weekday'] == 0 or df['month'] == 10 and	    df['day'] >= 8 and df['day'] <= 14 and df['weekday'] == 0 or df[	    'month'] == 11 and df['day'] >= 22 and df['day'] <= 28 and df[	    'weekday'].apply(lambda row: 1 if row == 3 else 0)",pd.DataFrame.apply,pd.Series.apply
+2,nyc-taxi-trip-duration,D://crw_data//df.apply\source69,"df.apply(lambda row: 1 if row['month'] == 12 and row['day'] == 31 or row[	    'month'] == 7 and row['day'] == 3 or row['month'] == 11 and row['day'] ==	    10 or row['month'] == 12 and row['day'] == 24 or row['month'] == 1 and 	    row['day'] >= 14 and row['day'] <= 20 and row['weekday'] == 6 or row[	    'month'] == 2 and row['day'] >= 14 and row['day'] <= 20 and row[	    'weekday'] == 6 or row['month'] == 5 and row['day'] >= 24 and row['day'	    ] <= 30 and row['weekday'] == 6 or (row['month'] == 9 and row['day'] >=	    1 and row['day'] <= 6 or (row['month'] == 8 and row['day'] == 31) and 	    row['weekday'] == 6) or row['month'] == 10 and row['day'] >= 7 and row[	    'day'] <= 13 and row['weekday'] == 6 or row['month'] == 11 and row[	    'day'] >= 21 and row['day'] <= 27 and row['weekday'] == 2 else 0, axis=1)"," df['month'] == 12 and df['day'] == 31 or df[	    'month'] == 7 and df['day'] == 3 or df['month'] == 11 and df['day'] ==	    10 or df['month'] == 12 and df['day'] == 24 or df['month'] == 1 and 	    df['day'] >= 14 and df['day'] <= 20 and df['weekday'] == 6 or df[	    'month'] == 2 and df['day'] >= 14 and df['day'] <= 20 and df[	    'weekday'] == 6 or df['month'] == 5 and df['day'] >= 24 and df['day'	    ] <= 30 and df['weekday'] == 6 or (df['month'] == 9 and df['day'] >=	    1 and df['day'] <= 6 or (df['month'] == 8 and df['day'] == 31) and 	    df['weekday'] == 6) or df['month'] == 10 and df['day'] >= 7 and df[	    'day'] <= 13 and df['weekday'] == 6 or df['month'] == 11 and df[	    'day'] >= 21 and df['day'] <= 27 and df['weekday'].apply(lambda row: 1 if row == 2 else 0)",pd.DataFrame.apply,pd.Series.apply
+2,nyc-taxi-trip-duration,D://crw_data//df.apply\source20,"df.apply(lambda row: 1 if row['month'] == 1 and row['day'] == 1 or row[	    'month'] == 7 and row['day'] == 4 or row['month'] == 11 and row['day'] ==	    11 or row['month'] == 12 and row['day'] == 25 or row['month'] == 1 and 	    row['day'] >= 15 and row['day'] <= 21 and row['weekday'] == 0 or row[	    'month'] == 2 and row['day'] >= 15 and row['day'] <= 21 and row[	    'weekday'] == 0 or row['month'] == 5 and row['day'] >= 25 and row['day'	    ] <= 31 and row['weekday'] == 0 or row['month'] == 9 and row['day'] >= 	    1 and row['day'] <= 7 and row['weekday'] == 0 or row['month'] == 10 and	    row['day'] >= 8 and row['day'] <= 14 and row['weekday'] == 0 or row[	    'month'] == 11 and row['day'] >= 22 and row['day'] <= 28 and row[	    'weekday'] == 3 else 0, axis=1)"," df['month'] == 1 and df['day'] == 1 or df[	    'month'] == 7 and df['day'] == 4 or df['month'] == 11 and df['day'] ==	    11 or df['month'] == 12 and df['day'] == 25 or df['month'] == 1 and 	    df['day'] >= 15 and df['day'] <= 21 and df['weekday'] == 0 or df[	    'month'] == 2 and df['day'] >= 15 and df['day'] <= 21 and df[	    'weekday'] == 0 or df['month'] == 5 and df['day'] >= 25 and df['day'	    ] <= 31 and df['weekday'] == 0 or df['month'] == 9 and df['day'] >= 	    1 and df['day'] <= 7 and df['weekday'] == 0 or df['month'] == 10 and	    df['day'] >= 8 and df['day'] <= 14 and df['weekday'] == 0 or df[	    'month'] == 11 and df['day'] >= 22 and df['day'] <= 28 and df[	    'weekday'].apply(lambda row: 1 if row == 3 else 0)",pd.DataFrame.apply,pd.Series.apply
+2,nyc-taxi-trip-duration,D://crw_data//df.apply\source20,"df.apply(lambda row: 1 if row['month'] == 12 and row['day'] == 31 or row[	    'month'] == 7 and row['day'] == 3 or row['month'] == 11 and row['day'] ==	    10 or row['month'] == 12 and row['day'] == 24 or row['month'] == 1 and 	    row['day'] >= 14 and row['day'] <= 20 and row['weekday'] == 6 or row[	    'month'] == 2 and row['day'] >= 14 and row['day'] <= 20 and row[	    'weekday'] == 6 or row['month'] == 5 and row['day'] >= 24 and row['day'	    ] <= 30 and row['weekday'] == 6 or (row['month'] == 9 and row['day'] >=	    1 and row['day'] <= 6 or (row['month'] == 8 and row['day'] == 31) and 	    row['weekday'] == 6) or row['month'] == 10 and row['day'] >= 7 and row[	    'day'] <= 13 and row['weekday'] == 6 or row['month'] == 11 and row[	    'day'] >= 21 and row['day'] <= 27 and row['weekday'] == 2 else 0, axis=1)"," df['month'] == 12 and df['day'] == 31 or df[	    'month'] == 7 and df['day'] == 3 or df['month'] == 11 and df['day'] ==	    10 or df['month'] == 12 and df['day'] == 24 or df['month'] == 1 and 	    df['day'] >= 14 and df['day'] <= 20 and df['weekday'] == 6 or df[	    'month'] == 2 and df['day'] >= 14 and df['day'] <= 20 and df[	    'weekday'] == 6 or df['month'] == 5 and df['day'] >= 24 and df['day'	    ] <= 30 and df['weekday'] == 6 or (df['month'] == 9 and df['day'] >=	    1 and df['day'] <= 6 or (df['month'] == 8 and df['day'] == 31) and 	    df['weekday'] == 6) or df['month'] == 10 and df['day'] >= 7 and df[	    'day'] <= 13 and df['weekday'] == 6 or df['month'] == 11 and df[	    'day'] >= 21 and df['day'] <= 27 and df['weekday'].apply(lambda row: 1 if row == 2 else 0)",pd.DataFrame.apply,pd.Series.apply
+2,nyc-taxi-trip-duration,D://crw_data//df.apply\source69,"df.apply(lambda row: 1 if row['month'] == 1 and row['day'] == 1 or row[	    'month'] == 7 and row['day'] == 4 or row['month'] == 11 and row['day'] ==	    11 or row['month'] == 12 and row['day'] == 25 or row['month'] == 1 and 	    row['day'] >= 15 and row['day'] <= 21 and row['weekday'] == 0 or row[	    'month'] == 2 and row['day'] >= 15 and row['day'] <= 21 and row[	    'weekday'] == 0 or row['month'] == 5 and row['day'] >= 25 and row['day'	    ] <= 31 and row['weekday'] == 0 or row['month'] == 9 and row['day'] >= 	    1 and row['day'] <= 7 and row['weekday'] == 0 or row['month'] == 10 and	    row['day'] >= 8 and row['day'] <= 14 and row['weekday'] == 0 or row[	    'month'] == 11 and row['day'] >= 22 and row['day'] <= 28 and row[	    'weekday'] == 3 else 0, axis=1)"," df['month'] == 1 and df['day'] == 1 or df[	    'month'] == 7 and df['day'] == 4 or df['month'] == 11 and df['day'] ==	    11 or df['month'] == 12 and df['day'] == 25 or df['month'] == 1 and 	    df['day'] >= 15 and df['day'] <= 21 and df['weekday'] == 0 or df[	    'month'] == 2 and df['day'] >= 15 and df['day'] <= 21 and df[	    'weekday'] == 0 or df['month'] == 5 and df['day'] >= 25 and df['day'	    ] <= 31 and df['weekday'] == 0 or df['month'] == 9 and df['day'] >= 	    1 and df['day'] <= 7 and df['weekday'] == 0 or df['month'] == 10 and	    df['day'] >= 8 and df['day'] <= 14 and df['weekday'] == 0 or df[	    'month'] == 11 and df['day'] >= 22 and df['day'] <= 28 and df[	    'weekday'].apply(lambda row: 1 if row == 3 else 0)",pd.DataFrame.apply,pd.Series.apply
+2,nyc-taxi-trip-duration,D://crw_data//df.apply\source69,"df.apply(lambda row: 1 if row['month'] == 12 and row['day'] == 31 or row[	    'month'] == 7 and row['day'] == 3 or row['month'] == 11 and row['day'] ==	    10 or row['month'] == 12 and row['day'] == 24 or row['month'] == 1 and 	    row['day'] >= 14 and row['day'] <= 20 and row['weekday'] == 6 or row[	    'month'] == 2 and row['day'] >= 14 and row['day'] <= 20 and row[	    'weekday'] == 6 or row['month'] == 5 and row['day'] >= 24 and row['day'	    ] <= 30 and row['weekday'] == 6 or (row['month'] == 9 and row['day'] >=	    1 and row['day'] <= 6 or (row['month'] == 8 and row['day'] == 31) and 	    row['weekday'] == 6) or row['month'] == 10 and row['day'] >= 7 and row[	    'day'] <= 13 and row['weekday'] == 6 or row['month'] == 11 and row[	    'day'] >= 21 and row['day'] <= 27 and row['weekday'] == 2 else 0, axis=1)"," df['month'] == 12 and df['day'] == 31 or df[	    'month'] == 7 and df['day'] == 3 or df['month'] == 11 and df['day'] ==	    10 or df['month'] == 12 and df['day'] == 24 or df['month'] == 1 and 	    df['day'] >= 14 and df['day'] <= 20 and df['weekday'] == 6 or df[	    'month'] == 2 and df['day'] >= 14 and df['day'] <= 20 and df[	    'weekday'] == 6 or df['month'] == 5 and df['day'] >= 24 and df['day'	    ] <= 30 and df['weekday'] == 6 or (df['month'] == 9 and df['day'] >=	    1 and df['day'] <= 6 or (df['month'] == 8 and df['day'] == 31) and 	    df['weekday'] == 6) or df['month'] == 10 and df['day'] >= 7 and df[	    'day'] <= 13 and df['weekday'] == 6 or df['month'] == 11 and df[	    'day'] >= 21 and df['day'] <= 27 and df['weekday'].apply(lambda row: 1 if row == 2 else 0)",pd.DataFrame.apply,pd.Series.apply
+2,nyc-taxi-trip-duration,D://crw_data//np.hstack\source31,"np.arange(0, 60, time_step).astype(int)","np.arange(0, 60, time_step).apply(int)",pd.Series.astype,pd.Series.apply
+2,nyc-taxi-trip-duration,D://crw_data//df.apply\source20,df.pickup_datetime.astype('datetime64[ns]'),df.pickup_datetime.apply('datetime64[ns]'),pd.Series.astype,pd.Series.apply
+2,nyc-taxi-trip-duration,D://crw_data//df.apply\source69,df.pickup_datetime.astype('datetime64[ns]'),df.pickup_datetime.apply('datetime64[ns]'),pd.Series.astype,pd.Series.apply
+2,PLAsTiCC-2018,D://crw_data//df.iloc\source65,np.sum(b_s),"np.einsum('i->',np)",np.ndarray.sum,np.einsum
+2,PLAsTiCC-2018,D://crw_data//df.iloc\source65,full_test.fillna(self.fill_nan),full_test.combine_first(full_test.applymap(lambda x: self.fill_nan)),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.iloc\source2,trn_df.iloc[trn_idx],trn_df.iat[trn_idx],pd.DataFrame.iloc,pd.DataFrame.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.iloc\source22,trn_df.iloc[trn_idx],trn_df.iat[trn_idx],pd.DataFrame.iloc,pd.DataFrame.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.loc\source135,(df[col] > d_median[col]).astype(np.uint8),(df[col] > d_median[col]).apply(np.uint8),pd.Series.astype,pd.Series.apply
+2,porto-seguro-safe-driver-prediction,D://crw_data//np.array\source752,df[col].astype(np.float32),df[col].apply(np.float32),pd.Series.astype,pd.Series.apply
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.iloc\source2,target.iloc[trn_idx],target.iat[trn_idx],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.iloc\source2,target.iloc[val_idx],target.iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.iloc\source22,target.iloc[trn_idx],target.iat[trn_idx],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.iloc\source2,trn_tgt.iloc[idx],trn_tgt.iat[idx],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.iloc\source22,target.iloc[val_idx],target.iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.iloc\source22,trn_tgt.iloc[idx],trn_tgt.iat[idx],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.iloc\source66,target.iloc[trn_idx],target.iat[trn_idx],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.iloc\source66,target.iloc[val_idx],target.iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.iloc\source66,trn_tgt.iloc[idx],trn_tgt.iat[idx],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.fillna\source54,y.iloc[train_index],y.iat[train_index],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.fillna\source54,y.iloc[test_index],y.iat[test_index],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.fillna\source54,y_valid_pred.iloc[test_index],y_valid_pred.iat[test_index],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//np.arange\source257,Y.iloc[train_index],Y.iat[train_index],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//np.arange\source257,Y.iloc[test_index],Y.iat[test_index],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//np.argsort\source126,y.iloc[train_index],y.iat[train_index],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//np.argsort\source126,y.iloc[test_index],y.iat[test_index],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//np.zeros\source137,y_train.iloc[fit_index],y_train.iat[fit_index],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//np.zeros\source137,y_train.iloc[val_index],y_train.iat[val_index],pd.Series.iloc,pd.Series.iat
+2,porto-seguro-safe-driver-prediction,D://crw_data//np.zeros\source137,"X_train.replace(-1, np.nan)","X_train.map(-1, np.nan)",pd.Series.replace,pd.Series.map
+2,porto-seguro-safe-driver-prediction,D://crw_data//df.loc\source135,"df['ps_reg_03_A'].replace(19, -1, inplace=True)","df['ps_reg_03_A'].map(19, -1, inplace=True)",pd.Series.replace,pd.Series.map
+2,porto-seguro-safe-driver-prediction,D://crw_data//np.abs\source4,"train.replace(-1, np.nan)","train.map(-1, np.nan)",pd.Series.replace,pd.Series.map
+2,predicting-red-hat-business-value,D://crw_data//np.append\source15,ppl.iloc[testset],ppl.iat[testset],pd.DataFrame.iloc,pd.DataFrame.iat
+2,predicting-red-hat-business-value,D://crw_data//np.full\source28,ppl[p_logi].astype('int'),ppl[p_logi].apply('int'),pd.Series.astype,pd.Series.apply
+2,predicting-red-hat-business-value,D://crw_data//np.append\source15,ppl[ppl_logi].astype(int),ppl[ppl_logi].apply(int),pd.Series.astype,pd.Series.apply
+2,predicting-red-hat-business-value,D://crw_data//np.array\source721,people['char_' + str(i)].astype(np.int32),people['char_' + str(i)].apply(np.int32),pd.Series.astype,pd.Series.apply
+2,predict-west-nile-virus,D://crw_data//pd.read_csv\source3198,"weather.replace('M', -1)","weather.map('M', -1)",pd.Series.replace,pd.Series.map
+2,predict-west-nile-virus,D://crw_data//pd.read_csv\source40,"weather.replace('M', -1)","weather.map('M', -1)",pd.Series.replace,pd.Series.map
+2,prudential-life-insurance-assessment,D://crw_data//np.arange\source311,sa.sum(axis=0),"np.einsum('ij->j',sa)",np.ndarray.sum,np.einsum
+2,prudential-life-insurance-assessment,D://crw_data//np.arange\source311,sa.sum(axis=0),"np.count_nonzero(sa,axis=0)",np.ndarray.sum,np.count_nonzero
+2,prudential-life-insurance-assessment,D://crw_data//pd.read_csv\source2528,"train.iloc[:, :20]","train.iat[:, :20]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,prudential-life-insurance-assessment,D://crw_data//pd.read_csv\source2528,"train.iloc[:, 20:40]","train.iat[:, 20:40]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,prudential-life-insurance-assessment,D://crw_data//pd.read_csv\source2507,"train_sample.ix[:, start_col:end_col]","train_sample.loc[:, start_col:end_col]",pd.DataFrame.ix,pd.DataFrame.loc
+2,prudential-life-insurance-assessment,D://crw_data//np.array\source994,y.astype(int),y.apply(int),pd.Series.astype,pd.Series.apply
+2,prudential-life-insurance-assessment,D://crw_data//np.array\source994,data[0].astype(int),data[0].apply(int),pd.Series.astype,pd.Series.apply
+2,prudential-life-insurance-assessment,D://crw_data//np.array\source994,data[0].astype(int),data[0].apply(int),pd.Series.astype,pd.Series.apply
+2,prudential-life-insurance-assessment,D://crw_data//np.array\source994,all_data['Response'].astype(int),all_data['Response'].apply(int),pd.Series.astype,pd.Series.apply
+2,prudential-life-insurance-assessment,D://crw_data//np.array\source994,data[0].astype(int),data[0].apply(int),pd.Series.astype,pd.Series.apply
+2,pubg-finish-placement-prediction,D://crw_data//df.fillna\source48,df.memory_usage().sum(),"np.count_nonzero(df.memory_usage(),)",np.ndarray.sum,np.count_nonzero
+2,pubg-finish-placement-prediction,D://crw_data//df.fillna\source48,df.memory_usage().sum(),"np.count_nonzero(df.memory_usage(),)",np.ndarray.sum,np.count_nonzero
+2,pubg-finish-placement-prediction,D://crw_data//pd.read_csv\source1181,df_train[column].fillna(mean_value),df_train[column].combine_first(df_train[column].applymap(lambda x: mean_value)),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,pubg-finish-placement-prediction,D://crw_data//pd.read_csv\source1230,train_data.iloc[1:10000],train_data.iat[1:10000],pd.DataFrame.iloc,pd.DataFrame.iat
+2,pubg-finish-placement-prediction,D://crw_data//pd.read_csv\source1230,train_data.iloc[1:10000],train_data.iat[1:10000],pd.DataFrame.iloc,pd.DataFrame.iat
+2,pubg-finish-placement-prediction,D://crw_data//df.fillna\source48,df[col].astype(np.float32),df[col].apply(np.float32),pd.Series.astype,pd.Series.apply
+2,pubg-finish-placement-prediction,D://crw_data//df.fillna\source48,df[col].astype(np.float16),df[col].apply(np.float16),pd.Series.astype,pd.Series.apply
+2,pubg-finish-placement-prediction,D://crw_data//df.iloc\source29,d[t].iloc[i],d[t].iat[i],pd.Series.iloc,pd.Series.iat
+2,pubg-finish-placement-prediction,D://crw_data//df.iloc\source19,target.iloc[valid_idx],target.iat[valid_idx],pd.Series.iloc,pd.Series.iat
+2,pubg-finish-placement-prediction,D://crw_data//pd.concat\source1002,line.replace(*pair),line.map(*pair),pd.Series.replace,pd.Series.map
+2,pubg-finish-placement-prediction,D://crw_data//df.iloc\source19,"merged_df['boostsRatio'].replace(np.inf, 0, inplace=True)","merged_df['boostsRatio'].map(np.inf, 0, inplace=True)",pd.Series.replace,pd.Series.map
+2,quora-question-pairs,D://crw_data//df.apply\source42,np.sum(total_weights),"np.einsum('i->',total_weights)",np.sum,np.einsum
+2,recruit-restaurant-visitor-forecasting,D://crw_data//df.iloc\source62,np.sum(yyy),"np.einsum('i->',yyy)",np.sum,np.einsum
+2,rossmann-store-sales,D://crw_data//df.fillna\source44,test_df.isnull().sum(),"np.einsum('i->',test_df.isnull())",np.ndarray.sum,np.einsum
+2,rossmann-store-sales,D://crw_data//df.fillna\source44,"train_df.Assortment.replace(mappings, inplace=True)","train_df.Assortment.map(mappings, inplace=True)",pd.Series.replace,pd.Series.map
+2,santander-customer-satisfaction,D://crw_data//df.iloc\source87,"train_df.iloc[:, :-1]","train_df.iat[:, :-1]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,santander-customer-satisfaction,D://crw_data//np.abs\source109,(test[features] == 0).astype(int),(test[features] == 0).apply(int),pd.Series.astype,pd.Series.apply
+2,santander-customer-satisfaction,D://crw_data//pd.read_csv\source1089,X['saldo_medio_var29_hace3'].map(logmap),X['saldo_medio_var29_hace3'].replace(logreplace),pd.Series.map,pd.Series.replace
+2,santander-customer-satisfaction,D://crw_data//np.array\source249,"training.replace(-999999, 2)","training.map(-999999, 2)",pd.Series.replace,pd.Series.map
+2,santander-value-prediction-challenge,D://crw_data//df.iloc\source20,"df.iloc[:, a:b].sum(1)","np.einsum('i->',df.iloc[:, a:b])",np.ndarray.sum,np.einsum
+2,santander-value-prediction-challenge,D://crw_data//np.array\source397,row.nonzero(),np.where(row),np.nonzero,np.where
+2,santander-value-prediction-challenge,D://crw_data//df.iloc\source20,"df.iloc[:, a:b]","df.iat[:, a:b]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,santander-value-prediction-challenge,D://crw_data//np.zeros\source14,y['target'].iloc[val_idx],y['target'].iat[val_idx],pd.Series.iloc,pd.Series.iat
+2,santander-value-prediction-challenge,D://crw_data//np.zeros\source14,"data.replace(0, np.nan, inplace=True)","data.map(0, np.nan, inplace=True)",pd.Series.replace,pd.Series.map
+2,santander-value-prediction-challenge,D://crw_data//np.zeros\source520,train.replace({(0): np.nan}),train.map({(0): np.nan}),pd.Series.replace,pd.Series.map
+2,santander-value-prediction-challenge,D://crw_data//np.zeros\source549,train.replace({(0): np.nan}),train.map({(0): np.nan}),pd.Series.replace,pd.Series.map
+2,santas-stolen-sleigh,D://crw_data//pd.read_csv\source2771,"gifts.Weight.replace(1, np.nan)","gifts.Weight.map(1, np.nan)",pd.Series.replace,pd.Series.map
+2,santas-uncertain-bags,D://crw_data//np.array\source313,gifts.iloc[i],gifts.iat[i],pd.DataFrame.iloc,pd.DataFrame.iat
+2,sberbank-russian-housing-market,D://crw_data//df.fillna\source33,np.sum(probs ** 2),"np.einsum('i->',np)",np.ndarray.sum,np.einsum
+2,sberbank-russian-housing-market,D://crw_data//np.where\source155,"np.where(df_macro.cpi.isnull(), 1, df_macro.cpi)","pd.DataFrame(pred_test_y).apply(lambda x : x > 0.5).replace({True: 1,False: 0}).values.flatten()",np.where,pd.DataFrame.apply
+2,sberbank-russian-housing-market,D://crw_data//pd.concat\source511,train.iloc[0],train.iat[0],pd.DataFrame.iloc,pd.DataFrame.iat
+2,sberbank-russian-housing-market,D://crw_data//df.fillna\source33,"np.unique(column_df, return_counts=True)[1].astype(float)","np.unique(column_df, return_counts=True)[1].apply(float)",pd.Series.astype,pd.Series.apply
+2,sberbank-russian-housing-market,D://crw_data//pd.read_csv\source1593,month_year.map(month_year_cnt_map),month_year.replace(month_year_cnt_replace),pd.Series.map,pd.Series.replace
+2,sberbank-russian-housing-market,D://crw_data//df.iterrows\source18,"p_df[x].replace('yes', 1, inplace=True)","p_df[x].map('yes', 1, inplace=True)",pd.Series.replace,pd.Series.map
+2,sf-crime,D://crw_data//np.concatenate\source133,train['Category'].fillna(2),train['Category'].combine_first(train['Category'].applymap(lambda x: 2)),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,sf-crime,D://crw_data//df.iloc\source70,"shuffle(fold0, random_state=123).iloc[0:300000, :]","shuffle(fold0, random_state=123).iat[0:300000, :]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,sf-crime,D://crw_data//pd.read_csv\source1523,df_train.Dates.map(get_hour_norm),df_train.Dates.replace(get_hour_norm),pd.Series.map,pd.Series.replace
+2,shelter-animal-outcomes,D://crw_data//np.append\source47,"np.sum(fractions_dog[1:, :1], axis=1)","np.einsum('ij->i',np)",np.ndarray.sum,np.einsum
+2,shelter-animal-outcomes,D://crw_data//np.array\source1065,pro_data.transpose(),pro_data.column_stack(),np.transpose,np.column_stack
+2,shelter-animal-outcomes,D://crw_data//np.array\source608,np.array(test['ID']).astype(int),np.array(test['ID']).apply(int),pd.Series.astype,pd.Series.apply
+2,shelter-animal-outcomes,D://crw_data//np.array\source609,np.array(test['ID']).astype(int),np.array(test['ID']).apply(int),pd.Series.astype,pd.Series.apply
+2,shelter-animal-outcomes,D://crw_data//np.array\source247,"x.replace('years', '')","x.map('years', '')",pd.Series.replace,pd.Series.map
+2,shelter-animal-outcomes,D://crw_data//np.append\source30,"i.replace(' Shorthair', '')","i.map(' Shorthair', '')",pd.Series.replace,pd.Series.map
+2,shelter-animal-outcomes,D://crw_data//np.array\source1065,"a[1].replace('years', '365')","a[1].map('years', '365')",pd.Series.replace,pd.Series.map
+2,shelter-animal-outcomes,D://crw_data//np.array\source608,"i.replace(' Shorthair', '')","i.map(' Shorthair', '')",pd.Series.replace,pd.Series.map
+2,springleaf-marketing-response,D://crw_data//df.apply\source23,"train.apply(lambda x: x.nunique(dropna=False), axis=0)","train.map(lambda x: x.nunique(dropna=False), axis=0)",pd.Series.apply,pd.Series.map
+2,springleaf-marketing-response,D://crw_data//pd.read_csv\source3653,"train.replace(to_replace=to_replace, value=np.nan)","train.map(to_map=to_map, value=np.nan)",pd.Series.replace,pd.Series.map
+2,talkingdata-adtracking-fraud-detection,D://crw_data//np.sum\source101,"np.sum(np.logical_and(y_pred == 1, y_test == 1))",(np.logical_and(y_pred == 1).sum( y_test == 1)),np.sum,np.ndarray.sum
+2,talkingdata-adtracking-fraud-detection,D://crw_data//df.apply\source38,"df.apply(lambda row: freq_hours(row), axis=1)","df.map(lambda row: freq_hours(row), axis=1)",pd.Series.apply,pd.Series.map
+2,talkingdata-adtracking-fraud-detection,D://crw_data//pd.concat\source759,df['app'].map(app_averages['average']),df['app'].replace(app_averages['average']),pd.Series.map,pd.Series.replace
+2,talkingdata-mobile-user-demographics,D://crw_data//np.arange\source204,"np.arange(x_min, x_max, h)","np.array(range(x_min, x_max, h))",np.arange,np.array
+2,talkingdata-mobile-user-demographics,D://crw_data//df.iloc\source33,row.sum(),"np.count_nonzero(row,)",np.ndarray.sum,np.count_nonzero
+2,talkingdata-mobile-user-demographics,D://crw_data//df.apply\source54,labelCategories.category.fillna('unknown'),labelCategories.category.combine_first(labelCategories.category.applymap(lambda x: 'unknown')),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,talkingdata-mobile-user-demographics,D://crw_data//df.iloc\source33,features.iloc[:classes.shape[0]],features.iat[:classes.shape[0]],pd.Series.iloc,pd.Series.iat
+2,talkingdata-mobile-user-demographics,D://crw_data//df.apply\source10,app_ev['app_id'].map(app_lab),app_ev['app_id'].replace(app_lab),pd.Series.map,pd.Series.replace
+2,talkingdata-mobile-user-demographics,D://crw_data//pd.concat\source707,events['event_id'].map(app_ev),events['event_id'].replace(app_ev),pd.Series.map,pd.Series.replace
+2,tap30challenge,D://crw_data//np.array\source224,"np.array(x_train, dtype=np.int32)","np.fromiter(x_train, dtype=np.int32)",np.array,np.fromiter
+2,tap30challenge,D://crw_data//np.arange\source315,"np.sum(np.sqrt(np.power(y_test - y_pre, 2)))","np.einsum('i->',np)",np.ndarray.sum,np.einsum
+2,tap30challenge,D://crw_data//np.arange\source315,"np.sum(np.sqrt(np.power(y_test - y_pre, 2)))",(np.sqrt(np.power(y_test - y_pre).sum( 2))),np.sum,np.ndarray.sum
+2,tap30challenge,D://crw_data//np.arange\source315,np.around(result).astype(int),np.around(result).apply(int),pd.Series.astype,pd.Series.apply
+2,the-nature-conservancy-fisheries-monitoring,D://crw_data//np.arange\source253,np.sum(train_unique_counts),"np.einsum('i->',np)",np.ndarray.sum,np.einsum
+2,titanic,D://crw_data//df.fillna\source23,"np.arange(0.046, 0.051, 1e-07)","np.array(range(0.046, 0.051, 1e-07))",np.arange,np.array
+2,titanic,D://crw_data//np.arange\source385,"np.arange(x_min, x_max, h)","np.array(range(x_min, x_max, h))",np.arange,np.array
+2,titanic,D://crw_data//np.arange\source385,"np.arange(y_min, y_max, h)","np.array(range(y_min, y_max, h))",np.arange,np.array
+2,titanic,D://crw_data//np.arange\source99,"np.arange(-10, 10, 0.1)","np.array(range(-10, 10, 0.1))",np.arange,np.array
+2,titanic,D://crw_data//np.arange\source99,"np.arange(-10, 10, 0.1)","np.array(range(-10, 10, 0.1))",np.arange,np.array
+2,titanic,D://crw_data//np.array\source429,"np.array(X, dtype=float)","np.fromiter(X, dtype=float)",np.array,np.fromiter
+2,titanic,D://crw_data//np.array\source429,"np.c_[np.ones(hiddenLayerOutput.shape[0]), hiddenLayerOutput]","np.hstack([np.ones(hiddenLayerOutput.shape[0]), hiddenLayerOutput])",np.c_,np.hstack
+2,titanic,D://crw_data//df.iloc\source40,"np.column_stack((X_initial, train_df_as_dic[key]))","np.transpose((X_initial, train_df_as_dic[key]))",np.column_stack,np.transpose
+2,titanic,D://crw_data//df.iloc\source40,"np.column_stack((X_initial, test_df_as_dic[key]))","np.transpose((X_initial, test_df_as_dic[key]))",np.column_stack,np.transpose
+2,titanic,D://crw_data//df.iloc\source40,"np.column_stack((X_initial, train_df_as_dic[key]))","np.transpose((X_initial, train_df_as_dic[key]))",np.column_stack,np.transpose
+2,titanic,D://crw_data//df.iloc\source40,"np.column_stack((X_initial, test_df_as_dic[key]))","np.transpose((X_initial, test_df_as_dic[key]))",np.column_stack,np.transpose
+2,titanic,D://crw_data//df.iloc\source40,"np.column_stack((passenger, y_pred_test))","np.transpose((passenger, y_pred_test))",np.column_stack,np.transpose
+2,titanic,D://crw_data//np.append\source32,"np.count_nonzero(data[:, (1)] == '1')","np.sum(data[:, (1)] == '1'!=0)",np.count_nonzero,np.sum
+2,titanic,D://crw_data//df.fillna\source32,"np.dot(input_x.transpose().iloc[1:], h - true_output_y)","np.einsum('ij,jm->im',input_x.transpose().iloc[1:], h - true_output_y)",np.dot,np.einsum
+2,titanic,D://crw_data//np.concatenate\source113,"np.dot((one_y - y).T, np.log(one_H - H))","np.einsum('ij,jm->im',(one_y - y).T, np.log(one_H - H))",np.dot,np.einsum
+2,titanic,D://crw_data//np.concatenate\source113,"np.dot(-y.T, np.log(H))","np.einsum('ij,jm->im',-y.T, np.log(H))",np.dot,np.einsum
+2,titanic,D://crw_data//pd.read_csv\source1761,test.dot(Theta),"np.tensordot(test,Theta,axes=1)",np.ndarray.dot,np.tensordot
+2,titanic,D://crw_data//np.arange\source385,np.sum(data_p[data_p['Pclass'] == 3]['Fare']),np.count_nonzero(data_p[data_p['Pclass'] == 3]['Fare']),np.sum,np.count_nonzero
+2,titanic,D://crw_data//df.fillna\source32,input_x.transpose(),input_x.column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//df.fillna\source32,input_x.transpose(),input_x.column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//np.array\source238,np.array(test_validate[target_name]).transpose(),np.array(test_validate[target_name]).column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//np.array\source429,Theta1.transpose(),Theta1.column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//np.array\source429,Theta2.transpose(),Theta2.column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//np.array\source429,Theta1.transpose(),Theta1.column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//np.array\source429,Theta2.transpose(),Theta2.column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//np.array\source429,delta2.transpose(),delta2.column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//np.array\source429,delta3.transpose(),delta3.column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//np.array\source429,Theta1.transpose(),Theta1.column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//np.array\source429,Theta2.transpose(),Theta2.column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//np.where\source21,trainData.describe().transpose(),trainData.describe().column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//pd.read_csv\source1761,(anstrain - Pred).transpose(),(anstrain - Pred).column_stack(),np.transpose,np.column_stack
+2,titanic,D://crw_data//np.concatenate\source113,"np.vstack((1.0, a_1))","np.concatenate((1.0, a_1), axis=0)",np.vstack,np.concatenate
+2,titanic,D://crw_data//np.concatenate\source113,"np.vstack((1.0, np.dot(theta_0, a_0)))","np.concatenate((1.0, np.dot(theta_0, a_0)), axis=0)",np.vstack,np.concatenate
+2,titanic,D://crw_data//np.where\source21,"np.where(fullData.Age.isnull(), 0, 1)","pd.DataFrame(y_pred[:]).apply(lambda x : x > 0.95).replace({True: 1,False: 0}).values.flatten()",np.where,pd.DataFrame.apply
+2,titanic,D://crw_data//pd.concat\source1065,"combined.apply(lambda r: fillAges(r) if np.isnan(r['Age']) else r['Age'],	    axis=1)","np.where( np.isnan(combined['Age']) , fillAges(combined) ,combined['Age'])",pd.DataFrame.apply,np.where
+2,titanic,D://crw_data//pd.concat\source1068,"combined.apply(lambda r: fillAges(r) if np.isnan(r['Age']) else r['Age'],	    axis=1)","np.where( np.isnan(combined['Age']) , fillAges(combined) ,combined['Age'])",pd.DataFrame.apply,np.where
+2,titanic,D://crw_data//pd.concat\source1118,"combined.apply(lambda r: fillAges(r) if np.isnan(r['Age']) else r['Age'],	    axis=1)","np.where( np.isnan(combined['Age']) , fillAges(combined) ,combined['Age'])",pd.DataFrame.apply,np.where
+2,titanic,D://crw_data//np.concatenate\source215,titanic['Embarked'].fillna('S'),titanic['Embarked'].combine_first(titanic['Embarked'].applymap(lambda x: 'S')),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.concatenate\source235,dataset['Embarked'].fillna('S'),dataset['Embarked'].combine_first(dataset['Embarked'].applymap(lambda x: 'S')),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.concatenate\source235,dataset['Fare'].fillna(train['Fare'].median()),dataset['Fare'].combine_first(dataset['Fare'].applymap(lambda x: train['Fare'].median())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.concatenate\source235,dataset['Title'].fillna(0),dataset['Title'].combine_first(dataset['Title'].applymap(lambda x: 0)),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.concatenate\source244,data['Age'].fillna(data['Age'].median()),data['Age'].combine_first(data['Age'].applymap(lambda x: data['Age'].median())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.concatenate\source244,data['Embarked'].fillna('S'),data['Embarked'].combine_first(data['Embarked'].applymap(lambda x: 'S')),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.concatenate\source244,data['Fare'].fillna(data['Fare'].median()),data['Fare'].combine_first(data['Fare'].applymap(lambda x: data['Fare'].median())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.concatenate\source84,t_train['Age'].fillna(t_train['Age'].median()),t_train['Age'].combine_first(t_train['Age'].applymap(lambda x: t_train['Age'].median())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.concatenate\source84,t_train['Embarked'].fillna('S'),t_train['Embarked'].combine_first(t_train['Embarked'].applymap(lambda x: 'S')),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.concatenate\source96,test_data['Fare'].fillna(test_data['Fare'].mean()),test_data['Fare'].combine_first(test_data['Fare'].applymap(lambda x: test_data['Fare'].mean())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.concatenate\source96,train_data['Age'].fillna(train_data['Age'].mean()),train_data['Age'].combine_first(train_data['Age'].applymap(lambda x: train_data['Age'].mean())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.concatenate\source96,test_data['Age'].fillna(test_data['Age'].mean()),test_data['Age'].combine_first(test_data['Age'].applymap(lambda x: test_data['Age'].mean())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.count_nonzero\source6,titanic['Age'].fillna(titanic['Age'].median()),titanic['Age'].combine_first(titanic['Age'].applymap(lambda x: titanic['Age'].median())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.count_nonzero\source6,titanic['Fare'].fillna(titanic['Fare'].median()),titanic['Fare'].combine_first(titanic['Fare'].applymap(lambda x: titanic['Fare'].median())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.count_nonzero\source6,titanic['Embarked'].fillna('S'),titanic['Embarked'].combine_first(titanic['Embarked'].applymap(lambda x: 'S')),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.count_nonzero\source6,titanic_test['Age'].fillna(titanic['Age'].median()),titanic_test['Age'].combine_first(titanic_test['Age'].applymap(lambda x: titanic['Age'].median())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.count_nonzero\source6,titanic_test['Embarked'].fillna('S'),titanic_test['Embarked'].combine_first(titanic_test['Embarked'].applymap(lambda x: 'S')),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//np.count_nonzero\source6,titanic_test['Fare'].fillna(titanic_test['Fare'].median()),titanic_test['Fare'].combine_first(titanic_test['Fare'].applymap(lambda x: titanic_test['Fare'].median())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//df.apply\source14,colonne.fillna(moyenne),colonne.combine_first(colonne.applymap(lambda x: moyenne)),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//df.apply\source14,dataFrame['Cabin'].fillna(0),dataFrame['Cabin'].combine_first(dataFrame['Cabin'].applymap(lambda x: 0)),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//df.apply\source14,dataFrame['Embarked'].fillna('S'),dataFrame['Embarked'].combine_first(dataFrame['Embarked'].applymap(lambda x: 'S')),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//df.apply\source30,df['Embarked'].fillna('S'),df['Embarked'].combine_first(df['Embarked'].applymap(lambda x: 'S')),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//df.apply\source30,df['Fare'].fillna(df['Fare'].mean()),df['Fare'].combine_first(df['Fare'].applymap(lambda x: df['Fare'].mean())),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//df.apply\source34,new_full_data['Embarked'].fillna(most_frequent_value),new_full_data['Embarked'].combine_first(new_full_data['Embarked'].applymap(lambda x: most_frequent_value)),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//df.apply\source34,new_full_data.Fare.fillna(meanFare),new_full_data.Fare.combine_first(new_full_data.Fare.applymap(lambda x: meanFare)),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//pd.read_csv\source1025,train['Age'].fillna(np.mean(train['Age'])),train['Age'].combine_first(train['Age'].applymap(lambda x: np.mean(train['Age']))),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//pd.read_csv\source1025,test['Age'].fillna(np.mean(test['Age'])),test['Age'].combine_first(test['Age'].applymap(lambda x: np.mean(test['Age']))),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//pd.read_csv\source1025,test['Fare'].fillna(np.mean(test['Fare'])),test['Fare'].combine_first(test['Fare'].applymap(lambda x: np.mean(test['Fare']))),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,titanic,D://crw_data//df.iloc\source46,train_df.iloc[0],train_df.iat[0],pd.DataFrame.iloc,pd.DataFrame.iat
+2,titanic,D://crw_data//df.loc\source107,"train_df.loc[iter, 'Name']","train_df.ix[iter, 'Name']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//df.loc\source107,"train_df.loc[iter, 'Title']","train_df.ix[iter, 'Title']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//df.loc\source107,"test_df.loc[iter, 'Name']","test_df.ix[iter, 'Name']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//df.loc\source107,"test_df.loc[iter, 'Title']","test_df.ix[iter, 'Title']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//df.loc\source220,"df.loc[passenger, 'Age']","df.ix[passenger, 'Age']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source17,"train.loc[i, 'numFam']","train.ix[i, 'numFam']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source17,"train.loc[i, 'numFam']","train.ix[i, 'numFam']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source17,"train.loc[i, 'numFam']","train.ix[i, 'numFam']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source17,"train.loc[i, 'numFam']","train.ix[i, 'numFam']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source17,"test.loc[i, 'numFam']","test.ix[i, 'numFam']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source17,"test.loc[i, 'numFam']","test.ix[i, 'numFam']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source17,"test.loc[i, 'numFam']","test.ix[i, 'numFam']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source17,"test.loc[i, 'numFam']","test.ix[i, 'numFam']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source18,"train.loc[i, 'SibSp']","train.ix[i, 'SibSp']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source18,"train.loc[i, 'SibSp']","train.ix[i, 'SibSp']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source18,"test.loc[i, 'SibSp']","test.ix[i, 'SibSp']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source18,"test.loc[i, 'SibSp']","test.ix[i, 'SibSp']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source18,"train.loc[i, 'Parch']","train.ix[i, 'Parch']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//np.column_stack\source18,"test.loc[i, 'Parch']","test.ix[i, 'Parch']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//pd.concat\source114,"Surname_list.loc[ctr, 'Surname']","Surname_list.ix[ctr, 'Surname']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//pd.concat\source114,"Title_list.loc[ctr, 'Title']","Title_list.ix[ctr, 'Title']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//pd.concat\source114,"Filler_Ages.male.loc[row['Title'], row['Pclass']]","Filler_Ages.male.ix[row['Title'], row['Pclass']]",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//pd.concat\source114,"Filler_Ages.female.loc[row['Title'], row['Pclass']]","Filler_Ages.female.ix[row['Title'], row['Pclass']]",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//pd.concat\source596,"full.loc[1043, 'Fare']","full.ix[1043, 'Fare']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//pd.concat\source596,"full.loc[i - 1, 'Pclass']","full.ix[i - 1, 'Pclass']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//pd.concat\source596,"full.loc[i - 1, 'Sex']","full.ix[i - 1, 'Sex']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//pd.concat\source596,"full.loc[i - 1, 'Age']","full.ix[i - 1, 'Age']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//pd.read_csv\source1467,"df_titanic_train_mod.loc[index, 'Title']","df_titanic_train_mod.ix[index, 'Title']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//pd.read_csv\source1841,"test2.loc[152, 'Fare']","test2.ix[152, 'Fare']",pd.DataFrame.loc,pd.DataFrame.ix
+2,titanic,D://crw_data//df.apply\source14,"df.apply(np.random.shuffle, axis=axis)","df.map(np.random.shuffle, axis=axis)",pd.Series.apply,pd.Series.map
+2,titanic,D://crw_data//df.fillna\source23,df['Name'].str.contains(' Mrs. ').astype('category'),df['Name'].str.contains(' Mrs. ').apply('category'),pd.Series.astype,pd.Series.apply
+2,titanic,D://crw_data//df.fillna\source23,df['Name'].str.contains(' Miss. ').astype('category'),df['Name'].str.contains(' Miss. ').apply('category'),pd.Series.astype,pd.Series.apply
+2,titanic,D://crw_data//df.fillna\source23,df['Name'].str.contains(' Ms. ').astype('category'),df['Name'].str.contains(' Ms. ').apply('category'),pd.Series.astype,pd.Series.apply
+2,titanic,D://crw_data//df.fillna\source23,df['title'].astype('category'),df['title'].apply('category'),pd.Series.astype,pd.Series.apply
+2,titanic,D://crw_data//np.column_stack\source17,output.astype('int'),output.apply('int'),pd.Series.astype,pd.Series.apply
+2,titanic,D://crw_data//np.column_stack\source18,output.astype('int'),output.apply('int'),pd.Series.astype,pd.Series.apply
+2,titanic,D://crw_data//np.column_stack\source21,output.astype('int'),output.apply('int'),pd.Series.astype,pd.Series.apply
+2,titanic,D://crw_data//np.concatenate\source104,training_set['Sex'].astype('category'),training_set['Sex'].apply('category'),pd.Series.astype,pd.Series.apply
+2,titanic,D://crw_data//np.concatenate\source104,training_set['Embarked'].astype('category'),training_set['Embarked'].apply('category'),pd.Series.astype,pd.Series.apply
+2,titanic,D://crw_data//np.concatenate\source104,prediction_set['Sex'].astype('category'),prediction_set['Sex'].apply('category'),pd.Series.astype,pd.Series.apply
+2,titanic,D://crw_data//np.concatenate\source114,train['Survived'].iloc[xx],train['Survived'].iat[xx],pd.Series.iloc,pd.Series.iat
+2,titanic,D://crw_data//np.concatenate\source116,train['Survived'].iloc[train1],train['Survived'].iat[train1],pd.Series.iloc,pd.Series.iat
+2,titanic,D://crw_data//df.iloc\source46,"dataset['Sex'].map({'male': 0, 'female': 1})","pd.DataFrame(dataset['Sex']).replace({'male': 0, 'female': 1})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.iloc\source46,"dataset['Embarked'].map({'S': 0, 'Q': 1, 'C': 2})","pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'Q': 1, 'C': 2})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.loc\source120,"dataset['Sex'].map({'female': 1, 'male': 0})","pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.loc\source120,"dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})","pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.loc\source122,"dataset['Sex'].map({'female': 1, 'male': 0})","pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.loc\source122,"dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})","pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.loc\source136,"dataset['Sex'].map({'female': 1, 'male': 0})","pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.loc\source136,"dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})","pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.loc\source143,"dataset['Sex'].map({'female': 1, 'male': 0})","pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.loc\source143,"dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})","pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.loc\source154,"dataset['Sex'].map({'female': 1, 'male': 0})","pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.loc\source154,"dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})","pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.loc\source254,"dataset['Sex'].map({'female': 1, 'male': 0})","pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//df.loc\source254,"dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})","pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//np.zeros\source160,"dataset['Sex'].map({'female': 1, 'male': 0})","pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//np.zeros\source160,"dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})","pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//np.zeros\source305,"dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})","pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//np.zeros\source313,"dataset['Sex'].map({'female': 1, 'male': 0})","pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//np.zeros\source313,"dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})","pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//np.zeros\source340,"dataset['Sex'].map({'female': 1, 'male': 0})","pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//np.zeros\source344,"dataset['Sex'].map({'female': 1, 'male': 0})","pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//np.zeros\source344,"dataset['Embarked'].map({'S': 0, 'C': 1, 'Q': 2})","pd.DataFrame(dataset['Embarked']).replace({'S': 0, 'C': 1, 'Q': 2})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//np.zeros\source353,"data['Sex'].map({'female': 0, 'male': 1})","pd.DataFrame(data['Sex']).replace({'female': 0, 'male': 1})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//np.zeros\source366,"dataset['Sex'].map({'female': 1, 'male': 0})","pd.DataFrame(dataset['Sex']).replace({'female': 1, 'male': 0})",pd.Series.map,pd.DataFrame.replace
+2,titanic,D://crw_data//np.where\source156,family['FamilySize'].map(lambda s: 1 if 2 <= s <= 4 else 0),"np.where( 2 <= family['FamilySize'] <= 4 , 1 ,0)",pd.Series.map,np.where
+2,titanic,D://crw_data//np.where\source74,family['FamilySize'].map(lambda s: 1 if 2 <= s <= 4 else 0),"np.where( 2 <= family['FamilySize'] <= 4 , 1 ,0)",pd.Series.map,np.where
+2,titanic,D://crw_data//pd.concat\source1118,combined['FamilySize'].map(lambda s: 1 if 2 <= s <= 4 else 0),"np.where( 2 <= combined['FamilySize'] <= 4 , 1 ,0)",pd.Series.map,np.where
+2,titanic,D://crw_data//pd.concat\source350,combined['FamilySize'].map(lambda s: 1 if 2 <= s <= 4 else 0),"np.where( 2 <= combined['FamilySize'] <= 4 , 1 ,0)",pd.Series.map,np.where
+2,titanic,D://crw_data//pd.concat\source499,combined.FamilySize.map(lambda s: 1 if 2 <= s <= 4 else 0),"np.where( 2 <= combined.FamilySize <= 4 , 1 ,0)",pd.Series.map,np.where
+2,titanic,D://crw_data//pd.concat\source571,all_datas['FamilySize'].map(lambda s: 1 if 2 <= s <= 4 else 0),"np.where( 2 <= all_datas['FamilySize'] <= 4 , 1 ,0)",pd.Series.map,np.where
+2,titanic,D://crw_data//pd.concat\source857,"combined2.loc[:, ('Title')].map(title_mapping)","combined2.loc[:, ('Title')].replace(title_replaceping)",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1076,"sns.FacetGrid(train, hue='Pclass', size=6).map(sns.kdeplot, 'Fare')","sns.FacetGrid(train, hue='Pclass', size=6).replace(sns.kdeplot, 'Fare')",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1268,dataset['Title'].map(title_mapping),dataset['Title'].replace(title_replaceping),pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1451,"g.map(plt.hist, 'Age', bins=20)","g.replace(plt.hist, 'Age', bins=20)",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1522,"map(float, data[1])","replace(float, data[1])",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1618,"g.map(plt.hist, 'Age', bins=20)","g.replace(plt.hist, 'Age', bins=20)",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1622,"g.map(plt.hist, 'Age', bins=20)","g.replace(plt.hist, 'Age', bins=20)",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1641,"facet.map(sns.kdeplot, var, shade=True)","facet.replace(sns.kdeplot, var, shade=True)",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1685,"facet.map(sns.kdeplot, var, shade=True)","facet.replace(sns.kdeplot, var, shade=True)",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1699,"g.map(plt.hist, 'Age', bins=20)","g.replace(plt.hist, 'Age', bins=20)",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1711,"g.map(plt.hist, 'Age', bins=20)","g.replace(plt.hist, 'Age', bins=20)",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1713,"g.map(plt.hist, 'Age', bins=20)","g.replace(plt.hist, 'Age', bins=20)",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1736,"g.map(plt.hist, 'Age', bins=20)","g.replace(plt.hist, 'Age', bins=20)",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source1878,"facet.map(sns.kdeplot, 'Age', shade=True)","facet.replace(sns.kdeplot, 'Age', shade=True)",pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//pd.read_csv\source2358,train['Sex'].map(gender_map),train['Sex'].replace(gender_replace),pd.Series.map,pd.Series.replace
+2,titanic,D://crw_data//np.array\source195,"train.Cader.str.replace('Mme', 'Mlle')","train.Cader.str.map('Mme', 'Mlle')",pd.Series.replace,pd.Series.map
+2,titanic,D://crw_data//pd.concat\source1054,"ticket.replace('.', '')","ticket.map('.', '')",pd.Series.replace,pd.Series.map
+2,titanic,D://crw_data//pd.concat\source1118,"ticket.replace('.', '')","ticket.map('.', '')",pd.Series.replace,pd.Series.map
+2,titanic,D://crw_data//pd.concat\source114,"FullName.replace(' ', '')","FullName.map(' ', '')",pd.Series.replace,pd.Series.map
+2,titanic,D://crw_data//df.apply\source34,"split_name[1].split('.')[0].replace(' ', '')","split_name[1].split('.')[0].map(' ', '')",pd.Series.replace,pd.Series.map
+2,titanic,D://crw_data//df.iloc\source55,"main_all_df['Name'].replace('(\,..*)', '', regex=True)","main_all_df['Name'].map('(\,..*)', '', regex=True)",pd.Series.replace,pd.Series.map
+2,titanic,D://crw_data//df.iterrows\source7,"df_data['Title'].replace('Mlle', 'Miss')","df_data['Title'].map('Mlle', 'Miss')",pd.Series.replace,pd.Series.map
+2,titanic,D://crw_data//df.loc\source125,"names.replace(item, 2, inplace=True)","names.map(item, 2, inplace=True)",pd.Series.replace,pd.Series.map
+2,titanic,D://crw_data//df.loc\source162,"df['Title'].replace(['Mme', 'Ms'], 'Mrs')","df['Title'].map(['Mme', 'Ms'], 'Mrs')",pd.Series.replace,pd.Series.map
+2,titanic,D://crw_data//np.append\source49,"train['Embarked'].replace(np.nan, 'S', regex=True)","train['Embarked'].map(np.nan, 'S', regex=True)",pd.Series.replace,pd.Series.map
+2,titanic,D://crw_data//pd.concat\source401,train_test.Cabin.str[0],train_test.Cabin.map(lambda x: x[0]),pd.Series.str,pd.Series.map
+2,titanic,D://crw_data//pd.read_csv\source1268,dataset['Cabin'].str[:1],dataset['Cabin'].map(lambda x: x[:1]),pd.Series.str,pd.Series.map
+2,titanic,D://crw_data//pd.read_csv\source1587,data.Cabin.str[0],data.Cabin.map(lambda x: x[0]),pd.Series.str,pd.Series.map
+2,titanic,D://crw_data//pd.read_csv\source1587,data.Cabin.str[0],data.Cabin.map(lambda x: x[0]),pd.Series.str,pd.Series.map
+2,titanic,D://crw_data//pd.read_csv\source1587,data.Cabin.str[0],data.Cabin.map(lambda x: x[0]),pd.Series.str,pd.Series.map
+2,transfer-learning-on-stack-exchange-tags,D://crw_data//df.apply\source17,"df.apply(process, axis=1)","df.map(process, axis=1)",pd.Series.apply,pd.Series.map
+2,traveling-santa-2018-prime-paths,D://crw_data//np.linalg.norm\source4,"np.linalg.norm(c[1:] - c[:-1], axis=1)","np.sqrt(np.square(c[1:] - c[:-1], axis=1).sum())",np.linalg.norm,np.sqrt_sum
+2,traveling-santa-2018-prime-paths,D://crw_data//np.array\source100,"np.where(p, 1.0, 1.1)","pd.DataFrame(df.y.values).apply(lambda x : x < eps).replace({True: 0,False: df.y.values - eps}).values.flatten()",np.where,pd.DataFrame.apply
+2,traveling-santa-2018-prime-paths,D://crw_data//np.linalg.norm\source4,"np.where(np.isin(path[9:-1:10], primes, True, True))","pd.DataFrame(mask).apply(lambda x : x > 128).replace({True: True,False: False}).values.flatten()",np.where,pd.DataFrame.apply
+2,traveling-santa-2018-prime-paths,D://crw_data//np.concatenate\source196,pd.read_csv('../input/cities.csv').iloc[1:],pd.read_csv('../input/cities.csv').iat[1:],pd.DataFrame.iloc,pd.DataFrame.iat
+2,traveling-santa-2018-prime-paths,D://crw_data//np.append\source5,onep[dista == min(dista)][0][0].astype(int),onep[dista == min(dista)][0][0].apply(int),pd.Series.astype,pd.Series.apply
+2,web-traffic-time-series-forecasting,D://crw_data//np.abs\source96,"train.iloc[:, 1:]","train.iat[:, 1:]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,web-traffic-time-series-forecasting,D://crw_data//np.abs\source96,"keys.loc[newkey, 'Id']","keys.ix[newkey, 'Id']",pd.DataFrame.loc,pd.DataFrame.ix
+2,web-traffic-time-series-forecasting,D://crw_data//np.abs\source99,"keys.loc[newkey, 'Id']","keys.ix[newkey, 'Id']",pd.DataFrame.loc,pd.DataFrame.ix
+2,web-traffic-time-series-forecasting,D://crw_data//df.apply\source13,"logmean_df.apply(mean_fill, axis=1)","logmean_df.map(mean_fill, axis=1)",pd.Series.apply,pd.Series.map
+2,web-traffic-time-series-forecasting,D://crw_data//df.apply\source13,data[date_cols].apply(lambda x: x.fillna(value=data['imputed_values'])),data[date_cols].map(lambda x: x.fillna(value=data['imputed_values'])),pd.Series.apply,pd.Series.map
+2,web-traffic-time-series-forecasting,D://crw_data//np.arange\source13,row.iloc[start[0] + 1:],row.iat[start[0] + 1:],pd.Series.iloc,pd.Series.iat
+2,web-traffic-time-series-forecasting,D://crw_data//np.arange\source13,row.iloc[-W:],row.iat[-W:],pd.Series.iloc,pd.Series.iat
+2,web-traffic-time-series-forecasting,D://crw_data//np.arange\source262,row.iloc[start[0] + 1:],row.iat[start[0] + 1:],pd.Series.iloc,pd.Series.iat
+2,web-traffic-time-series-forecasting,D://crw_data//np.arange\source262,row.iloc[-W:],row.iat[-W:],pd.Series.iloc,pd.Series.iat
+2,whats-cooking,D://crw_data//np.arange\source227,"np.arange(0.0, 5.0, 0.01)","np.array(range(0.0, 5.0, 0.01))",np.arange,np.array
+2,whats-cooking,D://crw_data//np.arange\source227,"np.arange(0.0, 5.0, 0.01)","np.array(range(0.0, 5.0, 0.01))",np.arange,np.array
+2,whats-cooking,D://crw_data//np.sum\source172,"i.replace('&', '')","i.map('&', '')",pd.Series.replace,pd.Series.map
+2,whats-cooking,D://crw_data//np.sum\source238,"i.replace('&', '')","i.map('&', '')",pd.Series.replace,pd.Series.map
+2,whats-cooking-kernels-only,D://crw_data//df.iloc\source30,df.sum(axis=0),"np.einsum('ij->j',df)",np.ndarray.sum,np.einsum
+2,whats-cooking-kernels-only,D://crw_data//df.iloc\source30,df.sum(axis=0),"np.count_nonzero(df,axis=0)",np.ndarray.sum,np.count_nonzero
+2,whats-cooking-kernels-only,D://crw_data//df.iloc\source30,df.iloc[train_idx],df.iat[train_idx],pd.DataFrame.iloc,pd.DataFrame.iat
+2,whats-cooking-kernels-only,D://crw_data//df.iloc\source30,dummies.astype(np.int8),dummies.apply(np.int8),pd.Series.astype,pd.Series.apply
+2,zillow-prize-1,D://crw_data//np.abs\source105,"np.hstack([X_train, month_model.predict(month_values.reshape(-1, 1))])","np.append(X_train, month_model.predict(month_values.reshape(-1, 1)), axis=1)",np.hstack,np.append
+2,zillow-prize-1,D://crw_data//np.abs\source106,"np.hstack([X_train, month_model.predict(month_values.reshape(-1, 1))])","np.append(X_train, month_model.predict(month_values.reshape(-1, 1)), axis=1)",np.hstack,np.append
+2,zillow-prize-1,D://crw_data//np.abs\source3,"np.hstack([X_train, month_avg_values])","np.append(X_train, month_avg_values, axis=1)",np.hstack,np.append
+2,zillow-prize-1,D://crw_data//np.abs\source105,"np.hstack([X_train, month_model.predict(month_values.reshape(-1, 1))])","np.concatenate([X_train, month_model.predict(month_values.reshape(-1, 1))], axis=1)",np.hstack,np.concatenate
+2,zillow-prize-1,D://crw_data//np.abs\source106,"np.hstack([X_train, month_model.predict(month_values.reshape(-1, 1))])","np.concatenate([X_train, month_model.predict(month_values.reshape(-1, 1))], axis=1)",np.hstack,np.concatenate
+2,zillow-prize-1,D://crw_data//np.abs\source3,"np.hstack([X_train, month_avg_values])","np.concatenate([X_train, month_avg_values], axis=1)",np.hstack,np.concatenate
+2,zillow-prize-1,D://crw_data//df.fillna\source13,properties[c].fillna(-1),properties[c].combine_first(properties[c].applymap(lambda x: -1)),pd.DataFrame.fillna,pd.DataFrame.combine_first
+2,zillow-prize-1,D://crw_data//df.merge\source81,"train.iloc[:, (i)]","train.iat[:, (i)]",pd.DataFrame.iloc,pd.DataFrame.iat
+2,zillow-prize-1,D://crw_data//df.fillna\source25,properties[c].astype(np.float32),properties[c].apply(np.float32),pd.Series.astype,pd.Series.apply
+2,zillow-prize-1,D://crw_data//np.array\source977,prop[c].astype(np.float32),prop[c].apply(np.float32),pd.Series.astype,pd.Series.apply
+2,zillow-prize-1,D://crw_data//np.array\source977,train_df['logerror'].values.astype(np.float32),train_df['logerror'].values.apply(np.float32),pd.Series.astype,pd.Series.apply
+2,zillow-prize-1,D://crw_data//np.array\source977,properties['parcelid'].astype(np.int32),properties['parcelid'].apply(np.int32),pd.Series.astype,pd.Series.apply
+2,zillow-prize-1,D://crw_data//df.fillna\source26,prop[c].astype(np.float32),prop[c].apply(np.float32),pd.Series.astype,pd.Series.apply
+2,zillow-prize-1,D://crw_data//np.array\source919,properties['parcelid'].astype(np.int32),properties['parcelid'].apply(np.int32),pd.Series.astype,pd.Series.apply
+2,zillow-prize-1,D://crw_data//np.array\source919,train_df['logerror'].values.astype(np.float32),train_df['logerror'].values.apply(np.float32),pd.Series.astype,pd.Series.apply

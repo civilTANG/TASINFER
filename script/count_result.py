@@ -11,7 +11,7 @@ with open('finally_12_27.csv', 'r') as f1:
             if line[-1] == '1':
                 pass_path.append(line[0])
 
-
+_1 = 1
 
 with open('kaggle_exec.csv', 'r') as f4:
     csv_read1 = csv.reader(f4)

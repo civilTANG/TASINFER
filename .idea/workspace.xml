@@ -4,7 +4,19 @@
     <bookmark url="file://$PROJECT_DIR$/script/unimportance/crw_shape.py" line="12" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bea2093-da22-4e20-b2b1-09481adf714d" name="Default Changelist" comment="" />
+    <list default="true" id="8bea2093-da22-4e20-b2b1-09481adf714d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/alterAPIplus/competition_name.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/error_1_15_21.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/op.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alterAPIplus/no_type_candidate.csv" beforeDir="false" afterPath="$PROJECT_DIR$/alterAPIplus/no_type_candidate.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/alterAPIplus/optimizetion.csv" beforeDir="false" afterPath="$PROJECT_DIR$/alterAPIplus/optimizetion.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kaggle_code/bosch-production-line-performance/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/kaggle_code/bosch-production-line-performance/code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/code.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/count_result.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/count_result.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/scripts.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/scripts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/temp.py" beforeDir="false" afterPath="$PROJECT_DIR$/script/temp.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,12 +24,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/script/count_result.py">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/script/temp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+            <state relative-caret-position="896">
+              <caret line="57" column="33" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="35" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/script/scripts.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="652">
+              <caret line="115" column="46" lean-forward="true" selection-start-line="115" selection-start-column="46" selection-end-line="115" selection-end-column="46" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -98,10 +122,8 @@
         <option value="$PROJECT_DIR$/hint/pd_type_hint.py" />
         <option value="$PROJECT_DIR$/hint/pd_shape_hint.py" />
         <option value="$PROJECT_DIR$/hint/numpy_shape_hint.py" />
-        <option value="$PROJECT_DIR$/kaggle_code/digit-recognizer/code.py" />
         <option value="$PROJECT_DIR$/kaggle_code/airbnb-recruiting-new-user-bookings/code.py" />
         <option value="$PROJECT_DIR$/kaggle_code/allstate-claims-severity/code.py" />
-        <option value="$PROJECT_DIR$/script/code.py" />
         <option value="$PROJECT_DIR$/hint/hint_numpy.py" />
         <option value="$PROJECT_DIR$/kaggle_code/bnp-paribas-cardif-claims-management/test_code.py" />
         <option value="$PROJECT_DIR$/kaggle_code/caterpillar-tube-pricing/test_code.py" />
@@ -112,24 +134,30 @@
         <option value="$PROJECT_DIR$/script/new_replace.csv" />
         <option value="$PROJECT_DIR$/script/11.py" />
         <option value="$PROJECT_DIR$/script/finally_12_27.csv" />
-        <option value="$PROJECT_DIR$/script/scripts.py" />
-        <option value="$PROJECT_DIR$/script/temp.py" />
         <option value="$PROJECT_DIR$/script/temp_12_29.csv" />
         <option value="$PROJECT_DIR$/script/count_result.py" />
+        <option value="$PROJECT_DIR$/kaggle_code/digit-recognizer/code.py" />
+        <option value="$PROJECT_DIR$/alterAPIplus/count_result.py" />
+        <option value="D:/crw_data/df.fillna/source13/code/code.py" />
+        <option value="$PROJECT_DIR$/kaggle_code/bosch-production-line-performance/code.py" />
+        <option value="$PROJECT_DIR$/script/code.py" />
+        <option value="$PROJECT_DIR$/script/temp.py" />
+        <option value="$PROJECT_DIR$/script/scripts.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1774" />
-    <option name="y" value="-188" />
-    <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-331" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,13 +174,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/script" />
+    <property name="last_opened_file_path" value="D:/改论文" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
@@ -160,6 +187,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\70916\Desktop\TASINFER\script" />
+      <recent name="C:\Users\70916\Desktop\TASINFER\alterAPIplus" />
       <recent name="C:\Users\70916\Desktop\TASINFER\kaggle_code\input" />
       <recent name="C:\Users\70916\Desktop\TASINFER\kaggle_code\digit-recognizer" />
     </key>
@@ -182,8 +210,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.count_result">
-    <configuration name="11" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.scripts">
+    <configuration name="code" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TASINFER" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -196,7 +224,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/script/11.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/script/code.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -205,7 +233,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="11111" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="count_result (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TASINFER" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -213,12 +241,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/script" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/alterAPIplus" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/script/11111.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/alterAPIplus/count_result.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -249,28 +277,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="get_competion" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="TASINFER" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/script" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\70916\Desktop\TASINFER\script\unimportance\get_competion.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="scripts" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="TASINFER" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -293,13 +299,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="TASINFER" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/script" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/script/temp.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.count_result" />
         <item itemvalue="Python.scripts" />
-        <item itemvalue="Python.11" />
-        <item itemvalue="Python.11111" />
-        <item itemvalue="Python.get_competion" />
+        <item itemvalue="Python.temp" />
+        <item itemvalue="Python.count_result (1)" />
+        <item itemvalue="Python.code" />
+        <item itemvalue="Python.count_result" />
       </list>
     </recent_temporary>
   </component>
@@ -322,12 +350,24 @@
       <workItem from="1608049491809" duration="2588000" />
       <workItem from="1608081888187" duration="22584000" />
       <workItem from="1608546667993" duration="8347000" />
-      <workItem from="1608700166106" duration="128902000" />
+      <workItem from="1608700166106" duration="134025000" />
+      <workItem from="1609503820258" duration="967000" />
+      <workItem from="1609554192094" duration="4997000" />
+      <workItem from="1609659110541" duration="17757000" />
+      <workItem from="1609737295278" duration="6076000" />
+      <workItem from="1609859260682" duration="1126000" />
+      <workItem from="1609922942042" duration="1485000" />
+      <workItem from="1609951977924" duration="598000" />
+      <workItem from="1610065052129" duration="694000" />
+      <workItem from="1610187998777" duration="26000" />
+      <workItem from="1610683984968" duration="6991000" />
+      <workItem from="1610692025285" duration="7426000" />
+      <workItem from="1610777429775" duration="4255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="292211000" />
+    <option name="totallyTimeSpent" value="349732000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -341,12 +381,12 @@
   <component name="ToolWindowManager">
     <frame x="-1928" y="-331" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14179105" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16577825" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35249457" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38611713" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -355,7 +395,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21800433" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21639344" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.329718" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -392,17 +432,18 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/TASINFER$test.coverage" NAME="test Coverage Results" MODIFIED="1608550452650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
     <SUITE FILE_PATH="coverage/TASINFER$shape_hint.coverage" NAME="shape_hint Coverage Results" MODIFIED="1607955126622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
-    <SUITE FILE_PATH="coverage/TASINFER$temp.coverage" NAME="temp Coverage Results" MODIFIED="1608271390842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
-    <SUITE FILE_PATH="coverage/TASINFER$scripts.coverage" NAME="scripts Coverage Results" MODIFIED="1609168246998" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
+    <SUITE FILE_PATH="coverage/TASINFER$temp.coverage" NAME="temp Coverage Results" MODIFIED="1610718597322" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
+    <SUITE FILE_PATH="coverage/TASINFER$scripts.coverage" NAME="scripts Coverage Results" MODIFIED="1610781035150" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
     <SUITE FILE_PATH="coverage/TASINFER$test_code__1_.coverage" NAME="test_code (1) Coverage Results" MODIFIED="1608279587574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaggle_code/caterpillar-tube-pricing" />
     <SUITE FILE_PATH="coverage/TASINFER$pd_shape_hint.coverage" NAME="pd_shape_hint Coverage Results" MODIFIED="1607957289541" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hint" />
     <SUITE FILE_PATH="coverage/TASINFER$test_code__2_.coverage" NAME="test_code (2) Coverage Results" MODIFIED="1607671768142" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaggle_code/airbnb-recruiting-new-user-bookings" />
     <SUITE FILE_PATH="coverage/TASINFER$test_code.coverage" NAME="test_code Coverage Results" MODIFIED="1608278345721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaggle_code/bnp-paribas-cardif-claims-management" />
     <SUITE FILE_PATH="coverage/TASINFER$numpy_shape_hint.coverage" NAME="numpy_shape_hint Coverage Results" MODIFIED="1607961010440" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/hint" />
-    <SUITE FILE_PATH="coverage/TASINFER$code.coverage" NAME="code Coverage Results" MODIFIED="1607666724436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaggle_code/favorita-grocery-sales-forecasting" />
+    <SUITE FILE_PATH="coverage/TASINFER$code.coverage" NAME="code Coverage Results" MODIFIED="1609409803964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
     <SUITE FILE_PATH="coverage/TASINFER$11.coverage" NAME="11 Coverage Results" MODIFIED="1609154539889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
     <SUITE FILE_PATH="coverage/TASINFER$get_competion.coverage" NAME="get_competion Coverage Results" MODIFIED="1608551859043" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
     <SUITE FILE_PATH="coverage/TASINFER$11111.coverage" NAME="11111 Coverage Results" MODIFIED="1608821901490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
+    <SUITE FILE_PATH="coverage/TASINFER$count_result__1_.coverage" NAME="count_result (1) Coverage Results" MODIFIED="1609674543715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/alterAPIplus" />
     <SUITE FILE_PATH="coverage/TASINFER$test_code__3_.coverage" NAME="test_code (3) Coverage Results" MODIFIED="1607672224098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/kaggle_code/allstate-claims-severity" />
     <SUITE FILE_PATH="coverage/TASINFER$extra_code.coverage" NAME="extra_code Coverage Results" MODIFIED="1607608810400" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
     <SUITE FILE_PATH="coverage/TASINFER$creat_test_code.coverage" NAME="creat_test_code Coverage Results" MODIFIED="1607671045525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
@@ -410,251 +451,12 @@
     <SUITE FILE_PATH="coverage/TASINFER$crw_shape.coverage" NAME="crw_shape Coverage Results" MODIFIED="1607576797022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/script" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kaggle_code/allstate-claims-severity/v.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kaggle_code/bnp-paribas-cardif-claims-management/v.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kaggle_code/bnp-paribas-cardif-claims-management/test_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kaggle_code/caterpillar-tube-pricing/code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-341">
-          <folding>
-            <element signature="e#137#146#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/sklearn/model_selection/_split.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="1419" column="31" selection-start-line="1419" selection-start-column="22" selection-end-line="1419" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kaggle_code/caterpillar-tube-pricing/test_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="59" column="23" lean-forward="true" selection-start-line="59" selection-start-column="23" selection-end-line="59" selection-end-column="23" />
-          <folding>
-            <element signature="e#135#144#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kaggle_code/bosch-production-line-performance/tas.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/extra_var.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1120">
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kaggle_code/airbnb-recruiting-new-user-bookings/test_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hint/builtins.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#126#149#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hint/array_hint.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hint/numpy_shape_hint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hint/pd_shape_hint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kaggle_code/digit-recognizer/code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="5" column="8" selection-start-line="4" selection-end-line="366" selection-end-column="61" />
-          <folding>
-            <element signature="e#627#682#0" />
-            <element signature="e#1200#1301#0" />
-            <element signature="e#1427#2151#0" />
-            <element signature="e#2215#2665#0" />
-            <element signature="e#2711#3030#0" />
-            <element signature="e#3072#3292#0" />
-            <element signature="e#3365#3931#0" />
-            <element signature="e#4046#5356#0" />
-            <element signature="e#5573#8837#0" />
-            <element signature="e#9005#10431#0" />
-            <element signature="e#11553#11671#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/unimportance/get_competion.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/creat_test_code.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="58" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/1199071403/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-419">
-          <caret line="4158" column="6" selection-start-line="4158" selection-start-column="6" selection-end-line="4158" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/unimportance/crw_shape.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-748">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="14" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/shape_hint.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="247" column="43" selection-start-line="247" selection-start-column="43" selection-end-line="247" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#2045#3098#0" />
-            <element signature="e#3149#4378#0" />
-            <element signature="e#4428#8972#0" />
-            <element signature="e#9106#9618#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/11111.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pandas/core/series.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1190">
-          <caret line="3913" column="8" selection-start-line="3913" selection-start-column="8" selection-end-line="3913" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/numpy/core/numeric.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="175" column="4" selection-start-line="175" selection-start-column="4" selection-end-line="175" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/12_24_error.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-64931">
-          <caret line="4" column="44" lean-forward="true" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/unimportance/new_replace.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="496" column="73" selection-start-line="496" selection-start-column="73" selection-end-line="496" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/unimportance/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/url_competition.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-380" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/urls.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/optimization_fliter.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/temp.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/exec_case.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/candidate.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="93" selection-start-column="62" selection-end-column="93" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/temp.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/script/ALTER_candidate.csv">
       <provider selected="true" editor-type-id="text-editor">
@@ -699,35 +501,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/scripts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="77" column="77" selection-start-line="76" selection-start-column="48" selection-end-line="77" selection-end-column="96" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kaggle_result.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="60" selection-start-column="60" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/script/optimize.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1186" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/no_type_candidate.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/optimizetion.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/script/kaggle_exec.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/script/finally_12_27.csv">
@@ -744,9 +523,118 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/script/type_candidate.csv">
+    <entry file="file://$PROJECT_DIR$/script/creat_test_code.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-26271" />
+        <state relative-caret-position="420">
+          <caret line="21" column="49" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/typing.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2840">
+          <folding>
+            <element signature="e#20#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hint/hint_numpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hint/builtins.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="606" column="45" selection-start-line="606" selection-start-column="45" selection-end-line="606" selection-end-column="45" />
+          <folding>
+            <element signature="e#126#149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alterAPIplus/kaggle_code.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alterAPIplus/no_type_candidate.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alterAPIplus/competition_name.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alterAPIplus/optimizetion.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alterAPIplus/num.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alterAPIplus/len.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alterAPIplus/count_result.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="27" column="67" lean-forward="true" selection-start-line="27" selection-start-column="67" selection-end-line="27" selection-end-column="67" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/crw_data/df.apply/source2/code/code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5430" />
+      </provider>
+    </entry>
+    <entry file="file://D:/crw_data/df.astype/source2/code/code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7664">
+          <caret line="111" column="22" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/crw_data/df.fillna/source37/code/code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-540" />
+      </provider>
+    </entry>
+    <entry file="file://D:/crw_data/df.fillna/source13/code/code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="269" column="24" selection-start-line="269" selection-start-column="24" selection-end-line="269" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/crw_data/np.arange/source315/code/code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="21" column="29" lean-forward="true" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kaggle_code/bosch-production-line-performance/code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-634">
+          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kaggle_code/2018-hse-ml-competion-02/code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="226" column="30" lean-forward="true" selection-start-line="226" selection-end-line="226" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/temp_12_29.csv">
@@ -756,10 +644,149 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2019.1/system/python_stubs/1199071403/numpy/core/_multiarray_umath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="11247" column="4" selection-start-line="11247" selection-start-column="4" selection-end-line="11247" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kaggle_code/airbnb-recruiting-new-user-bookings/code.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kaggle_code/digit-recognizer/code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="358" selection-start-line="355" selection-start-column="12" selection-end-line="363" selection-end-column="58" />
+          <folding>
+            <element signature="e#233#268#0" expanded="true" />
+            <element signature="e#627#682#0" />
+            <element signature="e#1200#1301#0" />
+            <element signature="e#1427#2151#0" />
+            <element signature="e#2215#2665#0" />
+            <element signature="e#2711#3030#0" />
+            <element signature="e#3072#3292#0" />
+            <element signature="e#3365#3931#0" />
+            <element signature="e#4046#5356#0" />
+            <element signature="e#5573#8837#0" />
+            <element signature="e#9005#10431#0" />
+            <element signature="e#11553#11671#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/1_15_error.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/temp.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/run.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="247" column="43" selection-start-line="247" selection-start-column="43" selection-end-line="247" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#2045#3098#0" />
+            <element signature="e#3149#4378#0" />
+            <element signature="e#4428#8972#0" />
+            <element signature="e#9106#9618#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/shape_hint.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/type_candidate.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kaggle_exec.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/url_competition.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/script/count_result.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="31" column="38" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        <state relative-caret-position="740">
+          <caret line="37" column="62" selection-start-line="36" selection-start-column="36" selection-end-line="37" selection-end-column="133" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/optimizetion.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/kaggle_result.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="99" lean-forward="true" selection-start-line="1" selection-start-column="99" selection-end-line="1" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/1_15_opm.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45480">
+          <caret line="2274" lean-forward="true" selection-start-line="2274" selection-end-line="2274" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/error_1_15_21.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/jiayou.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/op.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="896">
+          <caret line="57" column="33" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/scripts.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="652">
+          <caret line="115" column="46" lean-forward="true" selection-start-line="115" selection-start-column="46" selection-end-line="115" selection-end-column="46" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>

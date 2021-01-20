@@ -1,5 +1,11 @@
 import pandas as pd
 import numpy as np
+b = np.arange(9)
+a = np.reshape(b, (1, -1))
+print(a.shape)
+print(np.dot(b,b))
+print(a)
+exit(0)
 from scipy import stats
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
 from sklearn.metrics import mean_absolute_error

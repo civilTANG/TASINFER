@@ -5,26 +5,6 @@ import astor
 import numpy as np
 import  pandas as pd
 
-a = pd.Series(np.arange(16))
-b = pd.DataFrame(np.arange(16).reshape(2, 8))
-c = np.arange(16).reshape(2,4,2)
-d = np.ones(24).reshape(2,4,3)
-print(c)
-print('bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n')
-print(d)
-print('bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n')
-print(c*d)
-
-print('bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb\n')
-exit(0)
-#print(d)
-print(b.shape)
-print(dir(a))
-print(dir(b))
-print(dir(c))
-print(type(c))
-#print(help(a.apply))
-exit(0)
 path = r'D:\experiment\project'
 csv.field_size_limit(500 * 1024 * 1024)
 c = set() # 执行的文件
@@ -32,7 +12,7 @@ e = set() # 执行有误的
 a = 0
 error_dict = {}
 
-z = ['NotImplementedError', 'AttributeError', 'KeyError', 'ValueError', 'AssertionError', 'TypeError', 'NameError', 'MemoryError']
+z = ['AttributeError', 'KeyError', 'ValueError', 'AssertionError', 'TypeError', 'NameError']
 for root, dirs, files in os.walk(path, topdown=False):
     for name in files:
         if name.endswith('executed.csv'):
@@ -42,13 +22,13 @@ for root, dirs, files in os.walk(path, topdown=False):
                     if len(line):
                         c.add(line[0])
 
-                        print(line)
-                        exit(0)
         elif name.endswith('error_type.csv'):
+            continue
             with open(os.path.join(root, name), 'r') as f2:
                 csv_read = csv.reader(f2)
                 for line in csv_read:
                     if len(line):
+
                         error = line[3].split(':')[0]
                         error = error.replace('b"', '').replace('b\'', '')
                         if len(error) and (error in z):
@@ -58,89 +38,84 @@ for root, dirs, files in os.walk(path, topdown=False):
                                 if error == 'AssertionError':
                                     pass
                                 else:
-                                    continue
-                            if error in error_dict.keys():
-                                error_dict[error] = error_dict[error]+1
-                            else:
-                                error_dict[error] = 1
+                                    with open(line[1], 'r') as f3:
+                                        text = f3.read()
+                                        print(text)
+                                    print(line[1],line[2], line[3])
+                                    exit(0)
+
                             with open(line[1], 'r') as f3:
                                 text = f3.read()
                                 print(text)
                                 print(line[1], line[3])
+                            a = a + 1
+                            continue
                             root1 = ast.parse(text)
                             for node in ast.walk(root1):
                                 if isinstance(node, ast.Call):
                                     if isinstance(node.func, ast.Attribute) and node.func.attr == 'writerow':
-                                        if isinstance(node.func.value,ast.Name) and node.func.value.id == 'writer':
+                                        if isinstance(node.func.value, ast.Name) and node.func.value.id == 'writer':
                                             stmt = astor.to_source(node)
-                                            with open('12_24_error.csv', 'a+') as f4:
+                                            with open('1_15_error.csv', 'a+') as f4:
                                                 writer = csv.writer(f4)
                                                 writer.writerow([line[1], line[3], stmt, error])
-                            continue
-                            print('请输入0，1，2')
-                            case = input()
-                            case = int(case)
-                            while case not in [0,1,2]:
-                                    print('请输入0，1，2')
-                                    case = input()
-                                    case = int(case)
-                            if case == 0:
-                                with open('new_replace.csv', 'a+') as f4:
-                                    writer = csv.writer(f4)
-                                    writer.writerow([line[1], error, case])
-                            elif case == 1:
-                                with open('new_replace.csv','a+') as f4:
-                                    writer = csv.writer(f4)
-                                    writer.writerow([line[1], error, case])
-                            elif case == 2:
-                                print('请输入代码:')
-                                origin = input()
-                                print('请输入答案:')
-                                answer = input()
-                                print('请输入错误答案')
-                                wrong = input()
-                                with open('new_replace.csv', 'a+') as f4:
-                                    writer = csv.writer(f4)
-                                    writer.writerow([line[1], error, case, answer, origin, wrong])
-
-
-                            e.add(line[1])
-
-                            #print(code_path)
-                            #print(line[1])
-                            a = a + 1
 
 
 
-    for name in dirs:
-        pass
-        # print(os.path.join(root, name))
 print(len(c))
-print(len(e))
-for key, value in error_dict.items():
-    pass
-    print(key, value)
 
-result = {}
-for i in c:
-    code_path = os.path.join(i.split('\\')[0], i.split('\\')[1], i.split('\\')[2])
-    if code_path in result.keys():
-        result[code_path]['yes'] = result[code_path]['yes']+1
-    else:
-        result[code_path]={'yes': 1, 'no': 0}
-    #print(code_path)
+zi = set()
+with open('op.csv', 'r',encoding='UTF-8-sig') as f3:
+    csv_read = csv.reader(f3)
+    for line in csv_read:
+        if len(line):
+            try:
+                with open(os.path.join(line[0], 'link.txt'), 'r')as r1:
+                    url = r1.read()
 
-for i in e:
-    code_path = os.path.join(i.split('\\')[0], i.split('\\')[1], i.split('\\')[2])
-    if code_path in result.keys():
-        result[code_path]['no'] = result[code_path]['no']+1
-    else:
-        result[code_path] = {'yes': 0, 'no': 1}
-    #print(code_path)
+                zi.add(url)
+            except Exception as e:
+                print(e)
+count =0
+for item in c:
+    j = item.split('\code')[0]
 
-for key, value in result.items():
-    pass
-    #print(key, value)
 
-# print(len(result))
-#print(len(e))
+    with open(os.path.join(j, 'link.txt'), 'r')as r2:
+        k = r2.read()
+    with open(os.path.join(j, 'competition.txt'), 'r')as r7:
+        competition = r7.read()
+    #print(k)
+    if k in zi:
+        #print(item)
+        with open(item,'r') as r3:
+            text = r3.read()
+        root1 = ast.parse(text)
+        for node in ast.walk(root1):
+            if isinstance(node, ast.Call):
+                if isinstance(node.func, ast.Attribute) and node.func.attr == 'writerow':
+                    if isinstance(node.func.value, ast.Name) and node.func.value.id == 'writer':
+                        stmt = astor.to_source(node)
+                        r = ast.parse(stmt)
+                        #print(stmt)
+                        for node in ast.walk(r):
+                            if isinstance(node, ast.Call) and node.func.attr == 'writerow':
+                                s = astor.to_source(node.args[0])
+                                break
+                            # print(s)
+                        url = ''
+                        t1 = ''
+                        t2 = ''
+                        try:
+                            t = eval(s)
+
+                            with open('1_16_15.10.csv', 'a+') as f3:
+                                writer = csv.writer(f3)
+                                writer.writerow([ competition,j,t[1], t[2], t[3], t[6], t[7]])
+
+                        except Exception as e:
+                            print(e)
+        count =count+1
+
+print(count)
+print(zi)
